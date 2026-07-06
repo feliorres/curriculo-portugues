@@ -2,521 +2,570 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Português</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Português</title>
 
-    <!-- Google Fonts: Forum (Clássica/Romana), EB Garamond (Corpo de Texto) e Inter (Controles/UI) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Forum&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+  <!-- Google Fonts: Forum (Clássica/Romana), EB Garamond (Corpo de Texto) e Inter (Controles/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Forum&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 
-    <!-- Marked.js para renderização limpa do Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Marked.js para renderização limpa do Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <style>
-        /* --- SISTEMA DE DESIGN DE FOLHA DE PAPEL (SEM BOXES DE CONTORNO) --- */
-        :root {
-            --bg-paper: #FAF8F5;
-            /* off-white aconchegante */
-            --text-dark: #2E2C29;
-            /* cinza escuro/soot */
-            --text-muted: #7E7870;
-            /* cinza médio */
-            --accent: #8C7862;
-            /* warm sepia gold */
-            --accent-hover: #73614F;
-            --accent-light: #EFECE6;
-            --border-soft: #EBE7DF;
+  <style>
+    /* --- SISTEMA DE DESIGN DE FOLHA DE PAPEL (SEM BOXES DE CONTORNO) --- */
+    :root {
+      --bg-paper: #FAF8F5;
+      /* off-white aconchegante */
+      --text-dark: #2E2C29;
+      /* cinza escuro/soot */
+      --text-muted: #7E7870;
+      /* cinza médio */
+      --accent: #8C7862;
+      /* warm sepia gold */
+      --accent-hover: #73614F;
+      --accent-light: #EFECE6;
+      --border-soft: #EBE7DF;
 
-            --font-serif-title: 'Forum', Georgia, serif;
-            --font-serif-body: 'EB Garamond', Georgia, serif;
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
+      --font-serif-title: 'Forum', Georgia, serif;
+      --font-serif-body: 'EB Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            background-color: var(--bg-paper);
-            color: var(--text-dark);
-            font-family: var(--font-serif-body);
-            font-size: 1.2rem;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            padding: 60px 40px;
-        }
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-dark);
+      font-family: var(--font-serif-body);
+      font-size: 1.2rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 60px 40px;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-        /* --- CABEÇALHO SÓBRIO --- */
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-soft);
-        }
+    /* --- CABEÇALHO SÓBRIO --- */
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border-soft);
+    }
 
-        header h1 {
-            font-family: var(--font-serif-title);
-            font-size: 2.8rem;
-            font-weight: 400;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--text-dark);
-            margin-bottom: 8px;
-        }
+    header h1 {
+      font-family: var(--font-serif-title);
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
 
-        header p {
-            font-family: var(--font-sans);
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
+    header p {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
 
-        /* --- NAVEGAÇÃO MINIMALISTA (SEM BORDAS OU BOXES) --- */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 45px;
-            font-family: var(--font-sans);
-            font-size: 0.9rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
+    /* --- NAVEGAÇÃO MINIMALISTA (SEM BORDAS OU BOXES) --- */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 45px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
-        .nav-link {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            cursor: pointer;
-            padding: 8px 4px;
-            transition: all 0.2s ease;
-            border-bottom: 2px solid transparent;
-        }
+    .nav-link {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 8px 4px;
+      transition: all 0.2s ease;
+      border-bottom: 2px solid transparent;
+    }
 
-        .nav-link:hover {
-            color: var(--accent);
-        }
+    .nav-link:hover {
+      color: var(--accent);
+    }
 
-        .nav-link.active {
-            color: var(--text-dark);
-            border-bottom: 2px solid var(--accent);
-        }
+    .nav-link.active {
+      color: var(--text-dark);
+      border-bottom: 2px solid var(--accent);
+    }
 
-        /* --- CONTAINER DE CONTEÚDO --- */
-        .content-area {
-            min-height: 400px;
-        }
+    /* --- CONTAINER DE CONTEÚDO --- */
+    .content-area {
+      min-height: 400px;
+    }
 
-        .tab-panel {
-            display: none;
-        }
+    .tab-panel {
+      display: none;
+    }
 
-        .tab-panel.active {
-            display: block;
-        }
+    .tab-panel.active {
+      display: block;
+    }
 
-        /* --- CONTROLES DE FILTRO/SELEÇÃO DE ANO --- */
-        .sub-nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 35px;
-            font-family: var(--font-sans);
-            font-size: 0.85rem;
-        }
+    /* --- CONTROLES DE FILTRO/SELEÇÃO DE ANO --- */
+    .sub-nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 35px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+    }
 
-        .sub-link {
-            background: none;
-            border: 1px solid var(--border-soft);
-            border-radius: 20px;
-            color: var(--text-muted);
-            cursor: pointer;
-            padding: 6px 16px;
-            transition: all 0.2s ease;
-        }
+    .sub-link {
+      background: none;
+      border: 1px solid var(--border-soft);
+      border-radius: 20px;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 6px 16px;
+      transition: all 0.2s ease;
+    }
 
-        .sub-link:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
+    .sub-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
-        .sub-link.active {
-            background-color: var(--accent);
-            color: var(--bg-paper);
-            border-color: var(--accent);
-        }
+    .sub-link.active {
+      background-color: var(--accent);
+      color: var(--bg-paper);
+      border-color: var(--accent);
+    }
 
-        /* --- ESTILOS DE RENDERIZAÇÃO DO MARKDOWN (EB GARAMOND) --- */
-        .markdown-body {
-            font-family: var(--font-serif-body);
-            color: var(--text-dark);
-        }
+    /* --- ESTILOS DE RENDERIZAÇÃO DO MARKDOWN (EB GARAMOND) --- */
+    .markdown-body {
+      font-family: var(--font-serif-body);
+      color: var(--text-dark);
+    }
 
-        .markdown-body h1,
-        .markdown-body h2,
-        .markdown-body h3 {
-            font-family: var(--font-serif-title);
-            font-weight: 400;
-            color: var(--text-dark);
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3 {
+      font-family: var(--font-serif-title);
+      font-weight: 400;
+      color: var(--text-dark);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
 
-        .markdown-body h1 {
-            font-size: 2.2rem;
-        }
+    .markdown-body h1 {
+      font-size: 2.2rem;
+    }
 
-        .markdown-body h2 {
-            font-size: 1.8rem;
-            border-bottom: 1px solid var(--border-soft);
-            padding-bottom: 6px;
-        }
+    .markdown-body h2 {
+      font-size: 1.8rem;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 6px;
+    }
 
-        .markdown-body h3 {
-            font-size: 1.4rem;
-        }
+    .markdown-body h3 {
+      font-size: 1.4rem;
+    }
 
-        .markdown-body p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
+    .markdown-body p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
 
-        .markdown-body blockquote {
-            border-left: 2px solid var(--accent);
-            padding-left: 20px;
-            margin: 20px 0;
-            font-style: italic;
-            color: #4a4742;
-        }
+    .markdown-body blockquote {
+      border-left: 2px solid var(--accent);
+      padding-left: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #4a4742;
+    }
 
-        .markdown-body ul,
-        .markdown-body ol {
-            margin-left: 25px;
-            margin-bottom: 20px;
-        }
+    .markdown-body ul,
+    .markdown-body ol {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
 
-        .markdown-body li {
-            margin-bottom: 8px;
-        }
+    .markdown-body li {
+      margin-bottom: 8px;
+    }
 
-        /* Tabela Markdown Estilo Folha de Livro Antigo */
-        .markdown-body table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-            font-size: 1.1rem;
-        }
+    /* Tabela Markdown Estilo Folha de Livro Antigo */
+    .markdown-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      font-size: 1.1rem;
+    }
 
-        .markdown-body th {
-            font-family: var(--font-sans);
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 12px 10px;
-            border-bottom: 2px solid var(--text-dark);
-            color: var(--text-dark);
-            text-align: left;
-        }
+    .markdown-body th {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 10px;
+      border-bottom: 2px solid var(--text-dark);
+      color: var(--text-dark);
+      text-align: left;
+    }
 
-        .markdown-body td {
-            padding: 14px 10px;
-            border-bottom: 1px solid var(--border-soft);
-            vertical-align: top;
-        }
+    .markdown-body td {
+      padding: 14px 10px;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+    }
 
-        /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
-        .lesson-accordion-wrapper {
-            margin-top: 10px;
-            border-bottom: 1px solid var(--border-soft);
-            padding-bottom: 15px;
-        }
+    /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
+    .lesson-accordion-wrapper {
+      margin-top: 10px;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 15px;
+    }
 
-        .lesson-header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            border-bottom: 1px solid var(--border-soft);
-            padding-bottom: 12px;
-        }
+    .lesson-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 12px;
+    }
 
-        .lesson-accordion-trigger {
-            background: none;
-            border: none;
-            font-family: var(--font-serif-title);
-            font-size: 1.8rem;
-            color: var(--text-dark);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 6px 0;
-            text-align: left;
-            outline: none;
-            transition: color 0.2s;
-        }
+    .lesson-accordion-trigger {
+      background: none;
+      border: none;
+      font-family: var(--font-serif-title);
+      font-size: 1.8rem;
+      color: var(--text-dark);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 0;
+      text-align: left;
+      outline: none;
+      transition: color 0.2s;
+    }
 
-        .lesson-accordion-trigger:hover {
-            color: var(--accent);
-        }
+    .lesson-accordion-trigger:hover {
+      color: var(--accent);
+    }
 
-        .arrow-icon {
-            font-size: 0.95rem;
-            transition: transform 0.2s ease;
-            color: var(--text-muted);
-        }
+    .arrow-icon {
+      font-size: 0.95rem;
+      transition: transform 0.2s ease;
+      color: var(--text-muted);
+    }
 
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            font-family: var(--font-sans);
-            font-size: 0.85rem;
-            font-weight: 600;
-            gap: 12px;
-        }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      gap: 12px;
+    }
 
-        .toggle-option {
-            cursor: pointer;
-            color: var(--text-muted);
-            transition: color 0.2s;
-            padding: 4px 8px;
-        }
+    .toggle-option {
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.2s;
+      padding: 4px 8px;
+    }
 
-        .toggle-option.active {
-            color: var(--text-dark);
-            border-bottom: 1px solid var(--text-dark);
-        }
+    .toggle-option.active {
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--text-dark);
+    }
 
-        /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
-        .lesson-accordion-wrapper {
-            margin-top: 10px;
-            border-bottom: 1px solid var(--border-soft);
-            padding-bottom: 15px;
-        }
+    /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
+    .lesson-accordion-wrapper {
+      margin-top: 10px;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 15px;
+    }
 
-        .lesson-header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            border-bottom: 1px solid var(--border-soft);
-            padding-bottom: 12px;
-        }
+    .lesson-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 12px;
+    }
 
-        .lesson-accordion-trigger {
-            background: none;
-            border: none;
-            font-family: var(--font-serif-title);
-            font-size: 1.8rem;
-            color: var(--text-dark);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 6px 0;
-            text-align: left;
-            outline: none;
-            transition: color 0.2s;
-        }
+    .lesson-accordion-trigger {
+      background: none;
+      border: none;
+      font-family: var(--font-serif-title);
+      font-size: 1.8rem;
+      color: var(--text-dark);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 0;
+      text-align: left;
+      outline: none;
+      transition: color 0.2s;
+    }
 
-        .lesson-accordion-trigger:hover {
-            color: var(--accent);
-        }
+    .lesson-accordion-trigger:hover {
+      color: var(--accent);
+    }
 
-        .arrow-icon {
-            font-size: 0.95rem;
-            transition: transform 0.2s ease;
-            color: var(--text-muted);
-        }
+    .arrow-icon {
+      font-size: 0.95rem;
+      transition: transform 0.2s ease;
+      color: var(--text-muted);
+    }
 
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            font-family: var(--font-sans);
-            font-size: 0.85rem;
-            font-weight: 600;
-            gap: 12px;
-        }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      gap: 12px;
+    }
 
-        .toggle-option {
-            cursor: pointer;
-            color: var(--text-muted);
-            transition: color 0.2s;
-            padding: 4px 8px;
-        }
+    .toggle-option {
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.2s;
+      padding: 4px 8px;
+    }
 
-        .toggle-option.active {
-            color: var(--text-dark);
-            border-bottom: 1px solid var(--text-dark);
-        }
+    .toggle-option.active {
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--text-dark);
+    }
 
-        /* --- NOTIFICAÇÃO --- */
-        .toast {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--text-dark);
-            color: var(--bg-paper);
-            font-family: var(--font-sans);
-            font-size: 0.85rem;
-            padding: 12px 24px;
-            border-radius: 4px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s;
-            z-index: 1000;
-        }
+    /* --- NOTIFICAÇÃO --- */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--text-dark);
+      color: var(--bg-paper);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      padding: 12px 24px;
+      border-radius: 4px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      z-index: 1000;
+    }
 
-        .toast.active {
-            opacity: 1;
-        }
+    .toast.active {
+      opacity: 1;
+    }
 
-        /* --- MODAL DA LIÇÃO --- */
-        .lesson-modal {
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            width: 90%;
-            max-width: 900px;
-            max-height: 90vh;
-            margin: auto; /* Centraliza nativamente */
-            padding: 0;
-            background-color: var(--bg-paper);
-        }
+    /* --- MODAL DA LIÇÃO --- */
+    .lesson-modal {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 900px;
+      max-height: 90vh;
+      margin: auto;
+      /* Centraliza nativamente */
+      padding: 0;
+      background-color: var(--bg-paper);
+    }
 
-        .lesson-modal::backdrop {
-            background-color: rgba(46, 44, 41, 0.6);
-            backdrop-filter: blur(4px);
-        }
+    .lesson-modal::backdrop {
+      background-color: rgba(46, 44, 41, 0.6);
+      backdrop-filter: blur(4px);
+    }
 
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 30px;
-            border-bottom: 1px solid var(--border-soft);
-            background-color: var(--bg-paper);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-bottom: 1px solid var(--border-soft);
+      background-color: var(--bg-paper);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-        .modal-close {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-muted);
-            transition: color 0.2s;
-        }
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
 
-        .modal-close:hover {
-            color: var(--text-dark);
-        }
+    .modal-close:hover {
+      color: var(--text-dark);
+    }
 
-        .modal-body {
-            padding: 30px;
-            overflow-y: auto;
-            /* Subtrai o tamanho do header para não quebrar o layout */
-            max-height: calc(90vh - 80px); 
-        }
+    .modal-body {
+      padding: 30px;
+      overflow-y: auto;
+      /* Subtrai o tamanho do header para não quebrar o layout */
+      max-height: calc(90vh - 80px);
+    }
 
-        /* --- BOTÃO LER NO CRONOGRAMA --- */
-        .btn-ler {
-            background-color: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            border-radius: 15px;
-            padding: 4px 12px;
-            font-size: 0.8rem;
-            font-family: var(--font-sans);
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .btn-ler:hover {
-            background-color: var(--accent);
-            color: var(--bg-paper);
-        }
-    </style>
+    /* --- BOTÃO LER NO CRONOGRAMA --- */
+    .btn-ler {
+      background-color: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 15px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      font-family: var(--font-sans);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-ler:hover {
+      background-color: var(--accent);
+      color: var(--bg-paper);
+    }
+
+    /* --- RESPONSIVIDADE PARA CELULAR --- */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+        font-size: 1.1rem;
+      }
+
+      header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 25px;
+      }
+
+      .sub-nav {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      /* Tabelas responsivas com rolagem horizontal nativa */
+      .markdown-body table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+      }
+
+      .markdown-body th,
+      .markdown-body td {
+        padding: 12px 10px;
+      }
+
+      #lesson-modal {
+        width: 95%;
+        padding: 20px;
+        margin: 2vh auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <!-- CABEÇALHO DO CURSO -->
-        <header>
-            <h1>Português</h1>
-            <p>Painel de Gestão e Arquitetura do Currículo</p>
-        </header>
+  <div class="container">
+    <!-- CABEÇALHO DO CURSO -->
+    <header>
+      <h1>Português</h1>
+      <p>Painel de Gestão e Arquitetura do Currículo</p>
+    </header>
 
-        <!-- NAVEGAÇÃO PRINCIPAL -->
-        <nav>
-            <button class="nav-link active" onclick="showTab('matriz')">Matriz Curricular</button>
-            <button class="nav-link" onclick="showTab('cronogramas')">Cronogramas</button>
-        </nav>
+    <!-- NAVEGAÇÃO PRINCIPAL -->
+    <nav>
+      <button class="nav-link active" onclick="showTab('matriz')">Matriz Curricular</button>
+      <button class="nav-link" onclick="showTab('cronogramas')">Cronogramas</button>
+    </nav>
 
-        <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
-        <div class="content-area">
+    <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
+    <div class="content-area">
 
-            <!-- ABA 1: MATRIZ CURRICULAR -->
-            <div id="panel-matriz" class="tab-panel active">
-                <div id="matriz-render" class="markdown-body"></div>
-            </div>
+      <!-- ABA 1: MATRIZ CURRICULAR -->
+      <div id="panel-matriz" class="tab-panel active">
+        <div id="matriz-render" class="markdown-body"></div>
+      </div>
 
-            <!-- ABA 2: CRONOGRAMAS -->
-            <div id="panel-cronogramas" class="tab-panel">
-                <div class="sub-nav">
-                    <button class="sub-link active" onclick="changeCronogramaYear(6, this)">6º Ano (5th)</button>
-                    <button class="sub-link" onclick="changeCronogramaYear(7, this)">7º Ano (6th)</button>
-                    <button class="sub-link" onclick="changeCronogramaYear(8, this)">8º Ano (7th)</button>
-                    <button class="sub-link" onclick="changeCronogramaYear(9, this)">9º Ano (8th)</button>
-                </div>
-                <div id="cronograma-render" class="markdown-body"></div>
-            </div>
+      <!-- ABA 2: CRONOGRAMAS -->
+      <div id="panel-cronogramas" class="tab-panel">
+        <div class="sub-nav">
+          <button class="sub-link active" onclick="changeCronogramaYear(6, this)">6º Ano (5th)</button>
+          <button class="sub-link" onclick="changeCronogramaYear(7, this)">7º Ano (6th)</button>
+          <button class="sub-link" onclick="changeCronogramaYear(8, this)">8º Ano (7th)</button>
+          <button class="sub-link" onclick="changeCronogramaYear(9, this)">9º Ano (8th)</button>
+        </div>
+        <div id="cronograma-render" class="markdown-body"></div>
+      </div>
 
-            <!-- ================= MODAIS DE INTERAÇÃO ================= -->
+      <!-- ================= MODAIS DE INTERAÇÃO ================= -->
 
-            <!-- MODAL DE CONTEÚDO DA LIÇÃO -->
-            <dialog id="lesson-modal" class="lesson-modal">
-                <div class="modal-header">
-                    <div class="toggle-container">
-                        <span id="toggle-aluno" class="toggle-option active" onclick="setLessonVersion('aluno')">Aluno</span>
-                        <span style="color: var(--border-soft)">|</span>
-                        <span id="toggle-prof" class="toggle-option" onclick="setLessonVersion('professor')">Professor</span>
-                    </div>
-                    <button class="modal-close" onclick="closeLessonModal()">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div id="modal-content-render" class="markdown-body"></div>
-                </div>
-            </dialog>
+      <!-- MODAL DE CONTEÚDO DA LIÇÃO -->
+      <dialog id="lesson-modal" class="lesson-modal">
+        <div class="modal-header">
+          <div class="toggle-container">
+            <span id="toggle-aluno" class="toggle-option active" onclick="setLessonVersion('aluno')">Aluno</span>
+            <span style="color: var(--border-soft)">|</span>
+            <span id="toggle-prof" class="toggle-option" onclick="setLessonVersion('professor')">Professor</span>
+          </div>
+          <button class="modal-close" onclick="closeLessonModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-content-render" class="markdown-body"></div>
+        </div>
+      </dialog>
 
-            <!-- NOTIFICAÇÃO TOAST -->
-            <div class="toast" id="toast-message">Salvo com sucesso!</div>
+      <!-- NOTIFICAÇÃO TOAST -->
+      <div class="toast" id="toast-message">Salvo com sucesso!</div>
 
-            <!-- ================= DADOS E LÓGICA DO SISTEMA ================= -->
-            <script>
-                // --- TEXTOS PADRÃO DO CURRÍCULO (FALLBACK EM CASO DE EXECUÇÃO LOCAL SEM SERVIDOR) ---
-                const matrizCurricularText = `# Matriz Curricular - Português (Middle School)
+      <!-- ================= DADOS E LÓGICA DO SISTEMA ================= -->
+      <script>
+        // --- TEXTOS PADRÃO DO CURRÍCULO (FALLBACK EM CASO DE EXECUÇÃO LOCAL SEM SERVIDOR) ---
+        const matrizCurricularText = `# Matriz Curricular - Português (Middle School)
 *Representação Tabular do Currículo*
 
 Este arquivo apresenta o mapeamento completo dos tópicos gramaticais e estilísticos distribuídos de forma progressiva e cíclica (Currículo em Espiral) ao longo do Ensino Fundamental II (6º ao 9º ano).
@@ -544,7 +593,7 @@ Este arquivo apresenta o mapeamento completo dos tópicos gramaticais e estilís
 | **9º Ano — 3º Bim** | - | **[9.3.1]** Estrutura do período composto – coordenação e subordinação<br><br>**[9.3.2]** Orações coordenadas – tipos, usos e pontuação<br><br>**[9.3.3]** Orações subordinadas – substantivas, adjetivas e adverbiais | - | - | **[9.3.4]** Pontuação em períodos complexos e estilo do autor | - | - |
 | **9º Ano — 4º Bim** | - | - | **[9.4.2]** Análise sintática avançada – funções essenciais e acessórios da oração | - | **[9.4.4]** Revisão geral e prática de análise gramatical aplicada à produção textuais | **[9.4.1]** Figuras de linguagem – aprofundamento e análise crítica em textos literários e não literários | **[9.4.3]** Coesão e coerência em textos argumentativos e dissertativos |`;
 
-                const cronograma6Text = `# Cronograma de Aulas: 6º Ano (1º Bimestre)
+        const cronograma6Text = `# Cronograma de Aulas: 6º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
 
 Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 6º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
@@ -594,7 +643,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 6º Ano. A est
 *   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
 `;
 
-                const cronograma7Text = `# Cronograma de Aulas: 7º Ano (1º Bimestre)
+        const cronograma7Text = `# Cronograma de Aulas: 7º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
 
 Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
@@ -644,7 +693,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano. A est
 *   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
 `;
 
-                const cronograma8Text = `# Cronograma de Aulas: 8º Ano (1º Bimestre)
+        const cronograma8Text = `# Cronograma de Aulas: 8º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
 
 Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 8º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
@@ -694,7 +743,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 8º Ano. A est
 *   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
 `;
 
-                const cronograma9Text = `# Cronograma de Aulas: 9º Ano (1º Bimestre)
+        const cronograma9Text = `# Cronograma de Aulas: 9º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
 
 Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
@@ -745,7 +794,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 `;
 
 
-                const aula1_6Text = `# 6º Ano — Aula 1: Leitura e Vocabulário
+        const aula1_6Text = `# 6º Ano — Aula 1: Leitura e Vocabulário
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
 
@@ -796,7 +845,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
 `;
-                const aula2_6Text = `# 6º Ano — Aula 2: Análise e Interpretação
+        const aula2_6Text = `# 6º Ano — Aula 2: Análise e Interpretação
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Interpretar o texto.
 
@@ -858,7 +907,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
 `;
-                const aula3_6Text = `# 6º Ano — Aula 3: O Substantivo
+        const aula3_6Text = `# 6º Ano — Aula 3: O Substantivo
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender o conceito de classes de palavras e identificar o substantivo como a classe que nomeia as substâncias.
 
@@ -926,7 +975,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) Tufão
   * **Gabarito**: c
 `;
-                const aula4_6Text = `# 6º Ano — Aula 4: O Adjetivo
+        const aula4_6Text = `# 6º Ano — Aula 4: O Adjetivo
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender o conceito de adjetivo como classe qualificadora e praticar a concordância nominal simples.
 
@@ -1001,7 +1050,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) Deus - vemos
   * **Gabarito**: a
 `;
-                const aula5_6Text = `# 6º Ano — Aula 5: O Verbo
+        const aula5_6Text = `# 6º Ano — Aula 5: O Verbo
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender o conceito de verbo como motor da ação e do tempo, identificando os tempos verbais básicos.
 
@@ -1077,7 +1126,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) Atemporal
   * **Gabarito**: c
 `;
-                const aula6_6Text = `# 6º Ano — Aula 6: Morfologia Aplicada e Revisão
+        const aula6_6Text = `# 6º Ano — Aula 6: Morfologia Aplicada e Revisão
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender o conceito de fronteiras de classe (substantivação) e revisar as classes básicas (substantivo, adjetivo e verbo) aplicadas sobre o texto de ancoragem.
 
@@ -1150,7 +1199,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) advérbio
   * **Gabarito**: c
 `;
-                const aula1_7Text = `# 7º Ano — Aula 1: Leitura e Vocabulário
+        const aula1_7Text = `# 7º Ano — Aula 1: Leitura e Vocabulário
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
 
@@ -1201,7 +1250,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
 `;
-                const aula2_7Text = `# 7º Ano — Aula 2: Análise e Interpretação
+        const aula2_7Text = `# 7º Ano — Aula 2: Análise e Interpretação
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Interpretar o texto.
 
@@ -1263,7 +1312,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
 `;
-                const aula3_7Text = `# 7º Ano — Aula 3: Revisão de Classes Nominais
+        const aula3_7Text = `# 7º Ano — Aula 3: Revisão de Classes Nominais
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Realizar a revisão diagnóstica e identificação das classes nominais (substantivo, adjetivo, artigo, numeral e pronome) sob contexto.
 
@@ -1334,7 +1383,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) maior, mais, forte
   * **Gabarito**: a
 `;
-                const aula4_7Text = `# 7º Ano — Aula 4: Revisão de Classes Verbais e Relacionais
+        const aula4_7Text = `# 7º Ano — Aula 4: Revisão de Classes Verbais e Relacionais
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Realizar a revisão diagnóstica e identificação das classes verbais e relacionais (verbo, advérbio, preposição e conjunção) sob contexto.
 
@@ -1406,7 +1455,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) com, para, de
   * **Gabarito**: a
 `;
-                const aula5_7Text = `# 7º Ano — Aula 5: Análise Integrada (Variação de Classe)
+        const aula5_7Text = `# 7º Ano — Aula 5: Análise Integrada (Variação de Classe)
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender como o contexto morfossintático determina a transição de classe de palavras (derivação imprópria).
 
@@ -1478,7 +1527,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) o advérbio
   * **Gabarito**: b
 `;
-                const aula6_7Text = `# 7º Ano — Aula 6: Morfologia Aplicada (Texto "Deus")
+        const aula6_7Text = `# 7º Ano — Aula 6: Morfologia Aplicada (Texto "Deus")
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Realizar a revisão integradora das 10 classes de palavras aplicadas diretamente sobre o texto de ancoragem.
 
@@ -1548,7 +1597,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) com = conjunção
   * **Gabarito**: d
 `;
-                const aula1_8Text = `# 8º Ano — Aula 1: Leitura e Vocabulário
+        const aula1_8Text = `# 8º Ano — Aula 1: Leitura e Vocabulário
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
 
@@ -1599,7 +1648,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
 `;
-                const aula2_8Text = `# 8º Ano — Aula 2: Análise e Interpretação
+        const aula2_8Text = `# 8º Ano — Aula 2: Análise e Interpretação
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Interpretar o texto.
 
@@ -1661,7 +1710,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
 `;
-                const aula3_8Text = `# 8º Ano — Aula 3: Morfologia vs. Sintaxe (Classes Nominais)
+        const aula3_8Text = `# 8º Ano — Aula 3: Morfologia vs. Sintaxe (Classes Nominais)
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender a diferença entre classificação morfológica e sintática, identificando as funções sintáticas das classes nominais (sujeito, objetos e adjunto adnominal).
 
@@ -1733,7 +1782,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) Para o céu **sereno**.
   * **Gabarito**: a
 `;
-                const aula4_8Text = `# 8º Ano — Aula 4: Predicação Verbal e Conectivos
+        const aula4_8Text = `# 8º Ano — Aula 4: Predicação Verbal e Conectivos
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Compreender as funções sintáticas verbais (predicação) e o papel relacional dos conectivos (preposições e conjunções) na oração.
 
@@ -1799,7 +1848,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) De Ligação
   * **Gabarito**: a
 `;
-                const aula5_8Text = `# 8º Ano — Aula 5: Análise de Orações (Simples e Complexas)
+        const aula5_8Text = `# 8º Ano — Aula 5: Análise de Orações (Simples e Complexas)
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Analisar a estrutura morfossintática em períodos simples e compostos, associando orações adjetivas e adverbiais às suas funções.
 
@@ -1867,7 +1916,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) uma oração principal e uma subordinada
   * **Gabarito**: b
 `;
-                const aula6_8Text = `# 8º Ano — Aula 6: Morfossintaxe Aplicada (Texto "Deus")
+        const aula6_8Text = `# 8º Ano — Aula 6: Morfossintaxe Aplicada (Texto "Deus")
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
 **Objetivo**: Realizar a revisão integradora de funções sintáticas e predicação verbal aplicadas diretamente sobre o texto de ancoragem.
 
@@ -1935,7 +1984,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
   * d) vemos (verbo de ligação)
   * **Gabarito**: d
 `;
-                const aula1_9Text = `# 9º Ano — Aula 1: Leitura e Vocabulário
+        const aula1_9Text = `# 9º Ano — Aula 1: Leitura e Vocabulário
 **Texto de Ancoragem**: *"A Cristo S. N. Crucificado"* (Gregório de Matos)  
 **Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
 
@@ -1992,7 +2041,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 ### 3) Tarefa de casa
 * **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do soneto e do glossário.
 `;
-                const aula2_9Text = `# 9º Ano — Aula 2: Análise e Interpretação
+        const aula2_9Text = `# 9º Ano — Aula 2: Análise e Interpretação
 **Texto de Ancoragem**: *"A Cristo S. N. Crucificado"* (Gregório de Matos)  
 **Objetivo**: Interpretar o texto.
 
@@ -2061,166 +2110,166 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A est
 `;
 
 
-                // --- CONTROLES DE ESTADO E INICIALIZAÇÃO ---
-                let currentTab = 'matriz';
-                let currentCronogramaYear = 6;
-                let currentLessonYear = 6;
-                let isLessonOpen = false;
-                let lessonVersion = 'aluno'; // 'aluno' ou 'professor'
+        // --- CONTROLES DE ESTADO E INICIALIZAÇÃO ---
+        let currentTab = 'matriz';
+        let currentCronogramaYear = 6;
+        let currentLessonYear = 6;
+        let isLessonOpen = false;
+        let lessonVersion = 'aluno'; // 'aluno' ou 'professor'
 
-                const sources = {
-                    matriz: { path: './Acutis/Matriz_Curricular.md', fallback: matrizCurricularText },
-                    cronograma6: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_6o_Ano.md', fallback: cronograma6Text },
-                    cronograma7: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_7o_Ano.md', fallback: cronograma7Text },
-                    cronograma8: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_8o_Ano.md', fallback: cronograma8Text },
-                    cronograma9: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_9o_Ano.md', fallback: cronograma9Text },
+        const sources = {
+          matriz: { path: './Acutis/Matriz_Curricular.md', fallback: matrizCurricularText },
+          cronograma6: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_6o_Ano.md', fallback: cronograma6Text },
+          cronograma7: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_7o_Ano.md', fallback: cronograma7Text },
+          cronograma8: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_8o_Ano.md', fallback: cronograma8Text },
+          cronograma9: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_9o_Ano.md', fallback: cronograma9Text },
 
-                    aula1_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
-                    aula1_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
-                    aula2_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
-                    aula2_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
-                    aula3_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
-                    aula3_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
-                    aula4_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
-                    aula4_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
-                    aula5_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
-                    aula5_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
-                    aula6_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
-                    aula6_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
-                    aula1_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
-                    aula1_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
-                    aula2_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
-                    aula2_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
-                    aula3_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
-                    aula3_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
-                    aula4_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
-                    aula4_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
-                    aula5_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
-                    aula5_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
-                    aula6_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
-                    aula6_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
-                    aula1_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
-                    aula1_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
-                    aula2_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
-                    aula2_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
-                    aula3_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
-                    aula3_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
-                    aula4_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
-                    aula4_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
-                    aula5_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
-                    aula5_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
-                    aula6_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
-                    aula6_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
-                    aula1_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
-                    aula1_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
-                    aula2_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text },
-                    aula2_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text }
-                };
-
-
-                // Inicialização da Página
-                window.addEventListener('DOMContentLoaded', async () => {
-                    // Configura o Marked.js com opções elegantes
-                    marked.setOptions({
-                        breaks: true,
-                        gfm: true
-                    });
-
-                    // Carrega e renderiza a aba padrão (Matriz)
-                    await loadAndRenderMarkdown('matriz', 'matriz-render');
-                });
-
-                // Função genérica para buscar arquivo local e renderizar
-                async function loadAndRenderMarkdown(sourceKey, targetElementId) {
-                    const source = sources[sourceKey];
-                    let content = '';
-                    try {
-                        const response = await fetch(source.path);
-                        if (response.ok) {
-                            content = await response.text();
-                        } else {
-                            content = source.fallback;
-                        }
-                    } catch (e) {
-                        content = source.fallback; // Fallback se CORS bloquear file://
-                    }
-
-                    // Processamento dos Gabaritos
-                    if (sourceKey.endsWith('_aluno')) {
-                        // Remove todo o bloco de gabarito para a visão do aluno
-                        content = content.replace(/<!-- INICIO_GABARITO -->[\s\S]*?<!-- FIM_GABARITO -->/g, '');
-                        // Fallback para aulas não convertidas ainda
-                        content = content.replace(/^[ \t]*\*?[ \t]*\*\*Gabarito.*\r?\n?/gim, '');
-                    } else {
-                        // Envolve as respostas em uma div de destaque para o professor
-                        content = content.replace(/<!-- INICIO_GABARITO -->/g, '<div class="gabarito-prof" style="background-color: var(--accent-light); padding: 15px; margin: 15px 0; border-radius: 4px; border-left: 4px solid var(--accent);">\n\n');
-                        content = content.replace(/<!-- FIM_GABARITO -->/g, '\n\n</div>');
-                    }
-
-                    document.getElementById(targetElementId).innerHTML = marked.parse(content);
-                }
-
-                // Gerenciador de Abas Principais
-                function showTab(tabName) {
-                    currentTab = tabName;
-                    document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
-                    document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
-
-                    // Ativa link e painel
-                    event.target.classList.add('active');
-                    document.getElementById(`panel-${tabName}`).classList.add('active');
-
-                    // Carregamento sob demanda
-                    if (tabName === 'matriz') {
-                        loadAndRenderMarkdown('matriz', 'matriz-render');
-                    } else if (tabName === 'cronogramas') {
-                        loadAndRenderMarkdown(`cronograma${currentCronogramaYear}`, 'cronograma-render');
-                    }
-                }
-
-                // Sub-navegação de Anos na aba Cronogramas
-                async function changeCronogramaYear(year, element) {
-                    currentCronogramaYear = year;
-                    element.parentNode.querySelectorAll('.sub-link').forEach(btn => btn.classList.remove('active'));
-                    element.classList.add('active');
-                    await loadAndRenderMarkdown(`cronograma${year}`, 'cronograma-render');
-                }
-
-                // --- LÓGICA DO MODAL DE LIÇÕES ---
-                let currentModalLessonKey = null;
-
-                async function openLessonModal(key) {
-                    currentModalLessonKey = key;
-                    const modal = document.getElementById('lesson-modal');
-                    const sourceKey = `${key}_${lessonVersion}`;
-                    await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
-                    modal.showModal();
-                }
-
-                function closeLessonModal() {
-                    const modal = document.getElementById('lesson-modal');
-                    modal.close();
-                    currentModalLessonKey = null;
-                }
-
-                async function setLessonVersion(version) {
-                    lessonVersion = version;
-                    document.querySelectorAll('.toggle-option').forEach(el => el.classList.remove('active'));
-                    if (version === 'aluno') {
-                        document.getElementById('toggle-aluno').classList.add('active');
-                    } else {
-                        document.getElementById('toggle-prof').classList.add('active');
-                    }
-                    
-                    // Se o modal estiver aberto, recarrega o conteúdo com a versão correta
-                    if (currentModalLessonKey) {
-                        const sourceKey = `${currentModalLessonKey}_${lessonVersion}`;
-                        await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
-                    }
-                }
+          aula1_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
+          aula1_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
+          aula2_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
+          aula2_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
+          aula3_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
+          aula3_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
+          aula4_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
+          aula4_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
+          aula5_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
+          aula5_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
+          aula6_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
+          aula6_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
+          aula1_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
+          aula1_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
+          aula2_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
+          aula2_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
+          aula3_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
+          aula3_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
+          aula4_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
+          aula4_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
+          aula5_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
+          aula5_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
+          aula6_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
+          aula6_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
+          aula1_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
+          aula1_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
+          aula2_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
+          aula2_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
+          aula3_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
+          aula3_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
+          aula4_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
+          aula4_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
+          aula5_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
+          aula5_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
+          aula6_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
+          aula6_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
+          aula1_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
+          aula1_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
+          aula2_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text },
+          aula2_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text }
+        };
 
 
-            </script>
+        // Inicialização da Página
+        window.addEventListener('DOMContentLoaded', async () => {
+          // Configura o Marked.js com opções elegantes
+          marked.setOptions({
+            breaks: true,
+            gfm: true
+          });
+
+          // Carrega e renderiza a aba padrão (Matriz)
+          await loadAndRenderMarkdown('matriz', 'matriz-render');
+        });
+
+        // Função genérica para buscar arquivo local e renderizar
+        async function loadAndRenderMarkdown(sourceKey, targetElementId) {
+          const source = sources[sourceKey];
+          let content = '';
+          try {
+            const response = await fetch(source.path);
+            if (response.ok) {
+              content = await response.text();
+            } else {
+              content = source.fallback;
+            }
+          } catch (e) {
+            content = source.fallback; // Fallback se CORS bloquear file://
+          }
+
+          // Processamento dos Gabaritos
+          if (sourceKey.endsWith('_aluno')) {
+            // Remove todo o bloco de gabarito para a visão do aluno
+            content = content.replace(/<!-- INICIO_GABARITO -->[\s\S]*?<!-- FIM_GABARITO -->/g, '');
+              // Fallback para aulas não convertidas ainda
+              content = content.replace(/^[ \t]*\*?[ \t]*\*\*Gabarito.*\r?\n?/gim, '');
+          } else {
+            // Envolve as respostas em uma div de destaque para o professor
+            content = content.replace(/<!-- INICIO_GABARITO -->/g, '<div class="gabarito-prof" style="background-color: var(--accent-light); padding: 15px; margin: 15px 0; border-radius: 4px; border-left: 4px solid var(--accent);">\n\n');
+            content = content.replace(/<!-- FIM_GABARITO -->/g, '\n\n</div>');
+          }
+
+          document.getElementById(targetElementId).innerHTML = marked.parse(content);
+        }
+
+        // Gerenciador de Abas Principais
+        function showTab(tabName) {
+          currentTab = tabName;
+          document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+          // Ativa link e painel
+          event.target.classList.add('active');
+          document.getElementById(`panel-${tabName}`).classList.add('active');
+
+          // Carregamento sob demanda
+          if (tabName === 'matriz') {
+            loadAndRenderMarkdown('matriz', 'matriz-render');
+          } else if (tabName === 'cronogramas') {
+            loadAndRenderMarkdown(`cronograma${currentCronogramaYear}`, 'cronograma-render');
+          }
+        }
+
+        // Sub-navegação de Anos na aba Cronogramas
+        async function changeCronogramaYear(year, element) {
+          currentCronogramaYear = year;
+          element.parentNode.querySelectorAll('.sub-link').forEach(btn => btn.classList.remove('active'));
+          element.classList.add('active');
+          await loadAndRenderMarkdown(`cronograma${year}`, 'cronograma-render');
+        }
+
+        // --- LÓGICA DO MODAL DE LIÇÕES ---
+        let currentModalLessonKey = null;
+
+        async function openLessonModal(key) {
+          currentModalLessonKey = key;
+          const modal = document.getElementById('lesson-modal');
+          const sourceKey = `${key}_${lessonVersion}`;
+          await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
+          modal.showModal();
+        }
+
+        function closeLessonModal() {
+          const modal = document.getElementById('lesson-modal');
+          modal.close();
+          currentModalLessonKey = null;
+        }
+
+        async function setLessonVersion(version) {
+          lessonVersion = version;
+          document.querySelectorAll('.toggle-option').forEach(el => el.classList.remove('active'));
+          if (version === 'aluno') {
+            document.getElementById('toggle-aluno').classList.add('active');
+          } else {
+            document.getElementById('toggle-prof').classList.add('active');
+          }
+
+          // Se o modal estiver aberto, recarrega o conteúdo com a versão correta
+          if (currentModalLessonKey) {
+            const sourceKey = `${currentModalLessonKey}_${lessonVersion}`;
+            await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
+          }
+        }
+
+
+      </script>
 
 </body>
 
