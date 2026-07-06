@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Português</title>
+
+    <!-- Google Fonts: Forum (Clássica/Romana), EB Garamond (Corpo de Texto) e Inter (Controles/UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Marked.js para renderização limpa do Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        /* --- SISTEMA DE DESIGN DE FOLHA DE PAPEL (SEM BOXES DE CONTORNO) --- */
+        :root {
+            --bg-paper: #FAF8F5;
+            /* off-white aconchegante */
+            --text-dark: #2E2C29;
+            /* cinza escuro/soot */
+            --text-muted: #7E7870;
+            /* cinza médio */
+            --accent: #8C7862;
+            /* warm sepia gold */
+            --accent-hover: #73614F;
+            --accent-light: #EFECE6;
+            --border-soft: #EBE7DF;
+
+            --font-serif-title: 'Forum', Georgia, serif;
+            --font-serif-body: 'EB Garamond', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-paper);
+            color: var(--text-dark);
+            font-family: var(--font-serif-body);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 60px 40px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* --- CABEÇALHO SÓBRIO --- */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        header h1 {
+            font-family: var(--font-serif-title);
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* --- NAVEGAÇÃO MINIMALISTA (SEM BORDAS OU BOXES) --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 45px;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-link {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 8px 4px;
+            transition: all 0.2s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* --- CONTAINER DE CONTEÚDO --- */
+        .content-area {
+            min-height: 400px;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* --- CONTROLES DE FILTRO/SELEÇÃO DE ANO --- */
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+        }
+
+        .sub-link {
+            background: none;
+            border: 1px solid var(--border-soft);
+            border-radius: 20px;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 6px 16px;
+            transition: all 0.2s ease;
+        }
+
+        .sub-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .sub-link.active {
+            background-color: var(--accent);
+            color: var(--bg-paper);
+            border-color: var(--accent);
+        }
+
+        /* --- ESTILOS DE RENDERIZAÇÃO DO MARKDOWN (EB GARAMOND) --- */
+        .markdown-body {
+            font-family: var(--font-serif-body);
+            color: var(--text-dark);
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
+            font-family: var(--font-serif-title);
+            font-weight: 400;
+            color: var(--text-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .markdown-body h1 {
+            font-size: 2.2rem;
+        }
+
+        .markdown-body h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 6px;
+        }
+
+        .markdown-body h3 {
+            font-size: 1.4rem;
+        }
+
+        .markdown-body p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .markdown-body blockquote {
+            border-left: 2px solid var(--accent);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4a4742;
+        }
+
+        .markdown-body ul,
+        .markdown-body ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .markdown-body li {
+            margin-bottom: 8px;
+        }
+
+        /* Tabela Markdown Estilo Folha de Livro Antigo */
+        .markdown-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1.1rem;
+        }
+
+        .markdown-body th {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 12px 10px;
+            border-bottom: 2px solid var(--text-dark);
+            color: var(--text-dark);
+            text-align: left;
+        }
+
+        .markdown-body td {
+            padding: 14px 10px;
+            border-bottom: 1px solid var(--border-soft);
+            vertical-align: top;
+        }
+
+        /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
+        .lesson-accordion-wrapper {
+            margin-top: 10px;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 15px;
+        }
+
+        .lesson-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 12px;
+        }
+
+        .lesson-accordion-trigger {
+            background: none;
+            border: none;
+            font-family: var(--font-serif-title);
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 6px 0;
+            text-align: left;
+            outline: none;
+            transition: color 0.2s;
+        }
+
+        .lesson-accordion-trigger:hover {
+            color: var(--accent);
+        }
+
+        .arrow-icon {
+            font-size: 0.95rem;
+            transition: transform 0.2s ease;
+            color: var(--text-muted);
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 600;
+            gap: 12px;
+        }
+
+        .toggle-option {
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.2s;
+            padding: 4px 8px;
+        }
+
+        .toggle-option.active {
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--text-dark);
+        }
+
+        /* --- ABA LIÇÕES: SANFONA / ACCORDION E CABEÇALHOS --- */
+        .lesson-accordion-wrapper {
+            margin-top: 10px;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 15px;
+        }
+
+        .lesson-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid var(--border-soft);
+            padding-bottom: 12px;
+        }
+
+        .lesson-accordion-trigger {
+            background: none;
+            border: none;
+            font-family: var(--font-serif-title);
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 6px 0;
+            text-align: left;
+            outline: none;
+            transition: color 0.2s;
+        }
+
+        .lesson-accordion-trigger:hover {
+            color: var(--accent);
+        }
+
+        .arrow-icon {
+            font-size: 0.95rem;
+            transition: transform 0.2s ease;
+            color: var(--text-muted);
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 600;
+            gap: 12px;
+        }
+
+        .toggle-option {
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.2s;
+            padding: 4px 8px;
+        }
+
+        .toggle-option.active {
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--text-dark);
+        }
+
+        /* --- NOTIFICAÇÃO --- */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--text-dark);
+            color: var(--bg-paper);
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            padding: 12px 24px;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        .toast.active {
+            opacity: 1;
+        }
+
+        /* --- MODAL DA LIÇÃO --- */
+        .lesson-modal {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            margin: auto; /* Centraliza nativamente */
+            padding: 0;
+            background-color: var(--bg-paper);
+        }
+
+        .lesson-modal::backdrop {
+            background-color: rgba(46, 44, 41, 0.6);
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid var(--border-soft);
+            background-color: var(--bg-paper);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover {
+            color: var(--text-dark);
+        }
+
+        .modal-body {
+            padding: 30px;
+            overflow-y: auto;
+            /* Subtrai o tamanho do header para não quebrar o layout */
+            max-height: calc(90vh - 80px); 
+        }
+
+        /* --- BOTÃO LER NO CRONOGRAMA --- */
+        .btn-ler {
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 15px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-family: var(--font-sans);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-ler:hover {
+            background-color: var(--accent);
+            color: var(--bg-paper);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- CABEÇALHO DO CURSO -->
+        <header>
+            <h1>Português</h1>
+            <p>Painel de Gestão e Arquitetura do Currículo</p>
+        </header>
+
+        <!-- NAVEGAÇÃO PRINCIPAL -->
+        <nav>
+            <button class="nav-link active" onclick="showTab('matriz')">Matriz Curricular</button>
+            <button class="nav-link" onclick="showTab('cronogramas')">Cronogramas</button>
+        </nav>
+
+        <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
+        <div class="content-area">
+
+            <!-- ABA 1: MATRIZ CURRICULAR -->
+            <div id="panel-matriz" class="tab-panel active">
+                <div id="matriz-render" class="markdown-body"></div>
+            </div>
+
+            <!-- ABA 2: CRONOGRAMAS -->
+            <div id="panel-cronogramas" class="tab-panel">
+                <div class="sub-nav">
+                    <button class="sub-link active" onclick="changeCronogramaYear(6, this)">6º Ano (5th)</button>
+                    <button class="sub-link" onclick="changeCronogramaYear(7, this)">7º Ano (6th)</button>
+                    <button class="sub-link" onclick="changeCronogramaYear(8, this)">8º Ano (7th)</button>
+                    <button class="sub-link" onclick="changeCronogramaYear(9, this)">9º Ano (8th)</button>
+                </div>
+                <div id="cronograma-render" class="markdown-body"></div>
+            </div>
+
+            <!-- ================= MODAIS DE INTERAÇÃO ================= -->
+
+            <!-- MODAL DE CONTEÚDO DA LIÇÃO -->
+            <dialog id="lesson-modal" class="lesson-modal">
+                <div class="modal-header">
+                    <div class="toggle-container">
+                        <span id="toggle-aluno" class="toggle-option active" onclick="setLessonVersion('aluno')">Aluno</span>
+                        <span style="color: var(--border-soft)">|</span>
+                        <span id="toggle-prof" class="toggle-option" onclick="setLessonVersion('professor')">Professor</span>
+                    </div>
+                    <button class="modal-close" onclick="closeLessonModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content-render" class="markdown-body"></div>
+                </div>
+            </dialog>
+
+            <!-- NOTIFICAÇÃO TOAST -->
+            <div class="toast" id="toast-message">Salvo com sucesso!</div>
+
+            <!-- ================= DADOS E LÓGICA DO SISTEMA ================= -->
+            <script>
+                // --- TEXTOS PADRÃO DO CURRÍCULO (FALLBACK EM CASO DE EXECUÇÃO LOCAL SEM SERVIDOR) ---
+                const matrizCurricularText = `# Matriz Curricular - Português (Middle School)
+*Representação Tabular do Currículo*
+
+Este arquivo apresenta o mapeamento completo dos tópicos gramaticais e estilísticos distribuídos de forma progressiva e cíclica (Currículo em Espiral) ao longo do Ensino Fundamental II (6º ao 9º ano).
+
+---
+
+## 📊 Matriz Curricular Geral
+
+| Ano / Bimestre | Coluna 1: Morfologia (Classes e Conectivos) | Coluna 2: Sintaxe (Período & Orações) | Coluna 3: Sintaxe (Análise das Funções) | Coluna 4: Concordância & Regência | Coluna 5: Ortografia, Pontuação & Estilo | Coluna 6: Semântica (Figuras de Linguagem) | Coluna 7: Produção Textual, Coesão & Coerência |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **6º Ano — 1º Bim** | **[6.1.1]** Revisão das classes gramaticais básicas (substantivo, adjetivo, verbo)<br><br>**[6.1.2]** Flexão de gênero e número dos substantivos | - | - | **[6.1.3]** Concordância nominal simples | **[6.1.4]** Uso correto dos tempos verbais no presente e passado | - | - |
+| **6º Ano — 2º Bim** | **[6.2.1]** Pronomes pessoais, possessivos e demonstrativos<br><br>**[6.2.3]** Uso adequado de artigos e preposições | - | - | **[6.2.2]** Concordância verbal (sujeito e verbo) | **[6.2.4]** Pontuação em frases e pequenos textos (vírgula, ponto e ponto de exclamação) | - | - |
+| **6º Ano — 3º Bim** | **[6.3.1]** Advérbios e suas funções na frase<br><br>**[6.3.2]** Conjunções coordenativas (e, mas, ou, porque) | **[6.3.3]** Estrutura do período simples e composto | - | - | - | - | **[6.3.4]** Coesão e coerência em textos curtos |
+| **6º Ano — 4º Bim** | - | - | **[6.4.4]** Revisão geral e prática de análise sintática simples | - | **[6.4.1]** Revisão das principais regras ortográficas (acentuação, uso do hífen) | **[6.4.2]** Figuras de linguagem básicas (comparação, metáfora, personificação) | **[6.4.3]** Produção de textos com foco na correção gramatical |
+| **7º Ano — 1º Bim** | **[7.1.1]** Revisão das classes gramaticais estudadas no ciclo anterior<br><br>**[7.1.2]** Substantivos – classificação, flexões e emprego<br><br>**[7.1.4]** Verbos – modos, tempos e vozes verbais | - | - | **[7.1.3]** Adjetivos – graus e concordância nominal | - | - | - |
+| **7º Ano — 2º Bim** | **[7.2.1]** Pronomes – tipos e usos corretos<br><br>**[7.2.3]** Advérbios – classificação e função na frase | - | - | **[7.2.2]** Concordância verbal – regras e exceções | - | - | **[7.2.4]** Preposições e conjunções – relações de sentido e coesão |
+| **7º Ano — 3º Bim** | - | **[7.3.1]** Estrutura do período simples e composto<br><br>**[7.3.2]** Orações coordenadas – tipos e usos<br><br>**[7.3.3]** Orações subordinadas – substantivas, adjetivas e adverbiais | - | - | **[7.3.4]** Pontuação em períodos compostos | - | - |
+| **7º Ano — 4º Bim** | - | - | **[7.4.2]** Análise sintática – sujeito, predicado e complementos | - | **[7.4.4]** Revisão geral e prática de análise gramatical aplicada à produção textual | **[7.4.1]** Figuras de linguagem – aprofundamento (metonímia, hipérbole, ironia, antítese) | **[7.4.3]** Coesão e coerência em textos mais complexos |
+| **8º Ano — 1º Bim** | **[8.1.1]** Revisão das classes gramaticais e suas funções<br><br>**[8.1.2]** Substantivos – classificação, flexões e emprego em diferentes contextos<br><br>**[8.1.4]** Verbos – tempos, modos e vozes verbais | - | - | **[8.1.3]** Adjetivos – graus, concordância e valor semântico | - | - | - |
+| **8º Ano — 2º Bim** | **[8.2.1]** Pronomes – tipos, usos e correção gramatical<br><br>**[8.2.3]** Advérbios – classificação e efeitos de sentido | - | - | **[8.2.2]** Concordância nominal e verbal – regras e casos especiais | - | - | **[8.2.4]** Preposições e conjunções – relações de sentido e coesão textual |
+| **8º Ano — 3º Bim** | - | **[8.3.1]** Estrutura do período composto<br><br>**[8.3.2]** Orações coordenadas – tipos, usos e pontuação<br><br>**[8.3.3]** Orações subordinadas – substantivas, adjetivas e adverbiais | - | - | **[8.3.4]** Pontuação em períodos complexos e uso estilístico | - | - |
+| **8º Ano — 4º Bim** | - | - | **[8.4.2]** Análise sintática avançada – sujeito, predicado, complementos e adjuntos | - | **[8.4.4]** Revisão geral e prática de análise gramatical aplicada à produção textual | **[8.4.1]** Figuras de linguagem – aprofundamento e aplicação em textos literários e não literários | **[8.4.3]** Coesão e coerência em textos argumentativos e expositivos |
+| **9º Ano — 1º Bim** | **[9.1.1]** Revisão das classes gramaticais e suas funções<br><br>**[9.1.2]** Substantivos e adjetivos – classificação, flexões e usos estilísticos<br><br>**[9.1.3]** Verbos – tempos, modos, vozes e regência verbal<br><br>**[9.1.4]** Pronomes – tipos, usos e correção gramatical | - | - | - | - | - | - |
+| **9º Ano — 2º Bim** | **[9.2.2]** Advérbios – classificação e efeitos de sentido no texto | - | - | **[9.2.1]** Concordância nominal e verbal – regras e casos especiais<br><br>**[9.2.4]** Regência nominal e verbal – usos corretos e desvios comuns | - | - | **[9.2.3]** Preposições e conjunções – relações de sentido e coesão textual |
+| **9º Ano — 3º Bim** | - | **[9.3.1]** Estrutura do período composto – coordenação e subordinação<br><br>**[9.3.2]** Orações coordenadas – tipos, usos e pontuação<br><br>**[9.3.3]** Orações subordinadas – substantivas, adjetivas e adverbiais | - | - | **[9.3.4]** Pontuação em períodos complexos e estilo do autor | - | - |
+| **9º Ano — 4º Bim** | - | - | **[9.4.2]** Análise sintática avançada – funções essenciais e acessórios da oração | - | **[9.4.4]** Revisão geral e prática de análise gramatical aplicada à produção textuais | **[9.4.1]** Figuras de linguagem – aprofundamento e análise crítica em textos literários e não literários | **[9.4.3]** Coesão e coerência em textos argumentativos e dissertativos |`;
+
+                const cronograma6Text = `# Cronograma de Aulas: 6º Ano (1º Bimestre)
+*Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 6º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
+
+---
+
+## 📅 Distribuição das Aulas
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
+| :---: | :--- | :---: | :--- | :---: | :--- | :--- |
+| **1** | Leitura & Interpretação | \`[6.1.1]\` | **Texto de Ancoragem:** *"Deus"*, de Casimiro de Abreu. Leitura expressiva em voz alta, recitação conjunta e estudo do vocabulário inicial (Glossário). | <button class="btn-ler" onclick="openLessonModal('aula1_6')">Ler</button> | | |
+| **2** | Leitura & Interpretação | \`[6.1.1]\` | **Análise do Texto:** Estudo interlinear do sentido do poema de Casimiro de Abreu (compreensão literal e explicação das imagens líricas). | <button class="btn-ler" onclick="openLessonModal('aula2_6')">Ler</button> | | |
+| **3** | Teoria & Exercícios | \`[6.1.1]\` | **Morfologia:** Estudo do **Substantivo** como classe nomeadora. Exposição teórica do conceito + exercícios de fixação e escrita de frases. | <button class="btn-ler" onclick="openLessonModal('aula3_6')">Ler</button> | | |
+| **4** | Teoria & Exercícios | \`[6.1.1]\` | **Morfologia:** Estudo do **Adjetivo** como classe qualificadora. Exposição teórica + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula4_6')">Ler</button> | | |
+| **5** | Teoria & Exercícios | \`[6.1.1]\` | **Morfologia:** Estudo do **Verbo** como motor da ação e do tempo. Exposição teórica + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula5_6')">Ler</button> | | |
+| **6** | Conteúdo & Aplicação | \`[6.1.1]\` | **Morfologia Aplicada:** Fronteiras de classe (distinção sob contexto) + **Exercícios aplicados diretamente sobre o texto *"Deus"*** (estudado nas aulas 1 e 2). | <button class="btn-ler" onclick="openLessonModal('aula6_6')">Ler</button> | | |
+| **7** | Leitura & Interpretação | \`[6.1.2]\` | **Texto de Ancoragem:** *"Buscando a Cristo"*, de Gregório de Matos. Leitura expressiva, recitação e estudo do vocabulário barroco. | <button class="btn-ler" onclick="openLessonModal('aula7_6')">Ler</button> | | |
+| **8** | Leitura & Interpretação | \`[6.1.2]\` | **Análise do Texto:** Análise interlinear do sentido do soneto de Gregório de Matos (compreensão e reflexão espiritual sobre a misericórdia). | <button class="btn-ler" onclick="openLessonModal('aula8_6')">Ler</button> | | |
+| **9** | Teoria & Exercícios | \`[6.1.2]\` | **Morfologia:** Flexão de gênero e número dos substantivos (biformes, uniformes e plural dos nomes simples). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula9_6')">Ler</button> | | |
+| **10** | Conteúdo & Aplicação | \`[6.1.2]\` | **Morfologia Aplicada:** Casos especiais de flexão (metafonia, mudança de gênero/sentido) + **Exercícios aplicados ao texto de Gregório de Matos** (das aulas 7 e 8). | <button class="btn-ler" onclick="openLessonModal('aula10_6')">Ler</button> | | |
+| **11** | Leitura & Interpretação | \`[6.1.3]\` | **Texto de Ancoragem:** *"Os Lusíadas" (Canto I, Estrofes 1-2)*, de Luís de Camões. Leitura expressiva, métrica decassílaba e vocabulário épico. | <button class="btn-ler" onclick="openLessonModal('aula11_6')">Ler</button> | | |
+| **12** | Leitura & Interpretação | \`[6.1.3]\` | **Análise do Texto:** Estudo interlinear do sentido e introdução à epopeia nacional portuguesa (a intenção de cantar as glórias lusitanas). | <button class="btn-ler" onclick="openLessonModal('aula12_6')">Ler</button> | | |
+| **13** | Teoria & Exercícios | \`[6.1.3]\` | **Concordância:** A regra geral de Concordância Nominal Simples. Teoria + exercícios de fixação de adjetivos com substantivos simples. | <button class="btn-ler" onclick="openLessonModal('aula13_6')">Ler</button> | | |
+| **14** | Conteúdo & Aplicação | \`[6.1.3]\` | **Concordância Aplicada:** Concordância de adjetivo com múltiplos substantivos + **Exercícios aplicados ao texto de Camões** (das aulas 11 e 12). | <button class="btn-ler" onclick="openLessonModal('aula14_6')">Ler</button> | | |
+| **15** | **Avaliação Parcial** | - | **Prova Parcial Escrita** (Avaliação individual sobre classes básicas, flexão de substantivos e concordância simples). | <button class="btn-ler" onclick="openLessonModal('aula15_6')">Ler</button> | | |
+| **16** | Leitura & Interpretação | \`[6.1.4]\` | **Texto de Ancoragem:** *"Conta e Tempo"*, de Frei António das Chagas. Leitura expressiva, recitação de soneto e exploração do vocabulário barroco. | <button class="btn-ler" onclick="openLessonModal('aula16_6')">Ler</button> | | |
+| **17** | Leitura & Interpretação | \`[6.1.4]\` | **Análise do Texto:** Análise interlinear do sentido profundo do poema (a reflexão barroca do conceptismo sobre a brevidade da vida). | <button class="btn-ler" onclick="openLessonModal('aula17_6')">Ler</button> | | |
+| **18** | Teoria & Exercícios | \`[6.1.4]\` | **Modo Indicativo:** Estrutura verbal (radical, vogal temática, desinências) e as 3 conjugações. Teoria + exercícios de conjugação. | <button class="btn-ler" onclick="openLessonModal('aula18_6')">Ler</button> | | |
+| **19** | Teoria & Exercícios | \`[6.1.4]\` | **Modo Indicativo:** Estudo do tempo **Presente do Indicativo** (usos regulares e atemporais). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula19_6')">Ler</button> | | |
+| **20** | Teoria & Exercícios | \`[6.1.4]\` | **Modo Indicativo:** Estudo do **Pretérito Perfeito e Pretérito Imperfeito**. Teoria + exercícios de oposição e uso no passado. | <button class="btn-ler" onclick="openLessonModal('aula20_6')">Ler</button> | | |
+| **21** | Conteúdo & Aplicação | \`[6.1.4]\` | **Verbos Aplicados:** Correlação de tempos verbais narrativos + **Exercícios aplicados ao texto de Frei António das Chagas** (das aulas 16 e 17). | <button class="btn-ler" onclick="openLessonModal('aula21_6')">Ler</button> | | |
+| **22** | Leitura & Interpretação | \`[6.1.4]\` | **Texto de Ancoragem:** Fábula [A DEFINIR]. Leitura expressiva, recontação de fábulas e análise do gênero. | <button class="btn-ler" onclick="openLessonModal('aula22_6')">Ler</button> | | |
+| **23** | Leitura & Interpretação | \`[6.1.4]\` | **Análise do Texto:** Análise interlinear da fábula (discussão sobre cobiça e moralidade prática). | <button class="btn-ler" onclick="openLessonModal('aula23_6')">Ler</button> | | |
+| **24** | Teoria & Exercícios | \`[6.1.4]\` | **Modo Indicativo:** Estudo do **Pretérito Mais-que-perfeito** (formas simples e compostas). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula24_6')">Ler</button> | | |
+| **25** | Conteúdo & Aplicação | \`[6.1.4]\` | **Verbos Aplicados:** Estudo do **Presente Histórico** + **Exercícios aplicados à fábula [A DEFINIR]** (das aulas 22 e 23). | <button class="btn-ler" onclick="openLessonModal('aula25_6')">Ler</button> | | |
+| **26** | Leitura & Interpretação | \`[6.1.4]\` | **Texto de Ancoragem:** Soneto *"À puríssima Conceição de Nossa Senhora"*, de Bocage. Leitura expressiva e vocabulário neoclássico. | <button class="btn-ler" onclick="openLessonModal('aula26_6')">Ler</button> | | |
+| **27** | Leitura & Interpretação | \`[6.1.4]\` | **Análise do Texto:** Análise interlinear do soneto de Bocage (apelo à Virgem, figuras e transição de estilos). | <button class="btn-ler" onclick="openLessonModal('aula27_6')">Ler</button> | | |
+| **28** | Conteúdo & Aplicação | \`[6.1.4]\` | **Revisão Verbal Aplicada:** Exercícios de revisão integradora de tempos verbais e correlação **aplicados ao soneto de Bocage** (das aulas 26 e 27). | <button class="btn-ler" onclick="openLessonModal('aula28_6')">Ler</button> | | |
+| **29** | **Avaliação Bimestral** | - | **Prova Bimestral Escrita** (Exame integrador cobrando compreensão de texto e aplicação morfossintática do bimestre). | <button class="btn-ler" onclick="openLessonModal('aula29_6')">Ler</button> | | |
+| **30** | **Devolutiva & Fechamento** | - | Correção comentada da prova na lousa, análise de desvios comuns, feedback e encerramento do bimestre. | <button class="btn-ler" onclick="openLessonModal('aula30_6')">Ler</button> | | |
+---
+
+## 📊 Consolidação da Carga Horária
+
+*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
+*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
+*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+`;
+
+                const cronograma7Text = `# Cronograma de Aulas: 7º Ano (1º Bimestre)
+*Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
+
+---
+
+## 📅 Distribuição das Aulas
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
+| :---: | :--- | :---: | :--- | :---: | :--- | :--- |
+| **1** | Leitura & Interpretação | \`[7.1.1]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva em voz alta, recitação conjunta e estudo do vocabulário inicial (Glossário). | <button class="btn-ler" onclick="openLessonModal('aula1_7')">Ler</button> | | |
+| **2** | Leitura & Interpretação | \`[7.1.1]\` | **Análise do Texto:** Estudo interlinear do sentido do texto (compreensão literal e explicação das figuras e ideias). | <button class="btn-ler" onclick="openLessonModal('aula2_7')">Ler</button> | | |
+| **3** | Teoria & Exercícios | \`[7.1.1]\` | **Revisão de Classes:** Avaliação diagnóstica de classes nominais (Substantivo, Adjetivo, Artigo, Numeral, Pronome). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula3_7')">Ler</button> | | |
+| **4** | Teoria & Exercícios | \`[7.1.1]\` | **Revisão de Classes:** Avaliação diagnóstica de classes verbais e relacionais (Verbo, Advérbio, Preposição, Conjunção). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula4_7')">Ler</button> | | |
+| **5** | Teoria & Exercícios | \`[7.1.1]\` | **Análise Integrada:** Estudo prático de transição e variação de classe de palavras conforme o contexto na frase. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula5_7')">Ler</button> | | |
+| **6** | Conteúdo & Aplicação | \`[7.1.1]\` | **Morfologia Aplicada:** Exercícios de revisão integradora de classes de palavras **aplicados ao Texto 1** (estudado nas aulas 1 e 2). | <button class="btn-ler" onclick="openLessonModal('aula6_7')">Ler</button> | | |
+| **7** | Leitura & Interpretação | \`[7.1.2]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula7_7')">Ler</button> | | |
+| **8** | Leitura & Interpretação | \`[7.1.2]\` | **Análise do Texto:** Análise interlinear do sentido e ideias principais do texto. | <button class="btn-ler" onclick="openLessonModal('aula8_7')">Ler</button> | | |
+| **9** | Teoria & Exercícios | \`[7.1.2]\` | **Substantivos:** Classificação profunda dos substantivos (abstrato/concreto, coletivos) e estrutura/formação (derivação/composição). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula9_7')">Ler</button> | | |
+| **10** | Conteúdo & Aplicação | \`[7.1.2]\` | **Substantivos Aplicados:** Flexão de número de substantivos compostos e valor estilístico + **Exercícios aplicados ao Texto 2** (das aulas 7 e 8). | <button class="btn-ler" onclick="openLessonModal('aula10_7')">Ler</button> | | |
+| **11** | Leitura & Interpretação | \`[7.1.3]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, análise de ritmo e estudo de vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula11_7')">Ler</button> | | |
+| **12** | Leitura & Interpretação | \`[7.1.3]\` | **Análise do Texto:** Estudo interlinear do sentido e análise da caracterização na narrativa/poesia. | <button class="btn-ler" onclick="openLessonModal('aula12_7')">Ler</button> | | |
+| **13** | Teoria & Exercícios | \`[7.1.3]\` | **Adjetivos:** O adjetivo (locuções, tipos) e flexão de gênero/número de adjetivos compostos. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula13_7')">Ler</button> | | |
+| **14** | Conteúdo & Aplicação | \`[7.1.3]\` | **Adjetivos Aplicados:** Graus do adjetivo (comparativo e superlativo) e concordância nominal avançada + **Exercícios aplicados ao Texto 3** (das aulas 11 e 12). | <button class="btn-ler" onclick="openLessonModal('aula14_7')">Ler</button> | | |
+| **15** | **Avaliação Parcial** | - | **Prova Parcial Escrita** (Avaliação individual sobre classes de palavras, substantivos compostos e adjetivos). | <button class="btn-ler" onclick="openLessonModal('aula15_7')">Ler</button> | | |
+| **16** | Leitura & Interpretação | \`[7.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula16_7')">Ler</button> | | |
+| **17** | Leitura & Interpretação | \`[7.1.4]\` | **Análise do Texto:** Análise interlinear do sentido profundo do texto. | <button class="btn-ler" onclick="openLessonModal('aula17_7')">Ler</button> | | |
+| **18** | Teoria & Exercícios | \`[7.1.4]\` | **Verbos I:** O sistema verbal (estrutura, conjugação de modo) e o tempo Presente do Subjuntivo. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula18_7')">Ler</button> | | |
+| **19** | Teoria & Exercícios | \`[7.1.4]\` | **Verbos I:** Estudo do Pretérito Imperfeito do Subjuntivo e Futuro do Subjuntivo. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula19_7')">Ler</button> | | |
+| **20** | Teoria & Exercícios | \`[7.1.4]\` | **Verbos I:** O imperativo (afirmativo e negativo) e sua formação. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula20_7')">Ler</button> | | |
+| **21** | Conteúdo & Aplicação | \`[7.1.4]\` | **Verbos Aplicados:** Correlação do modo subjuntivo com o indicativo + **Exercícios aplicados ao Texto 4** (das aulas 16 e 17). | <button class="btn-ler" onclick="openLessonModal('aula21_7')">Ler</button> | | |
+| **22** | Leitura & Interpretação | \`[7.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e compreensão do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula22_7')">Ler</button> | | |
+| **23** | Leitura & Interpretação | \`[7.1.4]\` | **Análise do Texto:** Análise interlinear do sentido do texto. | <button class="btn-ler" onclick="openLessonModal('aula23_7')">Ler</button> | | |
+| **24** | Teoria & Exercícios | \`[7.1.4]\` | **Verbos II:** Formas Nominais do Verbo (infinitivo, gerúndio, particípio) e locuções verbais. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula24_7')">Ler</button> | | |
+| **25** | Conteúdo & Aplicação | \`[7.1.4]\` | **Verbos Aplicados:** Exercícios práticos de transposição e uso de formas nominais **aplicados ao Texto 5** (das aulas 22 e 23). | <button class="btn-ler" onclick="openLessonModal('aula25_7')">Ler</button> | | |
+| **26** | Leitura & Interpretação | \`[7.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula26_7')">Ler</button> | | |
+| **27** | Leitura & Interpretação | \`[7.1.4]\` | **Análise do Texto:** Análise interlinear do sentido e estilo do texto. | <button class="btn-ler" onclick="openLessonModal('aula27_7')">Ler</button> | | |
+| **28** | Conteúdo & Aplicação | \`[7.1.4]\` | **Vozes Verbais Aplicadas:** Estudo das Vozes Verbais (Ativa, Passiva e Reflexiva) + **Exercícios aplicados ao Texto 6** (das aulas 26 e 27). | <button class="btn-ler" onclick="openLessonModal('aula28_7')">Ler</button> | | |
+| **29** | **Avaliação Bimestral** | - | **Prova Bimestral Escrita** (Exame integrador cobrando compreensão de texto e aplicação gramatical do bimestre). | <button class="btn-ler" onclick="openLessonModal('aula29_7')">Ler</button> | | |
+| **30** | **Devolutiva & Fechamento** | - | Correção comentada da prova na lousa, análise de erros comuns, feedback e encerramento do bimestre. | <button class="btn-ler" onclick="openLessonModal('aula30_7')">Ler</button> | | |
+---
+
+## 📊 Consolidação da Carga Horária
+
+*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
+*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
+*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+`;
+
+                const cronograma8Text = `# Cronograma de Aulas: 8º Ano (1º Bimestre)
+*Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 8º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
+
+---
+
+## 📅 Distribuição das Aulas
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
+| :---: | :--- | :---: | :--- | :---: | :--- | :--- |
+| **1** | Leitura & Interpretação | \`[8.1.1]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva em voz alta, recitação conjunta e estudo do vocabulário inicial (Glossário). | <button class="btn-ler" onclick="openLessonModal('aula1_8')">Ler</button> | | |
+| **2** | Leitura & Interpretação | \`[8.1.1]\` | **Análise do Texto:** Estudo interlinear do sentido do texto (compreensão literal e explicação das figuras e ideias). | <button class="btn-ler" onclick="openLessonModal('aula2_8')">Ler</button> | | |
+| **3** | Teoria & Exercícios | \`[8.1.1]\` | **Morfossintaxe:** Transição morfossintática profunda (morfologia vs. sintaxe) e funções sintáticas das classes nominais (sujeito, objetos). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula3_8')">Ler</button> | | |
+| **4** | Teoria & Exercícios | \`[8.1.1]\` | **Morfossintaxe:** Funções sintáticas das classes verbais (predicação) e classes relacionais (conectivos) na oração. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula4_8')">Ler</button> | | |
+| **5** | Teoria & Exercícios | \`[8.1.1]\` | **Morfossintaxe:** Análise prática integradora de termos de orações simples e complexas. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula5_8')">Ler</button> | | |
+| **6** | Conteúdo & Aplicação | \`[8.1.1]\` | **Morfossintaxe Aplicada:** Exercícios de revisão de funções sintáticas morfológicas **aplicados ao Texto 1** (estudado nas aulas 1 e 2). | <button class="btn-ler" onclick="openLessonModal('aula6_8')">Ler</button> | | |
+| **7** | Leitura & Interpretação | \`[8.1.2]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula7_8')">Ler</button> | | |
+| **8** | Leitura & Interpretação | \`[8.1.2]\` | **Análise do Texto:** Análise interlinear do sentido e ideias principais do texto. | <button class="btn-ler" onclick="openLessonModal('aula8_8')">Ler</button> | | |
+| **9** | Teoria & Exercícios | \`[8.1.2]\` | **Substantivos:** Substantivos concretos/abstratos e o processo de **nominalização**. Flexão de gênero (casos oscilantes) e número de compostos. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula9_8')">Ler</button> | | |
+| **10** | Conteúdo & Aplicação | \`[8.1.2]\` | **Substantivos Aplicados:** Estilística do substantivo (substantivação e personificação) + **Exercícios aplicados ao Texto 2** (das aulas 7 e 8). | <button class="btn-ler" onclick="openLessonModal('aula10_8')">Ler</button> | | |
+| **11** | Leitura & Interpretação | \`[8.1.3]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, análise de ritmo e estudo de vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula11_8')">Ler</button> | | |
+| **12** | Leitura & Interpretação | \`[8.1.3]\` | **Análise do Texto:** Estudo interlinear do sentido e análise do valor semântico dos caracterizadores. | <button class="btn-ler" onclick="openLessonModal('aula12_8')">Ler</button> | | |
+| **13** | Teoria & Exercícios | \`[8.1.3]\` | **Adjetivos:** O adjetivo (posição semântica, graus, cores) e flexão de gênero/número de adjetivos compostos. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula13_8')">Ler</button> | | |
+| **14** | Conteúdo & Aplicação | \`[8.1.3]\` | **Adjetivos Aplicados:** Concordância nominal avançada (adjetivos antepostos/pospostos a múltiplos núcleos) + **Exercícios aplicados ao Texto 3** (das aulas 11 e 12). | <button class="btn-ler" onclick="openLessonModal('aula14_8')">Ler</button> | | |
+| **15** | **Avaliação Parcial** | - | **Prova Parcial Escrita** (Avaliação individual sobre funções sintáticas nominais, nominalizações e adjetivos compostos). | <button class="btn-ler" onclick="openLessonModal('aula15_8')">Ler</button> | | |
+| **16** | Leitura & Interpretação | \`[8.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula16_8')">Ler</button> | | |
+| **17** | Leitura & Interpretação | \`[8.1.4]\` | **Análise do Texto:** Análise interlinear do sentido profundo do texto. | <button class="btn-ler" onclick="openLessonModal('aula17_8')">Ler</button> | | |
+| **18** | Teoria & Exercícios | \`[8.1.4]\` | **Verbos I:** Tempos simples vs. tempos compostos do Modo Indicativo e semântica de anterioridade. Teoria + exercícios de conjugação. | <button class="btn-ler" onclick="openLessonModal('aula18_8')">Ler</button> | | |
+| **19** | Teoria & Exercícios | \`[8.1.4]\` | **Verbos I:** Correlação verbal Indicativo/Subjuntivo em períodos complexos. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula19_8')">Ler</button> | | |
+| **20** | Teoria & Exercícios | \`[8.1.4]\` | **Verbos I:** O imperativo (uniformidade de tratamento) e formas nominais (particípios duplos). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula20_8')">Ler</button> | | |
+| **21** | Conteúdo & Aplicação | \`[8.1.4]\` | **Verbos Aplicados:** Exercícios práticos de correlação e adequação temporal **aplicados ao Texto 4** (das aulas 16 e 17). | <button class="btn-ler" onclick="openLessonModal('aula21_8')">Ler</button> | | |
+| **22** | Leitura & Interpretação | \`[8.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e compreensão do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula22_8')">Ler</button> | | |
+| **23** | Leitura & Interpretação | \`[8.1.4]\` | **Análise do Texto:** Análise interlinear do sentido do texto. | <button class="btn-ler" onclick="openLessonModal('aula23_8')">Ler</button> | | |
+| **24** | Teoria & Exercícios | \`[8.1.4]\` | **Verbos II:** Vozes Verbais I: Voz Ativa e Voz Passiva (analítica e sintética) e transposição verbal. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula24_8')">Ler</button> | | |
+| **25** | Conteúdo & Aplicação | \`[8.1.4]\` | **Verbos Aplicados:** Transposição de vozes verbais **aplicados ao Texto 5** (das aulas 22 e 23). | <button class="btn-ler" onclick="openLessonModal('aula25_8')">Ler</button> | | |
+| **26** | Leitura & Interpretação | \`[8.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula26_8')">Ler</button> | | |
+| **27** | Leitura & Interpretação | \`[8.1.4]\` | **Análise do Texto:** Análise interlinear do sentido e estilo do texto. | <button class="btn-ler" onclick="openLessonModal('aula27_8')">Ler</button> | | |
+| **28** | Conteúdo & Aplicação | \`[8.1.4]\` | **Vozes Verbais Aplicadas:** Voz Reflexiva e Recíproca e funções do pronome "se" + **Exercícios aplicados ao Texto 6** (das aulas 26 e 27). | <button class="btn-ler" onclick="openLessonModal('aula28_8')">Ler</button> | | |
+| **29** | **Avaliação Bimestral** | - | **Prova Bimestral Escrita** (Exame integrador cobrando compreensão de texto e aplicação gramatical do bimestre). | <button class="btn-ler" onclick="openLessonModal('aula29_8')">Ler</button> | | |
+| **30** | **Devolutiva & Fechamento** | - | Correção comentada da prova na lousa, análise de erros comuns, feedback e encerramento do bimestre. | <button class="btn-ler" onclick="openLessonModal('aula30_8')">Ler</button> | | |
+---
+
+## 📊 Consolidação da Carga Horária
+
+*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
+*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
+*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+`;
+
+                const cronograma9Text = `# Cronograma de Aulas: 9º Ano (1º Bimestre)
+*Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 9º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
+
+---
+
+## 📅 Distribuição das Aulas
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
+| :---: | :--- | :---: | :--- | :---: | :--- | :--- |
+| **1** | Leitura & Interpretação | \`[9.1.1]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva em voz alta, recitação conjunta e estudo do vocabulário inicial (Glossário). | <button class="btn-ler" onclick="openLessonModal('aula1_9')">Ler</button> | | |
+| **2** | Leitura & Interpretação | \`[9.1.1]\` | **Análise do Texto:** Estudo interlinear do sentido do texto (compreensão literal e explicação das figuras e ideias). | <button class="btn-ler" onclick="openLessonModal('aula2_9')">Ler</button> | | |
+| **3** | Teoria & Exercícios | \`[9.1.1]\` | **Morfossintaxe:** Morfossintaxe integrada e as 10 classes de palavras em períodos simples e compostos. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula3_9')">Ler</button> | | |
+| **4** | Teoria & Exercícios | \`[9.1.1]\` | **Morfossintaxe:** Classes de palavras e sua atuação como mecanismos de coesão textual. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula4_9')">Ler</button> | | |
+| **5** | Teoria & Exercícios | \`[9.1.1]\` | **Estrutura Oracional:** Análise sintática do esqueleto oracional básico (sujeito, objetos, adjuntos). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula5_9')">Ler</button> | | |
+| **6** | Conteúdo & Aplicação | \`[9.1.1]\` | **Morfossintaxe Aplicada:** Exercícios de revisão integradora de morfossintaxe e coesão **aplicados ao Texto 1** (estudado nas aulas 1 e 2). | <button class="btn-ler" onclick="openLessonModal('aula6_9')">Ler</button> | | |
+| **7** | Leitura & Interpretação | \`[9.1.2]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula7_9')">Ler</button> | | |
+| **8** | Leitura & Interpretação | \`[9.1.2]\` | **Análise do Texto:** Análise interlinear do sentido e ideias principais do texto. | <button class="btn-ler" onclick="openLessonModal('aula8_9')">Ler</button> | | |
+| **9** | Teoria & Exercícios | \`[9.1.2]\` | **Estilística Nominal:** Processos de substantivação/adjetivação e plural de compostos complexos (cores). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula9_9')">Ler</button> | | |
+| **10** | Conteúdo & Aplicação | \`[9.1.2]\` | **Estilística Aplicada:** Usos estilísticos de graus nominais e adjetivo argumentativo + **Exercícios aplicados ao Texto 2** (das aulas 7 e 8). | <button class="btn-ler" onclick="openLessonModal('aula10_9')">Ler</button> | | |
+| **11** | Leitura & Interpretação | \`[9.1.3]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, análise de ritmo e estudo de vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula11_9')">Ler</button> | | |
+| **12** | Leitura & Interpretação | \`[9.1.3]\` | **Análise do Texto:** Estudo interlinear do sentido e da expressividade verbal. | <button class="btn-ler" onclick="openLessonModal('aula12_9')">Ler</button> | | |
+| **13** | Teoria & Exercícios | \`[9.1.3]\` | **Verbos:** Tempos verbais compostos (semântica da anterioridade) e correlação verbal em períodos complexos. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula13_9')">Ler</button> | | |
+| **14** | Conteúdo & Aplicação | \`[9.1.3]\` | **Verbos Aplicados:** Voz Ativa, Passiva e Agente da Passiva + **Exercícios aplicados ao Texto 3** (das aulas 11 e 12). | <button class="btn-ler" onclick="openLessonModal('aula14_9')">Ler</button> | | |
+| **15** | **Avaliação Parcial** | - | **Prova Parcial Escrita** (Avaliação individual sobre morfossintaxe integrada, estilística nominal, tempos compostos e vozes). | <button class="btn-ler" onclick="openLessonModal('aula15_9')">Ler</button> | | |
+| **16** | Leitura & Interpretação | \`[9.1.3]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula16_9')">Ler</button> | | |
+| **17** | Leitura & Interpretação | \`[9.1.3]\` | **Análise do Texto:** Análise interlinear do sentido profundo do texto. | <button class="btn-ler" onclick="openLessonModal('aula17_9')">Ler</button> | | |
+| **18** | Teoria & Exercícios | \`[9.1.3]\` | **Regência & Vozes:** Voz passiva sintética vs. indeterminação do sujeito (partícula "se"). Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula18_9')">Ler</button> | | |
+| **19** | Teoria & Exercícios | \`[9.1.3]\` | **Regência Verbal I:** O conceito de regência e estudo de verbos clássicos (*assistir, aspirar, preferir*). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula19_9')">Ler</button> | | |
+| **20** | Teoria & Exercícios | \`[9.1.3]\` | **Regência Verbal II:** Regência de pronomes relativos e preposição obrigatória. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula20_9')">Ler</button> | | |
+| **21** | Conteúdo & Aplicação | \`[9.1.3]\` | **Regência Aplicada:** Exercícios de regência verbal padrão e de relativos **aplicados ao Texto 4** (das aulas 16 e 17). | <button class="btn-ler" onclick="openLessonModal('aula21_9')">Ler</button> | | |
+| **22** | Leitura & Interpretação | \`[9.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e compreensão do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula22_9')">Ler</button> | | |
+| **23** | Leitura & Interpretação | \`[9.1.4]\` | **Análise do Texto:** Análise interlinear do sentido do texto. | <button class="btn-ler" onclick="openLessonModal('aula23_9')">Ler</button> | | |
+| **24** | Teoria & Exercícios | \`[9.1.4]\` | **Pronomes I:** Demonstrativos (espacial, temporal, textual) e pronomes relativos (função sintática). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula24_9')">Ler</button> | | |
+| **25** | Conteúdo & Aplicação | \`[9.1.4]\` | **Pronomes Aplicados:** Uso de pronomes pessoais (retos/oblíquos) e correção de desvios **aplicados ao Texto 5** (das aulas 22 e 23). | <button class="btn-ler" onclick="openLessonModal('aula25_9')">Ler</button> | | |
+| **26** | Leitura & Interpretação | \`[9.1.4]\` | **Texto de Ancoragem:** \`[A DEFINIR]\`. Leitura expressiva e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula26_9')">Ler</button> | | |
+| **27** | Leitura & Interpretação | \`[9.1.4]\` | **Análise do Texto:** Análise interlinear do sentido e estilo do texto. | <button class="btn-ler" onclick="openLessonModal('aula27_9')">Ler</button> | | |
+| **28** | Conteúdo & Aplicação | \`[9.1.4]\` | **Colocação Pronominal Aplicada:** Próclise, Ênclise, Mesóclise e locuções verbais + **Exercícios aplicados ao Texto 6** (das aulas 26 e 27). | <button class="btn-ler" onclick="openLessonModal('aula28_9')">Ler</button> | | |
+| **29** | **Avaliação Bimestral** | - | **Prova Bimestral Escrita** (Exame integrador cobrando compreensão de texto e aplicação gramatical do bimestre). | <button class="btn-ler" onclick="openLessonModal('aula29_9')">Ler</button> | | |
+| **30** | **Devolutiva & Fechamento** | - | Correção comentada da prova na lousa, análise de erros comuns, feedback e encerramento do bimestre. | <button class="btn-ler" onclick="openLessonModal('aula30_9')">Ler</button> | | |
+---
+
+## 📊 Consolidação da Carga Horária
+
+*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
+*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
+*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+`;
+
+
+                const aula1_6Text = `# 6º Ano — Aula 1: Leitura e Vocabulário
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Recitação
+* Acompanhe a leitura modelo do professor e, em seguida, recitemos todos juntos em uníssono.
+
+---
+
+### 2) Exercícios
+
+#### Copiar e Estudar
+* **Instrução**: Copie à mão no caderno o poema completo e o glossário a seguir.
+
+#### Glossário:
+* **Bramia** (v. 2): Rugia, fazia um barulho muito forte (ondas do mar).
+* **Altivo** (v. 3): Imponente, majestoso, elevado.
+* **Escuma** (v. 4): Variante poética para a palavra "espuma".
+* **Dura** (v. 7): Áspera, rude, severa ou barulhenta.
+* **Furor** (v. 7): Fúria, agitação violenta.
+* **Insano** (v. 7): Desmedido, descontrolado.
+* **Tufão** (v. 12): Vento extremamente forte; tempestade.
+
+#### Desafio Extra (Memorização)
+* **Atividade**: Memorize a primeira estrofe do poema de cabeça usando a técnica de leitura cumulativa verso por verso.
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
+`;
+                const aula2_6Text = `# 6º Ano — Aula 2: Análise e Interpretação
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Interpretar o texto.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Explicação Linha a Linha (Copiar no Caderno)
+* **Eu me lembro! eu me lembro! – Era pequeno**: Saudade e lembrança da infância do poeta.
+* **E brincava na praia; o mar bramia**: O menino brincava perto do mar agitado e barulhento.
+* **E, erguendo o dorso altivo, sacudia**: O mar como um gigante imponente erguendo suas costas (ondas).
+* **A branca escuma para o céu sereno**: As ondas quebrando e lançando espuma contra o céu calmo.
+* **E eu disse a minha mãe nesse momento**: O garoto faz uma pergunta, espantado com a força da natureza.
+* **"Que dura orquestra! Que furor insano!**: Comparação do som do mar a uma música barulhenta e sua agitação a uma fúria sem controle.
+* **Que pode haver maior do que o oceano**: A dúvida infantil sobre se há algo maior que a imensidão do mar.
+* **Ou que seja mais forte do que o vento?!"**: A dúvida sobre se há algo mais poderoso que a força do vento.
+* **Minha mãe a sorrir, olhou p’ra os céus**: O sorriso terno da mãe e seu olhar direcionado para o alto.
+* **E respondeu: – "Um Ser que nós não vemos**: A revelação de que existe um Criador invisível aos olhos físicos.
+* **É maior do que o mar que nós tememos**: Esse Ser invisível é infinitamente superior ao mar temível.
+* **Mais forte que o tufão! meu filho, é – Deus!"**: Esse Ser é mais forte que a tempestade mais violenta: Deus.
+
+---
+
+### 2) Exercícios
+
+#### Perguntas para a Sala (Discussão Oral)
+1. Por que o barulho do mar e do vento assusta ou impressiona o garoto?
+2. Por que a mãe sorri antes de dar a resposta ao seu filho?
+3. De que forma a mãe ensina ao filho que o invisível pode ser mais real e forte que o visível?
+
+#### Exercícios Individuais (Responder no Caderno)
+1. No verso *"Que dura orquestra!"*, o menino usa uma metáfora. Explique por que o som da natureza se assemelha a uma orquestra.
+2. Segundo a resposta da mãe, qual é a relação de grandeza entre o Criador e as forças da natureza (o mar e o tufão)?
+3. Reescreva a pergunta do garoto (versos 7 e 8) em uma frase simples e direta em prosa (sem usar versos ou interrogações).
+
+* **Gabarito/Critério para o Professor**:
+  1. O menino compara o mar a uma orquestra porque as ondas e o vento geram uma grande mistura de sons potentes simultaneamente. Essa "orquestra" natural produzia um som estrondoso, rude e muito barulhento ("dura orquestra").
+  2. A mãe responde que Deus é maior do que o oceano e mais forte do que o vento ou tempestade (tufão). Ela mostra que o Criador é infinitamente superior às maiores e mais temíveis forças da natureza visível, embora Ele mesmo seja invisível.
+  3. Exemplo de resposta: *"O garoto queria saber se existia alguma coisa no mundo maior do que o oceano ou mais forte do que a força do vento."*
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+`;
+                const aula3_6Text = `# 6º Ano — Aula 3: O Substantivo
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender o conceito de classes de palavras e identificar o substantivo como a classe que nomeia as substâncias.
+
+---
+
+### 1) Conteúdo
+
+* **Significado**: Usamos palavras para nomear e significar tudo o que existe no mundo.
+* **Classes de Palavras**: São categorias que organizam as palavras conforme a sua função.
+  * *Exemplos*: \`"cão"\` (nomeia um ser), \`"dois"\` (indica quantidade), \`"todos"\` (indica generalização).
+* **O Substantivo**: É a classe de palavras que expressa **substâncias** (tudo o que tem existência independente, seja física, mental ou espiritual).
+  * *O Teste*: Responde à pergunta: **"O que é isto?"**
+  * *Exemplos do poema "Deus"*: \`praia\`, \`mãe\`, \`oceano\`, \`vento\`, \`tufão\`, \`Deus\`.
+
+---
+
+### 2) Exercícios
+1. Identifique e escreva em seu caderno os substantivos presentes nos versos abaixo:
+   > *"E brincava na praia; o mar bramia"*  
+   > *"A branca escuma para o céu sereno."*  
+2. No verso: *"Mais forte que o tufão! meu filho, é – Deus!"*, quais são as três palavras que nomeiam seres ou entidades?
+3. Escreva uma frase curta associando um substantivo que represente um elemento da natureza a um substantivo que represente um objeto escolar.
+
+* **Gabarito/Critério para o Professor**:
+  1. No verso *"E brincava na praia; o mar bramia"*, os substantivos são: **praia** e **mar**. No verso *"A branca escuma para o céu sereno."*, os substantivos são: **escuma** e **céu**.
+  2. As três palavras são: **tufão**, **filho** e **Deus**.
+  3. Resposta pessoal. Exemplo esperado: *"O vento soprou a folha do meu caderno."* (Substantivos: vento e caderno).
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O menino via o oceano."*, quais palavras são substantivos?
+  * a) menino, via
+  * b) o, oceano
+  * c) menino, oceano
+  * d) via, oceano
+  * **Gabarito**: c
+
+* **Questão 2**: Qual das palavras retiradas do poema representa uma substância e, portanto, é classificada como substantivo?
+  * a) forte
+  * b) sorrir
+  * c) vento
+  * d) sereno
+  * **Gabarito**: c
+
+* **Questão 3**: No verso *"Mais forte que o tufão! meu filho, é – Deus!"*, além de "Deus" (substantivo próprio), qual outra palavra é classificada como substantivo comum?
+  * a) forte
+  * b) filho
+  * c) meu
+  * d) mais
+  * **Gabarito**: b
+
+* **Questão 4**: Na frase *"A branca escuma voava."*, qual palavra é o substantivo (núcleo que dá nome ao ser/objeto)?
+  * a) branca
+  * b) escuma
+  * c) voava
+  * d) A
+  * **Gabarito**: b
+
+* **Questão 5**: Qual das palavras abaixo, extraída do poema de Casimiro de Abreu, é um substantivo próprio por nomear um Ser supremo específico?
+  * a) Mãe
+  * b) Mar
+  * c) Deus
+  * d) Tufão
+  * **Gabarito**: c
+`;
+                const aula4_6Text = `# 6º Ano — Aula 4: O Adjetivo
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender o conceito de adjetivo como classe qualificadora e praticar a concordância nominal simples.
+
+---
+
+### 1) Conteúdo
+
+* **Definição**: O adjetivo é a classe de palavras que qualifica, descreve ou caracteriza um substantivo. Ele expressa os **acidentes** (qualidades, estados ou características) da substância.
+  * *Exemplo*: O substantivo \`céu\` é o ser (substância); a palavra \`sereno\` é o adjetivo que qualifica esse céu.
+* **Exemplos do Poema**:
+  * \`dorso\` (substantivo) -> \`altivo\` (adjetivo)
+  * \`escuma\` (substantivo) -> \`branca\` (adjetivo)
+  * \`orquestra\` (substantivo) -> \`dura\` (adjetivo)
+  * \`furor\` (substantivo) -> \`insano\` (adjetivo)
+* **Concordância**: O adjetivo deve sempre concordar em **gênero** (masculino/feminino) e **número** (singular/plural) com o substantivo que ele qualifica.
+  * *Exemplo*: \`dorso altivo\` (masculino singular) / \`escuma branca\` (feminino singular) / \`ventos insanos\` (masculino plural).
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno os adjetivos que caracterizam os substantivos a seguir no poema: \`dorso\`, \`escuma\`, \`orquestra\` e \`furor\`.
+2. Flexione os adjetivos entre parênteses para concordar corretamente com os substantivos:
+   * a) praia (belo)
+   * b) tufões (destruidor)
+   * c) mães (atento)
+3. Crie uma frase curta utilizando um substantivo do poema e atribua a ele um adjetivo de sua escolha que expresse força ou agitação.
+
+* **Gabarito/Critério para o Professor**:
+  1. No poema: \`dorso\` -> **altivo**; \`escuma\` -> **branca**; \`orquestra\` -> **dura**; \`furor\` -> **insano**.
+  2. Flexões corretas:
+     - a) praia **bela**
+     - b) tufões **destruidores**
+     - c) mães **atentas**
+  3. Resposta pessoal. Exemplo esperado: *"O mar **furioso** sacudia a praia."* (Adjetivo de força: furioso).
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O mar agitado sacudia a branca escuma."*, quais palavras são adjetivos?
+  * a) mar, escuma
+  * b) agitado, branca
+  * c) sacudia, escuma
+  * d) agitado, escuma
+  * **Gabarito**: b
+
+* **Questão 2**: No verso *"A branca escuma para o céu sereno."*, qual adjetivo caracteriza o substantivo "céu"?
+  * a) branca
+  * b) escuma
+  * c) sereno
+  * d) para
+  * **Gabarito**: c
+
+* **Questão 3**: Assinale a alternativa em que a concordância de gênero ou número entre substantivo e adjetivo está **incorreta**:
+  * a) ventos insanos
+  * b) escuma brancos
+  * c) mares altivos
+  * d) mãe sorridente
+  * **Gabarito**: b
+
+* **Questão 4**: No verso *"Que dura orquestra!"*, o adjetivo "dura" significa, neste contexto:
+  * a) rígida como pedra
+  * b) difícil de quebrar
+  * c) rude, áspera ou barulhenta
+  * d) persistente
+  * **Gabarito**: c
+
+* **Questão 5**: Qual das opções apresenta, respectivamente, um **substantivo** e um **adjetivo**?
+  * a) tufão - insano
+  * b) forte - vento
+  * c) maior - mar
+  * d) Deus - vemos
+  * **Gabarito**: a
+`;
+                const aula5_6Text = `# 6º Ano — Aula 5: O Verbo
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender o conceito de verbo como motor da ação e do tempo, identificando os tempos verbais básicos.
+
+---
+
+### 1) Conteúdo
+
+* **Definição**: O verbo é a classe de palavras que expressa ações, estados, processos ou fenômenos da natureza, situando-os no tempo. Ele é o "motor" das orações.
+* **Os Tempos Verbais Básicos**:
+  * **Passado (Pretérito)**: Ações que já aconteceram em relação ao momento de fala.
+    * *Exemplos do poema*: \`"brincava"\`, \`"bramia"\`, \`"sacudia"\`, \`"disse"\`, \`"olhou"\`, \`"respondeu"\`.
+  * **Presente**: Ações ocorrendo no momento da fala ou verdades permanentes.
+    * *Exemplos do poema*: \`"lembro"\`, \`"vemos"\`, \`"tememos"\`, \`"é"\`.
+  * **Futuro**: Ações que ainda vão acontecer.
+    * *Exemplos*: \`"brincará"\`, \`"soprará"\`, \`"responderá"\`.
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno os verbos da estrofe abaixo e classifique o tempo verbal de cada um:
+   > *"Minha mãe a sorrir, olhou p’ra os céus*  
+   > *E respondeu: – 'Um Ser que nós não vemos...'"*
+2. Reescreva as orações abaixo substituindo as formas verbais do passado pelo tempo **futuro**:
+   * a) O mar bramia com fúria.
+   * b) Eu disse a verdade à minha mãe.
+   * c) A branca escuma voou pelo ar.
+3. Crie uma frase curta no tempo **presente** usando um verbo que expresse uma ação do vento.
+
+* **Gabarito/Critério para o Professor**:
+  1. \`olhou\` -> **passado** (ação concluída); \`respondeu\` -> **passado** (ação concluída); \`vemos\` -> **presente** (ação no momento ou verdade permanente). (Nota: "sorrir" é verbo no infinitivo, funcionando como complemento adverbial no contexto).
+  2. Reescrevendo no futuro:
+     - a) O mar **bramirá** com fúria.
+     - b) Eu **direi** a verdade à minha mãe.
+     - c) A branca escuma **voará** pelo ar.
+  3. Resposta pessoal. Exemplo esperado: *"O vento **sopra** forte hoje."* (Verbo: sopra, no presente).
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O menino brincava na praia."*, em qual tempo está a forma verbal destacada?
+  * a) Presente
+  * b) Passado (Pretérito)
+  * c) Futuro
+  * d) Imperativo
+  * **Gabarito**: b
+
+* **Questão 2**: Qual das palavras em destaque na frase *"Um Ser que nós não **vemos**."* é classificada gramaticalmente como verbo?
+  * a) Ser
+  * b) nós
+  * c) vemos
+  * d) não
+  * **Gabarito**: c
+
+* **Questão 3**: Identifique a alternativa na qual a palavra em destaque **não** é classificada como verbo:
+  * a) o mar **bramia**
+  * b) minha mãe a **sorrir**
+  * c) o céu **sereno**
+  * d) ela **respondeu**
+  * **Gabarito**: c
+
+* **Questão 4**: Se a frase *"Minha mãe olhou para os céus"* fosse reescrita no tempo **presente**, a forma verbal destacada se tornaria:
+  * a) olhará
+  * b) olhava
+  * c) olha
+  * d) olhasse
+  * **Gabarito**: c
+
+* **Questão 5**: Na frase *"O vento soprará forte amanhã."*, o verbo destacado indica uma ação no tempo:
+  * a) Passado
+  * b) Presente
+  * c) Futuro
+  * d) Atemporal
+  * **Gabarito**: c
+`;
+                const aula6_6Text = `# 6º Ano — Aula 6: Morfologia Aplicada e Revisão
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender o conceito de fronteiras de classe (substantivação) e revisar as classes básicas (substantivo, adjetivo e verbo) aplicadas sobre o texto de ancoragem.
+
+---
+
+### 1) Conteúdo
+
+* **Fronteiras de Classe**: Uma palavra pode mudar de classe gramatical dependendo do contexto da frase.
+* **Substantivação**: Ocorre quando transformamos um adjetivo ou verbo em substantivo colocação de um artigo ou outro determinante antes dele.
+  * *Exemplo 1 (Verbo -> Substantivo)*:
+    * \`"Eu gosto de **sorrir**."\` (sorrir = verbo, indica ação).
+    * \`"O **sorrir** da mãe consolou o menino."\` (sorrir = substantivo, nomeia a expressão).
+  * *Exemplo 2 (Adjetivo -> Substantivo)*:
+    * \`"O mar é **agitado**."\` (agitado = adjetivo que caracteriza o mar).
+    * \`"O **agitado** das ondas assustou o garoto."\` (agitado = substantivo, nomeia o movimento).
+
+---
+
+### 2) Exercícios
+1. Identifique e justifique no caderno a classe gramatical da palavra destacada em cada frase:
+   * Frase A: *"O céu estava **sereno**."*
+   * Frase B: *"O **sereno** da manhã cobriu a grama."*
+2. Classifique as palavras em destaque como **substantivo**, **adjetivo** ou **verbo**:
+   * *"Minha **mãe** a **sorrir**, **olhou** p'ra os **céus**"*
+3. Crie duas frases curtas usando a palavra **brincar**: na primeira frase ela deve funcionar como verbo e na segunda como substantivo (substantivada).
+
+* **Gabarito/Critério para o Professor**:
+  1. Frase A: **adjetivo**, pois qualifica o substantivo "céu". Frase B: **substantivo**, pois nomeia a umidade da manhã e é precedido pelo artigo "O".
+  2. Classificações: \`mãe\` -> **substantivo**; \`sorrir\` -> **verbo** (no infinitivo); \`olhou\` -> **verbo**; \`céus\` -> **substantivo**.
+  3. Resposta pessoal. Exemplo esperado:
+     - Frase 1 (Verbo): *"O menino gosta de **brincar**."*
+     - Frase 2 (Substantivo): *"O **brincar** faz bem à saúde."*
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O **viver** é uma grande dádiva."*, devido ao contexto, a palavra em destaque pertence a qual classe gramatical?
+  * a) Verbo
+  * b) Substantivo
+  * c) Adjetivo
+  * d) Preposição
+  * **Gabarito**: b
+
+* **Questão 2**: Qual das palavras em destaque foi **substantivada** na frase correspondente?
+  * a) O mar estava muito **bramindo**.
+  * b) O **bramir** do oceano era forte.
+  * c) O mar **bramia** alto na areia.
+  * d) O barulho do mar era **forte**.
+  * **Gabarito**: b
+
+* **Questão 3**: Identifique a frase em que a palavra destacada funciona como **adjetivo**:
+  * a) O **forte** sopro do vento derrubou as telhas.
+  * b) Aquele **forte** resistiu à tempestade.
+  * c) O vento soprava **forte**.
+  * d) O **forte** do vento é a sua velocidade.
+  * **Gabarito**: a
+
+* **Questão 4**: Na frase *"O **cão** **pequeno** **brincava**."*, qual é a classificação gramatical correta das palavras destacadas, respectively?
+  * a) adjetivo, substantivo, verbo
+  * b) substantivo, adjetivo, verbo
+  * c) verbo, adjetivo, substantivo
+  * d) substantivo, verbo, adjetivo
+  * **Gabarito**: b
+
+* **Questão 5**: No verso *"A branca escuma para o céu sereno."*, se usarmos a palavra "sereno" precedida de artigo na frase *"O sereno da noite"*, ela passará a ser um:
+  * a) adjetivo
+  * b) verbo
+  * c) substantivo
+  * d) advérbio
+  * **Gabarito**: c
+`;
+                const aula1_7Text = `# 7º Ano — Aula 1: Leitura e Vocabulário
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Recitação
+* Acompanhe a leitura modelo do professor e, em seguida, recitemos todos juntos em uníssono.
+
+---
+
+### 2) Exercícios
+
+#### Copiar e Estudar
+* **Instrução**: Copie à mão no caderno o poema completo e o glossário a seguir.
+
+#### Glossário:
+* **Bramia** (v. 2): Rugia, fazia um barulho muito forte (ondas do mar).
+* **Altivo** (v. 3): Imponente, majestoso, elevado.
+* **Escuma** (v. 4): Variante poética para a palavra "espuma".
+* **Dura** (v. 7): Áspera, rude, severa ou barulhenta.
+* **Furor** (v. 7): Fúria, agitação violenta.
+* **Insano** (v. 7): Desmedido, descontrolado.
+* **Tufão** (v. 12): Vento extremamente forte; tempestade.
+
+#### Desafio Extra (Memorização)
+* **Atividade**: Memorize a primeira estrofe do poema de cabeça usando a técnica de leitura cumulativa verso por verso.
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
+`;
+                const aula2_7Text = `# 7º Ano — Aula 2: Análise e Interpretação
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Interpretar o texto.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Explicação Linha a Linha (Copiar no Caderno)
+* **Eu me lembro! eu me lembro! – Era pequeno**: Saudade e lembrança da infância do poeta.
+* **E brincava na praia; o mar bramia**: O menino brincava perto do mar agitado e barulhento.
+* **E, erguendo o dorso altivo, sacudia**: O mar como um gigante imponente erguendo suas costas (ondas).
+* **A branca escuma para o céu sereno**: As ondas quebrando e lançando espuma contra o céu calmo.
+* **E eu disse a minha mãe nesse momento**: O garoto faz uma pergunta, espantado com a força da natureza.
+* **"Que dura orquestra! Que furor insano!**: Comparação do som do mar a uma música barulhenta e sua agitação a uma fúria sem controle.
+* **Que pode haver maior do que o oceano**: A dúvida infantil sobre se há algo maior que a imensidão do mar.
+* **Ou que seja mais forte do que o vento?!"**: A dúvida sobre se há algo mais poderoso que a força do vento.
+* **Minha mãe a sorrir, olhou p’ra os céus**: O sorriso terno da mãe e seu olhar direcionado para o alto.
+* **E respondeu: – "Um Ser que nós não vemos**: A revelation de que existe um Criador invisível aos olhos físicos.
+* **É maior do que o mar que nós tememos**: Esse Ser invisível é infinitamente superior ao mar temível.
+* **Mais forte que o tufão! meu filho, é – Deus!"**: Esse Ser é mais forte que a tempestade mais violenta: Deus.
+
+---
+
+### 2) Exercícios
+
+#### Perguntas para a Sala (Discussão Oral)
+1. Por que o barulho do mar e do vento assusta ou impressiona o garoto?
+2. Por que a mãe sorri antes de dar a resposta ao seu filho?
+3. De que forma a mãe ensina ao filho que o invisível pode ser mais real e forte que o visível?
+
+#### Exercícios Individuais (Responder no Caderno)
+1. No verso *"Que dura orquestra!"*, o menino usa uma metáfora. Explique por que o som da natureza se assemelha a uma orquestra.
+2. Segundo a resposta da mãe, qual é a relação de grandeza entre o Criador e as forças da natureza (o mar e o tufão)?
+3. Reescreva a pergunta do garoto (versos 7 e 8) in uma frase simples e direta em prosa (sem usar versos ou interrogações).
+
+* **Gabarito/Critério para o Professor**:
+  1. O menino compara o mar a uma orquestra porque as ondas e o vento geram uma grande mistura de sons potentes simultaneamente. Essa "orquestra" natural produzia um som estrondoso, rude e muito barulhento ("dura orquestra").
+  2. A mãe responde que Deus é maior do que o oceano e mais forte do que o vento ou tempestade (tufão). Ela mostra que o Criador é infinitamente superior às maiores e mais temíveis forças da natureza visível, embora Ele mesmo seja invisível.
+  3. Exemplo de resposta: *"O garoto queria saber se existia alguma coisa no mundo maior do que o oceano ou mais forte do que a força do vento."*
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+`;
+                const aula3_7Text = `# 7º Ano — Aula 3: Revisão de Classes Nominais
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Realizar a revisão diagnóstica e identificação das classes nominais (substantivo, adjetivo, artigo, numeral e pronome) sob contexto.
+
+---
+
+### 1) Conteúdo
+
+* **Classes Nominais**: São as palavras que se relacionam com o nome, tendo o **substantivo** como núcleo.
+  1. **Substantivo**: Nomeia seres, coisas e conceitos. *(Ex: \`mar\`, \`mãe\`, \`vento\`)*
+  2. **Adjetivo**: Atribui qualidades, características ou estados ao substantivo. *(Ex: \`altivo\`, \`sereno\`, \`insano\`)*
+  3. **Artigo**: Determina ou indetermina o substantivo. *(Ex: \`o\` mar, \`a\` praia, \`um\` Ser)*
+  4. **Numeral**: Indica quantidade numérica, ordem, multiplicação ou fração. *(Ex: \`dois\` versos, \`primeira\` estrofe)*
+  5. **Pronome**: Substitui ou acompanha o substantivo, indicando a pessoa do discurso ou posse. *(Ex: \`eu\`, \`minha\`, \`este\`)*
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno a classe nominal de cada palavra destacada abaixo:
+   > *"**Minha** **mãe** a sorrir, olhou p’ra **os** **céus**"*
+2. No verso *"A branca escuma para o céu sereno."*, identifique os dois substantivos e os dois adjetivos correspondentes.
+3. Escreva uma oração curta em seu caderno contendo: um numeral, um substantivo e um adjetivo (use termos inspirados no poema).
+
+* **Gabarito/Critério para o Professor**:
+  1. Classes nominais no trecho:
+     - \`Minha\` -> **pronome** (possessivo)
+     - \`mãe\` -> **substantivo** (comum)
+     - \`os\` -> **artigo** (definido)
+     - \`céus\` -> **substantivo** (comum)
+  2. No verso *"A branca escuma para o céu sereno."*: Substantivos: **escuma** e **céu**; Adjetivos: **branca** e **sereno**.
+  3. Resposta pessoal. Exemplo esperado: *"**Duas** ondas **grandes** quebraram na praia."* (Numeral: Duas; Substantivo: ondas; Adjetivo: grandes).
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na oração *"Dois caminhos levavam à praia."*, as palavras *"Dois"* e *"praia"* são classificados, respectivamente, como:
+  * a) pronome e adjetivo
+  * b) numeral e substantivo
+  * c) artigo e adjetivo
+  * d) numeral e adjetivo
+  * **Gabarito**: b
+
+* **Questão 2**: No verso *"A branca escuma para o céu sereno."*, qual termo funciona como artigo definido feminino?
+  * a) branca
+  * b) escuma
+  * c) A
+  * d) sereno
+  * **Gabarito**: c
+
+* **Questão 3**: Na frase *"E eu disse a minha mãe nesse momento..."*, a palavra *"minha"* é classificada morfologicamente como:
+  * a) substantivo
+  * b) adjetivo
+  * c) pronome possessivo
+  * d) artigo indefinido
+  * **Gabarito**: c
+
+* **Questão 4**: Identifique a palavra que funciona como adjetivo no verso *"Que dura orquestra! Que furor insano!"*:
+  * a) orquestra
+  * b) furor
+  * c) insano
+  * d) que
+  * **Gabarito**: c
+
+* **Questão 5**: Assinale a alternativa que apresenta apenas substantivos comuns retirados do poema *"Deus"*:
+  * a) mar, vento, mãe
+  * b) altivo, sereno, insano
+  * c) eu, minha, nós
+  * d) maior, mais, forte
+  * **Gabarito**: a
+`;
+                const aula4_7Text = `# 7º Ano — Aula 4: Revisão de Classes Verbais e Relacionais
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Realizar a revisão diagnóstica e identificação das classes verbais e relacionais (verbo, advérbio, preposição e conjunção) sob contexto.
+
+---
+
+### 1) Conteúdo
+
+* **Classes Verbais e Relacionais**: São as palavras que expressam dinamicidade, circunstâncias ou ligam os termos de uma frase.
+  1. **Verbo**: Indica ação, estado, mudança de estado ou fenômeno da natureza situados no tempo. *(Ex: \`lembro\`, \`brincava\`, \`bramia\`, \`disse\`, \`vemos\`, \`é\`)*
+  2. **Advérbio**: Palavra invariável que expressa uma circunstância (tempo, modo, lugar, negação, intensidade) modificando um verbo, adjetivo ou outro advérbio. *(Ex: \`não\` [negação], \`mais\` [intensidade])*
+  3. **Preposição**: Liga duas palavras estabelecendo uma relação de dependência entre elas. *(Ex: \`para\` o céu, \`de\` Abreu, \`na\` [em+a] praia)*
+  4. **Conjunção**: Conecta orações ou termos coordenados estabelecendo relações de sentido (soma, alternância, oposição, etc.). *(Ex: \`e\` [adição], \`ou\` [alternância])*
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno os verbos presentes no verso abaixo e indique o tempo em que cada um está conjugado:
+   > *"E eu disse a minha mãe nesse momento"*
+2. No trecho: *"Que pode haver maior do que o oceano, / Ou que seja mais forte do que o vento?!"*, identifique o advérbio de intensidade e as conjunções.
+3. Identifique as preposições escondidas nas seguintes palavras contraídas do poema:
+   * a) na (praia)
+   * b) do (vento)
+   * c) p'ra os (céus)
+
+* **Gabarito/Critério para o Professor**:
+  1. \`disse\` -> **verbo** no passado (pretérito perfeito).
+  2. Advérbio de intensidade: **mais** (em *"mais forte"*). Conjunção: **Ou** (conjunção coordenativa alternativa).
+  3. Preposições contraídas:
+     - a) na = preposição **em** + artigo **a**
+     - b) do = preposição **de** + artigo **o**
+     - c) p'ra os = preposição **para** + artigo **os**
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O mar bramia **com** fúria **na** praia."*, as palavras destacadas funcionam como:
+  * a) conjunções
+  * b) preposições
+  * c) advérbios
+  * d) verbos
+  * **Gabarito**: b
+
+* **Questão 2**: Qual das opções destaca apenas palavras classificadas como advérbios no verso *"Um Ser que nós **não** vemos, é **mais** forte"*?
+  * a) Ser, vemos
+  * b) nós, é
+  * c) não, mais
+  * d) vemos, forte
+  * **Gabarito**: c
+
+* **Questão 3**: No verso *"**E** respondeu: – 'Um Ser que nós não vemos'"*, a conjunção destacada liga a oração anterior estabelecendo ideia de:
+  * a) oposição
+  * b) alternância
+  * c) adição
+  * d) explicação
+  * **Gabarito**: c
+
+* **Questão 4**: Na frase *"O vento soprará **amanhã**."*, a palavra em destaque funciona morfologicamente como:
+  * a) preposição
+  * b) conjunção
+  * c) advérbio de tempo
+  * d) verbo
+  * **Gabarito**: c
+
+* **Questão 5**: Assinale a alternativa que apresenta apenas verbos retirados do poema *"Deus"*:
+  * a) lembro, brincava, vemos
+  * b) praia, mar, tufão
+  * c) dura, insano, altivo
+  * d) com, para, de
+  * **Gabarito**: a
+`;
+                const aula5_7Text = `# 7º Ano — Aula 5: Análise Integrada (Variação de Classe)
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender como o contexto morfossintático determina a transição de classe de palavras (derivação imprópria).
+
+---
+
+### 1) Conteúdo
+
+* **Variação de Classe sob Contexto**: Na língua portuguesa, a classe de uma palavra não é fixa absoluta. É a frase que define sua classificação.
+* **Substantivação**: Ocorre quando colocamos um artigo ou outro determinante antes de um adjetivo ou verbo, transformando-o em substantivo.
+  * *Verbo -> Substantivo*: O infinitivo \`ser\` torna-se substantivo em *"Um **Ser** que nós não vemos"*.
+  * *Adjetivo -> Substantivo*: O adjetivo \`sereno\` torna-se substantivo em *"O **sereno** da manhã cobriu a grama"*.
+* **Adjetivação**: Ocorre quando um substantivo passa a qualificar outro substantivo no contexto.
+  * *Exemplo*: *"O menino tinha um olhar **mar**"* (o substantivo *mar* atua como adjetivo para qualificar a imensidão/profundidade do olhar).
+
+---
+
+### 2) Exercícios
+1. Explique em seu caderno por que a palavra **Ser** no verso *"Um Ser que nós não vemos"* é classificada como substantivo e não como verbo.
+2. Identifique a classe gramatical da palavra **insano** nas duas frases abaixo:
+   * Frase A: *"O garoto enfrentou o vento **insano**."*
+   * Frase B: *"Os **insanos** correram em direção ao mar."*
+3. Escreva duas frases curtas no caderno usando a palavra **brincar**: na primeira, ela deve funcionar como verbo; na segunda, deve vir precedida por um artigo e funcionar como substantivo (substantivação).
+
+* **Gabarito/Critério para o Professor**:
+  1. A palavra **Ser** é precedida pelo artigo indefinido *"Um"*, o que a nominaliza (substantivação), passando a atuar como substantivo comum (nomeando o Criador).
+  2. Classe de **insano**:
+     - Frase A: **adjetivo**, pois qualifica o substantivo "vento".
+     - Frase B: **substantivo**, pois indica a categoria de pessoas e vem precedida pelo artigo "Os".
+  3. Resposta pessoal. Exemplo esperado:
+     - Frase 1 (Verbo): *"O garoto quer **brincar**."*
+     - Frase 2 (Substantivo): *"O **brincar** é muito divertido."*
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na frase *"O **sorrir** da mãe tranquilizou o menino."*, a palavra em destaque pertence a qual classe gramatical devido ao contexto?
+  * a) verbo
+  * b) adjetivo
+  * c) substantivo
+  * d) advérbio
+  * **Gabarito**: c
+
+* **Questão 2**: Qual das palavras em destaque sofreu substantivação por derivação imprópria?
+  * a) O céu estava muito **sereno**.
+  * b) Sentimos o **frio** da noite.
+  * c) O vento **bramia** forte.
+  * d) A mãe **olhou** para o alto.
+  * **Gabarito**: b
+
+* **Questão 3**: Identifique a frase em que a palavra destacada funciona como **adjetivo**:
+  * a) O **jovem** venceu o desafio.
+  * b) Ele é um rapaz **jovem**.
+  * c) O **jovem** correu da chuva.
+  * d) Os **jovens** brincavam na praia.
+  * **Gabarito**: b
+
+* **Questão 4**: Se dissermos *"A tempestade foi **monstro**"*, a palavra destacada (que originalmente é um substantivo) funciona no contexto como:
+  * a) verbo
+  * b) adjetivo
+  * c) conjunção
+  * d) advérbio
+  * **Gabarito**: b
+
+* **Questão 5**: Qual classe de palavras tem a propriedade morfossintática de transformar qualquer outra palavra em substantivo quando colocada imediatamente antes dela?
+  * a) a preposição
+  * b) o artigo (ou determinante)
+  * c) a conjunção
+  * d) o advérbio
+  * **Gabarito**: b
+`;
+                const aula6_7Text = `# 7º Ano — Aula 6: Morfologia Aplicada (Texto "Deus")
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Realizar a revisão integradora das 10 classes de palavras aplicadas diretamente sobre o texto de ancoragem.
+
+---
+
+### 1) Conteúdo
+
+* **Revisão Geral das Classes de Palavras no Poema**:
+  * **Substantivos**: Nomes que identificam os seres e elementos. *(Ex: \`praia\`, \`mar\`, \`mãe\`, \`vento\`, \`Deus\`)*
+  * **Adjetivos**: Termos que qualificam ou caracterizam. *(Ex: \`altivo\`, \`branca\`, \`sereno\`, \`dura\`, \`insano\`, \`forte\`)*
+  * **Artigos**: Determinantes definidos ou indefinidos. *(Ex: \`o\` [mar], \`a\` [branca escuma], \`um\` [Ser])*
+  * **Pronomes**: Indicam posse ou a pessoa gramatical. *(Ex: \`Eu\`, \`me\`, \`minha\`, \`nós\`, \`este\`)*
+  * **Verbos**: Motores da ação e do tempo. *(Ex: \`lembro\`, \`brincava\`, \`bramia\`, \`sacudia\`, \`disse\`, \`vemos\`, \`tememos\`, \`respondeu\`)*
+  * **Advérbios**: Circunstâncias de tempo, negação e intensidade. *(Ex: \`não\`, \`mais\`)*
+  * **Preposições**: Elementos de ligação de dependência. *(Ex: \`em\`, \`para\`, \`de\` [na contração \`na\` e \`do\`])*
+  * **Conjunções**: Conectivos de coordenação ou subordinação. *(Ex: \`e\`, \`ou\`, \`que\`)*
+
+---
+
+### 2) Exercícios
+1. Identifique em seu caderno as classes gramaticais de todas as palavras do verso abaixo:
+   > *"E brincava na praia; o mar bramia"*
+2. No verso: *"Minha mãe a sorrir, olhou p’re os céus"*, qual a classe gramatical das palavras destacadas e que relação estabelecem?
+3. Indique as classes gramaticais das palavras **mar** e **tufão** na última estrofe do poema e descreva brevemente a importância delas no contexto.
+
+* **Gabarito/Critério para o Professor**:
+  1. Análise morfológica: \`E\` -> conjunção; \`brincava\` -> verbo; \`na\` -> contração (em+a); \`praia\` -> substantivo; \`o\` -> artigo; \`mar\` -> substantivo; \`bramia\` -> verbo.
+  2. Classes gramaticais e funções: \`Minha\` -> pronome possessivo (indica relação afetiva e pertença); \`p'ra\` -> preposição simples (liga a ação verbal ao seu destino).
+  3. Classes de **mar** e **tufão**: Ambos são **substantivos**. No contexto, representam os maiores poderes da natureza visível, destacando a imensa superioridade de Deus sobre eles.
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: No verso *"Eu me lembro! eu me lembro!"*, a palavra **Eu** é um pronome pessoal reto. Qual é a classificação gramatical da palavra **me**?
+  * a) pronome pessoal oblíquo (associado ao verbo pronominal)
+  * b) preposição simples
+  * c) artigo definido
+  * d) advérbio de modo
+  * **Gabarito**: a
+
+* **Questão 2**: Qual é a classe gramatical das palavras destacadas na frase *"O vento soprava **para** o mar, **e** a escuma subia."*?
+  * a) conjunção e preposição
+  * b) preposição e conjunção
+  * c) preposição e advérbio
+  * d) advérbio e conjunção
+  * **Gabarito**: b
+
+* **Questão 3**: No verso *"A branca escuma para o céu sereno."*, os termos **branca** e **sereno** são classificados, respectivamente, como:
+  * a) substantivo e adjetivo
+  * b) adjetivo e adjetivo
+  * c) advérbio e adjetivo
+  * d) adjetivo e substantivo
+  * **Gabarito**: b
+
+* **Questão 4**: Se na frase *"O **bramir** do mar é forte."* a palavra destacada funciona como substantivo, no verso original *"o mar **bramia**"* ela é classificada como:
+  * a) adjetivo
+  * b) verbo
+  * c) pronome
+  * d) numeral
+  * **Gabarito**: b
+
+* **Questão 5**: Assinale a alternativa que apresenta a correspondência de classe gramatical **incorreta**:
+  * a) mar = substantivo
+  * b) tufão = substantivo
+  * c) mais = advérbio
+  * d) com = conjunção
+  * **Gabarito**: d
+`;
+                const aula1_8Text = `# 8º Ano — Aula 1: Leitura e Vocabulário
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Recitação
+* Acompanhe a leitura modelo do professor e, em seguida, recitemos todos juntos em uníssono.
+
+---
+
+### 2) Exercícios
+
+#### Copiar e Estudar
+* **Instrução**: Copie à mão no caderno o poema completo e o glossário a seguir.
+
+#### Glossário:
+* **Bramia** (v. 2): Rugia, fazia um barulho muito forte (ondas do mar).
+* **Altivo** (v. 3): Imponente, majestoso, elevado.
+* **Escuma** (v. 4): Variante poética para a palavra "espuma".
+* **Dura** (v. 7): Áspera, rude, severa ou barulhenta.
+* **Furor** (v. 7): Fúria, agitação violenta.
+* **Insano** (v. 7): Desmedido, descontrolado.
+* **Tufão** (v. 12): Vento extremamente forte; tempestade.
+
+#### Desafio Extra (Memorização)
+* **Atividade**: Memorize a primeira estrofe do poema de cabeça usando a técnica de leitura cumulativa verso por verso.
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.
+`;
+                const aula2_8Text = `# 8º Ano — Aula 2: Análise e Interpretação
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Interpretar o texto.
+
+---
+
+### 1) Conteúdo
+
+#### O Poema
+> Eu me lembro! eu me lembro! – Era pequeno  
+> E brincava na praia; o mar bramia  
+> E, erguendo o dorso altivo, sacudia  
+> A branca escuma para o céu sereno.  
+> 
+> E eu disse a minha mãe nesse momento:  
+> "Que dura orquestra! Que furor insano!  
+> Que pode haver maior do que o oceano,  
+> Ou que seja mais forte do que o vento?!"  
+> 
+> Minha mãe a sorrir, olhou p’ra os céus  
+> E respondeu: – "Um Ser que nós não vemos,  
+> É maior do que o mar que nós tememos,  
+> Mais forte que o tufão! meu filho, é – Deus!"  
+
+#### Explicação Linha a Linha (Copiar no Caderno)
+* **Eu me lembro! eu me lembro! – Era pequeno**: Saudade e lembrança da infância do poeta.
+* **E brincava na praia; o mar bramia**: O menino brincava perto do mar agitado e barulhento.
+* **E, erguendo o dorso altivo, sacudia**: O mar como um gigante imponente erguendo suas costas (ondas).
+* **A branca escuma para o céu sereno**: As ondas quebrando e lançando espuma contra o céu calmo.
+* **E eu disse a minha mãe nesse momento**: O garoto faz uma pergunta, espantado com a força da natureza.
+* **"Que dura orquestra! Que furor insano!**: Comparação do som do mar a uma música barulhenta e sua agitação a uma fúria sem controle.
+* **Que pode haver maior do que o oceano**: A dúvida infantil sobre se há algo maior que a imensidão do mar.
+* **Ou que seja mais forte do que o vento?!"**: A dúvida sobre se há algo mais poderoso que a força do vento.
+* **Minha mãe a sorrir, olhou p’ra os céus**: O sorriso terno da mãe e seu olhar direcionado para o alto.
+* **E respondeu: – "Um Ser que nós não vemos**: A revelação de que existe um Criador invisível aos olhos físicos.
+* **É maior do que o mar que nós tememos**: Esse Ser invisível é infinitamente superior ao mar temível.
+* **Mais forte que o tufão! meu filho, é – Deus!"**: Esse Ser é mais forte que a tempestade mais violenta: Deus.
+
+---
+
+### 2) Exercícios
+
+#### Perguntas para a Sala (Discussão Oral)
+1. Por que o barulho do mar e do vento assusta ou impressiona o garoto?
+2. Por que a mãe sorri antes de dar a resposta ao seu filho?
+3. De que forma a mãe ensina ao filho que o invisível pode ser mais real e forte que o visível?
+
+#### Exercícios Individuais (Responder no Caderno)
+1. No verso *"Que dura orquestra!"*, o menino usa uma metáfora. Explique por que o som da natureza se assemelha a uma orquestra.
+2. Segundo a resposta da mãe, qual é a relação de grandeza entre o Criador e as forças da natureza (o mar e o tufão)?
+3. Reescreva a pergunta do garoto (versos 7 e 8) em uma frase simples e direta em prosa (sem usar versos ou interrogações).
+
+* **Gabarito/Critério para o Professor**:
+  1. O menino compara o mar a uma orquestra porque as ondas e o vento geram uma grande mistura de sons potentes simultaneamente. Essa "orquestra" natural produzia um som estrondoso, rude e muito barulhento ("dura orquestra").
+  2. A mãe responde que Deus é maior do que o oceano e mais forte do que o vento ou tempestade (tufão). Ela mostra que o Criador é infinitamente superior às maiores e mais temíveis forças da natureza visível, embora Ele mesmo seja invisível.
+  3. Exemplo de resposta: *"O garoto queria saber se existia alguma coisa no mundo maior do que o oceano ou mais forte do que a força do vento."*
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+`;
+                const aula3_8Text = `# 8º Ano — Aula 3: Morfologia vs. Sintaxe (Classes Nominais)
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender a diferença entre classificação morfológica e sintática, identificando as funções sintáticas das classes nominais (sujeito, objetos e adjunto adnominal).
+
+---
+
+### 1) Conteúdo
+
+* **Morfologia vs. Sintaxe (Morfossintaxe)**:
+  * **Morfologia**: Classifica a palavra isoladamente (o que ela **é** no dicionário). *Ex: a palavra \`mar\` é um substantivo.*
+  * **Sintaxe**: Classifica o papel que a palavra desempenha na oração (o que ela **faz**). *Ex: na oração "O mar bramia", a palavra \`mar\` funciona como **sujeito**.*
+* **Funções Sintáticas Nominais**:
+  1. **Sujeito**: Termo sobre o qual se faz a declaração principal. *(Ex: "**O mar** bramia." Núcleo: \`mar\`)*
+  2. **Objeto Direto (OD)**: Completa o sentido de um verbo sem preposição obrigatória. *(Ex: "...sacudia **a branca escuma**..." Núcleo do OD: \`escuma\`)*
+  3. **Objeto Indireto (OI)**: Completa o sentido de um verbo exigindo preposição. *(Ex: "...disse **a minha mãe**..." Preposição: \`a\`)*
+  4. **Adjunto Adnominal (ADN)**: Caracteriza ou determina um substantivo diretamente. *(Ex: "A **branca** escuma para o céu **sereno**." \`branca\` e \`sereno\` são ADNs)*
+
+---
+
+### 2) Exercícios
+1. Explique no caderno a diferença morfossintática da palavra **vento** na frase *"O vento soprava"*.
+2. No verso *"...sacudia a branca escuma..."*, identifique o **objeto direto**, o seu núcleo e os seus adjuntos adnominais.
+3. Classifique a função sintática dos termos destacados abaixo:
+   * a) *"**Eu** me lembro"*
+   * b) *"disse **a minha mãe**"*
+
+* **Gabarito/Critério para o Professor**:
+  1. Morfologicamente, **vento** é um **substantivo**. Sintaticamente, é o **sujeito** da oração.
+  2. No verso *"...sacudia a branca escuma..."*: Objeto Direto: **a branca escuma**; Núcleo: **escuma**; Adjuntos adnominais: **a** (artigo) e **branca** (adjetivo).
+  3. Funções sintáticas:
+     - a) *Eu* -> **sujeito** (núcleo do sujeito).
+     - b) *a minha mãe* -> **objeto indireto**.
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: No verso *"...o **mar** bramia..."*, a palavra em destaque funciona sintaticamente como:
+  * a) Objeto Direto
+  * b) Adjunto Adnominal
+  * c) Sujeito
+  * d) Predicativo do Sujeito
+  * **Gabarito**: c
+
+* **Questão 2**: No verso *"...sacudia a branca **escuma**..."*, o termo destacado exerce a função de:
+  * a) Núcleo do Objeto Direto
+  * b) Adjunto Adnominal
+  * c) Núcleo do Sujeito
+  * d) Objeto Indireto
+  * **Gabarito**: a
+
+* **Questão 3**: Na frase *"Minha mãe olhou para os céus"*, qual é a função sintática do pronome *"Minha"* em relação a *"mãe"*?
+  * a) Objeto Direto
+  * b) Adjunto Adnominal
+  * c) Sujeito
+  * d) Predicativo
+  * **Gabarito**: b
+
+* **Questão 4**: Na frase *"A branca escuma causava medo ao menino."*, qual termo funciona como objeto indireto?
+  * a) A branca escuma
+  * b) medo
+  * c) ao menino
+  * d) causava
+  * **Gabarito**: c
+
+* **Questão 5**: Qual das palavras em destaque funciona como substantivo na morfologia e como núcleo do sujeito na sintaxe?
+  * a) O **mar** bramia.
+  * b) A **branca** escuma.
+  * c) Eu **brincava** na praia.
+  * d) Para o céu **sereno**.
+  * **Gabarito**: a
+`;
+                const aula4_8Text = `# 8º Ano — Aula 4: Predicação Verbal e Conectivos
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Compreender as funções sintáticas verbais (predicação) e o papel relacional dos conectivos (preposições e conjunções) na oração.
+
+---
+
+### 1) Conteúdo
+
+* **Predicação Verbal**: Analisa como o verbo se relaciona com seus complementos:
+  1. **Verbo Intransitivo (VI)**: Possui sentido completo, não exigindo complementos obrigatórios. *(Ex: "brincava **na praia**" — \`brincava\` é VI)*
+  2. **Verbo Transitivo Direto (VTD)**: Exige complemento sem preposição obrigatória (Objeto Direto). *(Ex: "...sacudia **a branca escuma**" — \`sacudia\` é VTD)*
+  3. **Verbo Transitivo Indireto (VTI)**: Exige complemento precedido de preposição obrigatória (Objeto Indireto). *(Ex: "...olhou **p’ra os céus**" — \`olhou\` é VTI)*
+  4. **Verbo de Ligação (VL)**: Não indica ação; liga o sujeito a um estado ou qualidade (Predicativo do Sujeito). *(Ex: "Era **pequeno**" — \`era\` é VL)*
+* **Conectivos (Preposição e Conjunção)**: São classes relacionais que unem palavras (preposições) ou orações (conjunções), estabelecendo nexos de sentido e dependência sintática.
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno a predicação do verbo *bramia* na oração *"o mar bramia"* e do verbo *era* na oração *"Era pequeno"*.
+2. No verso *"E eu disse a minha mãe nesse momento"*, classifique a predicação do verbo *disse* e aponte os seus complementos.
+3. Identifique a conjunção aditiva presente no verso *"E brincava na praia"* e explique sua função de ligação.
+
+* **Gabarito/Critério para o Professor**:
+  1. \`bramia\` -> **verbo intransitivo** (VI), pois tem sentido completo. \`era\` -> **verbo de ligação** (VL), ligando o sujeito oculto a sua característica "pequeno".
+  2. \`disse\` -> **verbo transitivo direto e indireto** (VTDI). O objeto indireto é *"a minha mãe"*, e o objeto direto é a pergunta do menino.
+  3. Conjunção aditiva: **E**. Une a oração *"brincava na praia"* à oração anterior, somando ações do eu lírico.
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: No verso *"...Era **pequeno**"*, a palavra destacada funciona sintaticamente como:
+  * a) Adjunto Adnominal
+  * b) Predicativo do Sujeito
+  * c) Objeto Direto
+  * d) Adjunto Adverbial
+  * **Gabarito**: b
+
+* **Questão 2**: No verso *"...o mar **bramia**..."*, o verbo destacado é classificado sintaticamente como:
+  * a) Transitivo Direto
+  * b) Transitivo Indireto
+  * c) De Ligação
+  * d) Intransitivo
+  * **Gabarito**: d
+
+* **Questão 3**: Na fala da mãe, *"...meu filho, **é** – Deus!"*, o verbo destacado funciona como:
+  * a) Verbo Intransitivo
+  * b) Verbo Transitivo Direto
+  * c) Verbo de Ligação
+  * d) Verbo Transitivo Indireto
+  * **Gabarito**: c
+
+* **Questão 4**: Em *"...olhou **p’ra os céus**"*, o termo destacado funciona sintaticamente como:
+  * a) Objeto Direto
+  * b) Adjunto Adverbial de Direção/Lugar
+  * c) Predicativo do Sujeito
+  * d) Objeto Indireto
+  * **Gabarito**: b
+
+* **Questão 5**: No verso *"...sacudia a branca escuma..."*, o verbo *sacudia* classifica-se como:
+  * a) Transitivo Direto
+  * b) Transitivo Indireto
+  * c) Intransitivo
+  * d) De Ligação
+  * **Gabarito**: a
+`;
+                const aula5_8Text = `# 8º Ano — Aula 5: Análise de Orações (Simples e Complexas)
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Analisar a estrutura morfossintática em períodos simples e compostos, associando orações adjetivas e adverbiais às suas funções.
+
+---
+
+### 1) Conteúdo
+
+* **Período Simples vs. Período Composto**:
+  * **Período Simples**: Apresenta apenas uma oração (um único verbo). Os termos ligam-se diretamente ao verbo ou nome principal.
+    * *Exemplo*: *"O menino pequeno brincava na praia."*
+  * **Período Composto**: Contém mais de uma oração. As orações subordinadas exercem funções equivalentes a termos simples (substantivos, adjetivos ou advérbios).
+    * *Exemplo*: *"O menino, **que era pequeno**, brincava na praia."*
+* **Orações Adjetivas e Adjuntos Adnominais**: Orações que caracterizam substantivos funcionam sintaticamente como adjuntos adnominais.
+  * *Exemplo*: In *"Um Ser **que nós não vemos**..."*, a oração adjetiva equivale ao adjetivo *invisível* e atua como adjunto adnominal do substantivo *Ser*.
+
+---
+
+### 2) Exercícios
+1. Reduza o período composto a seguir em período simples no caderno, transformando a oração subordinada em um adjetivo correspondente:
+   > *"O menino, que era pequeno, brincava na praia."*
+2. No verso *"Um Ser que nós não vemos..."*, identifique o sujeito da oração destacada.
+3. Transforme a locução adjetiva em um adjetivo simples equivalente: *"erguendo o dorso de rei"*.
+
+* **Gabarito/Critério para o Professor**:
+  1. Período simples: *"O menino **pequeno** brincava na praia."* (A oração adjetiva *"que era pequeno"* vira o adjetivo *"pequeno"*).
+  2. O sujeito da oração destacada é o pronome pessoal **nós**.
+  3. Dorso de rei = dorso **real** ou **régio**.
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: Na oração *"Um Ser **que nós não vemos**"*, a oração adjetiva em destaque equivale sintaticamente a:
+  * a) um objeto direto de Ser
+  * b) um predicativo do sujeito
+  * c) um adjunto adnominal de Ser
+  * d) um adjunto adverbial
+  * **Gabarito**: c
+
+* **Questão 2**: Qual é a função sintática do pronome relativo *"que"* na oração *"Um Ser **que** nós não vemos"*? (Dica: substitua "que" por "Ser" na oração: *"nós vemos o Ser"*).
+  * a) Sujeito
+  * b) Objeto Direto
+  * c) Objeto Indireto
+  * d) Adjunto Adnominal
+  * **Gabarito**: b
+
+* **Questão 3**: Na frase *"O mar **que nós tememos** é imenso"*, a oração em destaque funciona sintaticamente como adjunto adnominal de:
+  * a) nós
+  * b) mar
+  * c) imenso
+  * d) é
+  * **Gabarito**: b
+
+* **Questão 4**: Na frase *"O menino, **quando olhou para o céu**, sorriu."*, a oração em destaque expressa circunstância de:
+  * a) causa
+  * b) tempo
+  * c) oposição
+  * d) consequência
+  * **Gabarito**: b
+
+* **Questão 5**: O período *"Minha mãe olhou para os céus e respondeu."* classifica-se como composto por coordenação porque contém:
+  * a) orações dependentes sintaticamente
+  * b) duas orações independentes ligadas pela conjunção "e"
+  * c) apenas um verbo
+  * d) uma oração principal e uma subordinada
+  * **Gabarito**: b
+`;
+                const aula6_8Text = `# 8º Ano — Aula 6: Morfossintaxe Aplicada (Texto "Deus")
+**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
+**Objetivo**: Realizar a revisão integradora de funções sintáticas e predicação verbal aplicadas diretamente sobre o texto de ancoragem.
+
+---
+
+### 1) Conteúdo
+
+* **Mapeamento de Funções Sintáticas no Poema**:
+  * **Sujeito**: *mar* (em *"o mar bramia"*), *nós* (em *"que nós não vemos"*).
+  * **Objeto Direto**: *escuma* (em *"...sacudia a branca escuma..."*).
+  * **Objeto Indireto**: *mãe* (em *"E eu disse a minha mãe..."*).
+  * **Predicativo do Sujeito**: *pequeno* (em *"Era pequeno"*), *Deus* (em *"...é – Deus!"*).
+  * **Adjunto Adnominal**: *branca* (de *escuma*), *altivo* (de *dorso*), *sereno* (de *céu*).
+  * **Adjunto Adverbial**: *na praia* (lugar em *"brincava na praia"*), *nesse momento* (tempo em *"disse... nesse momento"*).
+
+---
+
+### 2) Exercícios
+1. Identifique no caderno a função sintática e a classificação morfológica de cada termo da oração:
+   > *"O mar bramia."*
+2. Aponte a predicação verbal de **disse** e identifique o objeto indireto no trecho: *"disse a minha mãe"*.
+3. Identifique o sujeito do verbo **vemos** no verso: *"que nós não vemos"*.
+
+* **Gabarito/Critério para o Professor**:
+  1. Morfologicamente: \`O\` -> artigo; \`mar\` -> substantivo; \`bramia\` -> verbo. Sintaticamente: \`O\` -> adjunto adnominal; \`mar\` -> sujeito; \`bramia\` -> predicado (VI).
+  2. Predicação de \`disse\` -> **transitivo direto e indireto** (VTDI); Objeto Indireto: **a minha mãe**.
+  3. Sujeito do verbo vemos: **nós**.
+
+---
+
+### 3) Tarefa de casa
+
+* **Questão 1**: No verso *"E eu disse **a minha mãe**..."*, o termo em destaque é classificado sintaticamente como:
+  * a) Sujeito
+  * b) Objeto Direto
+  * c) Objeto Indireto
+  * d) Adjunto Adnominal
+  * **Gabarito**: c
+
+* **Questão 2**: No verso *"erguendo o **dorso** altivo"*, o substantivo destacado funciona sintaticamente como núcleo do:
+  * a) Objeto Direto
+  * b) Sujeito
+  * c) Predicativo do Sujeito
+  * d) Adjunto Adnominal
+  * **Gabarito**: a
+
+* **Questão 3**: Qual é a função sintática da palavra **altivo** no verso *"erguendo o dorso **altivo**"*?
+  * a) Objeto Direto
+  * b) Adjunto Adnominal
+  * c) Predicativo do Sujeito
+  * d) Sujeito
+  * **Gabarito**: b
+
+* **Questão 4**: Na frase *"O vento forte soprava na praia."*, qual é a classificação morfossintática correta do termo **forte**?
+  * a) substantivo / sujeito
+  * b) adjetivo / adjunto adnominal
+  * c) adjetivo / predicativo do sujeito
+  * d) advérbio / adjunto adverbial
+  * **Gabarito**: b
+
+* **Questão 5**: Assinale a alternativa que apresenta a classificação de predicação verbal **incorreta**:
+  * a) bramia (verbo intransitivo)
+  * b) era (verbo de ligação)
+  * c) sacudia (verbo transitivo direto)
+  * d) vemos (verbo de ligação)
+  * **Gabarito**: d
+`;
+                const aula1_9Text = `# 9º Ano — Aula 1: Leitura e Vocabulário
+**Texto de Ancoragem**: *"A Cristo S. N. Crucificado"* (Gregório de Matos)  
+**Objetivo**: Ter o primeiro contato com o texto e recitar adequadamente.
+
+---
+
+### 1) Conteúdo
+
+#### O Soneto
+> Meu Deus, que estais pendente em um madeiro,
+> Em cuja lei protesto de viver,
+> Em cuja santa lei hei de morrer,
+> Animoso, constante, firme e inteiro.
+> 
+> Neste lance, por ser o derradeiro,
+> Pois vejo a minha vida anoitecer,
+> É, meu Jesus, a hora de se ver
+> A brandura de um Pai, manso Cordeiro.
+> 
+> Mui grande é vosso amor, e meu delito,
+> Porém, pode ter fim todo o pecar,
+> E não o vosso amor, que é infinito.
+> 
+> Esta razão me obriga a confiar,
+> Que, por mais que pequei, neste conflito
+> Espero em vosso amor de me salvar.
+
+#### Recitação
+* **Atividade**: Acompanhe a leitura em voz alta do professor. Em seguida, toda a sala recitará o soneto em uníssono. Foco na postura, no controle da respiração e no ritmo decassílabo (medida nova).
+
+---
+
+### 2) Exercícios
+
+#### Copiar e Estudar
+* **Instruções**: Copie o soneto completo à mão em seu caderno de caligrafia ou estudos. Mantenha a divisão estrófica (dois quartetos e dois tercetos), atente para as maiúsculas reverenciais e respeite a pontuação clássica.
+* **Glossário**:
+  * **Pendente** (v. 1): Suspenso, pendurado.
+  * **Madeiro** (v. 1): Cruz, viga de madeira do martírio de Cristo.
+  * **Protesto** (v. 2): Promessa pública, juramento solene.
+  * **Animoso** (v. 4): Corajoso, destemido.
+  * **Lance** (v. 5): Momento decisivo, conjuntura crítica.
+  * **Derradeiro** (v. 5): Último, final.
+  * **Anoitecer** (v. 6): Chegar ao fim, findar (metáfora para a morte).
+  * **Brandura** (v. 8): Mansidão, suavidade, misericórdia.
+  * **Delito** (v. 9): Pecado, erro grave, falta moral.
+  * **Pecar** (v. 10): Ação de cometer pecado (infinitivo substantivado).
+  *(Instrução: Copie o glossário no caderno logo abaixo do soneto.)*
+
+#### Desafio Extra (Memorização)
+* **Atividade**: Memorize a primeira estrofe do soneto de cabeça usando o método de memorização cumulativa verso por verso.
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia manuscrita do soneto e do glossário.
+`;
+                const aula2_9Text = `# 9º Ano — Aula 2: Análise e Interpretação
+**Texto de Ancoragem**: *"A Cristo S. N. Crucificado"* (Gregório de Matos)  
+**Objetivo**: Interpretar o texto.
+
+---
+
+### 1) Conteúdo
+
+#### O Soneto
+> Meu Deus, que estais pendente em um madeiro,
+> Em cuja lei protesto de viver,
+> Em cuja santa lei hei de morrer,
+> Animoso, constante, firme e inteiro.
+> 
+> Neste lance, por ser o derradeiro,
+> Pois vejo a minha vida anoitecer,
+> É, meu Jesus, a hora de se ver
+> A brandura de um Pai, manso Cordeiro.
+> 
+> Mui grande é vosso amor, e meu delito,
+> Porém, pode ter fim todo o pecar,
+> E não o vosso amor, que é infinito.
+> 
+> Esta razão me obriga a confiar,
+> Que, por mais que pequei, neste conflito
+> Espero em vosso amor de me salvar.
+
+#### Explicação Linha a Linha (Copiar no Caderno)
+* **Meu Deus, que estais pendente em um madeiro**: O eu lírico fala diretamente a Cristo suspenso na cruz.
+* **Em cuja lei protesto de viver**: Declara solenemente seu compromisso de guiar a vida pelas leis cristãs.
+* **Em cuja santa lei hei de morrer**: Reafirma que perseverará fiel a essa lei até o instante da morte.
+* **Animoso, constante, firme e inteiro**: Descreve a disposição ideal da alma: corajosa, estável e íntegra.
+* **Neste lance, por ser o derradeiro**: Refere-se à hora da morte, o momento final da existência.
+* **Pois vejo a minha vida anoitecer**: Constata que sua energia vital está se apagando (metáfora para a morte).
+* **É, meu Jesus, a hora de se ver**: Apela a Jesus indicando que a morte é o momento de revelar Sua graça.
+* **A brandura de um Pai, manso Cordeiro**: Espera encontrar a misericórdia do Pai e o sacrifício pacífico do Cordeiro.
+* **Mui grande é vosso amor, e meu delito**: Contrasta (antítese) a imensidão do amor divino e a gravidade dos pecados.
+* **Porém, pode ter fim todo o pecar**: Argumenta que as faltas humanas são limitadas no tempo (são finitas).
+* **E não o vosso amor, que é infinito**: Conclui que a graça e o amor de Deus são ilimitados (infinitos).
+* **Esta razão me obriga a confiar**: A lógica da infinitude do amor divino obriga a alma a ter fé.
+* **Que, por mais que pequei, neste conflito**: Reconhece a extensão de suas faltas na angústia da morte.
+* **Espero em vosso amor de me salvar**: Deposita sua esperança final no amor de Deus para alcançar a salvação.
+
+---
+
+### 2) Exercícios
+
+#### Perguntas para a Sala (Discussão Oral)
+1. De que forma o eu lírico demonstra perseverança espiritual diante da iminência da própria morte?
+2. Como a oposição entre o pecado humano e a graça divina é retratada na terceira estrofe?
+3. Por que a imagem de Cristo na cruz (pendente no madeiro) traz esperança ao invés de desespero para o poeta?
+
+#### Exercícios Individuais (Responder no Caderno)
+1. No verso *"Pois vejo a minha vida anoitecer"*, identifique a metáfora contida na palavra **anoitecer** e explique qual circunstância da existência humana ela representa no poema.
+2. Na terceira estrofe, o poeta contrapõe o seu **delito** (pecado) ao **amor** de Deus. Explique a lógica argumentativa que ele usa para provar que a salvação é possível, relacionando as noções de "limite" e "infinito".
+3. O que o eu lírico espera encontrar na hora da morte, conforme expresso na segunda estrofe? Identifique as figuras divinas citadas e suas características associadas.
+
+* **Gabarito/Critério para o Professor**:
+  1. O termo *anoitecer* é uma metáfora para a aproximação da morte, a perda da luz vital ou o fim da existência terrena, simbolizando o momento final da vida física.
+  2. Gregório de Matos constrói uma antítese silogística: os pecados humanos são cometidos por um ser limitado no tempo, portanto o "pecar" tem fim (é finito). Já o amor e a misericórdia de Deus são divinos e infinitos. Sendo o infinito maior do que o finito, o perdão de Deus sempre superará a soma de todos os pecados cometidos.
+  3. O eu lírico espera encontrar a "brandura" (mansidão e acolhimento paternal) e o perdão. Ele cita Deus como um "Pai" afável e Jesus Cristo como o "manso Cordeiro" (o redentor sacrificial pacífico).
+
+---
+
+### 3) Tarefa de casa
+* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+`;
+
+
+                // --- CONTROLES DE ESTADO E INICIALIZAÇÃO ---
+                let currentTab = 'matriz';
+                let currentCronogramaYear = 6;
+                let currentLessonYear = 6;
+                let isLessonOpen = false;
+                let lessonVersion = 'aluno'; // 'aluno' ou 'professor'
+
+                const sources = {
+                    matriz: { path: './Acutis/Matriz_Curricular.md', fallback: matrizCurricularText },
+                    cronograma6: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_6o_Ano.md', fallback: cronograma6Text },
+                    cronograma7: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_7o_Ano.md', fallback: cronograma7Text },
+                    cronograma8: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_8o_Ano.md', fallback: cronograma8Text },
+                    cronograma9: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_9o_Ano.md', fallback: cronograma9Text },
+
+                    aula1_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
+                    aula1_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_1.md', fallback: aula1_6Text },
+                    aula2_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
+                    aula2_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_2.md', fallback: aula2_6Text },
+                    aula3_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
+                    aula3_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_3.md', fallback: aula3_6Text },
+                    aula4_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
+                    aula4_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_4.md', fallback: aula4_6Text },
+                    aula5_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
+                    aula5_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_5.md', fallback: aula5_6Text },
+                    aula6_6_aluno: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
+                    aula6_6_prof: { path: './Acutis/Novo_Padrao/6o_Ano/Aula_6.md', fallback: aula6_6Text },
+                    aula1_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
+                    aula1_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_1.md', fallback: aula1_7Text },
+                    aula2_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
+                    aula2_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_2.md', fallback: aula2_7Text },
+                    aula3_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
+                    aula3_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_3.md', fallback: aula3_7Text },
+                    aula4_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
+                    aula4_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_4.md', fallback: aula4_7Text },
+                    aula5_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
+                    aula5_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_5.md', fallback: aula5_7Text },
+                    aula6_7_aluno: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
+                    aula6_7_prof: { path: './Acutis/Novo_Padrao/7o_Ano/Aula_6.md', fallback: aula6_7Text },
+                    aula1_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
+                    aula1_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_1.md', fallback: aula1_8Text },
+                    aula2_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
+                    aula2_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_2.md', fallback: aula2_8Text },
+                    aula3_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
+                    aula3_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_3.md', fallback: aula3_8Text },
+                    aula4_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
+                    aula4_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_4.md', fallback: aula4_8Text },
+                    aula5_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
+                    aula5_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_5.md', fallback: aula5_8Text },
+                    aula6_8_aluno: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
+                    aula6_8_prof: { path: './Acutis/Novo_Padrao/8o_Ano/Aula_6.md', fallback: aula6_8Text },
+                    aula1_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
+                    aula1_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_1.md', fallback: aula1_9Text },
+                    aula2_9_aluno: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text },
+                    aula2_9_prof: { path: './Acutis/Novo_Padrao/9o_Ano/Aula_2.md', fallback: aula2_9Text }
+                };
+
+
+                // Inicialização da Página
+                window.addEventListener('DOMContentLoaded', async () => {
+                    // Configura o Marked.js com opções elegantes
+                    marked.setOptions({
+                        breaks: true,
+                        gfm: true
+                    });
+
+                    // Carrega e renderiza a aba padrão (Matriz)
+                    await loadAndRenderMarkdown('matriz', 'matriz-render');
+                });
+
+                // Função genérica para buscar arquivo local e renderizar
+                async function loadAndRenderMarkdown(sourceKey, targetElementId) {
+                    const source = sources[sourceKey];
+                    let content = '';
+                    try {
+                        const response = await fetch(source.path);
+                        if (response.ok) {
+                            content = await response.text();
+                        } else {
+                            content = source.fallback;
+                        }
+                    } catch (e) {
+                        content = source.fallback; // Fallback se CORS bloquear file://
+                    }
+
+                    // Processamento dos Gabaritos
+                    if (sourceKey.endsWith('_aluno')) {
+                        // Remove todo o bloco de gabarito para a visão do aluno
+                        content = content.replace(/<!-- INICIO_GABARITO -->[\s\S]*?<!-- FIM_GABARITO -->/g, '');
+                        // Fallback para aulas não convertidas ainda
+                        content = content.replace(/^[ \t]*\*?[ \t]*\*\*Gabarito.*\r?\n?/gim, '');
+                    } else {
+                        // Envolve as respostas em uma div de destaque para o professor
+                        content = content.replace(/<!-- INICIO_GABARITO -->/g, '<div class="gabarito-prof" style="background-color: var(--accent-light); padding: 15px; margin: 15px 0; border-radius: 4px; border-left: 4px solid var(--accent);">\n\n');
+                        content = content.replace(/<!-- FIM_GABARITO -->/g, '\n\n</div>');
+                    }
+
+                    document.getElementById(targetElementId).innerHTML = marked.parse(content);
+                }
+
+                // Gerenciador de Abas Principais
+                function showTab(tabName) {
+                    currentTab = tabName;
+                    document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+                    // Ativa link e painel
+                    event.target.classList.add('active');
+                    document.getElementById(`panel-${tabName}`).classList.add('active');
+
+                    // Carregamento sob demanda
+                    if (tabName === 'matriz') {
+                        loadAndRenderMarkdown('matriz', 'matriz-render');
+                    } else if (tabName === 'cronogramas') {
+                        loadAndRenderMarkdown(`cronograma${currentCronogramaYear}`, 'cronograma-render');
+                    }
+                }
+
+                // Sub-navegação de Anos na aba Cronogramas
+                async function changeCronogramaYear(year, element) {
+                    currentCronogramaYear = year;
+                    element.parentNode.querySelectorAll('.sub-link').forEach(btn => btn.classList.remove('active'));
+                    element.classList.add('active');
+                    await loadAndRenderMarkdown(`cronograma${year}`, 'cronograma-render');
+                }
+
+                // --- LÓGICA DO MODAL DE LIÇÕES ---
+                let currentModalLessonKey = null;
+
+                async function openLessonModal(key) {
+                    currentModalLessonKey = key;
+                    const modal = document.getElementById('lesson-modal');
+                    const sourceKey = `${key}_${lessonVersion}`;
+                    await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
+                    modal.showModal();
+                }
+
+                function closeLessonModal() {
+                    const modal = document.getElementById('lesson-modal');
+                    modal.close();
+                    currentModalLessonKey = null;
+                }
+
+                async function setLessonVersion(version) {
+                    lessonVersion = version;
+                    document.querySelectorAll('.toggle-option').forEach(el => el.classList.remove('active'));
+                    if (version === 'aluno') {
+                        document.getElementById('toggle-aluno').classList.add('active');
+                    } else {
+                        document.getElementById('toggle-prof').classList.add('active');
+                    }
+                    
+                    // Se o modal estiver aberto, recarrega o conteúdo com a versão correta
+                    if (currentModalLessonKey) {
+                        const sourceKey = `${currentModalLessonKey}_${lessonVersion}`;
+                        await loadAndRenderMarkdown(sourceKey, 'modal-content-render');
+                    }
+                }
+
+
+            </script>
+
+</body>
+
+</html>
