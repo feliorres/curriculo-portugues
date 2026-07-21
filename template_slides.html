@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apresentação da Aula</title>
+<!-- Atualizando as fontes para incluir o EB Garamond como no index -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:     #F5F0E8;
+    --cream-mid: #EDE7DA;
+    --ink:       #1C1A17;
+    --ink-soft:  #4A4640;
+    --ink-faint: #9A948C;
+    --accent:    #2E2B27;
+    --rule:      #D4CCC0;
+    --font-title: 'Forum', Georgia, serif;
+    --font-body:  'EB Garamond', Georgia, serif;
+    --font-ui:    'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--cream);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body); /* Usando a fonte do corpo do projeto */
+    gap: 0;
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* ── Individual slide ── */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--cream);
+    display: flex; flex-direction: column;
+    padding: 60px 10%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Cover slide (Camões background) ── */
+  .slide-cover {
+    background-image: linear-gradient(to right, rgba(28, 26, 23, 0.4) 30%, rgba(28, 26, 23, 0.85) 70%), url('camoes.jpg');
+    background-size: cover;
+    background-position: left center;
+    color: #F5F0E8;
+  }
+  .slide-cover .label {
+    color: #EDE7DA;
+  }
+  .slide-cover h1 {
+    color: #FFFFFF;
+  }
+  .slide-cover p {
+    color: #EDE7DA;
+  }
+  .slide-cover strong {
+    color: #FFFFFF;
+  }
+
+  /* ── Slide number ── */
+  .slide-num {
+    position: absolute;
+    bottom: 28px; right: 40px;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: .12em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.08;
+    color: var(--ink);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 22px;
+  }
+
+  h3 {
+    font-family: var(--font-body);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 28px; /* Aumentado */
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 38px; /* Aumentado */
+    line-height: 1.45;
+    color: var(--ink);
+    font-weight: 400;
+    border-left: 2px solid var(--ink);
+    padding-left: 28px;
+    margin-bottom: 20px;
+  }
+
+  blockquote cite {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: 20px;
+    font-style: normal;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 4px;
+  }
+  ul li {
+    font-size: 30px; /* Aumentado */
+    font-weight: 400;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 14px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--ink-faint);
+  }
+
+  .rule {
+    width: 40px; height: 1px;
+    background: var(--ink);
+    margin-bottom: 32px;
+  }
+  
+  .poem-text {
+      font-family: var(--font-body);
+      font-size: 34px; /* Aumentado para visibilidade */
+      line-height: 1.6;
+      color: var(--ink);
+      white-space: pre-line;
+      border-left: 2px solid var(--rule);
+      padding-left: 28px;
+      margin-top: 16px;
+  }
+  
+  .explanation-list {
+      list-style: none;
+  }
+  .explanation-list li {
+      font-size: 26px; /* Aumentado */
+      margin-bottom: 18px;
+  }
+  .explanation-list li strong {
+      font-family: var(--font-title);
+      font-size: 28px; /* Aumentado */
+      color: var(--ink);
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+  }
+  .nav-btn {
+    background: rgba(28, 26, 23, 0.05);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(28, 26, 23, 0.1); border-color: var(--ink-soft); }
+  .nav-btn:disabled { opacity: .25; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa da Aula) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">7º Ano — Aula 1</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-end; text-align: right; width: 100%;">
+      <div style="max-width: 50%;">
+        <h1>Leitura e Vocabulário</h1>
+        <p style="margin-top: 24px;"><strong>Texto de Ancoragem:</strong> "Deus" (Casimiro de Abreu)</p>
+        <p><strong>Objetivo:</strong> Ter o primeiro contato com o texto e recitar adequadamente.</p>
+      </div>
+    </div>
+    <div class="slide-num">01</div>
+  </div>
+
+  <!-- Slide 2 (1. Conteúdo - O Poema Parte 1) -->
+  <div class="slide" id="s2">
+    <div class="label">1. Conteúdo</div>
+    <h2>O Poema (Parte 1)</h2>
+    <div class="poem-text">
+      Eu me lembro! eu me lembro! – Era pequeno
+      E brincava na praia; o mar bramia
+      E, erguendo o dorso altivo, sacudia
+      A branca escuma para o céu sereno.
+      
+      E eu disse a minha mãe nesse momento:
+      "Que dura orquestra! Que furor insano!
+      Que pode haver maior do que o oceano,
+      Ou que seja mais forte do que o vento?!"
+    </div>
+    <div class="slide-num">02</div>
+  </div>
+
+  <!-- Slide 3 (1. Conteúdo - O Poema Parte 2) -->
+  <div class="slide" id="s3">
+    <div class="label">1. Conteúdo</div>
+    <h2>O Poema (Parte 2)</h2>
+    <div class="poem-text">
+      Minha mãe a sorrir, olhou p’ra os céus
+      E respondeu: – "Um Ser que nós não vemos,
+      É maior do que o mar que nós tememos,
+      Mais forte que o tufão! meu filho, é – Deus!"
+    </div>
+    <div class="slide-num">03</div>
+  </div>
+
+  <!-- Slide 4 (Explicação / Glossário) -->
+  <div class="slide" id="s4">
+    <div class="label">1. Conteúdo</div>
+    <h2>Glossário e Explicação</h2>
+    <ul class="explanation-list">
+      <li><strong>Bramia:</strong> Rugia, fazia um barulho muito forte (ondas do mar).</li>
+      <li><strong>Altivo:</strong> Imponente, majestoso, elevado.</li>
+      <li><strong>Escuma:</strong> Variante poética para a palavra "espuma".</li>
+      <li><strong>Dura:</strong> Áspera, rude, severa ou barulhenta.</li>
+      <li><strong>Insano:</strong> Desmedido, descontrolado.</li>
+    </ul>
+    <div class="slide-num">04</div>
+  </div>
+  
+  <!-- Slide 5 (2. Exercícios) -->
+  <div class="slide" id="s5">
+    <div class="label">2. Exercícios</div>
+    <h2>Atividades da Aula</h2>
+    <ul>
+      <li><strong>Copiar e Estudar:</strong> Copie à mão no caderno o poema completo e o glossário.</li>
+      <li><strong>Desafio Extra (Memorização):</strong> Memorize a primeira estrofe do poema de cabeça usando a técnica de leitura cumulativa verso por verso.</li>
+      <li><strong>Discussão Oral:</strong> Por que o barulho do mar e do vento assusta ou impressiona o garoto?</li>
+    </ul>
+    <div class="slide-num">05</div>
+  </div>
+  
+  <!-- Slide 6 (3. Tarefa de casa) -->
+  <div class="slide" id="s6">
+    <div class="label">3. Tarefa de Casa</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+      <div class="rule"></div>
+      <h2>Envio da Atividade</h2>
+      <p>Envie uma foto nítida do caderno contendo a cópia manuscrita do poema e do glossário.</p>
+    </div>
+    <div class="slide-num">06</div>
+  </div>
+  
+</div><!-- /deck -->
+
+<!-- Navegação -->
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 6</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = [
+    's1','s2','s3','s4','s5','s6'
+  ];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active', idx === i);
+      }
+    });
+    
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(dir) {
+    cur = Math.min(Math.max(cur + dir, 0), order.length - 1);
+    show(cur);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') move(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   move(-1);
+  });
+
+  show(0);
+</script>
+</body>
+</html>

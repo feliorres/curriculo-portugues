@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apresentação da Aula</title>
+<!-- Atualizando as fontes para incluir o EB Garamond como no index -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:     #F5F0E8;
+    --cream-mid: #EDE7DA;
+    --ink:       #1C1A17;
+    --ink-soft:  #4A4640;
+    --ink-faint: #9A948C;
+    --accent:    #2E2B27;
+    --rule:      #D4CCC0;
+    --font-title: 'Forum', Georgia, serif;
+    --font-body:  'EB Garamond', Georgia, serif;
+    --font-ui:    'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--cream);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    gap: 0;
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* ── Individual slide ── */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--cream);
+    display: flex; flex-direction: column;
+    padding: 60px 10%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Cover slide (Camões background) ── */
+  .slide-cover {
+    background-image: linear-gradient(to right, rgba(28, 26, 23, 0.4) 30%, rgba(28, 26, 23, 0.85) 70%), url('camoes.jpg');
+    background-size: cover;
+    background-position: left center;
+    color: #F5F0E8;
+  }
+  .slide-cover .label {
+    color: #EDE7DA;
+  }
+  .slide-cover h1 {
+    color: #FFFFFF;
+  }
+  .slide-cover p {
+    color: #EDE7DA;
+  }
+  .slide-cover strong {
+    color: #FFFFFF;
+  }
+
+  /* ── Slide number ── */
+  .slide-num {
+    position: absolute;
+    bottom: 28px; right: 40px;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: .12em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1.08;
+    color: var(--ink);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 22px;
+  }
+
+  p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 42px; /* Tamanho maior para impacto visual */
+    line-height: 1.45;
+    color: var(--ink);
+    font-weight: 400;
+    border-left: 4px solid var(--accent);
+    padding-left: 32px;
+    margin-bottom: 20px;
+  }
+
+  .rule {
+    width: 40px; height: 1px;
+    background: var(--ink);
+    margin-bottom: 32px;
+  }
+  
+  /* ── Custom Cards for Program Overview ── */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    width: 100%;
+    margin-top: 24px;
+    flex: 1;
+    align-content: center;
+  }
+  .card {
+    border: 1px solid var(--rule);
+    padding: 36px;
+    background: var(--cream-mid);
+    border-radius: 4px;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    background: var(--cream);
+    border-color: var(--ink-soft);
+  }
+  .card-title {
+    font-family: var(--font-title);
+    font-size: 36px;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .card-desc {
+    font-family: var(--font-body);
+    font-size: 26px;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+  }
+  .nav-btn {
+    background: rgba(28, 26, 23, 0.05);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(28, 26, 23, 0.1); border-color: var(--ink-soft); }
+  .nav-btn:disabled { opacity: .25; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa da Aula) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">7º Ano — Aula 0</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-end; text-align: right; width: 100%;">
+      <div style="max-width: 50%;">
+        <h1>Apresentação do Curso</h1>
+        <p style="margin-top: 24px;"><strong>Boas-vindas!</strong></p>
+        <p><strong>Objetivo:</strong> Panorama do conteúdo programático e introdução à nossa metodologia.</p>
+      </div>
+    </div>
+    <div class="slide-num">01</div>
+  </div>
+
+  <!-- Slide 2 (Conteúdo Programático) -->
+  <div class="slide" id="s2">
+    <div class="label">O Que Vamos Aprender?</div>
+    <h2>Conteúdo Programático</h2>
+    <div class="cards">
+      <div class="card">
+         <div class="card-title">1. Revisão e Fundamentos</div>
+         <div class="card-desc">Classes gramaticais básicas, gêneros e flexões iniciais da língua.</div>
+      </div>
+      <div class="card">
+         <div class="card-title">2. O Mundo dos Nomes</div>
+         <div class="card-desc">Aprofundamento nos Substantivos, Adjetivos e sua harmonia na frase.</div>
+      </div>
+      <div class="card">
+         <div class="card-title">3. O Mundo das Ações</div>
+         <div class="card-desc">Os Verbos como motor da ação: seus modos, tempos e vozes verbais.</div>
+      </div>
+      <div class="card">
+         <div class="card-title">4. Conexões e Circunstâncias</div>
+         <div class="card-desc">Pronomes, Advérbios, Conjunções e Preposições costurando os textos.</div>
+      </div>
+    </div>
+    <div class="slide-num">02</div>
+  </div>
+  
+  <!-- Slide 3 (Metodologia) -->
+  <div class="slide" id="s3">
+    <div class="label">Como Vamos Aprender?</div>
+    <h2>Nossa Metodologia</h2>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+      <blockquote>
+        "Não estudaremos regras vazias ou listas soltas. Todo o nosso conteúdo gramatical e estrutural nascerá da <strong>leitura ativa</strong>, <strong>interpretação</strong> e <strong>vivência</strong> de grandes textos da Língua Portuguesa."
+      </blockquote>
+      <p style="margin-top: 40px; font-size: 30px; font-style: italic; color: var(--ink-faint);">
+        (A gramática a serviço do texto, e o texto a serviço da gramática.)
+      </p>
+    </div>
+    <div class="slide-num">03</div>
+  </div>
+
+</div><!-- /deck -->
+
+<!-- Navegação -->
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 3</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = [
+    's1','s2','s3'
+  ];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active', idx === i);
+      }
+    });
+    
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(dir) {
+    cur = Math.min(Math.max(cur + dir, 0), order.length - 1);
+    show(cur);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') move(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   move(-1);
+  });
+
+  show(0);
+</script>
+</body>
+</html>
