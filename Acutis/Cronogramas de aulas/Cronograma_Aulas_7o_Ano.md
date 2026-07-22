@@ -1,7 +1,7 @@
 # Cronograma de Aulas: 7º Ano (1º Bimestre)
-*Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
+*Planejamento Aula a Aula com Foco na Nova Matriz Curricular*
 
-Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
+Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano com base na nova matriz curricular. As aulas focam no aprofundamento das classes gramaticais, concordância nominal e sistema verbal completo (modos, tempos e vozes), com 70% das aulas dedicadas ao conteúdo programático e 30% reservadas para atividades práticas, revisões dirigidas e avaliações.
 
 ---
 
@@ -9,40 +9,40 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 7º Ano. A est
 
 | Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
 | :---: | :--- | :---: | :--- | :---: | :--- | :--- |
-| **1** | Leitura & Interpretação | `[7.1.1]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva em voz alta, recitação conjunta e estudo do vocabulário inicial (Glossário). | <button class="btn-ler" onclick="openLessonModal('aula1_7')">Ler</button> | | |
-| **2** | Leitura & Interpretação | `[7.1.1]` | **Análise do Texto:** Estudo interlinear do sentido do texto (compreensão literal e explicação das figuras e ideias). | <button class="btn-ler" onclick="openLessonModal('aula2_7')">Ler</button> | | |
-| **3** | Teoria & Exercícios | `[7.1.1]` | **Revisão de Classes:** Avaliação diagnóstica de classes nominais (Substantivo, Adjetivo, Artigo, Numeral, Pronome). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula3_7')">Ler</button> | | |
-| **4** | Teoria & Exercícios | `[7.1.1]` | **Revisão de Classes:** Avaliação diagnóstica de classes verbais e relacionais (Verbo, Advérbio, Preposição, Conjunção). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula4_7')">Ler</button> | | |
-| **5** | Teoria & Exercícios | `[7.1.1]` | **Análise Integrada:** Estudo prático de transição e variação de classe de palavras conforme o contexto na frase. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula5_7')">Ler</button> | | |
-| **6** | Conteúdo & Aplicação | `[7.1.1]` | **Morfologia Aplicada:** Exercícios de revisão integradora de classes de palavras **aplicados ao Texto 1** (estudado nas aulas 1 e 2). | <button class="btn-ler" onclick="openLessonModal('aula6_7')">Ler</button> | | |
-| **7** | Leitura & Interpretação | `[7.1.2]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula7_7')">Ler</button> | | |
-| **8** | Leitura & Interpretação | `[7.1.2]` | **Análise do Texto:** Análise interlinear do sentido e ideias principais do texto. | <button class="btn-ler" onclick="openLessonModal('aula8_7')">Ler</button> | | |
-| **9** | Teoria & Exercícios | `[7.1.2]` | **Substantivos:** Classificação profunda dos substantivos (abstrato/concreto, coletivos) e estrutura/formação (derivação/composição). Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula9_7')">Ler</button> | | |
-| **10** | Conteúdo & Aplicação | `[7.1.2]` | **Substantivos Aplicados:** Flexão de número de substantivos compostos e valor estilístico + **Exercícios aplicados ao Texto 2** (das aulas 7 e 8). | <button class="btn-ler" onclick="openLessonModal('aula10_7')">Ler</button> | | |
-| **11** | Leitura & Interpretação | `[7.1.3]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva, análise de ritmo e estudo de vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula11_7')">Ler</button> | | |
-| **12** | Leitura & Interpretação | `[7.1.3]` | **Análise do Texto:** Estudo interlinear do sentido e análise da caracterização na narrativa/poesia. | <button class="btn-ler" onclick="openLessonModal('aula12_7')">Ler</button> | | |
-| **13** | Teoria & Exercícios | `[7.1.3]` | **Adjetivos:** O adjetivo (locuções, tipos) e flexão de gênero/número de adjetivos compostos. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula13_7')">Ler</button> | | |
-| **14** | Conteúdo & Aplicação | `[7.1.3]` | **Adjetivos Aplicados:** Graus do adjetivo (comparativo e superlativo) e concordância nominal avançada + **Exercícios aplicados ao Texto 3** (das aulas 11 e 12). | <button class="btn-ler" onclick="openLessonModal('aula14_7')">Ler</button> | | |
-| **15** | **Avaliação Parcial** | - | **Prova Parcial Escrita** (Avaliação individual sobre classes de palavras, substantivos compostos e adjetivos). | <button class="btn-ler" onclick="openLessonModal('aula15_7')">Ler</button> | | |
-| **16** | Leitura & Interpretação | `[7.1.4]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva, recitação e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula16_7')">Ler</button> | | |
-| **17** | Leitura & Interpretação | `[7.1.4]` | **Análise do Texto:** Análise interlinear do sentido profundo do texto. | <button class="btn-ler" onclick="openLessonModal('aula17_7')">Ler</button> | | |
-| **18** | Teoria & Exercícios | `[7.1.4]` | **Verbos I:** O sistema verbal (estrutura, conjugação de modo) e o tempo Presente do Subjuntivo. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula18_7')">Ler</button> | | |
-| **19** | Teoria & Exercícios | `[7.1.4]` | **Verbos I:** Estudo do Pretérito Imperfeito do Subjuntivo e Futuro do Subjuntivo. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula19_7')">Ler</button> | | |
-| **20** | Teoria & Exercícios | `[7.1.4]` | **Verbos I:** O imperativo (afirmativo e negativo) e sua formação. Teoria + exercícios de fixação. | <button class="btn-ler" onclick="openLessonModal('aula20_7')">Ler</button> | | |
-| **21** | Conteúdo & Aplicação | `[7.1.4]` | **Verbos Aplicados:** Correlação do modo subjuntivo com o indicativo + **Exercícios aplicados ao Texto 4** (das aulas 16 e 17). | <button class="btn-ler" onclick="openLessonModal('aula21_7')">Ler</button> | | |
-| **22** | Leitura & Interpretação | `[7.1.4]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva e compreensão do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula22_7')">Ler</button> | | |
-| **23** | Leitura & Interpretação | `[7.1.4]` | **Análise do Texto:** Análise interlinear do sentido do texto. | <button class="btn-ler" onclick="openLessonModal('aula23_7')">Ler</button> | | |
-| **24** | Teoria & Exercícios | `[7.1.4]` | **Verbos II:** Formas Nominais do Verbo (infinitivo, gerúndio, particípio) e locuções verbais. Teoria + exercícios. | <button class="btn-ler" onclick="openLessonModal('aula24_7')">Ler</button> | | |
-| **25** | Conteúdo & Aplicação | `[7.1.4]` | **Verbos Aplicados:** Exercícios práticos de transposição e uso de formas nominais **aplicados ao Texto 5** (das aulas 22 e 23). | <button class="btn-ler" onclick="openLessonModal('aula25_7')">Ler</button> | | |
-| **26** | Leitura & Interpretação | `[7.1.4]` | **Texto de Ancoragem:** `[A DEFINIR]`. Leitura expressiva e estudo do vocabulário. | <button class="btn-ler" onclick="openLessonModal('aula26_7')">Ler</button> | | |
-| **27** | Leitura & Interpretação | `[7.1.4]` | **Análise do Texto:** Análise interlinear do sentido e estilo do texto. | <button class="btn-ler" onclick="openLessonModal('aula27_7')">Ler</button> | | |
-| **28** | Conteúdo & Aplicação | `[7.1.4]` | **Vozes Verbais Aplicadas:** Estudo das Vozes Verbais (Ativa, Passiva e Reflexiva) + **Exercícios aplicados ao Texto 6** (das aulas 26 e 27). | <button class="btn-ler" onclick="openLessonModal('aula28_7')">Ler</button> | | |
-| **29** | **Avaliação Bimestral** | - | **Prova Bimestral Escrita** (Exame integrador cobrando compreensão de texto e aplicação gramatical do bimestre). | <button class="btn-ler" onclick="openLessonModal('aula29_7')">Ler</button> | | |
-| **30** | **Devolutiva & Fechamento** | - | Correção comentada da prova na lousa, análise de erros comuns, feedback e encerramento do bimestre. | <button class="btn-ler" onclick="openLessonModal('aula30_7')">Ler</button> | | |
+| **1** | Exposição & Prática | `[7.1.1]` | **Revisão de Classes I:** Panorama morfológico e revisão diagnóstica das classes nominais (Substantivo, Adjetivo, Artigo, Numeral, Pronome). | - | - | Ficha diagnóstica de classes nominais |
+| **2** | Exposição & Prática | `[7.1.1]` | **Revisão de Classes II:** Panorama morfológico e revisão diagnóstica de verbos e conectivos (Advérbio, Preposição, Conjunção). | - | - | Ficha diagnóstica de conectivos |
+| **3** | Exposição & Teoria | `[7.1.1]` | **Morfologia Contextual I:** Análise de palavras cuja classe gramatical altera-se conforme o contexto da frase. | - | - | Exercícios de diferenciação contextual |
+| **4** | Exposição & Prática | `[7.1.1]` | **Morfologia Contextual II:** Exercícios avançados de transição morfológica e classificação em trechos clássicos. | - | - | Questionário online de morfologia |
+| **5** | Exposição & Teoria | `[7.1.2]` | **Substantivos I:** Classificação aprofundada (concretos/abstratos, coletivos) e os efeitos semânticos no texto. | - | - | Identificação de substantivos abstratos |
+| **6** | Exposição & Teoria | `[7.1.2]` | **Substantivos II:** Formação das palavras (primitivos/derivados, simples/compostos) e flexões de gênero e número simples. | - | - | Exercício de derivação nominais |
+| **7** | Exposição & Teoria | `[7.1.2]` | **Substantivos III:** Flexão de número de substantivos compostos (regras gerais, elementos invariáveis e exceções). | - | - | Lista de flexão de compostos |
+| **8** | Exposição & Teoria | `[7.1.2]` | **Substantivos IV:** Flexão de grau (aumentativo e diminutivo) e seus valores expressivos, afetivos e pejorativos. | - | - | Análise de valor estilístico de grau |
+| **9** | Exposição & Teoria | `[7.1.3]` | **Adjetivos I:** Conceito, valor caracterizador, locuções adjetivas e flexões de gênero e número em adjetivos simples. | - | - | Conversão de locuções em adjetivos |
+| **10** | Exposição & Teoria | `[7.1.3]` | **Adjetivos II:** Flexão de gênero e número em adjetivos compostos (regras e invariabilidade de cores). | - | - | Pluralização de adjetivos compostos |
+| **11** | Exposição & Teoria | `[7.1.3]` | **Adjetivos III:** Estudo completo dos graus do adjetivo (Comparativo de igualdade/superioridade/inferioridade e Superlativo). | - | - | Transformação em grau superlativo |
+| **12** | Oficina de Atividades | - | **Oficina de Fixação I:** Exercícios práticos integrados sobre revisão de classes, substantivos e adjetivos. | - | - | Atividade de fixação morfológica |
+| **13** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de conceitos e esclarecimento de dúvidas dos tópicos nominais do 1º Bimestre. | - | - | Ficha de revisão teórica I |
+| **14** | Avaliação | - | **Prova Parcial I:** Avaliação escrita individual sobre classes gramaticais, substantivos compostos e adjetivos. | - | - | - |
+| **15** | Exposição & Teoria | `[7.1.3]` | **Concordância Nominal I:** Regra geral de concordância nominal e concordância do adjetivo com múltiplos substantivos. | - | - | Exercícios de concordância nominal |
+| **16** | Exposição & Teoria | `[7.1.3]` | **Concordância Nominal II:** Casos especiais de concordância nominal (anexo, mesmo, próprio, só, bastante, é bom/necessário). | - | - | Questionário de casos especiais |
+| **17** | Exposição & Teoria | `[7.1.4]` | **Sistema Verbal I (Estrutura):** Decomposição morfossintática do verbo (radical, vogal temática, desinências modo-temporais e número-pessoais). | - | - | Análise estrutural de verbos |
+| **18** | Exposição & Teoria | `[7.1.4]` | **Sistema Verbal II (Subjuntivo):** Formação e emprego dos tempos do Modo Subjuntivo (Presente, Pretérito Imperfeito e Futuro). | - | - | Conjugação no modo subjuntivo |
+| **19** | Exposição & Teoria | `[7.1.4]` | **Sistema Verbal III (Imperativo):** Formação do Imperativo Afirmativo e Negativo a partir do Indicativo e Subjuntivo. | - | - | Reescrita de frases no imperativo |
+| **20** | Exposição & Teoria | `[7.1.4]` | **Sistema Verbal IV (Formas Nominais):** Infinitivo (pessoal/impessoal), Gerúndio e Particípio e o emprego em locuções verbais. | - | - | Identificação de locuções verbais |
+| **21** | Oficina de Atividades | - | **Oficina de Fixação II:** Prática intensiva de concordância nominal, modo subjuntivo, imperativo e formas nominais. | - | - | Ficha prática de verbos |
+| **22** | Avaliação | - | **Prova Parcial II:** Avaliação escrita sobre concordância nominal avançada, modos subjuntivo/imperativo e formas nominais. | - | - | - |
+| **23** | Exposição & Teoria | `[7.1.4]` | **Vozes Verbais I (Ativa e Passiva):** Conceito de voz ativa e passiva (analítica e sintética) e técnicas de conversão. | - | - | Transposição de voz ativa em passiva |
+| **24** | Exposição & Teoria | `[7.1.4]` | **Vozes Verbais II (Reflexiva e Recíproca):** Voz reflexiva, voz recíproca e estudo das funções do pronome "se" (partícula passivadora e índice). | - | - | Análise de funções da partícula "se" |
+| **25** | Exposição & Teoria | `[7.1.4]` | **Verbos Irregulares e Anômalos:** Conjugação e particularidades dos verbos auxiliares e irregulares de alta frequência (ter, haver, ser, estar, ir, vir). | - | - | Exercícios com verbos irregulares |
+| **26** | Exposição & Teoria | `[7.1.4]` | **Correlação Verbal:** Articulação e harmonia dos tempos e modos verbais em frases e parágrafos para coesão textual. | - | - | Correção de correlação verbal |
+| **27** | Oficina de Atividades | - | **Oficina de Fixação III:** Prática integrada de vozes verbais, verbos irregulares e correlação temporais. | - | - | Atividade prática de análise verbal |
+| **28** | Revisão Dirigida | - | **Revisão Parcial II:** Revisão geral de todo o conteúdo morfológico e de concordância do 1º Bimestre do 7º Ano. | - | - | Ficha integradora de revisão |
+| **29** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de Morfologia, Concordância Nominal e Sistema Verbal. | - | - | - |
+| **30** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de notas e encerramento do 1º Bimestre. | - | - | - |
+
 ---
 
 ## 📊 Consolidação da Carga Horária
 
-*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
-*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
-*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+*   **Aulas de Conteúdo (70%):** 21 aulas (distribuídas entre os 4 tópicos morfológicos e verbais do 1º Bimestre).
+*   **Aulas de Fixação, Revisão e Provas (30%):** 9 aulas.
