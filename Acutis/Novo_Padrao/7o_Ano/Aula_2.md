@@ -1,12 +1,13 @@
-# 7º Ano — Aula 2: Análise e Interpretação
+# 7º Ano — Aula 2: Revisão de Classes II (Verbos e Conectivos)
 **Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
-**Objetivo**: Interpretar o texto.
+**Tópico**: `[7.1.1]` Morfologia — Panorama morfológico e revisão diagnóstica de verbos e conectivos (Verbo, Advérbio, Preposição, Conjunção, Interjeição).  
+**Objetivo**: Realizar a revisão diagnóstica do verbo (ações/tempo) e dos conectivos (circunstâncias, ligações de termos e orações) aplicados ao texto poético clássico.
 
 ---
 
 ### 1) Conteúdo
 
-#### O Poema
+#### O Poema (Ancoragem)
 > Eu me lembro! eu me lembro! – Era pequeno  
 > E brincava na praia; o mar bramia  
 > E, erguendo o dorso altivo, sacudia  
@@ -22,35 +23,67 @@
 > É maior do que o mar que nós tememos,  
 > Mais forte que o tufão! meu filho, é – Deus!"  
 
-#### Explicação Linha a Linha (Copiar no Caderno)
-* **Eu me lembro! eu me lembro! – Era pequeno**: Saudade e lembrança da infância do poeta.
-* **E brincava na praia; o mar bramia**: O menino brincava perto do mar agitado e barulhento.
-* **E, erguendo o dorso altivo, sacudia**: O mar como um gigante imponente erguendo suas costas (ondas).
-* **A branca escuma para o céu sereno**: As ondas quebrando e lançando espuma contra o céu calmo.
-* **E eu disse a minha mãe nesse momento**: O garoto faz uma pergunta, espantado com a força da natureza.
-* **"Que dura orquestra! Que furor insano!**: Comparação do som do mar a uma música barulhenta e sua agitação a uma fúria sem controle.
-* **Que pode haver maior do que o oceano**: A dúvida infantil sobre se há algo maior que a imensidão do mar.
-* **Ou que seja mais forte do que o vento?!"**: A dúvida sobre se há algo mais poderoso que a força do vento.
-* **Minha mãe a sorrir, olhou p’ra os céus**: O sorriso terno da mãe e seu olhar direcionado para o alto.
-* **E respondeu: – "Um Ser que nós não vemos**: A revelação de que existe um Criador invisível aos olhos físicos.
-* **É maior do que o mar que nós tememos**: Esse Ser invisível é infinitamente superior ao mar temível.
-* **Mais forte que o tufão! meu filho, é – Deus!"**: Esse Ser é mais forte que a tempestade mais violenta: Deus.
+#### Verbos e Conectivos em Foco:
+1. **Verbo**: A palavra por excelência que indica ações, estados ou fenômenos no tempo.  
+   * *Ex. no poema*: `lembro`, `era`, `brincava`, `bramia`, `erguendo`, `sacudia`, `disse`, `respondeu`, `vemos`, `tememos`.
+2. **Advérbio**: Palavra invariável que exprime uma circunstância (tempo, lugar, intensidade, negação) modificando o verbo ou o adjetivo.  
+   * *Ex. no poema*: `não` (negação), `mais` (intensidade).
+3. **Preposição**: Palavra invariável que liga dois termos de uma frase, estabelecendo relação de dependência.  
+   * *Ex. no poema*: `em` (em + a = *na*), `para`, `de` (de + o = *do*).
+4. **Conjunção**: Palavra invariável que liga duas orações ou pensamentos, estabelecendo relações lógicas (adição, oposição, alternância, comparação).  
+   * *Ex. no poema*: `e` (adição), `ou` (alternância), `que` (conexão), `mais... do que` (comparação).
+5. **Interjeição**: Palavra que traduz emoções e sentimentos diretos (*Que dura orquestra!*, *Meu filho!*).
 
 ---
 
-### 2) Exercícios
+### 2) Exercícios (Ficha Diagnóstica no Caderno)
 
-#### Perguntas para a Sala (Discussão Oral)
-1. Por que o barulho do mar e do vento assusta ou impressiona o garoto?
-2. Por que a mãe sorri antes de dar a resposta ao seu filho?
-3. De que forma a mãe ensina ao filho que o invisível pode ser mais real e forte que o visível?
+1. **Ação e Tempo (Verbos)**: Retire do poema 4 verbos que indicam ações praticadas ou observadas no passado pelo eu lírico.
+2. **Análise de Circunstância (Advérbio)**: No verso *"Um Ser que nós não vemos"*, qual palavra indica a circunstância de **negação** da visão?
+3. **Ligação de Termos (Preposição)**: Na expressão *"brincava na praia"*, a palavra `na` é a união da preposição **em** com qual artigo?
+4. **Ligação de Ideias (Conjunção)**: No verso *"É maior do que o mar que nós tememos, / Mais forte que o tufão!"*, identifique a estrutura que estabelece a **comparação**.
 
-#### Exercícios Individuais (Responder no Caderno)
-1. No verso *"Que dura orquestra!"*, o menino usa uma metáfora. Explique por que o som da natureza se assemelha a uma orquestra.
-2. Segundo a resposta da mãe, qual é a relação de grandeza entre o Criador e as forças da natureza (o mar e o tufão)?
-3. Reescreva a pergunta do garoto (versos 7 e 8) in uma frase simples e direta em prosa (sem usar versos ou interrogações).
+* **Gabarito para o Professor**:
+  1. Verbos no passado: *lembro, era, brincava, bramia, sacudia, disse, respondeu*.
+  2. Advérbio de negação: **não**.
+  3. Preposição **em** + artigo definido feminino **a** (`em + a = na`).
+  4. Estrutura comparativa: **mais... do que** (ou **mais... que**).
 
 ---
 
-### 3) Tarefa de casa
-* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+### 3) Tarefa de casa (Ficha Diagnóstica de Conectivos)
+
+* **Questão 1**: Qual das palavras abaixo, extraída do poema, é um **verbo** que indica ação situativa no tempo?
+  * a) oceano
+  * b) bramia
+  * c) sereno
+  * d) tufão
+  * **Gabarito**: b
+
+* **Questão 2**: Na frase *"olhou p'ra os céus"*, a palavra "p'ra" (para) desempenha a função de:
+  * a) Substantivo
+  * b) Adjetivo
+  * c) Preposição
+  * d) Verbo
+  * **Gabarito**: c
+
+* **Questão 3**: No verso *"E brincava na praia..."*, a palavra **"E"** funciona como uma conjunção que expressa a ideia de:
+  * a) Oposição
+  * b) Adição / Continuidade
+  * c) Causa
+  * d) Conclusão
+  * **Gabarito**: b
+
+* **Questão 4**: Qual palavra do verso *"Um Ser que nós não vemos"* é um **advérbio de negação**?
+  * a) Um
+  * b) nós
+  * c) não
+  * d) vemos
+  * **Gabarito**: c
+
+* **Questão 5**: Na expressão *"mais forte do que o vento"*, a palavra **"mais"** modifica o adjetivo "forte", funcionando como um advérbio de:
+  * a) Tempo
+  * b) Lugar
+  * c) Modo
+  * d) Intensidade
+  * **Gabarito**: d

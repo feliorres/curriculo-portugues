@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8º Ano — Aula 3: Conectivos Morfológicos e Encadeamento Textual</title>
+<!-- Fontes do projeto Acutis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-slide:    #FFFDF7;
+    --text-main:   #385054;
+    --text-soft:   #385054;
+    --text-muted:  rgba(56, 80, 84, 0.75);
+    --rule-color:  #385054;
+    --nav-bg:      rgba(56, 80, 84, 0.05);
+    --nav-border:  rgba(56, 80, 84, 0.25);
+    --font-title:  'Forum', Georgia, serif;
+    --font-body:   'EB Garamond', Georgia, serif;
+    --font-ui:     'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-slide);
+  }
+
+  /* ── Individual slide ── */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    padding: 45px 7%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Cover slide ── */
+  .slide-cover {
+    background: var(--bg-slide);
+    color: var(--text-main);
+  }
+
+  /* ── Logo Acutis ── */
+  .slide-logo {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ── Slide number ── */
+  .slide-num {
+    position: absolute;
+    bottom: 28px; left: 40px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-main);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 25px;
+    line-height: 1.5;
+    color: var(--text-main);
+    font-weight: 400;
+    border-left: 3px solid var(--text-main);
+    padding-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 6px;
+  }
+  ul li {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.5;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+
+  .rule {
+    width: 50px; height: 2px;
+    background: var(--text-main);
+    margin-bottom: 18px;
+  }
+
+  .explanation-list {
+    list-style: none;
+  }
+  .explanation-list li {
+    font-size: 23px;
+    margin-bottom: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+  }
+  .explanation-list li strong {
+    font-family: var(--font-title);
+    font-size: 25px;
+    color: var(--text-main);
+  }
+
+  /* ── Analysis Box ── */
+  .analysis-box {
+    background: rgba(56, 80, 84, 0.04);
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-top: 12px;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 20;
+  }
+  .nav-btn {
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
+  .nav-btn:disabled { opacity: .3; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: var(--text-main);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa da Aula) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">8º Ano — Aula 3</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
+      <h1>Conectivos Morfológicos</h1>
+      <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+      <p style="margin-bottom: 12px;"><strong>Tópico [8.1.1]:</strong> Pronomes, Preposições e Conjunções no Encadeamento Textual</p>
+      <p><strong>Objetivo:</strong> Compreender a função articuladora das classes relacionais na coesão anafórica, regencial e argumentativa em textos clássicos.</p>
+    </div>
+    <div class="slide-num">01</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 2 (1. As Classes Relacionais) -->
+  <div class="slide" id="s2">
+    <div class="label">1. Conceito Fundamental</div>
+    <h2>As Classes Relacionais (O Cimento do Texto)</h2>
+    <div class="rule"></div>
+    
+    <ul class="explanation-list">
+      <li><strong>Classes Nocionais:</strong> Substantivos, Adjetivos e Verbos carregam o conteúdo conceitual do texto (nomeiam, caracterizam e indicam ações).</li>
+      <li style="margin-top: 16px;"><strong>Classes Relacionais:</strong> Pronomes, Preposições e Conjunções são os <em>cimentos gramaticais</em>. Não nomeiam por si sós, mas conectam termos e orações.</li>
+    </ul>
+
+    <blockquote>
+      Sem as classes relacionais, o texto seria apenas uma lista desconexa de nomes e ações soltas.
+    </blockquote>
+
+    <div class="slide-num">02</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 3 (2A. Pronomes - Coesão Anafórica) -->
+  <div class="slide" id="s3">
+    <div class="label">2. Os Três Grandes Articuladores</div>
+    <h2>A. Pronomes (Coesão Anafórica e Referencial)</h2>
+    <div class="rule"></div>
+    
+    <p style="font-size: 22px; margin-bottom: 10px;">Substituem ou acompanham os nomes, garantindo a continuidade do tema sem repetições viciosas:</p>
+
+    <blockquote>
+      "Bento Santiago viveu isolado. <strong>Ele</strong> [Pronome Pessoal Reto] construiu uma casa idêntica à de <strong>sua</strong> [Pronome Possessivo] infância..." (Machado de Assis)
+    </blockquote>
+
+    <div class="analysis-box">
+      <ul style="margin-top:0;">
+        <li><strong>Ele</strong> → Morfologia: <em>Pronome Pessoal Reto</em> | Sintaxe: <strong>Sujeito</strong> (retoma anaforicamente <em>Bento Santiago</em>).</li>
+        <li><strong>sua</strong> → Morfologia: <em>Pronome Possessivo</em> | Sintaxe: <strong>Adjunto Adnominal</strong> de <em>infância</em>.</li>
+      </ul>
+    </div>
+
+    <div class="slide-num">03</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 4 (2B. Preposições - Coesão Intra-oracional) -->
+  <div class="slide" id="s4">
+    <div class="label">2. Os Três Grandes Articuladores</div>
+    <h2>B. Preposições (Coesão Intra-oracional & Regência)</h2>
+    <div class="rule"></div>
+    
+    <p style="font-size: 22px; margin-bottom: 10px;">Ligam termos dentro da mesma oração, estabelecendo dependência sintática e relações semânticas:</p>
+
+    <blockquote>
+      "A compaixão <strong>pela</strong> [por + a] dor alheia é o primeiro sinal <strong>de</strong> humanidade num coração <strong>de</strong> pedra." (Padre Antônio Vieira)
+    </blockquote>
+
+    <div class="analysis-box">
+      <ul style="margin-top:0;">
+        <li><strong>pela (por + a)</strong> → Morfologia: <em>Preposição + Artigo</em> | Sintaxe: Conector de <strong>Complemento Nominal</strong> (de <em>compaixão</em>).</li>
+        <li><strong>de</strong> → Morfologia: <em>Preposição Essencial</em> | Sintaxe: Conector de <strong>Complemento Nominal</strong> (de <em>sinal</em>) e <strong>Adjunto Adnominal</strong> (de <em>pedra</em>).</li>
+      </ul>
+    </div>
+
+    <div class="slide-num">04</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 5 (2C. Conjunções - Lógica Argumentativa) -->
+  <div class="slide" id="s5">
+    <div class="label">2. Os Três Grandes Articuladores</div>
+    <h2>C. Conjunções (Coesão Inter-oracional & Lógica)</h2>
+    <div class="rule"></div>
+    
+    <p style="font-size: 22px; margin-bottom: 10px;">Articulam orações e argumentos inteiros, definindo a direção do pensamento:</p>
+
+    <div class="analysis-box" style="font-size: 20px;">
+      <ul style="margin-top:0;">
+        <li><strong>Adição (e, nem):</strong> <em>"O tempo passa <strong>e</strong> a memória permanece."</em></li>
+        <li><strong>Oposição / Concessão (mas, embora):</strong> <em>"<strong>Embora</strong> a vida seja breve, a arte é imortal."</em></li>
+        <li><strong>Causa (porque):</strong> <em>"Choro <strong>porque</strong> a saudade aperta o coração."</em></li>
+        <li><strong>Conclusão (portanto):</strong> <em>"A virtude é um bem supremo; <strong>portanto</strong>, devemos cultivá-la."</em></li>
+        <li><strong>Condição (se):</strong> <em>"<strong>Se</strong> queres conhecer um homem, dá-lhe poder."</em></li>
+      </ul>
+    </div>
+
+    <div class="slide-num">05</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 6 (Conectivos no Texto de Ancoragem: Sal da Terra) -->
+  <div class="slide" id="s6">
+    <div class="label">3. Análise no Texto de Ancoragem</div>
+    <h2>Conectivos em "Sal da Terra" (Pe. Antônio Vieira)</h2>
+    <div class="rule"></div>
+
+    <blockquote>
+      "Ou é <strong>porque</strong> o sal não salga, <strong>e</strong> os pregadores não pregam a verdadeira doutrina; <strong>ou</strong> porque a terra se não deixa salgar, <strong>e</strong> os ouvintes, sendo verdadeira a doutrina que <strong>lhes</strong> dão, <strong>a</strong> não querem receber."
+    </blockquote>
+
+    <div class="analysis-box" style="font-size: 20px;">
+      <ul style="margin-top:0;">
+        <li><strong>porque</strong> → Conjunção subordinativa <em>causal</em> (apresenta a razão/justificativa).</li>
+        <li><strong>e</strong> → Conjunção coordenativa <em>aditiva</em> (soma argumentos e orações).</li>
+        <li><strong>ou... ou</strong> → Conjunção coordenativa <em>alternativa</em> (apresenta hipóteses).</li>
+        <li><strong>lhes / a</strong> → Pronomes pessoais oblíquos (retomam <em>ouvintes</em> e <em>doutrina</em>).</li>
+      </ul>
+    </div>
+
+    <div class="slide-num">06</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 7 (Atividade em Sala no Caderno) -->
+  <div class="slide" id="s7">
+    <div class="label">4. Atividade em Sala</div>
+    <h2>Atividade do Aluno em Sala (No Caderno)</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>1. Transcrição do Trecho:</strong>
+        <br><em style="font-size: 24px; display: block; margin-top: 8px; padding-left: 20px; border-left: 3px solid #385054;">"Ou é porque o sal não salga, <strong>e</strong> os pregadores dizem uma cousa <strong>e</strong> fazem outra; <strong>ou</strong> porque a terra se não deixa salgar, <strong>e</strong> os ouvintes querem antes imitar o que <strong>eles</strong> fazem..."</em>
+      </li>
+      <li style="margin-top: 14px;"><strong>2. Tarefa no Caderno:</strong>
+        <br>• Sublinhe os conectivos (conjunções) e identifique a relação lógica de cada um (Causal, Aditiva ou Alternativa).
+        <br>• Identifique o pronome <strong>eles</strong> e indique a qual palavra ele se refere no texto.
+      </li>
+    </ul>
+
+    <div class="slide-num">07</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+</div><!-- /deck -->
+
+<!-- Navegação -->
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 7</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = [
+    's1','s2','s3','s4','s5','s6','s7'
+  ];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active', idx === i);
+      }
+    });
+    
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(step) {
+    const nextIdx = cur + step;
+    if (nextIdx >= 0 && nextIdx < order.length) {
+      cur = nextIdx;
+      show(cur);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      move(1);
+    } else if (e.key === 'ArrowLeft') {
+      move(-1);
+    }
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>

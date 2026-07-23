@@ -1,61 +1,56 @@
-# 8º Ano — Aula 2: Análise e Interpretação
-**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
-**Objetivo**: Interpretar o texto.
+# 8º Ano — Aula 2: Revisão Morfossintática II (Análise em Enunciados Complexos)
+**Tópico**: `[8.1.1]` Morfossintaxe — Análise morfológica aplicada a enunciados complexos e textos opinativos.  
+**Objetivo**: Aplicar o diagnóstico morfossintático em períodos compostos e trechos opinativos/literários, compreendendo como as escolhas das classes gramaticais estruturam o estilo, a persuasão e a clareza discursiva.
 
 ---
 
-### 1) Conteúdo
+### 1) Conteúdo Teórico
 
-#### O Poema
-> Eu me lembro! eu me lembro! – Era pequeno  
-> E brincava na praia; o mar bramia  
-> E, erguendo o dorso altivo, sacudia  
-> A branca escuma para o céu sereno.  
-> 
-> E eu disse a minha mãe nesse momento:  
-> "Que dura orquestra! Que furor insano!  
-> Que pode haver maior do que o oceano,  
-> Ou que seja mais forte do que o vento?!"  
-> 
-> Minha mãe a sorrir, olhou p’ra os céus  
-> E respondeu: – "Um Ser que nós não vemos,  
-> É maior do que o mar que nós tememos,  
-> Mais forte que o tufão! meu filho, é – Deus!"  
-
-#### Explicação Linha a Linha (Copiar no Caderno)
-* **Eu me lembro! eu me lembro! – Era pequeno**: Saudade e lembrança da infância do poeta.
-* **E brincava na praia; o mar bramia**: O menino brincava perto do mar agitado e barulhento.
-* **E, erguendo o dorso altivo, sacudia**: O mar como um gigante imponente erguendo suas costas (ondas).
-* **A branca escuma para o céu sereno**: As ondas quebrando e lançando espuma contra o céu calmo.
-* **E eu disse a minha mãe nesse momento**: O garoto faz uma pergunta, espantado com a força da natureza.
-* **"Que dura orquestra! Que furor insano!**: Comparação do som do mar a uma música barulhenta e sua agitação a uma fúria sem controle.
-* **Que pode haver maior do que o oceano**: A dúvida infantil sobre se há algo maior que a imensidão do mar.
-* **Ou que seja mais forte do que o vento?!"**: A dúvida sobre se há algo mais poderoso que a força do vento.
-* **Minha mãe a sorrir, olhou p’ra os céus**: O sorriso terno da mãe e seu olhar direcionado para o alto.
-* **E respondeu: – "Um Ser que nós não vemos**: A revelação de que existe um Criador invisível aos olhos físicos.
-* **É maior do que o mar que nós tememos**: Esse Ser invisível é infinitamente superior ao mar temível.
-* **Mais forte que o tufão! meu filho, é – Deus!"**: Esse Ser é mais forte que a tempestade mais violenta: Deus.
+#### 1. A Morfossintaxe no Discurso Complexo
+Nos textos literários e ensaísticos de alta maturidade, as palavras não funcionam isoladas. As escolhas morfológicas feitas pelo autor determinam o ritmo, a carga de persuasão e a arquitetura sintática da frase.
 
 ---
 
-### 2) Exercícios
+#### 2. O Valor Discursivo das Escolhas Morfológicas com Exemplos Literários
 
-#### Perguntas para a Sala (Discussão Oral)
-1. Por que o barulho do mar e do vento assusta ou impressiona o garoto?
-2. Por que a mãe sorri antes de dar a resposta ao seu filho?
-3. De que forma a mãe ensina ao filho que o invisível pode ser mais real e forte que o visível?
+#### A. Substantivos Abstratos (A Construção de Conceitos e Teses)
+Os substantivos abstratos conferem densidade filosófica e argumentativa ao discurso. Sintaticamente, atuam com frequência como **Núcleos do Sujeito**, **Objetos** ou **Complementos Nominais**.
+> *"A **corrupção** dos costumes é a perda da **memória** e o esquecimento da **virtude**."* 
+> *"A **vaidade** é uma **cegueira** que impede o homem de ver a sua própria **pequenez**."*
 
-#### Exercícios Individuais (Responder no Caderno)
-1. No verso *"Que dura orquestra!"*, o menino usa uma metáfora. Explique por que o som da natureza se assemelha a uma orquestra.
-2. Segundo a resposta da mãe, qual é a relação de grandeza entre o Criador e as forças da natureza (o mar e o tufão)?
-3. Reescreva a pergunta do garoto (versos 7 e 8) em uma frase simples e direta em prosa (sem usar versos ou interrogações).
-
-* **Gabarito/Critério para o Professor**:
-  1. O menino compara o mar a uma orquestra porque as ondas e o vento geram uma grande mistura de sons potentes simultaneamente. Essa "orquestra" natural produzia um som estrondoso, rude e muito barulhento ("dura orquestra").
-  2. A mãe responde que Deus é maior do que o oceano e mais forte do que o vento ou tempestade (tufão). Ela mostra que o Criador é infinitamente superior às maiores e mais temíveis forças da natureza visível, embora Ele mesmo seja invisível.
-  3. Exemplo de resposta: *"O garoto queria saber se existia alguma coisa no mundo maior do que o oceano ou mais forte do que a força do vento."*
+* **Análise Morfossintática**:
+  * `corrupção`, `memória`, `virtude` (Morfologia: **Substantivos Abstratos** | Sintaxe: *corrupção* = **Núcleo do Sujeito**; *memória/virtude* = **Núcleos de Complementos/Adjuntos**).
+  * `vaidade` (Morfologia: **Substantivo Abstrato** | Sintaxe: **Núcleo do Sujeito**).
 
 ---
 
-### 3) Tarefa de casa
-* **Envio**: Envie uma foto nítida do caderno contendo a cópia da Explicação Linha a Linha e as respostas dos Exercícios Individuais.
+#### B. Adjetivos Valorativos vs. Descritivos (A Carga Crítica)
+Enquanto os adjetivos descritivos indicam dados objetivos, os adjetivos valorativos revelam o julgamento moral e a opinião do autor, atuando sintaticamente como **Adjuntos Adnominais** ou **Predicativos**.
+> *"A terra era **bruta**, **estéril**, **agreste**, cortada por um vento **sibilante** e **cruel**."* (Euclides da Cunha)
+> *"Este recurso é um remédio **desesperado** para um mal **incurável**."* (Eça de Queirós)
+
+* **Análise Morfossintática**:
+  * `bruta`, `estéril`, `agreste` (Morfologia: **Adjetivos** | Sintaxe: **Predicativos do Sujeito** *terra*).
+  * `sibilante`, `cruel` (Morfologia: **Adjetivos** | Sintaxe: **Adjuntos Adnominais** de *vento*).
+  * `desesperado`, `incurável` (Morfologia: **Adjetivos valorativos** | Sintaxe: **Adjuntos Adnominais** de *remédio* e *mal*).
+
+---
+
+#### C. Verbos Nocionais vs. Verbos de Ligação (A Dinâmica da Ação e do Julgamento)
+Verbos de ação (**nocionais**) trazem movimento e progressão ao texto; verbos de **ligação** fixam definições, estados e teses.
+> *"A razão **procura**, a paixão **arrasta**, a prudência **sustenta**."* (Padre Antônio Vieira)
+> *"O mundo **é** um teatro; os homens **parecem** atores de uma comédia **estranha**."* (Machado de Assis)
+
+* **Análise Morfossintática**:
+  * `procura`, `arrasta`, `sustenta` (Morfologia: **Verbos Nocionais Transitivos** | Sintaxe: **Núcleos do Predicado Verbal**).
+  * `é`, `parecem` (Morfologia: **Verbos de Ligação** | Sintaxe: Conectores de **Predicado Nominal** com predicativos *teatro* e *atores*).
+
+---
+
+#### D. Conectivos Morfológicos (O Encadeamento Lógico)
+Conjunções e preposições organizam o raciocínio lógico no período composto (causa, oposição, concessão, consequência).
+> *"**Embora** a verdade seja **dura**, devemos encará-la, **porque** a mentira é um veneno que destrói as nações."* (Eça de Queirós)
+
+* **Análise Morfossintática**:
+  * `Embora` (Morfologia: **Conjunção subordinativa concessiva** | Sintaxe: Conector que introduz a oração de ressalva/oposição).
+  * `porque` (Morfologia: **Conjunção subordinativa causal** | Sintaxe: Conector que introduz a justificativa argumentativa).

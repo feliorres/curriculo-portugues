@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6º Ano — Aula 6: Flexão do Substantivo II (Número)</title>
+<!-- Fontes do projeto Acutis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-slide:    #FFFDF7;
+    --text-main:   #385054;
+    --text-soft:   #385054;
+    --text-muted:  rgba(56, 80, 84, 0.75);
+    --rule-color:  #385054;
+    --nav-bg:      rgba(56, 80, 84, 0.05);
+    --nav-border:  rgba(56, 80, 84, 0.25);
+    --font-title:  'Forum', Georgia, serif;
+    --font-body:   'EB Garamond', Georgia, serif;
+    --font-ui:     'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-slide);
+  }
+
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    padding: 50px 8%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  .slide-cover {
+    background: var(--bg-slide);
+    color: var(--text-main);
+  }
+
+  .slide-logo {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .slide-num {
+    position: absolute;
+    bottom: 28px; left: 40px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 14px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-main);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--text-main);
+    font-weight: 400;
+    border-left: 3px solid var(--text-main);
+    padding-left: 24px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  ul { list-style: none; margin-top: 8px; }
+  ul li {
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.45;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+
+  .rule {
+    width: 50px; height: 2px;
+    background: var(--text-main);
+    margin-bottom: 20px;
+  }
+
+  .etymo-box {
+    background: rgba(56, 80, 84, 0.04);
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .rule-card {
+    background: #FFF;
+    border: 1px solid rgba(56, 80, 84, 0.15);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 20px;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 20;
+  }
+  .nav-btn {
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
+  .nav-btn:disabled { opacity: .3; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: var(--text-main);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">6º Ano — Aula 6</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
+      <h1>Flexão do Substantivo II</h1>
+      <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+      <p style="margin-bottom: 12px;"><strong>Tópico [6.1.2]:</strong> Número dos Substantivos (Nomes Simples e Compostos)</p>
+      <p><strong>Objetivo:</strong> Compreender a etimologia, conceito e as regras de pluralização de substantivos simples e compostos.</p>
+    </div>
+    <div class="slide-num">01</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 2 (Conceito Geral e Regras 1-4 Nomes Simples) -->
+  <div class="slide" id="s2">
+    <div class="label">1. Nomes Simples</div>
+    <h2>Flexão de Número (Regras 1 a 4)</h2>
+    <div class="rule"></div>
+
+    <div class="etymo-box">
+      📜 <strong>Etimologia:</strong><br>
+      • <em>Número:</em> Do latim <em>numerus</em> ("quantidade", "divisão", "medida").
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-card">
+        <strong>1. Vogal ou Ditongo:</strong> + <strong>-s</strong><br>
+        <em>casa</em> → <strong>casas</strong> | <em>troféu</em> → <strong>troféus</strong>
+      </div>
+      <div class="rule-card">
+        <strong>2. Terminados em R / Z:</strong> + <strong>-es</strong><br>
+        <em>mar</em> → <strong>mares</strong> | <em>raiz</em> → <strong>raízes</strong>
+      </div>
+      <div class="rule-card">
+        <strong>3. Terminados em M:</strong> trocar por <strong>-ns</strong><br>
+        <em>jardim</em> → <strong>jardins</strong> | <em>homem</em> → <strong>homens</strong>
+      </div>
+      <div class="rule-card">
+        <strong>4. Terminados em AL, EL, OL, UL:</strong> trocar por <strong>-is</strong><br>
+        <em>jornal</em> → <strong>jornais</strong> | <em>papel</em> → <strong>papéis</strong>
+      </div>
+    </div>
+
+    <div class="slide-num">02</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 3 (Regras 5-7 Nomes Simples) -->
+  <div class="slide" id="s3">
+    <div class="label">1. Nomes Simples</div>
+    <h2>Plural de Nomes em IL, S e ÃO</h2>
+    <div class="rule"></div>
+
+    <div class="rules-grid">
+      <div class="rule-card">
+        <strong>5. Terminados em IL:</strong><br>
+        • Oxítonas: <strong>-is</strong> (<em>funil</em> → <strong>funis</strong>)<br>
+        • Paroxítonas: <strong>-eis</strong> (<em>fóssil</em> → <strong>fósseis</strong>)
+      </div>
+      <div class="rule-card">
+        <strong>6. Terminados em S:</strong><br>
+        • Oxítonas/Monossílabos: + <strong>-es</strong> (<em>gás</em> → <strong>gases</strong>)<br>
+        • Paroxítonas: Invariável (<em>o lápis</em> → <strong>os lápis</strong>)
+      </div>
+      <div class="rule-card" style="grid-column: span 2;">
+        <strong>7. Terminados em ÃO:</strong> Podem flexionar em <strong>-ões</strong>, <strong>-ães</strong> ou <strong>-ãos</strong>.<br>
+        <em>leão</em> → <strong>leões</strong> | <em>pão</em> → <strong>pães</strong> | <em>mão</em> → <strong>mãos</strong>
+      </div>
+    </div>
+
+    <div class="slide-num">03</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 4 (Plural dos Substantivos Compostos - Casos Práticos) -->
+  <div class="slide" id="s4">
+    <div class="label">2. Nomes Compostos</div>
+    <h2>Plural dos Substantivos Compostos</h2>
+    <div class="rule"></div>
+
+    <div class="rules-grid">
+      <div class="rule-card">
+        <strong>Ambos os elementos variam:</strong><br>
+        (Numeral/Subst + Subst/Adj)<br>
+        • <em>segunda-feira</em> → <strong>segundas-feiras</strong><br>
+        • <em>cirurgião-dentista</em> → <strong>cirurgiões-dentistas</strong>
+      </div>
+      <div class="rule-card">
+        <strong>Apenas o 1º elemento varia:</strong><br>
+        (2º elemento especifica o tipo/fim)<br>
+        • <em>ano-luz</em> → <strong>anos-luz</strong>
+      </div>
+      <div class="rule-card" style="grid-column: span 2;">
+        <strong>Apenas o 2º elemento varia:</strong> (Verbo + Subst ou invocações/palavras consolidadas)<br>
+        • <em>beija-flor</em> → <strong>beija-flores</strong> (verbo <em>beijar</em> + substantivo <em>flor</em>)<br>
+        • <em>ave-maria</em> → <strong>ave-marias</strong> (invocação/prece consolidada)
+      </div>
+    </div>
+
+    <div class="slide-num">04</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 5 (Exercício em Sala) -->
+  <div class="slide" id="s5">
+    <div class="label">3. Prática em Sala</div>
+    <h2>Fixação no Caderno</h2>
+    <div class="rule"></div>
+
+    <ul>
+      <li><strong>1.</strong> Flexione no plural os substantivos compostos: <em>segunda-feira</em>, <em>beija-flor</em>, <em>cirurgião-dentista</em>, <em>ano-luz</em> e <em>ave-maria</em>.</li>
+      <li><strong>2.</strong> Explique por que em <em>anos-luz</em> apenas a primeira palavra flexiona, enquanto em <em>segundas-feiras</em> ambas flexionam.</li>
+    </ul>
+
+    <div class="slide-num">05</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+</div><!-- /deck -->
+
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 5</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = ['s1','s2','s3','s4','s5'];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('active', idx === i);
+    });
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(step) {
+    const nextIdx = cur + step;
+    if (nextIdx >= 0 && nextIdx < order.length) {
+      cur = nextIdx;
+      show(cur);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>

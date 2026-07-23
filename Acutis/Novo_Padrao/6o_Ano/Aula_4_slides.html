@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6º Ano — Aula 4: Substantivo no Texto II</title>
+<!-- Fontes do projeto Acutis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-slide:    #FFFDF7;
+    --text-main:   #385054;
+    --text-soft:   #385054;
+    --text-muted:  rgba(56, 80, 84, 0.75);
+    --rule-color:  #385054;
+    --nav-bg:      rgba(56, 80, 84, 0.05);
+    --nav-border:  rgba(56, 80, 84, 0.25);
+    --font-title:  'Forum', Georgia, serif;
+    --font-body:   'EB Garamond', Georgia, serif;
+    --font-ui:     'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-slide);
+  }
+
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    padding: 50px 8%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  .slide-cover {
+    background: var(--bg-slide);
+    color: var(--text-main);
+  }
+
+  .slide-logo {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .slide-num {
+    position: absolute;
+    bottom: 28px; left: 40px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 14px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-main);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--text-main);
+    font-weight: 400;
+    border-left: 3px solid var(--text-main);
+    padding-left: 24px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  ul { list-style: none; margin-top: 8px; }
+  ul li {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.5;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+
+  .rule {
+    width: 50px; height: 2px;
+    background: var(--text-main);
+    margin-bottom: 20px;
+  }
+
+  .etymo-box {
+    background: rgba(56, 80, 84, 0.04);
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 20;
+  }
+  .nav-btn {
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
+  .nav-btn:disabled { opacity: .3; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: var(--text-main);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">6º Ano — Aula 4</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
+      <h1>Substantivo no Texto II</h1>
+      <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+      <p style="margin-bottom: 12px;"><strong>Tópico [6.1.5]:</strong> Formação dos Substantivos & Coletivos</p>
+      <p><strong>Objetivo:</strong> Estudar a etimologia, conceito e estrutura dos substantivos simples/compostos, primitivos/derivados e coletivos.</p>
+    </div>
+    <div class="slide-num">01</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 2 (Substantivo Simples e Composto) -->
+  <div class="slide" id="s2">
+    <div class="label">1. Formação quanto aos Radicais</div>
+    <h2>Substantivos Simples e Compostos</h2>
+    <div class="rule"></div>
+
+    <div class="etymo-box">
+      📜 <strong>Etimologia:</strong><br>
+      • <em>Substantivo:</em> Do latim <em>substantivus</em> ("que existe por si mesmo").<br>
+      • <em>Simples:</em> Do latim <em>simplex</em> ("único", "formado por uma só parte").<br>
+      • <em>Composto:</em> Do latim <em>compositus</em> ("colocado junto", "unido").
+    </div>
+
+    <p style="margin-bottom: 10px;"><strong>Conceito:</strong></p>
+    <ul>
+      <li><strong>Simples:</strong> Formado por apenas <strong>um único radical</strong>. (Ex.: <em>chuva, flor, sol, pássaro</em>).</li>
+      <li><strong>Composto:</strong> Formado pela união de <strong>dois ou mais radicais</strong>. (Ex.: <em>guarda-chuva, couve-flor, girassol</em>).</li>
+    </ul>
+
+    <div class="slide-num">02</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 3 (Substantivo Primitivo e Derivado) -->
+  <div class="slide" id="s3">
+    <div class="label">2. Formação quanto à Origem</div>
+    <h2>Substantivos Primitivos e Derivados</h2>
+    <div class="rule"></div>
+
+    <div class="etymo-box">
+      📜 <strong>Etimologia:</strong><br>
+      • <em>Primitivo:</em> Do latim <em>primitivus</em> ("original", "o primeiro").<br>
+      • <em>Derivado:</em> Do latim <em>derivatus</em> ("desviar a água da fonte", "originar-se de").
+    </div>
+
+    <p style="margin-bottom: 10px;"><strong>Conceito:</strong></p>
+    <ul>
+      <li><strong>Primitivo:</strong> Vocábulo original que não deriva de outro nome; serve de matriz. (Ex.: <em>pedra, ferro, livro, dente</em>).</li>
+      <li><strong>Derivado:</strong> Formado a partir de um substantivo primitivo por afixos. (Ex.: <em>pedreiro, ferreiro, livraria, dentista</em>).</li>
+    </ul>
+
+    <div class="slide-num">03</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 4 (Substantivos Coletivos) -->
+  <div class="slide" id="s4">
+    <div class="label">3. Quantidade e Conjunto</div>
+    <h2>Substantivos Coletivos</h2>
+    <div class="rule"></div>
+
+    <div class="etymo-box">
+      📜 <strong>Etimologia:</strong><br>
+      • <em>Coletivo:</em> Do latim <em>collectivus</em> ("reunido", "ajuntado", de <em>colligere</em> = colher/reunir).
+    </div>
+
+    <p style="margin-bottom: 10px;"><strong>Conceito:</strong></p>
+    <p style="font-size: 22px; margin-bottom: 12px;">Substantivo que, mesmo estando no <strong>singular flexional</strong>, designa um conjunto de seres da mesma espécie.</p>
+
+    <ul>
+      <li><strong>Alcateia:</strong> Conjunto de lobos.</li>
+      <li><strong>Arquipélago:</strong> Conjunto de ilhas.</li>
+      <li><strong>Constelação:</strong> Conjunto de estrelas.</li>
+      <li><strong>Enxame:</strong> Conjunto de abelhas.</li>
+    </ul>
+
+    <div class="slide-num">04</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 5 (Exercício de Fixação em Sala) -->
+  <div class="slide" id="s5">
+    <div class="label">4. Prática em Sala</div>
+    <h2>Fixação no Caderno</h2>
+    <div class="rule"></div>
+
+    <ul>
+      <li><strong>1.</strong> Identifique o substantivo primitivo que deu origem às palavras: <em>ferreiro</em>, <em>dentista</em> e <em>pedreira</em>.</li>
+      <li><strong>2.</strong> Classifique as palavras em <strong>Simples</strong> ou <strong>Composto</strong>: <em>girassol</em>, <em>mar</em>, <em>pica-pau</em>, <em>sol</em>.</li>
+      <li><strong>3.</strong> Indique o substantivo coletivo de: <em>lobos</em>, <em>estrelas</em> e <em>ilhas</em>.</li>
+    </ul>
+
+    <div class="slide-num">05</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+</div><!-- /deck -->
+
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 5</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = ['s1','s2','s3','s4','s5'];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('active', idx === i);
+    });
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(step) {
+    const nextIdx = cur + step;
+    if (nextIdx >= 0 && nextIdx < order.length) {
+      cur = nextIdx;
+      show(cur);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>

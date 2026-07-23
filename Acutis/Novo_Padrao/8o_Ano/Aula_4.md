@@ -1,65 +1,40 @@
-# 8º Ano — Aula 4: Predicação Verbal e Conectivos
-**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
-**Objetivo**: Compreender as funções sintáticas verbais (predicação) e o papel relacional dos conectivos (preposições e conjunções) na oração.
+# 8º Ano — Aula 4: Substantivos I (Análise Categorial & Nuances de Gênero)
+**Tópico**: `[8.1.2]` Substantivos I — Análise categorial detalhada (concreto/abstrato, coletivos eruditos) e nuance de significado em diferentes gêneros.  
+**Objetivo**: Compreender a classificação dos substantivos em contexto, a transição entre abstrato/concreto, coletivos eruditos e as mudanças de sentido decorrentes da alteração de gênero.
 
 ---
 
-### 1) Conteúdo
+### 1) Conteúdo Teórico
 
-* **Predicação Verbal**: Analisa como o verbo se relaciona com seus complementos:
-  1. **Verbo Intransitivo (VI)**: Possui sentido completo, não exigindo complementos obrigatórios. *(Ex: "brincava **na praia**" — `brincava` é VI)*
-  2. **Verbo Transitivo Direto (VTD)**: Exige complemento sem preposição obrigatória (Objeto Direto). *(Ex: "...sacudia **a branca escuma**" — `sacudia` é VTD)*
-  3. **Verbo Transitivo Indireto (VTI)**: Exige complemento precedido de preposição obrigatória (Objeto Indireto). *(Ex: "...olhou **p’ra os céus**" — `olhou` é VTI)*
-  4. **Verbo de Ligação (VL)**: Não indica ação; liga o sujeito a um estado ou qualidade (Predicativo do Sujeito). *(Ex: "Era **pequeno**" — `era` é VL)*
-* **Conectivos (Preposição e Conjunção)**: São classes relacionais que unem palavras (preposições) ou orações (conjunções), estabelecendo nexos de sentido e dependência sintática.
-
----
-
-### 2) Exercícios
-1. Identifique no caderno a predicação do verbo *bramia* na oração *"o mar bramia"* e do verbo *era* na oração *"Era pequeno"*.
-2. No verso *"E eu disse a minha mãe nesse momento"*, classifique a predicação do verbo *disse* e aponte os seus complementos.
-3. Identifique a conjunção aditiva presente no verso *"E brincava na praia"* e explique sua função de ligação.
-
-* **Gabarito/Critério para o Professor**:
-  1. `bramia` -> **verbo intransitivo** (VI), pois tem sentido completo. `era` -> **verbo de ligação** (VL), ligando o sujeito oculto a sua característica "pequeno".
-  2. `disse` -> **verbo transitivo direto e indireto** (VTDI). O objeto indireto é *"a minha mãe"*, e o objeto direto é a pergunta do menino.
-  3. Conjunção aditiva: **E**. Une a oração *"brincava na praia"* à oração anterior, somando ações do eu lírico.
+#### 1. Substantivos Concretos vs. Abstratos
+* **Substantivo Concreto**: Designa seres com existência própria e independente no mundo real, fictício ou espiritual (*pedra*, *anjo*, *fada*, *Deus*).
+* **Substantivo Abstrato**: Designa ações, estados, qualidades ou sentimentos que dependem de outro ser (*velhice*, *beleza*, *salto*, *saudade*).
+* **Mudança Categorial no Texto**:
+  * *A **justiça** tardou.* (Abstrato — qualidade/conceito)
+  * *Os **justiças** da cidade chegaram.* (Concreto — magistrados/pessoas)
 
 ---
 
-### 3) Tarefa de casa
+#### 2. Substantivos Coletivos Eruditos
+* **Plêiade**: Conjunto de poetas ou artistas ilustres.
+* **Hemeroteca**: Conjunto de jornais e periódicos.
+* **Pinacoteca**: Conjunto de quadros e pinturas.
+* **Redil / Aprisco**: Conjunto de ovelhas ou fiéis.
 
-* **Questão 1**: No verso *"...Era **pequeno**"*, a palavra destacada funciona sintaticamente como:
-  * a) Adjunto Adnominal
-  * b) Predicativo do Sujeito
-  * c) Objeto Direto
-  * d) Adjunto Adverbial
-  * **Gabarito**: b
+---
 
-* **Questão 2**: No verso *"...o mar **bramia**..."*, o verbo destacado é classificado sintaticamente como:
-  * a) Transitivo Direto
-  * b) Transitivo Indireto
-  * c) De Ligação
-  * d) Intransitivo
-  * **Gabarito**: d
+#### 3. Nuances Semânticas na Mudança de Gênero
+* **O cabeça** (o líder) $\neq$ **A cabeça** (parte do corpo)
+* **O cura** (o pároco) $\neq$ **A cura** (restabelecimento da saúde)
+* **O capital** (patrimônio/dinheiro) $\neq$ **A capital** (cidade-sede)
+* **O grama** (unidade de massa) $\neq$ **A grama** (relva)
+* **O rádio** (aparelho/osso) $\neq$ **A rádio** (emissora)
 
-* **Questão 3**: Na fala da mãe, *"...meu filho, **é** – Deus!"*, o verbo destacado funciona como:
-  * a) Verbo Intransitivo
-  * b) Verbo Transitivo Direto
-  * c) Verbo de Ligação
-  * d) Verbo Transitivo Indireto
-  * **Gabarito**: c
+---
 
-* **Questão 4**: Em *"...olhou **p’ra os céus**"*, o termo destacado funciona sintaticamente como:
-  * a) Objeto Direto
-  * b) Adjunto Adverbial de Direção/Lugar
-  * c) Predicativo do Sujeito
-  * d) Objeto Indireto
-  * **Gabarito**: b
+### 2) Exercícios em Sala
 
-* **Questão 5**: No verso *"...sacudia a branca escuma..."*, o verbo *sacudia* classifica-se como:
-  * a) Transitivo Direto
-  * b) Transitivo Indireto
-  * c) Intransitivo
-  * d) De Ligação
-  * **Gabarito**: a
+1. Diferencie o sentido dos termos destacados nas frases:
+   * a) *Comprei duzentos **gramas** de queijo.*
+   * b) *A **grama** do jardim foi cortada.*
+   * c) *Ele é o **cabeça** da equipe.*

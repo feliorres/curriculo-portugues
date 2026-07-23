@@ -1,71 +1,53 @@
-# 8º Ano — Aula 3: Morfologia vs. Sintaxe (Classes Nominais)
-**Texto de Ancoragem**: *"Deus"* (Casimiro de Abreu)  
-**Objetivo**: Compreender a diferença entre classificação morfológica e sintática, identificando as funções sintáticas das classes nominais (sujeito, objetos e adjunto adnominal).
+# 8º Ano — Aula 3: Conectivos Morfológicos e Encadeamento Textual
+**Tópico**: `[8.1.1]` Morfossintaxe — O papel de pronomes, preposições e conjunções no encadeamento textual.  
+**Objetivo**: Compreender a função articuladora das classes relacionais (pronomes, preposições e conjunções), analisando como garantem a coesão anafórica, regencial e inter-oracional em textos da literatura de língua portuguesa.
 
 ---
 
-### 1) Conteúdo
+### 1) Conteúdo Teórico
 
-* **Morfologia vs. Sintaxe (Morfossintaxe)**:
-  * **Morfologia**: Classifica a palavra isoladamente (o que ela **é** no dicionário). *Ex: a palavra `mar` é um substantivo.*
-  * **Sintaxe**: Classifica o papel que a palavra desempenha na oração (o que ela **faz**). *Ex: na oração "O mar bramia", a palavra `mar` funciona como **sujeito**.*
-* **Funções Sintáticas Nominais**:
-  1. **Sujeito**: Termo sobre o qual se faz a declaração principal. *(Ex: "**O mar** bramia." Núcleo: `mar`)*
-  2. **Objeto Direto (OD)**: Completa o sentido de um verbo sem preposição obrigatória. *(Ex: "...sacudia **a branca escuma**..." Núcleo do OD: `escuma`)*
-  3. **Objeto Indireto (OI)**: Completa o sentido de um verbo exigindo preposição. *(Ex: "...disse **a minha mãe**..." Preposição: `a`)*
-  4. **Adjunto Adnominal (ADN)**: Caracteriza ou determina um substantivo diretamente. *(Ex: "A **branca** escuma para o céu **sereno**." `branca` e `sereno` são ADNs)*
+#### 1. As Classes Relacionais (Os Cimentos do Texto)
+Enquanto substantivos, adjetivos e verbos carregam o conteúdo conceitual e representativo do texto, as **classes relacionais** são os cimentos gramaticais. Elas não nomeiam nem caracterizam por si sós, mas estabelecem fios de referência, dependência e articulação lógica entre termos e orações.
 
 ---
 
-### 2) Exercícios
-1. Explique no caderno a diferença morfossintática da palavra **vento** na frase *"O vento soprava"*.
-2. No verso *"...sacudia a branca escuma..."*, identifique o **objeto direto**, o seu núcleo e os seus adjuntos adnominais.
-3. Classifique a função sintática dos termos destacados abaixo:
-   * a) *"**Eu** me lembro"*
-   * b) *"disse **a minha mãe**"*
+#### 2. Os Três Grandes Articuladores Textuais com Exemplos Literários
 
-* **Gabarito/Critério para o Professor**:
-  1. Morfologicamente, **vento** é um **substantivo**. Sintaticamente, é o **sujeito** da oração.
-  2. No verso *"...sacudia a branca escuma..."*: Objeto Direto: **a branca escuma**; Núcleo: **escuma**; Adjuntos adnominais: **a** (artigo) e **branca** (adjetivo).
-  3. Funções sintáticas:
-     - a) *Eu* -> **sujeito** (núcleo do sujeito).
-     - b) *a minha mãe* -> **objeto indireto**.
+#### A. Pronomes (Coesão Anafórica e Catafórica)
+Substituem ou acompanham os substantivos, mantendo o tema ativo na memória do leitor sem repetições viciosas.
+> *"Bento Santiago viveu isolado. **Ele** [pronome anafórico] construiu uma casa idêntica à de **sua** [pronome possessivo] infância, para atar as duas pontas da vida."* (Machado de Assis)
+> *"**Tudo** [pronome indefinido] passa, **nada** [pronome indefinido] fica, senão a lembrança do que **nós** [pronome pessoal] fomos."* (Fernando Pessoa / Ricardo Reis)
+
+* **Análise Morfossintática**:
+  * `Ele` (Morfologia: **Pronome pessoal reto** | Sintaxe: **Núcleo do Sujeito**, retomando anaforicamente *Bento Santiago*).
+  * `sua` (Morfologia: **Pronome possessivo** | Sintaxe: **Adjunto Adnominal** de *infância*).
+  * `Tudo` / `nada` (Morfologia: **Pronomes indefinidos** | Sintaxe: **Núcleos do Sujeito** das respectivas orações).
 
 ---
 
-### 3) Tarefa de casa
+#### B. Preposições (Coesão Intra-oracional e Regência)
+Ligam dois termos de uma oração estabelecendo uma relação de dependência sintática (regência verbal/nominal) e semântica (posse, matéria, instrumento, direção, causa).
+> *"A compaixão **pela** [por + a] dor alheia é o primeiro sinal **de** humanidade num coração **de** pedra."* (Padre Antônio Vieira)
+> *"Navegar **é** preciso; viver não é preciso. Obras **de** pedra caem; palavras **no** [em + o] vento somem."* (Fernando Pessoa)
 
-* **Questão 1**: No verso *"...o **mar** bramia..."*, a palavra em destaque funciona sintaticamente como:
-  * a) Objeto Direto
-  * b) Adjunto Adnominal
-  * c) Sujeito
-  * d) Predicativo do Sujeito
-  * **Gabarito**: c
+* **Análise Morfossintática**:
+  * `pela` (Morfologia: Preposição `por` + Artigo `a` | Sintaxe: Conector de **Complemento Nominal** do substantivo *compaixão*).
+  * `de` (Morfologia: Preposição essencial | Sintaxe: Conector de **Complemento Nominal** de *sinal* e **Adjunto Adnominal** de *pedra*).
+  * `no` (Morfologia: Preposição `em` + Artigo `o` | Sintaxe: Conector de **Adjunto Adverbial de Lugar** de *somem*).
 
-* **Questão 2**: No verso *"...sacudia a branca **escuma**..."*, o termo destacado exerce a função de:
-  * a) Núcleo do Objeto Direto
-  * b) Adjunto Adnominal
-  * c) Núcleo do Sujeito
-  * d) Objeto Indireto
-  * **Gabarito**: a
+---
 
-* **Questão 3**: Na frase *"Minha mãe olhou para os céus"*, qual é a função sintática do pronome *"Minha"* em relação a *"mãe"*?
-  * a) Objeto Direto
-  * b) Adjunto Adnominal
-  * c) Sujeito
-  * d) Predicativo
-  * **Gabarito**: b
+#### C. Conjunções (Coesão Inter-oracional e Lógica Argumentativa)
+Conectam orações e argumentos inteiros, imprimindo a direção lógica e ideológica pretendida pelo autor:
 
-* **Questão 4**: Na frase *"A branca escuma causava medo ao menino."*, qual termo funciona como objeto indireto?
-  * a) A branca escuma
-  * b) medo
-  * c) ao menino
-  * d) causava
-  * **Gabarito**: c
-
-* **Questão 5**: Qual das palavras em destaque funciona como substantivo na morfologia e como núcleo do sujeito na sintaxe?
-  * a) O **mar** bramia.
-  * b) A **branca** escuma.
-  * c) Eu **brincava** na praia.
-  * d) Para o céu **sereno**.
-  * **Gabarito**: a
+1. **Adição**:
+   > *"O tempo passa **e** a memória permanece."* (Machado de Assis) — `e` (Conjunção aditiva).
+2. **Oposição / Concessão**:
+   > *"Mudam-se os tempos, **mas** não se mudam os meus afetos."* (Luís de Camões) — `mas` (Conjunção adversativa).
+   > *"**Embora** a vida seja breve, a arte é imortal."* (Padre Antônio Vieira) — `Embora` (Conjunção concessiva).
+3. **Causa / Justificativa**:
+   > *"Choro **porque** a saudade aperta o coração."* (Casimiro de Abreu) — `porque` (Conjunção causal).
+4. **Conclusão**:
+   > *"A virtude é um bem supremo; **portanto**, devemos cultivá-la."* (Pe. Antônio Vieira) — `portanto` (Conjunção conclusiva).
+5. **Condição**:
+   > *"**Se** queres conhecer um homem, dá-lhe poder."* (Provérbio / Eça de Queirós) — `Se` (Conjunção condicional).

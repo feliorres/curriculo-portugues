@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 960" style="width: 100%; height: auto; font-family: 'EB Garamond', Georgia, serif; background-color: #FFFDF7;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#385054" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <style>
+    .root-box { fill: #385054; rx: 8px; }
+    .root-text { fill: #FFFDF7; font-family: 'Forum', Georgia, serif; font-size: 22px; font-weight: bold; dominant-baseline: central; text-anchor: middle; }
+    
+    .branch-box { fill: rgba(56, 80, 84, 0.08); stroke: #385054; stroke-width: 2px; rx: 6px; }
+    .branch-text { fill: #385054; font-family: 'Forum', Georgia, serif; font-size: 18px; font-weight: bold; dominant-baseline: central; }
+    
+    .subbranch-box { fill: #FFFDF7; stroke: rgba(56, 80, 84, 0.4); stroke-width: 1.5px; rx: 5px; }
+    .subbranch-text { fill: #385054; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; dominant-baseline: central; }
+    
+    .leaf-text { fill: #385054; font-family: 'EB Garamond', Georgia, serif; font-size: 15px; dominant-baseline: central; }
+    
+    .link-line { fill: none; stroke: #385054; stroke-width: 2px; stroke-linecap: round; }
+    .link-sub { fill: none; stroke: rgba(56, 80, 84, 0.4); stroke-width: 1.5px; stroke-linecap: round; }
+  </style>
+
+  <!-- ================= CONEXÕES (LINHAS) ================= -->
+  
+  <!-- Raiz -> Ramos Principais -->
+  <path d="M 140,480 C 180,480 180,240 220,240" class="link-line"/>
+  <path d="M 140,480 C 180,480 180,720 220,720" class="link-line"/>
+
+  <!-- ===== RAMO 1: SINTAXE DA ORAÇÃO ===== -->
+  <path d="M 390,240 C 420,240 420,100 450,100" class="link-sub"/>
+  <path d="M 390,240 C 420,240 420,220 450,220" class="link-sub"/>
+  <path d="M 390,240 C 420,240 420,310 450,310" class="link-sub"/>
+  <path d="M 390,240 C 420,240 420,380 450,380" class="link-sub"/>
+
+  <!-- Sub-ramos de Oração -->
+  <!-- Termos Essenciais -->
+  <path d="M 610,100 C 630,100 630,70 650,70" class="link-sub"/>
+  <path d="M 610,100 C 630,100 630,120 650,120" class="link-sub"/>
+  <path d="M 740,120 C 760,120 760,90 780,90" class="link-sub"/>
+  <path d="M 740,120 C 760,120 760,110 780,110" class="link-sub"/>
+  <path d="M 740,120 C 760,120 760,130 780,130" class="link-sub"/>
+  <path d="M 740,120 C 760,120 760,150 780,150" class="link-sub"/>
+  <path d="M 860,150 C 880,150 880,140 900,140" class="link-sub"/>
+  <path d="M 860,150 C 880,150 880,165 900,165" class="link-sub"/>
+
+  <!-- Termos Integrantes -->
+  <path d="M 610,220 C 630,220 630,200 650,200" class="link-sub"/>
+  <path d="M 790,200 C 810,200 810,190 830,190" class="link-sub"/>
+  <path d="M 790,200 C 810,200 810,210 830,210" class="link-sub"/>
+  <path d="M 610,220 C 630,220 630,230 650,230" class="link-sub"/>
+  <path d="M 610,220 C 630,220 630,250 650,250" class="link-sub"/>
+
+  <!-- Termos Acessórios & Independente -->
+  <path d="M 610,310 C 630,310 630,290 650,290" class="link-sub"/>
+  <path d="M 610,310 C 630,310 630,310 650,310" class="link-sub"/>
+  <path d="M 610,310 C 630,310 630,330 650,330" class="link-sub"/>
+  <path d="M 610,380 C 630,380 630,380 650,380" class="link-sub"/>
+
+  <!-- ===== RAMO 2: SINTAXE DO PERÍODO ===== -->
+  <path d="M 390,720 C 420,720 420,530 450,530" class="link-sub"/>
+  <path d="M 390,720 C 420,720 420,760 450,760" class="link-sub"/>
+
+  <!-- Orações Coordenadas -->
+  <path d="M 620,530 C 640,530 640,480 660,480" class="link-sub"/>
+  <path d="M 620,530 C 640,530 640,540 660,540" class="link-sub"/>
+  <path d="M 750,540 C 770,540 770,500 790,500" class="link-sub"/>
+  <path d="M 750,540 C 770,540 770,520 790,520" class="link-sub"/>
+  <path d="M 750,540 C 770,540 770,540 790,540" class="link-sub"/>
+  <path d="M 750,540 C 770,540 770,560 790,560" class="link-sub"/>
+  <path d="M 750,540 C 770,540 770,580 790,580" class="link-sub"/>
+
+  <!-- Orações Subordinadas -->
+  <path d="M 620,760 C 640,760 640,650 660,650" class="link-sub"/>
+  <path d="M 620,760 C 640,760 640,740 660,740" class="link-sub"/>
+  <path d="M 620,760 C 640,760 640,860 660,860" class="link-sub"/>
+
+  <!-- Substantivas -->
+  <path d="M 770,650 C 790,650 790,600 810,600" class="link-sub"/>
+  <path d="M 770,650 C 790,650 790,620 810,620" class="link-sub"/>
+  <path d="M 770,650 C 790,650 790,640 810,640" class="link-sub"/>
+  <path d="M 770,650 C 790,650 790,660 810,660" class="link-sub"/>
+  <path d="M 770,650 C 790,650 790,680 810,680" class="link-sub"/>
+  <path d="M 770,650 C 790,650 790,700 810,700" class="link-sub"/>
+
+  <!-- Adjetivas -->
+  <path d="M 770,740 C 790,740 790,730 810,730" class="link-sub"/>
+  <path d="M 770,740 C 790,740 790,750 810,750" class="link-sub"/>
+
+  <!-- Adverbiais -->
+  <path d="M 770,860 C 790,860 790,780 810,780" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,800 810,800" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,820 810,820" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,840 810,840" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,860 810,860" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,880 810,880" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,900 810,900" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,920 810,920" class="link-sub"/>
+  <path d="M 770,860 C 790,860 790,940 810,940" class="link-sub"/>
+
+  <!-- ================= NÓS E RÓTULOS ================= -->
+
+  <!-- RAIZ -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="450" width="100" height="60" class="root-box"/>
+    <text x="90" y="480" class="root-text">Sintaxe</text>
+  </g>
+
+  <!-- PRINCIPAIS -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="210" width="170" height="60" class="branch-box"/>
+    <text x="235" y="240" class="branch-text">Sintaxe da oração</text>
+
+    <rect x="220" y="690" width="170" height="60" class="branch-box"/>
+    <text x="235" y="720" class="branch-text">Sintaxe do período</text>
+  </g>
+
+  <!-- SINTAXE DA ORAÇÃO -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="80" width="160" height="40" class="subbranch-box"/>
+    <text x="465" y="100" class="subbranch-text">Termos essenciais</text>
+
+    <rect x="450" y="200" width="160" height="40" class="subbranch-box"/>
+    <text x="465" y="220" class="subbranch-text">Termos integrantes</text>
+
+    <rect x="450" y="290" width="160" height="40" class="subbranch-box"/>
+    <text x="465" y="310" class="subbranch-text">Termos acessórios</text>
+
+    <rect x="450" y="360" width="160" height="40" class="subbranch-box"/>
+    <text x="465" y="380" class="subbranch-text">Termo independente</text>
+  </g>
+
+  <!-- Detalhes de Oração -->
+  <text x="650" y="70" class="leaf-text">Sujeito</text>
+  <text x="650" y="120" class="leaf-text">Predicado</text>
+  <text x="780" y="90" class="leaf-text">Predicado nominal</text>
+  <text x="780" y="110" class="leaf-text">Predicado verbal</text>
+  <text x="780" y="130" class="leaf-text">Predicado verbo-nominal</text>
+  <text x="780" y="150" class="leaf-text">Predicativo</text>
+  <text x="900" y="140" class="leaf-text">Predicativo do sujeito</text>
+  <text x="900" y="165" class="leaf-text">Predicativo do objeto</text>
+
+  <text x="650" y="200" class="leaf-text">Complemento verbal</text>
+  <text x="830" y="190" class="leaf-text">Objeto direto</text>
+  <text x="830" y="210" class="leaf-text">Objeto indireto</text>
+  <text x="650" y="230" class="leaf-text">Complemento nominal</text>
+  <text x="650" y="250" class="leaf-text">Agente da passiva</text>
+
+  <text x="650" y="290" class="leaf-text">Adjunto adnominal</text>
+  <text x="650" y="310" class="leaf-text">Adjunto adverbial</text>
+  <text x="650" y="330" class="leaf-text">Aposto</text>
+  <text x="650" y="380" class="leaf-text">Vocativo</text>
+
+  <!-- SINTAXE DO PERÍODO -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="510" width="170" height="40" class="subbranch-box"/>
+    <text x="465" y="530" class="subbranch-text">Orações coordenadas</text>
+
+    <rect x="450" y="740" width="170" height="40" class="subbranch-box"/>
+    <text x="465" y="760" class="subbranch-text">Orações subordinadas</text>
+  </g>
+
+  <!-- Detalhes de Coordenadas -->
+  <text x="660" y="480" class="leaf-text">Assindéticas</text>
+  <text x="660" y="540" class="leaf-text">Sindéticas</text>
+  <text x="790" y="500" class="leaf-text">Aditivas</text>
+  <text x="790" y="520" class="leaf-text">Adversativas</text>
+  <text x="790" y="540" class="leaf-text">Alternativas</text>
+  <text x="790" y="560" class="leaf-text">Conclusivas</text>
+  <text x="790" y="580" class="leaf-text">Explicativas</text>
+
+  <!-- Detalhes de Subordinadas -->
+  <text x="660" y="650" class="leaf-text">Substantivas</text>
+  <text x="810" y="600" class="leaf-text">Subjetiva</text>
+  <text x="810" y="620" class="leaf-text">Obj. direta</text>
+  <text x="810" y="640" class="leaf-text">Obj. indireta</text>
+  <text x="810" y="660" class="leaf-text">Completiva nominal</text>
+  <text x="810" y="680" class="leaf-text">Predicativa</text>
+  <text x="810" y="700" class="leaf-text">Apostiva</text>
+
+  <text x="660" y="740" class="leaf-text">Adjetivas</text>
+  <text x="810" y="730" class="leaf-text">Explicativa</text>
+  <text x="810" y="750" class="leaf-text">Restritiva</text>
+
+  <text x="660" y="860" class="leaf-text">Adverbiais</text>
+  <text x="810" y="780" class="leaf-text">Causal</text>
+  <text x="810" y="800" class="leaf-text">Comparativa</text>
+  <text x="810" y="820" class="leaf-text">Concessiva</text>
+  <text x="810" y="840" class="leaf-text">Condicional</text>
+  <text x="810" y="860" class="leaf-text">Conformativa</text>
+  <text x="810" y="880" class="leaf-text">Consecutiva</text>
+  <text x="810" y="900" class="leaf-text">Final</text>
+  <text x="810" y="920" class="leaf-text">Proporcional</text>
+  <text x="810" y="940" class="leaf-text">Temporal</text>
+</svg>

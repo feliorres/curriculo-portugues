@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8º Ano — Aula 1: Revisão Morfossintática I (Classes & Mapa Sintático)</title>
+<!-- Fontes do projeto Acutis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-slide:    #FFFDF7;
+    --text-main:   #385054;
+    --text-soft:   #385054;
+    --text-muted:  rgba(56, 80, 84, 0.75);
+    --rule-color:  #385054;
+    --nav-bg:      rgba(56, 80, 84, 0.05);
+    --nav-border:  rgba(56, 80, 84, 0.25);
+    --font-title:  'Forum', Georgia, serif;
+    --font-body:   'EB Garamond', Georgia, serif;
+    --font-ui:     'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-slide);
+  }
+
+  /* ── Individual slide ── */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    padding: 45px 7%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Cover slide ── */
+  .slide-cover {
+    background: var(--bg-slide);
+    color: var(--text-main);
+  }
+
+  /* ── Logo Acutis ── */
+  .slide-logo {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ── Slide number ── */
+  .slide-num {
+    position: absolute;
+    bottom: 28px; left: 40px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-main);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--text-main);
+    font-weight: 400;
+    border-left: 3px solid var(--text-main);
+    padding-left: 28px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 8px;
+  }
+  ul li {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.55;
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+
+  .rule {
+    width: 50px; height: 2px;
+    background: var(--text-main);
+    margin-bottom: 20px;
+  }
+
+  .explanation-list {
+    list-style: none;
+  }
+  .explanation-list li {
+    font-size: 25px;
+    margin-bottom: 16px;
+    color: var(--text-main);
+    line-height: 1.55;
+  }
+  .explanation-list li strong {
+    font-family: var(--font-title);
+    font-size: 27px;
+    color: var(--text-main);
+  }
+
+  /* ── Slide SVG e Grid Containers ── */
+  .svg-center-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mapa-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .mapa-card {
+    background: rgba(56, 80, 84, 0.04);
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .mapa-card h3 {
+    font-family: var(--font-title);
+    font-size: 24px;
+    color: #385054;
+    margin-bottom: 10px;
+  }
+
+  .mapa-card ul {
+    margin-top: 0;
+  }
+
+  .mapa-card ul li {
+    font-size: 20px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+
+  .mapa-card ul li::before {
+    content: '•';
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 20;
+  }
+  .nav-btn {
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
+  .nav-btn:disabled { opacity: .3; cursor: default; }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: var(--text-main);
+    min-width: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- Slide 1 (Capa da Aula) -->
+  <div class="slide active slide-cover" id="s1">
+    <div class="label">8º Ano — Aula 1</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 88%;">
+      <h1>Revisão Morfossintática I</h1>
+      <div class="rule" style="margin-top: 20px; margin-bottom: 20px;"></div>
+      <p style="margin-bottom: 10px;"><strong>Tópico [8.1.1]:</strong> As 10 Classes Gramaticais & O Mapa Geral da Sintaxe</p>
+      <p><strong>Objetivo:</strong> Panorama morfológico completo, etimologia das 10 classes e introdução à estrutura sintática da oração e do período.</p>
+    </div>
+    <div class="slide-num">01</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 2 (Por que estudamos Português? - Pergunta) -->
+  <div class="slide" id="s2">
+    <div class="label">I. Introdução</div>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start;">
+      <h2>1. Por que estudamos Português?</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="slide-num">02</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 3 (Por que estudamos Português? - Respostas) -->
+  <div class="slide" id="s3">
+    <div class="label">I. Introdução</div>
+    <h2>Por que estudamos Português?</h2>
+    <div class="rule"></div>
+    <ul>
+      <li><strong>Instrumento do Pensamento:</strong> Estudar a língua é aprender a organizar nossos próprios pensamentos com clareza e precisão.</li>
+      <li><strong>Acesso ao Conhecimento:</strong> Permite ler e interpretar textos complexos, histórias, ciências e a alta cultura.</li>
+      <li><strong>Expressão e Comunicação:</strong> Capacita a pessoa a expressar sentimentos, defender ideias e se comunicar com o mundo.</li>
+    </ul>
+    <div class="slide-num">03</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 4 (O que estudamos em Português? - SVG Mapa Mental Adaptado) -->
+  <div class="slide" id="s4">
+    <div class="label">I. Introdução</div>
+    <h2>2. O que estudamos em Português?</h2>
+    
+    <div class="svg-center-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 680" style="width: 100%; height: auto; max-height: 58vh;">
+        <defs>
+          <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#385054" flood-opacity="0.1"/>
+          </filter>
+        </defs>
+
+        <style>
+          .bg-root { fill: #385054; rx: 8px; }
+          .bg-branch-1 { fill: rgba(56, 80, 84, 0.05); stroke: #385054; stroke-width: 2px; rx: 8px; }
+          .bg-branch-2 { fill: rgba(56, 80, 84, 0.08); stroke: #385054; stroke-width: 2px; rx: 8px; }
+          .bg-sub { fill: #FFFDF7; stroke: rgba(56, 80, 84, 0.3); stroke-width: 1.5px; rx: 6px; }
+          .bg-sub-highlight { fill: rgba(56, 80, 84, 0.15); stroke: #385054; stroke-width: 2px; rx: 6px; }
+
+          .txt-root { fill: #FFFDF7; font-family: 'Forum', Georgia, serif; font-size: 20px; font-weight: 500; dominant-baseline: central; text-anchor: middle; letter-spacing: 0.05em; }
+          .txt-branch-1 { fill: #385054; font-family: 'Forum', Georgia, serif; font-size: 18px; font-weight: 600; dominant-baseline: central; }
+          .txt-branch-2 { fill: #385054; font-family: 'Forum', Georgia, serif; font-size: 18px; font-weight: 600; dominant-baseline: central; }
+          .txt-sub { fill: #385054; font-family: 'EB Garamond', Georgia, serif; font-size: 16px; font-weight: 500; dominant-baseline: central; }
+          
+          .link-main { fill: none; stroke: #385054; stroke-width: 2.5px; stroke-linecap: round; }
+          .link-sub { fill: none; stroke: rgba(56, 80, 84, 0.4); stroke-width: 1.5px; stroke-linecap: round; }
+          .link-highlight { fill: none; stroke: #385054; stroke-width: 2px; stroke-linecap: round; }
+        </style>
+
+        <path d="M 210,340 C 245,340 245,110 280,110" class="link-main"/>
+        <path d="M 210,340 C 245,340 245,430 280,430" class="link-main"/>
+
+        <path d="M 490,110 C 520,110 520,70 550,70" class="link-sub"/>
+        <path d="M 490,110 C 520,110 520,150 550,150" class="link-sub"/>
+
+        <path d="M 490,430 C 520,430 520,230 550,230" class="link-sub"/>
+        <path d="M 490,430 C 520,430 520,330 550,330" class="link-highlight"/>
+        <path d="M 490,430 C 520,430 520,430 550,430" class="link-highlight"/>
+        <path d="M 490,430 C 520,430 520,520 550,520" class="link-sub"/>
+        <path d="M 490,430 C 520,430 520,610 550,610" class="link-sub"/>
+
+        <path d="M 770,330 C 805,330 805,300 840,300" class="link-highlight"/>
+        <path d="M 770,330 C 805,330 805,360 840,360" class="link-highlight"/>
+
+        <g filter="url(#card-shadow)">
+          <rect x="40" y="305" width="170" height="70" class="bg-root"/>
+          <text x="125" y="340" class="txt-root">PORTUGUÊS</text>
+        </g>
+
+        <g filter="url(#card-shadow)">
+          <rect x="280" y="80" width="210" height="60" class="bg-branch-1"/>
+          <text x="300" y="110" class="txt-branch-1">1. Leitura e escrita</text>
+        </g>
+
+        <g filter="url(#card-shadow)">
+          <rect x="280" y="400" width="210" height="60" class="bg-branch-2"/>
+          <text x="300" y="430" class="txt-branch-2">2. Gramática</text>
+        </g>
+
+        <g filter="url(#card-shadow)">
+          <rect x="550" y="50" width="220" height="40" class="bg-sub"/>
+          <text x="565" y="70" class="txt-sub">1.1 Interpretação de texto</text>
+
+          <rect x="550" y="130" width="220" height="40" class="bg-sub"/>
+          <text x="565" y="150" class="txt-sub">1.2 Tipos e gêneros de texto</text>
+        </g>
+
+        <g filter="url(#card-shadow)">
+          <rect x="550" y="210" width="220" height="40" class="bg-sub"/>
+          <text x="565" y="230" class="txt-sub">2.1 Fonética</text>
+
+          <rect x="550" y="310" width="220" height="40" class="bg-sub-highlight"/>
+          <text x="565" y="330" class="txt-sub" style="font-weight: 700; fill: #385054;">2.2 Morfologia</text>
+
+          <rect x="550" y="410" width="220" height="40" class="bg-sub-highlight"/>
+          <text x="565" y="430" class="txt-sub" style="font-weight: 700; fill: #385054;">2.3 Sintaxe</text>
+
+          <rect x="550" y="500" width="220" height="40" class="bg-sub"/>
+          <text x="565" y="520" class="txt-sub">2.4 Semântica</text>
+
+          <rect x="550" y="590" width="220" height="40" class="bg-sub"/>
+          <text x="565" y="610" class="txt-sub">2.5 Estilística</text>
+        </g>
+
+        <g filter="url(#card-shadow)">
+          <rect x="840" y="280" width="240" height="40" class="bg-sub"/>
+          <text x="855" y="300" class="txt-sub">2.2.1 Formação de palavras</text>
+
+          <rect x="840" y="340" width="240" height="40" class="bg-sub"/>
+          <text x="855" y="360" class="txt-sub">2.2.2 Classes de palavras</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="slide-num">04</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 5 (Morfologia vs Sintaxe) -->
+  <div class="slide" id="s5">
+    <div class="label">I. Introdução</div>
+    <h2>3. Morfologia vs. Sintaxe</h2>
+    <div class="rule"></div>
+    
+    <ul class="explanation-list">
+      <li><strong>Morfologia:</strong> É o estudo da <em>PALAVRA</em> isolada (forma e classe gramatical).</li>
+      <li><strong>Sintaxe:</strong> É o estudo da <em>ORAÇÃO</em> e da frase (função e relação entre termos).</li>
+    </ul>
+
+    <blockquote>
+      Na Morfologia, analisamos o que a palavra É.<br>
+      Na Sintaxe, analisamos o que a palavra FAZ dentro da estrutura oracional.
+    </blockquote>
+
+    <div class="slide-num">05</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 6 (Classes de Palavras - Rosca SVG) -->
+  <div class="slide" id="s6">
+    <div class="label">I. Panorama Morfológico</div>
+    <h2>4. As 10 Classes de Palavras</h2>
+    <p style="font-size: 24px; margin-bottom: 8px;">Classes de palavras são as 10 categorias fundamentais da língua.</p>
+
+    <div class="svg-center-container">
+      <svg width="440" height="440" viewBox="0 0 500 500" style="max-height: 55vh;">
+        <g stroke="#385054" stroke-width="1.5">
+          <path d="M 250 50 A 200 200 0 0 1 367.56 88.20 L 302.90 177.19 A 90 90 0 0 0 250 160 Z" fill="rgba(56, 80, 84, 0.22)"/>
+          <path d="M 367.56 88.20 A 200 200 0 0 1 440.21 188.20 L 335.60 222.19 A 90 90 0 0 0 302.90 177.19 Z" fill="rgba(56, 80, 84, 0.22)"/>
+          <path d="M 440.21 188.20 A 200 200 0 0 1 440.21 311.80 L 335.60 277.81 A 90 90 0 0 0 335.60 222.19 Z" fill="rgba(56, 80, 84, 0.22)"/>
+          <path d="M 440.21 311.80 A 200 200 0 0 1 367.56 411.80 L 302.90 322.81 A 90 90 0 0 0 335.60 277.81 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 367.56 411.80 A 200 200 0 0 1 250 450 L 250 340 A 90 90 0 0 0 302.90 322.81 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 250 450 A 200 200 0 0 1 132.44 411.80 L 197.10 322.81 A 90 90 0 0 0 250 340 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 132.44 411.80 A 200 200 0 0 1 59.79 311.80 L 164.40 277.81 A 90 90 0 0 0 197.10 322.81 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 59.79 311.80 A 200 200 0 0 1 59.79 188.20 L 164.40 222.19 A 90 90 0 0 0 164.40 277.81 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 59.79 188.20 A 200 200 0 0 1 132.44 88.20 L 197.10 177.19 A 90 90 0 0 0 164.40 222.19 Z" fill="rgba(56, 80, 84, 0.06)"/>
+          <path d="M 132.44 88.20 A 200 200 0 0 1 250 50 L 250 160 A 90 90 0 0 0 197.10 177.19 Z" fill="rgba(56, 80, 84, 0.06)"/>
+        </g>
+
+        <g font-family="EB Garamond, Georgia, serif" font-size="17" fill="#385054" text-anchor="middle" dominant-baseline="central">
+          <text x="294.81" y="112.10" transform="rotate(18 294.81 112.10)" font-weight="bold">Substantivo</text>
+          <text x="367.31" y="164.77" transform="rotate(54 367.31 164.77)" font-weight="bold">Adjetivo</text>
+          <text x="395.00" y="250.00" transform="rotate(90 395.00 250.00)" font-weight="bold">Verbo</text>
+          <text x="367.31" y="335.23" transform="rotate(-54 367.31 335.23)">Pronome</text>
+          <text x="294.81" y="387.90" transform="rotate(-18 294.81 387.90)">Artigo</text>
+          <text x="205.19" y="387.90" transform="rotate(18 205.19 387.90)">Numeral</text>
+          <text x="132.69" y="335.23" transform="rotate(54 132.69 335.23)">Preposição</text>
+          <text x="105.00" y="250.00" transform="rotate(-90 105.00 250.00)">Conjunção</text>
+          <text x="132.69" y="164.77" transform="rotate(-54 132.69 164.77)">Interjeição</text>
+          <text x="205.19" y="112.10" transform="rotate(-18 205.19 112.10)">Advérbio</text>
+        </g>
+
+        <circle cx="250" cy="250" r="82" fill="#FFFDF7" stroke="#385054" stroke-width="1.5"/>
+        <text x="250" y="240" font-family="Forum, Georgia, serif" font-size="22" fill="#385054" text-anchor="middle">10 CLASSES</text>
+        <text x="250" y="264" font-family="Inter, sans-serif" font-size="12" fill="rgba(56, 80, 84, 0.75)" text-anchor="middle" letter-spacing="1">GRAMATICAIS</text>
+      </svg>
+    </div>
+
+    <div class="slide-num">06</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 7 (1. Substantivo) -->
+  <div class="slide" id="s7">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>1. Substantivo</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>substantivum</em> (relativo à substância, a essência do que existe por si mesmo).</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Nomeia os seres, objetos, lugares, sentimentos, ações e conceitos da realidade ou imaginação.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>homem, cidade, coragem, Pedro, beleza, vento, livro.</em></li>
+    </ul>
+    <div class="slide-num">07</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 8 (2. Adjetivo) -->
+  <div class="slide" id="s8">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>2. Adjetivo</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>adjectivus</em> (<em>ad</em> = junto a + <em>jacere</em> = colocar; "aqueles que se juntam ao nome").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Modifica o substantivo, atribuindo-lhe qualidades, estados, características ou aparências.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>forte, furioso, limpo, brasileiro, alegre, tempestuoso.</em></li>
+    </ul>
+    <div class="slide-num">08</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 9 (3. Verbo) -->
+  <div class="slide" id="s9">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>3. Verbo</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>verbum</em> (literalmente "a palavra por excelência", o motor do pensamento).</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Expressa ações, estados, processos ou fenômenos da natureza, situando-os no tempo.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>correr, estar, chover, cantar, estudar, permaneceu, falará.</em></li>
+    </ul>
+    <div class="slide-num">09</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 10 (4. Pronome) -->
+  <div class="slide" id="s10">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>4. Pronome</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>pronomen</em> (<em>pro</em> = em lugar de + <em>nomen</em> = nome; "em lugar do nome").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Substitui ou acompanha o substantivo, indicando a pessoa do discurso ou situando-o na frase.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>ele, ela, este, meu, vosso, quem, tudo, alguém.</em></li>
+    </ul>
+    <div class="slide-num">10</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 11 (5. Artigo) -->
+  <div class="slide" id="s11">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>5. Artigo</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>articulus</em> (diminutivo de <em>artus</em> = pequena articulação, nó, junta).</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Antepõe o substantivo para determiná-lo de forma precisa ou vaga, indicando seu gênero e número.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>o, a, os, as</em> (definidos) | <em>um, uma, uns, umas</em> (indefinidos).</li>
+    </ul>
+    <div class="slide-num">11</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 12 (6. Numeral) -->
+  <div class="slide" id="s12">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>6. Numeral</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>numeralis</em> (relativo ao número, contagem ou medida).</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Exprime quantidade exata, ordem de sucessão, fração ou multiplicação dos seres e coisas.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>um, dois, primeiro, décimo, metade, duplo, triplo.</em></li>
+    </ul>
+    <div class="slide-num">12</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 13 (7. Advérbio) -->
+  <div class="slide" id="s13">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>7. Advérbio</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>adverbium</em> (<em>ad</em> = junto a + <em>verbum</em> = verbo; "o que acompanha o verbo").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Modifica o verbo, o adjetivo ou outro advérbio, exprimindo uma circunstância (tempo, lugar, modo, intensidade).</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>ontem, hoje, aqui, calmamente, muito, não, com certeza.</em></li>
+    </ul>
+    <div class="slide-num">13</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 14 (8. Preposição) -->
+  <div class="slide" id="s14">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>8. Preposição</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>praepositio</em> (<em>prae</em> = antes + <em>positio</em> = posição; "colocado antes").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Conecta dois termos de uma oração, estabelecendo entre eles uma relação de dependência e sentido.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>de, em, para, com, por, a, sem, contra, sob.</em></li>
+    </ul>
+    <div class="slide-num">14</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 15 (9. Conjunção) -->
+  <div class="slide" id="s15">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>9. Conjunção</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>conjunctio</em> (<em>cum</em> = junto + <em>jungere</em> = ligar; "união, ligação").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Conecta duas orações ou dois termos de mesma função sintática numa frase.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>e, mas, porém, porque, contudo, portanto, se, ou.</em></li>
+    </ul>
+    <div class="slide-num">15</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 16 (10. Interjeição) -->
+  <div class="slide" id="s16">
+    <div class="label">Morfologia | Classes Gramaticais</div>
+    <h2>10. Interjeição</h2>
+    <div class="rule"></div>
+    <ul class="explanation-list">
+      <li><strong>Etimologia:</strong> Do latim <em>interjectio</em> (<em>inter</em> = entre + <em>jacere</em> = lançar; "algo lançado no meio do discurso").</li>
+      <li style="margin-top: 16px;"><strong>Conceito:</strong> Traduz de forma viva e direta emoções, sentimentos e reações puras.</li>
+      <li style="margin-top: 16px;"><strong>Exemplos:</strong> <em>Ah!, Oh!, Ufa!, Bravo!, Meu Deus!, Caramba!</em></li>
+    </ul>
+    <div class="slide-num">16</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 17 (Mapa Geral da Sintaxe - Apresentação) -->
+  <div class="slide" id="s17">
+    <div class="label">II. O Mapa Geral da Sintaxe</div>
+    <h2>Mapa Geral da Sintaxe — Língua Portuguesa</h2>
+    <div class="rule"></div>
+    <p style="margin-bottom: 16px;">A Sintaxe estuda as relações entre as palavras dentro da oração e entre as orações dentro do período.</p>
+    <ul class="explanation-list">
+      <li><strong>1. Sintaxe da Oração:</strong> Como as palavras se organizam para formar os termos da frase (Essenciais, Integrantes, Acessórios e Independente).</li>
+      <li style="margin-top: 14px;"><strong>2. Sintaxe do Período:</strong> Como as orações se articulam entre si (Coordenação e Subordinação).</li>
+    </ul>
+    <div class="slide-num">17</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 18 (1. Sintaxe da Oração - Estrutura dos Termos) -->
+  <div class="slide" id="s18">
+    <div class="label">II. O Mapa Geral da Sintaxe</div>
+    <h2>1. Sintaxe da Oração (Os Termos Oracionais)</h2>
+    <div class="rule" style="margin-bottom: 14px;"></div>
+
+    <div class="mapa-grid">
+      <div class="mapa-card">
+        <h3>Termos Essenciais</h3>
+        <ul>
+          <li><strong>Sujeito:</strong> Ser sobre o qual se declara algo.</li>
+          <li><strong>Predicado:</strong> Tudo o que se declara sobre o sujeito (Nominal, Verbal, Verbo-Nominal).</li>
+        </ul>
+      </div>
+
+      <div class="mapa-card">
+        <h3>Termos Integrantes</h3>
+        <ul>
+          <li><strong>Complementos Verbais:</strong> Objeto Direto / Indireto.</li>
+          <li><strong>Complemento Nominal:</strong> Completa o sentido do nome.</li>
+          <li><strong>Agente da Passiva:</strong> Pratica a ação na voz passiva.</li>
+        </ul>
+      </div>
+
+      <div class="mapa-card">
+        <h3>Termos Acessórios</h3>
+        <ul>
+          <li><strong>Adjunto Adnominal:</strong> Caracteriza/determina o nome.</li>
+          <li><strong>Adjunto Adverbial:</strong> Expressa circunstância do verbo.</li>
+          <li><strong>Aposto:</strong> Explica ou resume um termo.</li>
+        </ul>
+      </div>
+
+      <div class="mapa-card">
+        <h3>Termo Independente</h3>
+        <ul>
+          <li><strong>Vocativo:</strong> Elemento de interpelação direta ao ouvinte/leitor (fora da estrutura sintática).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">18</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 19 (2. Sintaxe do Período - Coordenadas e Subordinadas) -->
+  <div class="slide" id="s19">
+    <div class="label">II. O Mapa Geral da Sintaxe</div>
+    <h2>2. Sintaxe do Período (Coordenação & Subordinação)</h2>
+    <div class="rule" style="margin-bottom: 14px;"></div>
+
+    <div class="mapa-grid">
+      <div class="mapa-card">
+        <h3>2.1 Orações Coordenadas</h3>
+        <p style="font-size: 18px; margin-bottom: 10px;">Orações independentes entre si:</p>
+        <ul>
+          <li><strong>Assindéticas:</strong> Sem conectivo (ex: <em>"Vim, vi, venci."</em>).</li>
+          <li><strong>Sindéticas:</strong> Com conectivo (Aditivas, Adversativas, Alternativas, Conclusivas, Explicativas).</li>
+        </ul>
+      </div>
+
+      <div class="mapa-card">
+        <h3>2.2 Orações Subordinadas</h3>
+        <p style="font-size: 18px; margin-bottom: 10px;">Exercem função sintática para a principal:</p>
+        <ul>
+          <li><strong>Substantivas:</strong> Sujeitiva, Objetiva Direta/Indireta, Completiva Nominal, Predicativa, Apostiva.</li>
+          <li><strong>Adjetivas:</strong> Explicativa e Restritiva.</li>
+          <li><strong>Adverbiais:</strong> Causal, Comparativa, Concessiva, Condicional, Conformativa, Consecutiva, Final, Proporcional, Temporal.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">19</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 20 (A Ponte Morfossintática: Da Classe à Função) -->
+  <div class="slide" id="s20">
+    <div class="label">III. Síntese Integradora</div>
+    <h2>A Ponte Morfossintática: Classe → Função</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Substantivo (Morfologia):</strong> Atua principalmente como <strong>Núcleo do Sujeito</strong> ou <strong>Núcleo dos Objetos</strong> (Sintaxe).</li>
+      <li><strong>Adjetivo (Morfologia):</strong> Atua como <strong>Adjunto Adnominal</strong> ou <strong>Predicativo</strong> (Sintaxe).</li>
+      <li><strong>Verbo (Morfologia):</strong> Atua como <strong>Núcleo do Predicado Verbal</strong> ou <strong>Verbo de Ligação</strong> (Sintaxe).</li>
+      <li><strong>Advérbio (Morfologia):</strong> Atua como <strong>Adjunto Adverbial</strong> (Sintaxe).</li>
+    </ul>
+
+    <div class="slide-num">20</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 21 (Plano de Aula / Atividade de Sala) -->
+  <div class="slide" id="s21">
+    <div class="label">IV. Prática em Sala</div>
+    <h2>Plano de Aula & Atividade Prática</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Apresentação do Professor:</strong> Exposição panorâmica das 10 classes e do mapa sintático geral (quadro e slides).</li>
+      <li style="margin-top: 18px;"><strong>Atividade dos Alunos:</strong>
+        <br>1. Acompanhar a explicação anotando os pontos principais no caderno.
+        <br>2. Responder oralmente às perguntas do professor durante o percurso do mapa sintático.
+      </li>
+    </ul>
+
+    <div class="slide-num">21</div>
+    <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+</div><!-- /deck -->
+
+<!-- Navegação -->
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 21</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = [
+    's1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12','s13','s14','s15','s16','s17','s18','s19','s20','s21'
+  ];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active', idx === i);
+      }
+    });
+    
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(step) {
+    const nextIdx = cur + step;
+    if (nextIdx >= 0 && nextIdx < order.length) {
+      cur = nextIdx;
+      show(cur);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      move(1);
+    } else if (e.key === 'ArrowLeft') {
+      move(-1);
+    }
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>

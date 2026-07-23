@@ -1,0 +1,34 @@
+Qual é a capital federal do Brasil?
+A. Rio de Janeiro
+B. São Paulo
+C. Brasília
+D. Salvador
+ANSWER: C
+
+Qual destes planetas é conhecido no Sistema Solar como o Planeta Vermelho?
+A. Vênus
+B. Marte
+C. Júpiter
+D. Saturno
+ANSWER: B
+
+Quem é o autor da famosa obra literária "Dom Casmurro"?
+A. José de Alencar
+B. Machado de Assis
+C. Clarice Lispector
+D. Jorge Amado
+ANSWER: B
+
+Qual é o elemento químico representado na tabela periódica pelo símbolo 'Au'?
+A. Prata
+B. Cobre
+C. Ouro
+D. Ferro
+ANSWER: C
+
+Qual é a função principal das mitocôndrias no interior das células?
+A. Síntese de proteínas
+B. Digestão intracelular
+C. Respiração celular (produção de energia)
+D. Armazenamento de material genético
+ANSWER: C

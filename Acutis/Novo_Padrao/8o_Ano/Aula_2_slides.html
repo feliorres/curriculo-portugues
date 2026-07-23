@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8º Ano — Aula 2: Revisão Morfossintática II (O Sal da Terra)</title>
+  <!-- Fontes do projeto Acutis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-slide: #FFFDF7;
+      --text-main: #385054;
+      --text-soft: #385054;
+      --text-muted: rgba(56, 80, 84, 0.75);
+      --rule-color: #385054;
+      --nav-bg: rgba(56, 80, 84, 0.05);
+      --nav-border: rgba(56, 80, 84, 0.25);
+      --font-title: 'Forum', Georgia, serif;
+      --font-body: 'EB Garamond', Georgia, serif;
+      --font-ui: 'Inter', sans-serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      overflow: hidden;
+    }
+
+    /* ── Deck container ── */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-slide);
+    }
+
+    /* ── Individual slide ── */
+    .slide {
+      position: absolute;
+      inset: 0;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      padding: 45px 7%;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .45s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    /* ── Cover slide ── */
+    .slide-cover {
+      background: var(--bg-slide);
+      color: var(--text-main);
+    }
+
+    /* ── Logo Acutis ── */
+    .slide-logo {
+      position: absolute;
+      bottom: 24px;
+      right: 36px;
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ── Slide number ── */
+    .slide-num {
+      position: absolute;
+      bottom: 28px;
+      left: 40px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── Typography ── */
+    .label {
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--text-main);
+      letter-spacing: .01em;
+    }
+
+    h2 {
+      font-family: var(--font-title);
+      font-size: 40px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: var(--text-main);
+    }
+
+    blockquote {
+      font-family: var(--font-body);
+      font-size: 26px;
+      line-height: 1.5;
+      color: var(--text-main);
+      font-weight: 400;
+      border-left: 3px solid var(--text-main);
+      padding-left: 24px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 6px;
+    }
+
+    ul li {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-left: 28px;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-main);
+      opacity: 0.7;
+    }
+
+    .rule {
+      width: 50px;
+      height: 2px;
+      background: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    .explanation-list {
+      list-style: none;
+    }
+
+    .explanation-list li {
+      font-size: 23px;
+      margin-bottom: 14px;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .explanation-list li strong {
+      font-family: var(--font-title);
+      font-size: 25px;
+      color: var(--text-main);
+    }
+
+    /* ── Box de Texto Integral ── */
+    .full-text-box {
+      background: rgba(56, 80, 84, 0.04);
+      border: 1px solid rgba(56, 80, 84, 0.2);
+      border-left: 4px solid #385054;
+      border-radius: 6px;
+      padding: 20px 24px;
+      font-family: var(--font-body);
+      font-size: 20px;
+      line-height: 1.55;
+      color: var(--text-main);
+      max-height: 62vh;
+      overflow-y: auto;
+    }
+
+    /* ── Tabela de Análise Morfossintática ── */
+    .analysis-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .analysis-table th {
+      font-family: var(--font-title);
+      font-size: 22px;
+      text-align: left;
+      padding: 10px 14px;
+      background: rgba(56, 80, 84, 0.1);
+      color: #385054;
+      border-bottom: 2px solid #385054;
+    }
+
+    .analysis-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(56, 80, 84, 0.15);
+      line-height: 1.45;
+    }
+
+    .analysis-table tr:nth-child(even) td {
+      background: rgba(56, 80, 84, 0.02);
+    }
+
+    /* ── Navigation ── */
+    .nav {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 20;
+    }
+
+    .nav-btn {
+      background: var(--nav-bg);
+      border: 1px solid var(--nav-border);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(56, 80, 84, 0.12);
+      border-color: var(--text-main);
+    }
+
+    .nav-btn:disabled {
+      opacity: .3;
+      cursor: default;
+    }
+
+    .nav-counter {
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      color: var(--text-main);
+      min-width: 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="deck" id="deck">
+
+    <!-- Slide 1 (Capa da Aula) -->
+    <div class="slide active slide-cover" id="s1">
+      <div class="label">8º Ano — Aula 2</div>
+      <div
+        style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
+        <h1>Revisão Morfossintática II</h1>
+        <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+        <p style="margin-bottom: 12px;"><strong>Texto de Ancoragem:</strong> "O Sal da Terra" (Padre Antônio Vieira)</p>
+        <p><strong>Objetivo:</strong> Análise morfológica e funcional detalhada palavra por palavra de texto opinativo
+          clássico.</p>
+      </div>
+      <div class="slide-num">01</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 2 (Texto de Apoio Na Íntegra) -->
+    <div class="slide" id="s2">
+      <div class="label">1. Texto de Ancoragem</div>
+      <h2>O Sal da Terra (Texto na Íntegra)</h2>
+      <p style="font-size: 18px; font-family: var(--font-ui); font-weight: 500; opacity: 0.85; margin-bottom: 10px;">
+        Sermão de Santo António aos Peixes — Padre Antônio Vieira
+      </p>
+
+      <div class="full-text-box">
+        Vós, diz Cristo Senhor nosso, falando com os pregadores, sois o sal da terra: e chama-lhes sal da terra, porque
+        quer que faça, na terra o que faz o sal. O efeito do sal é impedir a corrupção, mas quando a terra se vê tão
+        corrupta como está a nossa, havendo tantos que têm ofício de sal, qual será, ou qual pode ser a causa desta
+        corrupção?<br><br>
+        Ou é porque o sal não salga, ou porque a terra se não deixa salgar. Ou é porque o sal não salga, e os pregadores
+        não pregam a verdadeira doutrina; ou porque a terra se não deixa salgar, e os ouvintes, sendo verdadeira a
+        doutrina que lhes dão, a não querem receber.<br><br>
+        Ou é porque o sal não salga, e os pregadores dizem uma cousa e fazem outra; ou porque a terra se não deixa
+        salgar, e os ouvintes querem antes imitar o que eles fazem, que fazer o que dizem. Ou é porque o sal não salga,
+        e os pregadores se pregam a si, e não a Cristo; ou porque a terra se não deixa salgar, e os ouvintes em vez de
+        servir a Cristo, servem seus apetites. Não é tudo isto verdade? Ainda mal.
+      </div>
+
+      <div class="slide-num">02</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 3 (Trecho Selecionado em Destaque) -->
+    <div class="slide" id="s3">
+      <div class="label">2. Trecho para Análise</div>
+      <h2>Trecho em Análise Morfossintática</h2>
+      <div class="rule"></div>
+
+      <blockquote>
+        "Vós, diz Cristo Senhor nosso, falando com os pregadores, sois o sal da terra: e chama-lhes sal da terra, porque
+        quer que faça, na terra o que faz o sal."
+      </blockquote>
+
+      <p style="font-size: 22px; margin-top: 14px; opacity: 0.9;">
+        Nos slides a seguir, cada palavra deste trecho será analisada quanto à sua <strong>Classificação
+          Morfológica</strong> (Forma/Classe) e à sua <strong>Função Sintática</strong> (Papel na Oração).
+      </p>
+
+      <div class="slide-num">03</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 4 (Análise Parte 1) -->
+    <div class="slide" id="s4">
+      <div class="label">3. Análise Morfossintática</div>
+      <h2>Parte 1: "Vós, diz Cristo Senhor nosso, falando..."</h2>
+      <div class="rule"></div>
+
+      <table class="analysis-table">
+        <thead>
+          <tr>
+            <th>Palavra / Termo</th>
+            <th>Classificação Morfológica</th>
+            <th>Função Sintática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Vós</strong></td>
+            <td>Pronome Pessoal Reto</td>
+            <td><strong>Sujeito Simples</strong> (do verbo <em>sois</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>diz</strong></td>
+            <td>Verbo Transitivo Direto</td>
+            <td><strong>Núcleo do Predicado Verbal</strong> (Oração Intercalada)</td>
+          </tr>
+          <tr>
+            <td><strong>Cristo</strong></td>
+            <td>Substantivo Próprio</td>
+            <td><strong>Núcleo do Sujeito</strong> (do verbo <em>diz</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>Senhor</strong></td>
+            <td>Substantivo Comum</td>
+            <td><strong>Aposto Explicativo</strong></td>
+          </tr>
+          <tr>
+            <td><strong>nosso</strong></td>
+            <td>Pronome Possessivo</td>
+            <td><strong>Adjunto Adnominal</strong> (de <em>Senhor</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>falando</strong></td>
+            <td>Verbo no Gerúndio</td>
+            <td><strong>Núcleo do Predicado Verbal</strong> (Oração Reduzida)</td>
+          </tr>
+          <tr>
+            <td><strong>com os pregadores</strong></td>
+            <td>Preposição + Artigo + Substantivo</td>
+            <td><strong>Adjunto Adverbial / Objeto Indireto</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="slide-num">04</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 5 (Análise Parte 2) -->
+    <div class="slide" id="s5">
+      <div class="label">3. Análise Morfossintática</div>
+      <h2>Parte 2: "...sois o sal da terra..."</h2>
+      <div class="rule"></div>
+
+      <table class="analysis-table">
+        <thead>
+          <tr>
+            <th>Palavra / Termo</th>
+            <th>Classificação Morfológica</th>
+            <th>Função Sintática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>sois</strong></td>
+            <td>Verbo de Ligação</td>
+            <td><strong>Verbo de Ligação</strong> (Liga o sujeito <em>Vós</em> ao predicativo)</td>
+          </tr>
+          <tr>
+            <td><strong>o</strong></td>
+            <td>Artigo Definido</td>
+            <td><strong>Adjunto Adnominal</strong> (de <em>sal</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>sal</strong></td>
+            <td>Substantivo</td>
+            <td><strong>Núcleo do Predicativo do Sujeito</strong> (de <em>Vós</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>da (de + a)</strong></td>
+            <td>Preposição <em>de</em> + Artigo <em>a</em></td>
+            <td><strong>Conector do Adjunto Adnominal</strong></td>
+          </tr>
+          <tr>
+            <td><strong>terra</strong></td>
+            <td>Substantivo</td>
+            <td><strong>Núcleo do Adjunto Adnominal / Compl. Nominal</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="slide-num">05</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 6 (Análise Parte 3) -->
+    <div class="slide" id="s6">
+      <div class="label">3. Análise Morfossintática</div>
+      <h2>Parte 3: "...e chama-lhes sal da terra..."</h2>
+      <div class="rule"></div>
+
+      <table class="analysis-table">
+        <thead>
+          <tr>
+            <th>Palavra / Termo</th>
+            <th>Classificação Morfológica</th>
+            <th>Função Sintática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>e</strong></td>
+            <td>Conjunção</td>
+            <td><strong>Conector Inter-oracional Aditivo</strong></td>
+          </tr>
+          <tr>
+            <td><strong>chama</strong></td>
+            <td>Verbo Transitivo Direto e Indireto</td>
+            <td><strong>Núcleo do Predicado Verbo-Nominal</strong> (Suj. Oculto: <em>Cristo</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>-lhes</strong></td>
+            <td>Pronome Pessoal Oblíquo Átono</td>
+            <td><strong>Objeto Indireto</strong> (refere-se aos <em>pregadores</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>sal</strong></td>
+            <td>Substantivo</td>
+            <td><strong>Núcleo do Predicativo do Objeto</strong></td>
+          </tr>
+          <tr>
+            <td><strong>da terra</strong></td>
+            <td>Preposição + Artigo + Substantivo</td>
+            <td><strong>Adjunto Adnominal</strong> (de <em>sal</em>)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="slide-num">06</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 7 (Análise Parte 4) -->
+    <div class="slide" id="s7">
+      <div class="label">3. Análise Morfossintática</div>
+      <h2>Parte 4: "...porque quer que faça, na terra o que faz o sal."</h2>
+      <div class="rule"></div>
+
+      <table class="analysis-table">
+        <thead>
+          <tr>
+            <th>Palavra / Termo</th>
+            <th>Classificação Morfológica</th>
+            <th>Função Sintática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>porque</strong></td>
+            <td>Conjunção</td>
+            <td><strong>Conector de Oração Subordinada Causal</strong></td>
+          </tr>
+          <tr>
+            <td><strong>quer</strong></td>
+            <td>Verbo Transitivo Direto</td>
+            <td><strong>Núcleo do Predicado Verbal</strong></td>
+          </tr>
+          <tr>
+            <td><strong>que</strong></td>
+            <td>Conjunção</td>
+            <td><strong>Conector de Or. Subordinada Substantiva Obj. Direta</strong></td>
+          </tr>
+          <tr>
+            <td><strong>faça</strong></td>
+            <td>Verbo Transitivo Direto</td>
+            <td><strong>Núcleo do Predicado Verbal</strong></td>
+          </tr>
+          <tr>
+            <td><strong>na terra</strong></td>
+            <td>Preposição + Artigo + Substantivo</td>
+            <td><strong>Adjunto Adverbial de Lugar</strong></td>
+          </tr>
+          <tr>
+            <td><strong>o [aquilo]</strong></td>
+            <td>Pronome Demonstrativo</td>
+            <td><strong>Objeto Direto</strong> (do verbo <em>faça</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>que</strong></td>
+            <td>Pronome Relativo</td>
+            <td><strong>Objeto Direto</strong> (do verbo <em>faz</em>)</td>
+          </tr>
+          <tr>
+            <td><strong>faz</strong></td>
+            <td>Verbo Transitivo Direto</td>
+            <td><strong>Núcleo do Predicado Verbal</strong></td>
+          </tr>
+          <tr>
+            <td><strong>o sal</strong></td>
+            <td>Artigo + Substantivo</td>
+            <td><strong>Sujeito Simples</strong> (do verbo <em>faz</em>)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="slide-num">07</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 8 (Atividade em Sala & Anotações) -->
+    <div class="slide" id="s8">
+      <div class="label">4. Atividade em Sala</div>
+      <h2>Anotação & Fixação no Caderno</h2>
+      <div class="rule"></div>
+
+      <ul class="explanation-list">
+        <li><strong>1. Transcrição:</strong> Copie o trecho analisado e as tabelas de correspondência morfossintática no
+          caderno.</li>
+        <li style="margin-top: 16px;"><strong>2. Exercício Prático de Aplicação:</strong>
+          <br>Identifique a classe morfológica e a função sintática das palavras em destaque:
+          <br><em
+            style="font-size: 24px; display: block; margin-top: 10px; padding-left: 20px; border-left: 3px solid #385054;">"O
+            **efeito** do sal é **impedir** a **corrupção**."</em>
+        </li>
+      </ul>
+
+      <div class="slide-num">08</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+  </div><!-- /deck -->
+
+  <!-- Navegação -->
+  <div class="nav">
+    <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+    <div class="nav-counter" id="counter">1 / 8</div>
+    <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+  </div>
+
+  <script>
+    const order = [
+      's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8'
+    ];
+    let cur = 0;
+
+    function show(i) {
+      order.forEach((id, idx) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.toggle('active', idx === i);
+        }
+      });
+
+      document.getElementById('prev').disabled = i === 0;
+      document.getElementById('next').disabled = i === order.length - 1;
+      document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+    }
+
+    function move(step) {
+      const nextIdx = cur + step;
+      if (nextIdx >= 0 && nextIdx < order.length) {
+        cur = nextIdx;
+        show(cur);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        move(1);
+      } else if (e.key === 'ArrowLeft') {
+        move(-1);
+      }
+    });
+
+    show(0);
+  </script>
+
+</body>
+
+</html>

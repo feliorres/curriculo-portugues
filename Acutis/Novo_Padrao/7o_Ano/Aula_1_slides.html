@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7º Ano — Aula 1: Slides</title>
+  <!-- Fontes do projeto Acutis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-slide: #FFFDF7;
+      --text-main: #385054;
+      --text-soft: #385054;
+      --text-muted: rgba(56, 80, 84, 0.75);
+      --rule-color: #385054;
+      --nav-bg: rgba(56, 80, 84, 0.05);
+      --nav-border: rgba(56, 80, 84, 0.25);
+      --font-title: 'Forum', Georgia, serif;
+      --font-body: 'EB Garamond', Georgia, serif;
+      --font-ui: 'Inter', sans-serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      overflow: hidden;
+    }
+
+    /* ── Deck container ── */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-slide);
+    }
+
+    /* ── Individual slide ── */
+    .slide {
+      position: absolute;
+      inset: 0;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      padding: 50px 8%;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .45s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    /* ── Cover slide ── */
+    .slide-cover {
+      background: var(--bg-slide);
+      color: var(--text-main);
+    }
+
+    /* ── Logo Acutis ── */
+    .slide-logo {
+      position: absolute;
+      bottom: 24px;
+      right: 36px;
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ── Slide number ── */
+    .slide-num {
+      position: absolute;
+      bottom: 28px;
+      left: 40px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── Typography ── */
+    .label {
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 68px;
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--text-main);
+      letter-spacing: .01em;
+    }
+
+    h2 {
+      font-family: var(--font-title);
+      font-size: 44px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
+    blockquote {
+      font-family: var(--font-body);
+      font-size: 30px;
+      line-height: 1.5;
+      color: var(--text-main);
+      font-weight: 400;
+      border-left: 3px solid var(--text-main);
+      padding-left: 28px;
+      margin-top: 14px;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    ul li {
+      font-size: 25px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.55;
+      padding-left: 32px;
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-main);
+      opacity: 0.7;
+    }
+
+    .rule {
+      width: 50px;
+      height: 2px;
+      background: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .explanation-list {
+      list-style: none;
+    }
+
+    .explanation-list li {
+      font-size: 25px;
+      margin-bottom: 16px;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .explanation-list li strong {
+      font-family: var(--font-title);
+      font-size: 27px;
+      color: var(--text-main);
+    }
+
+    .poem-text {
+      font-family: var(--font-body);
+      font-size: 24px;
+      line-height: 1.5;
+      color: var(--text-main);
+      border-left: 3px solid var(--text-main);
+      padding-left: 24px;
+      margin-top: 10px;
+    }
+
+    .svg-center-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* ── Navigation ── */
+    .nav {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 20;
+    }
+
+    .nav-btn {
+      background: var(--nav-bg);
+      border: 1px solid var(--nav-border);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(56, 80, 84, 0.12);
+      border-color: var(--text-main);
+    }
+
+    .nav-btn:disabled {
+      opacity: .3;
+      cursor: default;
+    }
+
+    .nav-counter {
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      color: var(--text-main);
+      min-width: 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="deck" id="deck">
+
+    <!-- Slide 1 (Capa da Aula) -->
+    <div class="slide active slide-cover" id="s1">
+      <div class="label">7º Ano — Aula 1</div>
+      <div
+        style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
+        <h1>Revisão de Classes Nominais</h1>
+        <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+        <p style="margin-bottom: 10px;"><strong>Tópico:</strong> [7.1.1] Morfologia — Substantivo, Adjetivo, Artigo, Numeral e Pronome</p>
+        <p style="margin-bottom: 10px;"><strong>Texto de Ancoragem:</strong> "Deus" (Casimiro de Abreu)</p>
+        <p><strong>Objetivo:</strong> Panorama morfológico e revisão diagnóstica das 5 classes nominais aplicadas ao texto clássico.</p>
+      </div>
+      <div class="slide-num">01</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 2 (1. O que estudamos em Português - Mapa Mental SVG) -->
+    <div class="slide" id="s2">
+      <div class="label">1. Panorama Morfológico</div>
+      <h2>O Lugar da Morfologia</h2>
+
+      <div class="svg-center-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 680" style="width: 100%; height: auto; max-height: 58vh;">
+          <defs>
+            <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#385054" flood-opacity="0.1"/>
+            </filter>
+          </defs>
+
+          <style>
+            .bg-root { fill: #385054; rx: 8px; }
+            .bg-branch-1 { fill: rgba(56, 80, 84, 0.05); stroke: #385054; stroke-width: 2px; rx: 8px; }
+            .bg-branch-2 { fill: rgba(56, 80, 84, 0.08); stroke: #385054; stroke-width: 2px; rx: 8px; }
+            .bg-sub { fill: #FFFDF7; stroke: rgba(56, 80, 84, 0.3); stroke-width: 1.5px; rx: 6px; }
+            .bg-sub-highlight { fill: rgba(56, 80, 84, 0.15); stroke: #385054; stroke-width: 2px; rx: 6px; }
+
+            .txt-root { fill: #FFFDF7; font-family: 'Forum', Georgia, serif; font-size: 20px; font-weight: 500; dominant-baseline: central; text-anchor: middle; letter-spacing: 0.05em; }
+            .txt-branch-1 { fill: #385054; font-family: 'Forum', Georgia, serif; font-size: 18px; font-weight: 600; dominant-baseline: central; }
+            .txt-branch-2 { fill: #385054; font-family: 'Forum', Georgia, serif; font-size: 18px; font-weight: 600; dominant-baseline: central; }
+            .txt-sub { fill: #385054; font-family: 'EB Garamond', Georgia, serif; font-size: 16px; font-weight: 500; dominant-baseline: central; }
+            
+            .link-main { fill: none; stroke: #385054; stroke-width: 2.5px; stroke-linecap: round; }
+            .link-sub { fill: none; stroke: rgba(56, 80, 84, 0.4); stroke-width: 1.5px; stroke-linecap: round; }
+            .link-highlight { fill: none; stroke: #385054; stroke-width: 2px; stroke-linecap: round; }
+          </style>
+
+          <path d="M 210,340 C 245,340 245,110 280,110" class="link-main"/>
+          <path d="M 210,340 C 245,340 245,430 280,430" class="link-main"/>
+
+          <path d="M 490,110 C 520,110 520,70 550,70" class="link-sub"/>
+          <path d="M 490,110 C 520,110 520,150 550,150" class="link-sub"/>
+
+          <path d="M 490,430 C 520,430 520,230 550,230" class="link-sub"/>
+          <path d="M 490,430 C 520,430 520,330 550,330" class="link-highlight"/>
+          <path d="M 490,430 C 520,430 520,430 550,430" class="link-sub"/>
+          <path d="M 490,430 C 520,430 520,520 550,520" class="link-sub"/>
+          <path d="M 490,430 C 520,430 520,610 550,610" class="link-sub"/>
+
+          <path d="M 770,330 C 805,330 805,300 840,300" class="link-highlight"/>
+          <path d="M 770,330 C 805,330 805,360 840,360" class="link-highlight"/>
+
+          <g filter="url(#card-shadow)">
+            <rect x="40" y="305" width="170" height="70" class="bg-root"/>
+            <text x="125" y="340" class="txt-root">PORTUGUÊS</text>
+          </g>
+
+          <g filter="url(#card-shadow)">
+            <rect x="280" y="80" width="210" height="60" class="bg-branch-1"/>
+            <text x="300" y="110" class="txt-branch-1">1. Leitura e escrita</text>
+          </g>
+
+          <g filter="url(#card-shadow)">
+            <rect x="280" y="400" width="210" height="60" class="bg-branch-2"/>
+            <text x="300" y="430" class="txt-branch-2">2. Gramática</text>
+          </g>
+
+          <g filter="url(#card-shadow)">
+            <rect x="550" y="50" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="70" class="txt-sub">1.1 Interpretação de texto</text>
+
+            <rect x="550" y="130" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="150" class="txt-sub">1.2 Tipos e gêneros de texto</text>
+          </g>
+
+          <g filter="url(#card-shadow)">
+            <rect x="550" y="210" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="230" class="txt-sub">2.1 Fonética</text>
+
+            <rect x="550" y="310" width="220" height="40" class="bg-sub-highlight"/>
+            <text x="565" y="330" class="txt-sub" style="font-weight: 700; fill: #385054;">2.2 Morfologia</text>
+
+            <rect x="550" y="410" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="430" class="txt-sub">2.3 Sintaxe</text>
+
+            <rect x="550" y="500" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="520" class="txt-sub">2.4 Semântica</text>
+
+            <rect x="550" y="590" width="220" height="40" class="bg-sub"/>
+            <text x="565" y="610" class="txt-sub">2.5 Estilística</text>
+          </g>
+
+          <g filter="url(#card-shadow)">
+            <rect x="840" y="280" width="240" height="40" class="bg-sub"/>
+            <text x="855" y="300" class="txt-sub">2.2.1 Formação de palavras</text>
+
+            <rect x="840" y="340" width="240" height="40" class="bg-sub-highlight"/>
+            <text x="855" y="360" class="txt-sub" style="font-weight: 700; fill: #385054;">2.2.2 Classes Nominais</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="slide-num">02</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 3 (Classes Nominais - Rosca SVG) -->
+    <div class="slide" id="s3">
+      <div class="label">1. Morfologia</div>
+      <h2>O Universo das Classes Nominais</h2>
+      <p style="font-size: 22px; margin-bottom: 6px;">As 5 classes que orbitam ao redor dos nomes (Substantivos):</p>
+
+      <div class="svg-center-container">
+        <svg width="420" height="420" viewBox="0 0 500 500" style="max-height: 56vh;">
+          <g stroke="#385054" stroke-width="1.5">
+            <path d="M 250 50 A 200 200 0 0 1 367.56 88.20 L 302.90 177.19 A 90 90 0 0 0 250 160 Z" fill="rgba(56, 80, 84, 0.35)"/>
+            <path d="M 367.56 88.20 A 200 200 0 0 1 440.21 188.20 L 335.60 222.19 A 90 90 0 0 0 302.90 177.19 Z" fill="rgba(56, 80, 84, 0.25)"/>
+            <path d="M 440.21 188.20 A 200 200 0 0 1 440.21 311.80 L 335.60 277.81 A 90 90 0 0 0 335.60 222.19 Z" fill="rgba(56, 80, 84, 0.08)"/>
+            <path d="M 440.21 311.80 A 200 200 0 0 1 367.56 411.80 L 302.90 322.81 A 90 90 0 0 0 335.60 277.81 Z" fill="rgba(56, 80, 84, 0.25)"/>
+            <path d="M 367.56 411.80 A 200 200 0 0 1 250 450 L 250 340 A 90 90 0 0 0 302.90 322.81 Z" fill="rgba(56, 80, 84, 0.25)"/>
+            <path d="M 250 450 A 200 200 0 0 1 132.44 411.80 L 197.10 322.81 A 90 90 0 0 0 250 340 Z" fill="rgba(56, 80, 84, 0.25)"/>
+            <path d="M 132.44 411.80 A 200 200 0 0 1 59.79 311.80 L 164.40 277.81 A 90 90 0 0 0 197.10 322.81 Z" fill="rgba(56, 80, 84, 0.08)"/>
+            <path d="M 59.79 311.80 A 200 200 0 0 1 59.79 188.20 L 164.40 222.19 A 90 90 0 0 0 164.40 277.81 Z" fill="rgba(56, 80, 84, 0.08)"/>
+            <path d="M 59.79 188.20 A 200 200 0 0 1 132.44 88.20 L 197.10 177.19 A 90 90 0 0 0 164.40 222.19 Z" fill="rgba(56, 80, 84, 0.08)"/>
+            <path d="M 132.44 88.20 A 200 200 0 0 1 250 50 L 250 160 A 90 90 0 0 0 197.10 177.19 Z" fill="rgba(56, 80, 84, 0.08)"/>
+          </g>
+
+          <g font-family="EB Garamond, Georgia, serif" font-size="17" fill="#385054" text-anchor="middle" dominant-baseline="central">
+            <text x="294.81" y="112.10" transform="rotate(18 294.81 112.10)" font-weight="bold">Substantivo</text>
+            <text x="367.31" y="164.77" transform="rotate(54 367.31 164.77)" font-weight="bold">Adjetivo</text>
+            <text x="395.00" y="250.00" transform="rotate(90 395.00 250.00)" opacity="0.4">Verbo</text>
+            <text x="367.31" y="335.23" transform="rotate(-54 367.31 335.23)" font-weight="bold">Pronome</text>
+            <text x="294.81" y="387.90" transform="rotate(-18 294.81 387.90)" font-weight="bold">Artigo</text>
+            <text x="205.19" y="387.90" transform="rotate(18 205.19 387.90)" font-weight="bold">Numeral</text>
+            <text x="132.69" y="335.23" transform="rotate(54 132.69 335.23)" opacity="0.4">Preposição</text>
+            <text x="105.00" y="250.00" transform="rotate(-90 105.00 250.00)" opacity="0.4">Conjunção</text>
+            <text x="132.69" y="164.77" transform="rotate(-54 132.69 164.77)" opacity="0.4">Interjeição</text>
+            <text x="205.19" y="112.10" transform="rotate(-18 205.19 112.10)" opacity="0.4">Advérbio</text>
+          </g>
+
+          <circle cx="250" cy="250" r="82" fill="#FFFDF7" stroke="#385054" stroke-width="1.5"/>
+          <text x="250" y="240" font-family="Forum, Georgia, serif" font-size="20" fill="#385054" text-anchor="middle">CLASSES</text>
+          <text x="250" y="264" font-family="Inter, sans-serif" font-size="12" fill="rgba(56, 80, 84, 0.75)" text-anchor="middle" letter-spacing="1">NOMINAIS</text>
+        </svg>
+      </div>
+
+      <div class="slide-num">03</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 4 (Classes Nominais: Substantivo & Adjetivo) -->
+    <div class="slide" id="s4">
+      <div class="label">1. Morfologia | Revisão Diagnóstica</div>
+      <h2>Substantivo & Adjetivo</h2>
+      <div class="rule"></div>
+
+      <ul class="explanation-list">
+        <li><strong>1. Substantivo (O Núcleo):</strong> Classe que nomeia seres, objetos, lugares, sentimentos e conceitos.
+          <br><span style="font-size:22px; opacity:0.85;">Ex. no poema: <em>praia, mar, escuma, céu, mãe, tufão, Deus.</em></span>
+        </li>
+        <li style="margin-top: 18px;"><strong>2. Adjetivo (O Atributo):</strong> Classe que atribui qualidades, estados ou características ao substantivo.
+          <br><span style="font-size:22px; opacity:0.85;">Ex. no poema: <em>pequeno, altivo, branca, sereno, dura, insano.</em></span>
+        </li>
+      </ul>
+
+      <div class="slide-num">04</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 5 (Classes Nominais: Artigo, Numeral & Pronome) -->
+    <div class="slide" id="s5">
+      <div class="label">1. Morfologia | Revisão Diagnóstica</div>
+      <h2>Artigo, Numeral & Pronome</h2>
+      <div class="rule"></div>
+
+      <ul class="explanation-list">
+        <li><strong>3. Artigo (O Determinante):</strong> Antepõe o substantivo determinando-o (definido) ou indeterminando-o (indefinido).
+          <br><span style="font-size:22px; opacity:0.85;">Ex.: <em>o mar, a praia, um Ser.</em></span>
+        </li>
+        <li><strong>4. Numeral (A Quantidade/Ordem):</strong> Indica valor numérico ou posição ordinal.
+          <br><span style="font-size:22px; opacity:0.85;">Ex.: <em>primeiro, dois, três.</em></span>
+        </li>
+        <li><strong>5. Pronome (O Substituto/Acompanhante):</strong> Acompanha ou substitui o nome.
+          <br><span style="font-size:22px; opacity:0.85;">Ex. no poema: <em>eu, minha, este, nós.</em></span>
+        </li>
+      </ul>
+
+      <div class="slide-num">05</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 6 (Texto de Ancoragem: Poema "Deus") -->
+    <div class="slide" id="s6">
+      <div class="label">2. Texto de Ancoragem</div>
+      <h2>"Deus"</h2>
+      <p style="font-size: 18px; font-family: var(--font-ui); font-weight: 500; opacity: 0.85; margin-bottom: 6px;">Casimiro de Abreu</p>
+
+      <div class="poem-text">
+        Eu me lembro! eu me lembro! – Era pequeno<br>
+        E brincava na praia; o mar bramia<br>
+        E, erguendo o dorso altivo, sacudia<br>
+        A branca escuma para o céu sereno.<br><br>
+
+        E eu disse a minha mãe nesse momento:<br>
+        "Que dura orquestra! Que furor insano!<br>
+        Que pode haver maior do que o oceano,<br>
+        Ou que seja mais forte do que o vento?!"<br><br>
+
+        Minha mãe a sorrir, olhou p’ra os céus<br>
+        E respondeu: – "Um Ser que nós não vemos,<br>
+        É maior do que o mar que nós tememos,<br>
+        Mais forte que o tufão! meu filho, é – Deus!"
+      </div>
+
+      <div class="slide-num">06</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 7 (Vocabulário / Glossário) -->
+    <div class="slide" id="s7">
+      <div class="label">2. Texto de Ancoragem</div>
+      <h2>Glossário Vocabular</h2>
+      <div class="rule"></div>
+
+      <ul class="explanation-list">
+        <li><strong>Bramia:</strong> Rugia, fazia um barulho fortíssimo.</li>
+        <li><strong>Altivo:</strong> Imponente, majestoso, elevado.</li>
+        <li><strong>Escuma:</strong> Espuma (variante poética).</li>
+        <li><strong>Furor:</strong> Fúria, agitação violenta.</li>
+        <li><strong>Insano:</strong> Desmedido, descontrolado.</li>
+        <li><strong>Tufão:</strong> Vento forte, tempestade.</li>
+      </ul>
+
+      <div class="slide-num">07</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 8 (Exercícios Diagnósticos no Caderno) -->
+    <div class="slide" id="s8">
+      <div class="label">3. Atividade Diagnóstica</div>
+      <h2>Ficha Diagnóstica no Caderno</h2>
+      <div class="rule"></div>
+
+      <ul>
+        <li style="font-size: 25px; line-height: 1.5;"><strong>1. Cópia & Vocabulário:</strong> Copie o poema <em>"Deus"</em> e o glossário em seu caderno.</li>
+        <li style="font-size: 25px; line-height: 1.5; margin-top: 14px;"><strong>2. Análise Morfológica (Retire do texto):</strong>
+          <ul style="margin-left: 24px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <li style="font-size: 23px;">a) <strong>3 Substantivos</strong> (elementos da natureza)</li>
+            <li style="font-size: 23px;">b) <strong>3 Adjetivos</strong> (qualidades/atributos)</li>
+            <li style="font-size: 23px;">c) <strong>2 Pronomes</strong> (pessoais ou possessivos)</li>
+            <li style="font-size: 23px;">d) <strong>2 Artigos</strong> (um definido e um indefinido)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="slide-num">08</div>
+      <img src="../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+  </div><!-- /deck -->
+
+  <!-- Navegação -->
+  <div class="nav">
+    <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+    <div class="nav-counter" id="counter">1 / 8</div>
+    <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+  </div>
+
+  <script>
+    const order = [
+      's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8'
+    ];
+    let cur = 0;
+
+    function show(i) {
+      order.forEach((id, idx) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.toggle('active', idx === i);
+        }
+      });
+
+      document.getElementById('prev').disabled = i === 0;
+      document.getElementById('next').disabled = i === order.length - 1;
+      document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+    }
+
+    function move(step) {
+      const nextIdx = cur + step;
+      if (nextIdx >= 0 && nextIdx < order.length) {
+        cur = nextIdx;
+        show(cur);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        move(1);
+      } else if (e.key === 'ArrowLeft') {
+        move(-1);
+      }
+    });
+
+    show(0);
+  </script>
+
+</body>
+
+</html>
