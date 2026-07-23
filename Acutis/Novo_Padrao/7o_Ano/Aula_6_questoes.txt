@@ -1,0 +1,34 @@
+Qual é a regra geral de pluralização para substantivos simples terminados em "m" (como em "jardim" ou "homem")?
+A. Acrescenta-se "-es" no final (jardimes)
+B. Substitui-se "-m" por "-ns" (jardins, homens)
+C. A palavra fica invariável no plural
+D. Troca-se o "-m" por "-is" (jardis)
+ANSWER: B
+
+Na flexão de substantivos compostos formados por dois substantivos em que ambos aceitam variação (como "cirurgião-dentista"), qual é a forma correta no plural?
+A. cirurgião-dentistas
+B. cirurgiões-dentistas
+C. cirurgiões-dentista
+D. cirurgião-dentistases
+ANSWER: B
+
+Nos compostos em que o primeiro elemento é um verbo e o segundo é um substantivo (como "beija-flor"), apenas o segundo elemento varia. Qual é o plural correto?
+A. beijas-flores
+B. beijas-flor
+C. beija-flores
+D. beijaflores
+ANSWER: C
+
+Quando o segundo elemento de um substantivo composto limita ou especifica a espécie/finalidade do primeiro (como em "ano-luz"), qual regra de plural se aplica?
+A. Flexiona-se apenas o primeiro elemento (anos-luz)
+B. Flexionam-se ambos os elementos (anos-luzes)
+C. Flexiona-se apenas o segundo elemento (ano-luzes)
+D. A palavra permanece invariável no plural (os ano-luz)
+ANSWER: A
+
+A palavra composta "ave-maria", que representa uma oração/invocação consolidada na língua, faz o plural flexionando apenas o segundo elemento. Qual é a forma correta?
+A. aves-marias
+B. ave-marias
+C. aves-maria
+D. ave-mariases
+ANSWER: B

@@ -1,0 +1,34 @@
+Na análise linguística, qual é a diferença fundamental entre a abordagem morfológica e a abordagem sintática?
+A. A Morfologia analisa o som dos fonemas, enquanto a Sintaxe analisa a pontuação
+B. A Morfologia analisa a classe e a forma da palavra isolada, enquanto a Sintaxe analisa a função da palavra dentro da oração
+C. A Morfologia estuda a figura de linguagem, enquanto a Sintaxe estuda a origem latina dos termos
+D. A Morfologia só se aplica a verbos, enquanto a Sintaxe só se aplica a substantivos
+ANSWER: B
+
+Na estrutura da oração segundo a gramática tradicional, como são classificados o Sujeito e o Predicado?
+A. Termos Acessórios da Oração
+B. Termos Integrantes da Oração
+C. Termos Essenciais da Oração
+D. Orações Subordinadas Adjetivas
+ANSWER: C
+
+Na ponte morfossintática (relação entre classe e função), qual classe gramatical atua prioritariamente como núcleo do sujeito e núcleo dos objetos (direto e indireto)?
+A. Adjetivo
+B. Substantivo
+C. Advérbio
+D. Preposição
+ANSWER: B
+
+Em qual categoria do mapa sintático se enquadram termos como Adjunto Adnominal, Adjunto Adverbial e Aposto?
+A. Termos Essenciais da Oração
+B. Termos Integrantes da Oração
+C. Termos Acessórios da Oração
+D. Conectivos Inter-oracionais
+ANSWER: C
+
+Na correspondência entre morfologia e sintaxe, a classe dos verbos de ação (nocionais) desempenha tipicamente a função sintática de:
+A. Núcleo do Predicado Verbal
+B. Predicativo do Sujeito
+C. Adjunto Adnominal
+D. Conector de Complemento Nominal
+ANSWER: A

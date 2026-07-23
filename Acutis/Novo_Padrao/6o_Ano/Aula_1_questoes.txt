@@ -1,0 +1,34 @@
+Qual ramo da gramática é dedicado ao estudo da palavra em sua forma e classe, analisando-a isoladamente?
+A. Fonética
+B. Sintaxe
+C. Morfologia
+D. Semântica
+ANSWER: C
+
+A etimologia da palavra "substantivo" vem do latim substantivum. O que essa classe gramatical nomeia fundamentalmente?
+A. As circunstâncias de tempo e lugar das ações
+B. Os seres, objetos, lugares, sentimentos e conceitos
+C. As características e qualidades atribuídas aos nomes
+D. As ligações lógicas entre duas orações diferentes
+ANSWER: B
+
+Qual classe de palavras é definida etimologicamente como "a palavra por excelência" (do latim verbum) e é responsável por indicar ações, estados ou fenômenos no tempo?
+A. Adjetivo
+B. Verbo
+C. Advérbio
+D. Pronome
+ANSWER: B
+
+A palavra "pronome" vem do latim pronomen (pro = em lugar de + nomen = nome). Qual é a função principal dessa classe na oração?
+A. Expressar emoções puras e reações diretas
+B. Conectar dois termos estabelecendo regência
+C. Substituir ou acompanhar um substantivo
+D. Indicar a quantidade exata de elementos
+ANSWER: C
+
+Qual das opções a seguir apresenta apenas classes de palavras invariáveis (que não flexionam em gênero ou número)?
+A. Substantivo, Adjetivo e Verbo
+B. Pronome, Artigo e Numeral
+C. Advérbio, Preposição, Conjunção e Interjeição
+D. Substantivo, Pronome e Preposição
+ANSWER: C

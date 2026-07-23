@@ -1,0 +1,34 @@
+Qual é a principal diferença conceitual entre as classes nocionais (substantivos, adjetivos, verbos) e as classes relacionais (pronomes, preposições, conjunções)?
+A. As nocionais mudam de gênero; as relacionais não têm significado na língua
+B. As nocionais carregam conteúdo conceitual/representativo; as relacionais atuam como cimentos gramaticais e articuladores
+C. As relacionais só aparecem em poesias; as nocionais só aparecem em textos em prosa
+D. As nocionais exercem apenas a função de advérbio; as relacionais exercem a função de sujeito
+ANSWER: B
+
+No recurso da coesão anafórica realizada pelos pronomes (ex.: "Bento Santiago viveu isolado. Ele construiu uma casa..."), qual é o papel do pronome "Ele"?
+A. Antecipar um termo que ainda será apresentado no texto
+B. Retomar um termo já mencionado anteriormente, evitando repetição desnecessária
+C. Conectar duas orações subordinadas causais
+D. Modificar a intensidade de um adjetivo
+ANSWER: B
+
+Em frases como "A compaixão pela dor alheia é o primeiro sinal de humanidade", qual é o papel sintático e coesivo das preposições "pela" e "de"?
+A. Ligar termos dentro da oração estabelecendo dependência sintática e regência
+B. Ligar duas orações independentes com valor de adição
+C. Substituir substantivos abstratos por concretos
+D. Introduzir um diálogo em discurso direto
+ANSWER: A
+
+No trecho de Vieira "Ou é porque o sal não salga, e os pregadores não pregam a verdadeira doutrina...", qual é a relação lógica estabelecida pela conjunção "porque"?
+A. Concessão ou oposição
+B. Causa ou justificativa
+C. Condição ou hipótese
+D. Conclusão ou consequência
+ANSWER: B
+
+Na passagem "sendo verdadeira a doutrina que lhes dão, a não querem receber", os pronomes oblíquos "lhes" e "a" garantem a coesão textual ao retomarem, respectivamente:
+A. "pregadores" e "doutrina"
+B. "ouvintes" e "doutrina"
+C. "sal" e "terra"
+D. "Cristo" e "pregadores"
+ANSWER: B

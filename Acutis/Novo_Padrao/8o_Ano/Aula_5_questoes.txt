@@ -1,0 +1,34 @@
+O que caracteriza o processo de formação por parassíntese (ou derivação parassintética) na criação de um verbo ou substantivo?
+A. A perda obrigatória da vogal temática do radical
+B. O acréscimo simultâneo e dependente de prefixo e sufixo ao mesmo tempo
+C. A junção de dois radicais com perda de fonemas
+D. A mudança de classe gramatical sem alteração gráfica
+ANSWER: B
+
+Na frase "O não da diretoria foi doloroso para a equipe", a palavra "não", originalmente um advérbio, passa a funcionar como substantivo. Como é chamado esse processo de formação?
+A. Derivação Regressiva
+B. Derivação Imprópria (ou Conversão)
+C. Parassíntese
+D. Composição por Aglutinação
+ANSWER: B
+
+O substantivo abstrato de ação "o combate" foi criado a partir do verbo "combater". Esse tipo de formação é classificado como:
+A. Derivação Regressiva (ou Deverbal)
+B. Derivação Prefixal
+C. Composição por Justaposição
+D. Derivação Parassintética
+ANSWER: A
+
+Qual é a diferença fundamental entre a composição por justaposição e a composição por aglutinação?
+A. Na justaposição há perda de fonemas; na aglutinação os radicais permanecem intactos
+B. Na justaposição os radicais mantêm a integridade sonora; na aglutinação ao menos um radical sofre perda fonética
+C. A justaposição só ocorre em verbos; a aglutinação ocorre apenas em adjetivos
+D. A justaposição elimina a vogal temática; a aglutinação cria parassílabas
+ANSWER: B
+
+Qual das opções a seguir apresenta um substantivo composto por AGLUTINAÇÃO, no qual ocorreu alteração fonética na junção dos radicais?
+A. guarda-roupa
+B. passatempo
+C. planalto (plano + alto)
+D. quarta-feira
+ANSWER: C
