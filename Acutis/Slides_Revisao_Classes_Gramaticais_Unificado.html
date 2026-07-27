@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acutis Academy — Slides Unificados: Revisão Geral das Classes Gramaticais (6º ao 9º Ano)</title>
+<!-- Fontes do projeto Acutis -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-slide:    #FFFDF7;
+    --text-main:   #385054;
+    --text-soft:   #385054;
+    --text-muted:  rgba(56, 80, 84, 0.75);
+    --rule-color:  #385054;
+    --nav-bg:      rgba(56, 80, 84, 0.05);
+    --nav-border:  rgba(56, 80, 84, 0.25);
+    --accent-gold: #8C7862;
+    --accent-light: #EFECE6;
+    --font-title:  'Forum', Georgia, serif;
+    --font-body:   'EB Garamond', Georgia, serif;
+    --font-ui:     'Inter', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  /* ── Deck container ── */
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-slide);
+  }
+
+  /* ── Individual slide ── */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--bg-slide);
+    color: var(--text-main);
+    display: flex; flex-direction: column;
+    padding: 45px 7%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease;
+    overflow-y: auto;
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Header Top Bar / Grade Selector ── */
+  .grade-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-family: var(--font-ui);
+  }
+
+  .grade-badges {
+    display: flex;
+    gap: 8px;
+  }
+
+  .grade-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-muted);
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+
+  .grade-badge.active-badge {
+    background: var(--text-main);
+    color: #FFFDF7;
+    border-color: var(--text-main);
+  }
+
+  /* ── Cover slide ── */
+  .slide-cover {
+    background: var(--bg-slide);
+    color: var(--text-main);
+    justify-content: center;
+  }
+
+  /* ── Logo Acutis ── */
+  .slide-logo {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ── Slide number ── */
+  .slide-num {
+    position: absolute;
+    bottom: 28px; left: 40px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .label {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-main);
+    letter-spacing: .01em;
+  }
+
+  h2 {
+    font-family: var(--font-title);
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  blockquote {
+    font-family: var(--font-body);
+    font-size: 28px;
+    line-height: 1.45;
+    color: var(--text-main);
+    font-weight: 400;
+    border-left: 3px solid var(--text-main);
+    padding-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 6px;
+  }
+  ul li {
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--text-main);
+    line-height: 1.5;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-main);
+    opacity: 0.7;
+  }
+
+  .rule {
+    width: 50px; height: 2px;
+    background: var(--text-main);
+    margin-bottom: 16px;
+  }
+
+  .explanation-list {
+    list-style: none;
+  }
+  .explanation-list li {
+    font-size: 23px;
+    margin-bottom: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+  }
+  .explanation-list li strong {
+    font-family: var(--font-title);
+    font-size: 25px;
+    color: var(--text-main);
+  }
+
+  /* ── Grids e Cards ── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 12px;
+  }
+
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .card {
+    background: rgba(56, 80, 84, 0.04);
+    border: 1px solid rgba(56, 80, 84, 0.18);
+    border-left: 4px solid var(--text-main);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+
+  .card-gold {
+    border-left-color: var(--accent-gold);
+    background: rgba(140, 120, 98, 0.06);
+  }
+
+  .card h3 {
+    font-family: var(--font-title);
+    font-size: 23px;
+    color: var(--text-main);
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .card ul {
+    margin-top: 4px;
+  }
+
+  .card ul li {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    padding-left: 18px;
+  }
+
+  .card ul li::before {
+    content: '•';
+  }
+
+  /* ── Tag de Nível de Ano ── */
+  .tag-ano {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    background: var(--text-main);
+    color: #FFFDF7;
+  }
+
+  .tag-6 { background: #4A6B6C; }
+  .tag-7 { background: #5C7A68; }
+  .tag-8 { background: #8C7862; }
+  .tag-9 { background: #385054; }
+
+  /* ── Tabela Morfossintática ── */
+  .table-container {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 20px;
+  }
+
+  .table-container th, .table-container td {
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    padding: 10px 14px;
+    text-align: left;
+  }
+
+  .table-container th {
+    font-family: var(--font-title);
+    font-size: 22px;
+    background: rgba(56, 80, 84, 0.08);
+    color: var(--text-main);
+    font-weight: 400;
+  }
+
+  .table-container tr:nth-child(even) {
+    background: rgba(56, 80, 84, 0.02);
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 20;
+    background: var(--bg-slide);
+    padding: 4px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--nav-border);
+  }
+  .nav-btn {
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .nav-btn:hover:not(:disabled) {
+    background: var(--text-main);
+    color: #FFFDF7;
+  }
+  .nav-btn:disabled {
+    opacity: .35; cursor: default;
+  }
+  .nav-counter {
+    font-family: var(--font-ui);
+    font-size: 12px; font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: .08em;
+    min-width: 60px; text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck">
+
+  <!-- ================= SLIDE 1: CAPA ================= -->
+  <div class="slide slide-cover active" id="s1">
+    <div class="label">Instituto Acutis • Língua Portuguesa (6º ao 9º Ano)</div>
+    <h1>Revisão Geral das<br>Classes Gramaticais</h1>
+    <div class="rule" style="margin-top: 18px; margin-bottom: 24px; width: 80px; height: 3px;"></div>
+    <p style="font-size: 26px; color: var(--text-main); max-width: 800px;">
+      Guia Unificado de Estudo Morfológico: do Reconhecimento das Palavras à Análise Morfossintática Avançada.
+    </p>
+
+    <div style="margin-top: 32px; display: flex; gap: 10px;">
+      <span class="tag-ano tag-6">6º Ano — Reconhecimento</span>
+      <span class="tag-ano tag-7">7º Ano — Flexões & Semântica</span>
+      <span class="tag-ano tag-8">8º Ano — Morfossintaxe</span>
+      <span class="tag-ano tag-9">9º Ano — Regência & Estilo</span>
+    </div>
+
+    <div class="slide-num">01 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 2: MAPA DOS NÍVEIS POR TURMA ================= -->
+  <div class="slide" id="s2">
+    <div class="grade-bar">
+      <div class="label">Panorama Pedagógico</div>
+      <div class="grade-badges">
+        <span class="grade-badge active-badge">Visão Geral</span>
+        <span class="grade-badge">6º Ano</span>
+        <span class="grade-badge">7º Ano</span>
+        <span class="grade-badge">8º Ano</span>
+        <span class="grade-badge">9º Ano</span>
+      </div>
+    </div>
+    <h2>Progressão Curricular por Turma</h2>
+    <div class="rule"></div>
+
+    <div class="grid-4">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º Ano</span> Nível 1</h3>
+        <p><strong>Foco:</strong> Identificação e diferenciação das 10 classes.</p>
+        <ul>
+          <li>Classes básicas (Substantivo, Adjetivo, Verbo).</li>
+          <li>Distinção entre Nomes e Conectivos.</li>
+          <li>Reconhecimento no texto.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag-ano tag-7">7º Ano</span> Nível 2</h3>
+        <p><strong>Foco:</strong> Flexões, concordância e valor semântico.</p>
+        <ul>
+          <li>Flexões de gênero, número e grau.</li>
+          <li>Modos e tempos verbais básicos.</li>
+          <li>Pronomes e coesão textual.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag-ano tag-8">8º Ano</span> Nível 3</h3>
+        <p><strong>Foco:</strong> A ponte entre Morfologia e Sintaxe.</p>
+        <ul>
+          <li>O que a palavra <strong>É</strong> vs. o que ela <strong>FAZ</strong>.</li>
+          <li>Núcleos (Sujeito, Objeto, Predicado).</li>
+          <li>Adjuntos e modificadores.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag-ano tag-9">9º Ano</span> Nível 4</h3>
+        <p><strong>Foco:</strong> Análise sintática avançada e estilo.</p>
+        <ul>
+          <li>Regência nominal e verbal.</li>
+          <li>Conjunções no período composto.</li>
+          <li>Seleção lexical e efeitos estilísticos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">02 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 3: O LUGAR DA MORFOLOGIA ================= -->
+  <div class="slide" id="s3">
+    <div class="label">I. Fundamentação Gramatical</div>
+    <h2>O Lugar da Morfologia na Língua</h2>
+    <div class="rule"></div>
+
+    <p style="margin-bottom: 16px;">A Gramática Tradicional organiza-se em eixos complementares de estudo:</p>
+
+    <div class="grid-4">
+      <div class="card">
+        <h3>1. Fonética & Ortografia</h3>
+        <p>Estuda os sons da fala (fonemas), as letras do alfabeto e as regras de escrita correta.</p>
+      </div>
+
+      <div class="card card-gold">
+        <h3>2. Morfologia</h3>
+        <p>Estuda a <strong>estrutura</strong>, a <strong>formação</strong> e a <strong>classificação</strong> individual das palavras isoladas.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Sintaxe</h3>
+        <p>Estuda a <strong>relação de dependência e função</strong> que as palavras exercem dentro da oração e do período.</p>
+      </div>
+
+      <div class="card">
+        <h3>4. Semântica & Estilo</h3>
+        <p>Estuda o <strong>significado</strong>, os efeitos de sentido no contexto e os recursos literários/expressivos do autor.</p>
+      </div>
+    </div>
+
+    <blockquote style="margin-top: 20px;">
+      "A Morfologia catalogará as peças do idioma; a Sintaxe ensinará a combiná-las com harmonia e rigor."
+    </blockquote>
+
+    <div class="slide-num">03 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 4: VARIÁVEIS X INVARIÁVEIS ================= -->
+  <div class="slide" id="s4">
+    <div class="label">I. Divisão Fundamental</div>
+    <h2>Palavras Variáveis vs. Invariáveis</h2>
+    <div class="rule"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Palavras Variáveis (6 Classes)</h3>
+        <p style="margin-bottom: 10px;">Flexionam-se para se adaptar ao contexto (gênero, número, pessoa, tempo, modo ou grau):</p>
+        <ul>
+          <li><strong>Substantivo:</strong> <em>menino / meninas</em></li>
+          <li><strong>Adjetivo:</strong> <em>bello / bellos / bellíssima</em></li>
+          <li><strong>Verbo:</strong> <em>canto / cantávamos / cantariam</em></li>
+          <li><strong>Pronome:</strong> <em>este / estes / minha / minhas</em></li>
+          <li><strong>Artigo:</strong> <em>o / a / os / as</em></li>
+          <li><strong>Numeral:</strong> <em>um / dois / primeiro / primeira</em></li>
+        </ul>
+      </div>
+
+      <div class="card card-gold">
+        <h3>Palavras Invariáveis (4 Classes)</h3>
+        <p style="margin-bottom: 10px;">Mantêm rigorosamente a mesma forma, independentemente da frase:</p>
+        <ul>
+          <li><strong>Advérbio:</strong> <em>ontem, rapidamente, muito</em></li>
+          <li><strong>Preposição:</strong> <em>de, em, com, para, por</em></li>
+          <li><strong>Conjunção:</strong> <em>e, mas, porque, contudo</em></li>
+          <li><strong>Interjeição:</strong> <em>ah!, psiu!, bravo!</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">04 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 5: VISÃO GERAL DAS 10 CLASSES ================= -->
+  <div class="slide" id="s5">
+    <div class="label">II. Visão Panorâmica</div>
+    <h2>As 10 Classes Gramaticais em Resumo</h2>
+    <div class="rule"></div>
+
+    <div class="grid-5">
+      <div class="card">
+        <h3>1. Substantivo</h3>
+        <p><strong>Nomeia</strong> os seres, coisas, ideias e sentimentos.</p>
+      </div>
+      <div class="card">
+        <h3>2. Adjetivo</h3>
+        <p><strong>Caracteriza</strong> o substantivo, atribuindo qualidades.</p>
+      </div>
+      <div class="card">
+        <h3>3. Verbo</h3>
+        <p><strong>Expressa</strong> ação, estado, processo ou fenômeno.</p>
+      </div>
+      <div class="card">
+        <h3>4. Pronome</h3>
+        <p><strong>Acompanha ou substitui</strong> o nome no texto.</p>
+      </div>
+      <div class="card">
+        <h3>5. Artigo</h3>
+        <p><strong>Determina</strong> ou indetermina o substantivo.</p>
+      </div>
+    </div>
+
+    <div class="grid-5" style="margin-top: 10px;">
+      <div class="card">
+        <h3>6. Numeral</h3>
+        <p><strong>Quantifica</strong> ou indica a ordem dos seres.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>7. Advérbio</h3>
+        <p><strong>Modifica</strong> o verbo, o adjetivo ou outro advérbio.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>8. Preposição</h3>
+        <p><strong>Liga</strong> palavras estabelecendo relação.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>9. Conjunção</h3>
+        <p><strong>Liga</strong> orações ou termos equivalentes.</p>
+      </div>
+      <div class="card card-gold">
+        <h3>10. Interjeição</h3>
+        <p><strong>Exprime</strong> emoções e apelos vivos.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">05 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 6: SUBSTANTIVO ================= -->
+  <div class="slide" id="s6">
+    <div class="label">III. As Classes em Detalhe • 1 / 10</div>
+    <h2>1. Substantivo: O Núcleo dos Nomes</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Classe variável que nomeia tudo o que existe ou imaginamos (pessoas, objetos, lugares, sentimentos, ações e conceitos). Ex.: <em>livro, virtude, Camões, sabedoria</em>.</li>
+      <li><strong>Classificação:</strong> Simples/Composto, Próprio/Comum, Concreto/Abstrato, Primitivo/Derivado e Coletivo.</li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Foco Morfológico</h3>
+        <p>Flexão de Gênero (masculino/feminino) e Número (singular/plural). Identificação dos tipos de substantivos em frases e pequenos textos.</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Foco Morfossintático</h3>
+        <p>O substantivo como <strong>Núcleo Sintático</strong> principal da oração: Núcleo do Sujeito, Núcleo do Objeto Direto/Indireto, Núcleo do Complemento Nominal e Aposto.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">06 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 7: ADJETIVO ================= -->
+  <div class="slide" id="s7">
+    <div class="label">III. As Classes em Detalhe • 2 / 10</div>
+    <h2>2. Adjetivo: Caracterização & Valor Estilístico</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Palavra variável que especifica, qualifica ou caracteriza o substantivo, concordando com ele em gênero e número. Ex.: <em>texto claro, ideias nobres</em>.</li>
+      <li><strong>Locução Adjetiva:</strong> Expressão preposicionada com valor de adjetivo. Ex.: <em>amor de mãe (= materno)</em>.</li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Flexão & Concordância</h3>
+        <p>Concordância nominal simples e flexão de Grau (Comparativo: <em>mais... que</em>; Superlativo: <em>estudiosíssimo, muito estudioso</em>).</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Papel Sintático & Estilo</h3>
+        <p>Atuação sintática como <strong>Adjunto Adnominal</strong> (atributo caracterizador) ou <strong>Predicativo</strong> (estado atribuído pelo predicado). Mudança de sentido conforme a posição no texto: <em>homem simples x simples homem</em>.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">07 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 8: VERBO ================= -->
+  <div class="slide" id="s8">
+    <div class="label">III. As Classes em Detalhe • 3 / 10</div>
+    <h2>3. Verbo: O Motor do Discurso</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Classe variável que exprime ação, estado, mudança de estado ou fenômeno da natureza, situando-os no tempo (Presente, Pretérito, Futuro). Ex.: <em>escrever, permanecer, chover</em>.</li>
+      <li><strong>Estrutura Verbal:</strong> Radical + Vogal Temática + Desinências Modo-Temporais e Número-Pessoais.</li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Conjugações & Modos</h3>
+        <p>Identificação das 3 conjugações (-ar, -er, -ir) e dos 3 Modos Verbais: <strong>Indicativo</strong> (certeza), <strong>Subjuntivo</strong> (dúvida/hipótese) e <strong>Imperativo</strong> (ordem/pedido).</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Sintaxe & Regência Verbal</h3>
+        <p>Vozes Verbais (Ativa, Passiva, Reflexiva), Predicação (Transitividade Direta/Indireta, Intransitivo, Ligação) e Regência Verbal no texto erudito.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">08 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 9: PRONOME ================= -->
+  <div class="slide" id="s9">
+    <div class="label">III. As Classes em Detalhe • 4 / 10</div>
+    <h2>4. Pronome: Representação & Coesão Textual</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Palavra que substitui (pronome substantivo) ou acompanha (pronome adjetivo) um substantivo, indicando a sua pessoa gramatical no discurso.</li>
+      <li><strong>Principais Tipos:</strong> Pessoais (retos/oblíquos), Possessivos, Demonstrativos, Indefinidos, Interrogativos e Relativos.</li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Emprego Prático</h3>
+        <p>Uso correto dos pronomes pessoais e possessivos. Evitar redundâncias e manter a coesão textual em narrativas e descrições.</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Pronomes Relativos & Colocação</h3>
+        <p>Pronomes Relativos (<em>que, quem, cujo, onde</em>) como conectores do período composto e regras de Colocação Pronominal (Próclise, Mesóclise, Ênclise).</p>
+      </div>
+    </div>
+
+    <div class="slide-num">09 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 10: ARTIGO & NUMERAL ================= -->
+  <div class="slide" id="s10">
+    <div class="label">III. As Classes em Detalhe • 5 & 6 / 10</div>
+    <h2>5. Artigo & 6. Numeral: Determinantes Nominais</h2>
+    <div class="rule"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>5. Artigo (Definido & Indefinido)</h3>
+        <p style="margin-bottom: 8px;">Antepõe-se ao substantivo para defini-lo ou generalizá-lo:</p>
+        <ul>
+          <li><strong>Definidos (o, a, os, as):</strong> Individualizam o ser. Ex.: <em>O aluno estudou.</em></li>
+          <li><strong>Indefinidos (um, uma, uns, umas):</strong> Generalizam o ser. Ex.: <em>Um aluno perguntou.</em></li>
+          <li><strong>Efeito Estilístico:</strong> Capacidade de substantivar qualquer classe de palavra. Ex.: <em>O <strong>cantar</strong> dos pássaros.</em></li>
+        </ul>
+      </div>
+
+      <div class="card card-gold">
+        <h3>6. Numeral (Quantidade & Ordem)</h3>
+        <p style="margin-bottom: 8px;">Indica quantidade exata, posição em uma sequência ou fração/multiplicação:</p>
+        <ul>
+          <li><strong>Cardinais:</strong> <em>um, dois, três...</em> (quantidade)</li>
+          <li><strong>Ordinais:</strong> <em>primeiro, segundo, terceiro...</em> (ordem)</li>
+          <li><strong>Multiplicativos / Fracionários:</strong> <em>dobro, metade, terço...</em></li>
+          <li><strong>Emprego Técnico:</strong> Leitura correta em leis, séculos, capítulos e documentos formais.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">10 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 11: ADVÉRBIO ================= -->
+  <div class="slide" id="s11">
+    <div class="label">III. As Classes em Detalhe • 7 / 10</div>
+    <h2>7. Advérbio: Modificador das Circunstâncias</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Classe <strong>invariável</strong> que modifica um <strong>verbo</strong>, um <strong>adjetivo</strong> ou outro <strong>advérbio</strong>, atribuindo-lhes uma circunstância (tempo, lugar, modo, intensidade, negação, afirmação, dúvida).</li>
+      <li><strong>Exemplos:</strong> <em>Estudou <strong>muito</strong> (modifica verbo); Aluno <strong>muito</strong> dedicado (modifica adjetivo); Escreveu <strong>muito</strong> bem (modifica advérbio).</em></li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Reconhecimento & Locuções</h3>
+        <p>Classificação das circunstâncias adverbiais simples e identificação de Locuções Adverbiais (ex.: <em>às pressas, de manhã, em silêncio</em>).</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Adjunto Adverbial & Pontuação</h3>
+        <p>Atuação sintática como <strong>Adjunto Adverbial</strong>. Mobilidade do advérbio na oração e o emprego obrigatório/facultativo da vírgula.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">11 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 12: PREPOSIÇÃO ================= -->
+  <div class="slide" id="s12">
+    <div class="label">III. As Classes em Detalhe • 8 / 10</div>
+    <h2>8. Preposição: Conexão & Regência</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Palavra <strong>invariável</strong> que liga dois termos de uma oração, estabelecendo entre eles uma relação de subordinação e sentido.</li>
+      <li><strong>Preposições Essenciais:</strong> <em>a, ante, após, até, com, contra, de, em, para, perante, por, sem, sob, sobre, trás.</em></li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º / 7º Ano</span> Combinações & Contrações</h3>
+        <p>Formação de contrações prepositivas comuns: <em>de + o = do; em + a = na; a + a = à (crase); de + este = deste</em>.</p>
+      </div>
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º / 9º Ano</span> Regência Nominal & Verbal</h3>
+        <p>A preposição como exigência sintática dos verbos e nomes regentes: <em>gostar <strong>de</strong>, obedecer <strong>ao</strong> regulamento, amor <strong>à</strong> pátria</em>.</p>
+      </div>
+    </div>
+
+    <div class="slide-num">12 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 13: CONJUNÇÃO ================= -->
+  <div class="slide" id="s13">
+    <div class="label">III. As Classes em Detalhe • 9 / 10</div>
+    <h2>9. Conjunção: Conexão de Orações & Coesão</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Classe <strong>invariável</strong> que liga orações ou termos de mesma função sintática, criando relações lógicas no texto.</li>
+    </ul>
+
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3>Conjunções Coordenativas</h3>
+        <p style="margin-bottom: 6px;">Liguam orações independentes:</p>
+        <ul>
+          <li><strong>Aditivas:</strong> <em>e, nem, não só... mas também</em></li>
+          <li><strong>Adversativas:</strong> <em>mas, porém, contudo, todavia</em></li>
+          <li><strong>Alternativas:</strong> <em>ou... ou, quer... quer</em></li>
+          <li><strong>Conclusivas:</strong> <em>logo, portanto, por isso</em></li>
+          <li><strong>Explicativas:</strong> <em>pois, porque, que</em></li>
+        </ul>
+      </div>
+
+      <div class="card card-gold">
+        <h3>Conjunções Subordinativas</h3>
+        <p style="margin-bottom: 6px;">Liguam orações dependentes (8º / 9º Ano):</p>
+        <ul>
+          <li><strong>Integrantes:</strong> <em>que, se</em> (orações substantivas)</li>
+          <li><strong>Causais:</strong> <em>porque, visto que, já que</em></li>
+          <li><strong>Concessivas:</strong> <em>embora, ainda que, se bem que</em></li>
+          <li><strong>Condicionais:</strong> <em>se, caso, contanto que</em></li>
+          <li><strong>Temporais:</strong> <em>quando, enquanto, logo que</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">13 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 14: INTERJEIÇÃO ================= -->
+  <div class="slide" id="s14">
+    <div class="label">III. As Classes em Detalhe • 10 / 10</div>
+    <h2>10. Interjeição: Expressão Viva do Afeto</h2>
+    <div class="rule"></div>
+
+    <ul class="explanation-list">
+      <li><strong>Definição Morfológica:</strong> Palavra ou locução <strong>invariável</strong> que exprime emoções, sentimentos, reações espontâneas ou apelos diretos ao ouvinte.</li>
+      <li><strong>Exemplos por Categoria:</strong>
+        <br>— <strong>Alegria / Vibração:</strong> <em>Ah!, Oh!, Bravo!, Viva!</em>
+        <br>— <strong>Alerta / Advertência:</strong> <em>Cuidado!, Atenção!, Psiu!</em>
+        <br>— <strong>Dor / Lamento:</strong> <em>Ai!, Ui!, Que pena!</em>
+        <br>— <strong>Socorro / Apelo:</strong> <em>Socorro!, Valha-me Deus!</em>
+      </li>
+    </ul>
+
+    <div class="card" style="margin-top: 14px;">
+      <h3>Uso Textual & Estilístico (Todas as Turmas)</h3>
+      <p>As interjeições são abundantes em diálogos, obras dramáticas, poemas e textos narrativos. Na escrita, são quase sempre seguidas de <strong>ponto de exclamação (!)</strong>.</p>
+    </div>
+
+    <div class="slide-num">14 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 15: A PONTE MORFOSSINTÁTICA ================= -->
+  <div class="slide" id="s15">
+    <div class="label">IV. Integração Morfossintática</div>
+    <h2>A Ponte Morfossintática: Classe → Função</h2>
+    <div class="rule"></div>
+
+    <p style="margin-bottom: 12px;">Compreender a diferença entre o que a palavra <strong>É</strong> (Morfologia) e o que a palavra <strong>FAZ</strong> na oração (Sintaxe):</p>
+
+    <table class="table-container">
+      <thead>
+        <tr>
+          <th>Classe Morfológica (O que É)</th>
+          <th>Função Sintática Típica (O que FAZ)</th>
+          <th>Aplicação por Nível</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Substantivo</strong></td>
+          <td>Núcleo do Sujeito, do Objeto, do Complemento ou Aposto</td>
+          <td><span class="tag-ano tag-6">6º a 9º</span> Base Nominal</td>
+        </tr>
+        <tr>
+          <td><strong>Adjetivo</strong></td>
+          <td>Adjunto Adnominal ou Predicativo (do Sujeito/Objeto)</td>
+          <td><span class="tag-ano tag-7">7º a 9º</span> Atributo / Estado</td>
+        </tr>
+        <tr>
+          <td><strong>Verbo</strong></td>
+          <td>Núcleo do Predicado Verbal / Verbo de Ligação</td>
+          <td><span class="tag-ano tag-6">6º a 9º</span> Eixo da Oração</td>
+        </tr>
+        <tr>
+          <td><strong>Advérbio</strong></td>
+          <td>Adjunto Adverbial (tempo, lugar, modo, etc.)</td>
+          <td><span class="tag-ano tag-8">8º e 9º</span> Circunstância</td>
+        </tr>
+        <tr>
+          <td><strong>Preposição / Conjunção</strong></td>
+          <td>Conectivos frasais e interoracionais (Sem função sintática isolada)</td>
+          <td><span class="tag-ano tag-8">8º e 9º</span> Conectores</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="slide-num">15 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 16: ROTEIRO PRÁTICO EM SALA ================= -->
+  <div class="slide" id="s16">
+    <div class="label">V. Orientação Didática</div>
+    <h2>Guia Prático de Apresentação em Sala</h2>
+    <div class="rule"></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="tag-ano tag-6">6º Ano</span> & <span class="tag-ano tag-7">7º Ano</span></h3>
+        <ul>
+          <li><strong>Passo 1:</strong> Focar nos slides 4, 5 e 6 a 10 (reconhecimento das classes nominais e verbais).</li>
+          <li><strong>Passo 2:</strong> Fazer a leitura guiada de um parágrafo no quadro, sublinhando substantivos e adjetivos.</li>
+          <li><strong>Passo 3:</strong> Praticar flexões simples e concordância nominal.</li>
+        </ul>
+      </div>
+
+      <div class="card card-gold">
+        <h3><span class="tag-ano tag-8">8º Ano</span> & <span class="tag-ano tag-9">9º Ano</span></h3>
+        <ul>
+          <li><strong>Passo 1:</strong> Recapitular rapidamente a tabela do slide 5 e focar na Ponte Morfossintática (slide 15).</li>
+          <li><strong>Passo 2:</strong> Analisar a transitividade dos verbos e a função dos conectivos (conjunções/pronomes relativos).</li>
+          <li><strong>Passo 3:</strong> Resolver a atividade prática graduada do slide 17.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">16 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 17: ATIVIDADE PRÁTICA ================= -->
+  <div class="slide" id="s17">
+    <div class="label">VI. Prática & Fixação</div>
+    <h2>Atividade Prática Graduada em Sala</h2>
+    <div class="rule"></div>
+
+    <blockquote style="font-size: 24px; margin-bottom: 14px;">
+      "O tempo <strong>veloz</strong> transforma <strong>silenciosamente</strong> as coisas <strong>que</strong> amamos."
+    </blockquote>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Desafio Nível 1 — 6º & 7º Ano</h3>
+        <p>Classifique morfologicamente as palavras destacadas na frase acima:</p>
+        <ul>
+          <li><strong>tempo:</strong> Substantivo comum abstrato.</li>
+          <li><strong>veloz:</strong> Adjetivo (caracteriza tempo).</li>
+          <li><strong>silenciosamente:</strong> Advérbio de modo.</li>
+          <li><strong>que:</strong> Pronome relativo (substitui coisas).</li>
+        </ul>
+      </div>
+
+      <div class="card card-gold">
+        <h3>Desafio Nível 2 — 8º & 9º Ano</h3>
+        <p>Indique a função sintática das mesmas palavras na oração:</p>
+        <ul>
+          <li><strong>tempo:</strong> Núcleo do Sujeito.</li>
+          <li><strong>veloz:</strong> Adjunto Adnominal.</li>
+          <li><strong>silenciosamente:</strong> Adjunto Adverbial de modo.</li>
+          <li><strong>que amamos:</strong> Oração Subordinada Adjetiva Restritiva.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-num">17 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- ================= SLIDE 18: FECHAMENTO ================= -->
+  <div class="slide slide-cover" id="s18">
+    <div class="label">Fechamento da Aula</div>
+    <h1>Conclusão & Síntese</h1>
+    <div class="rule" style="margin-top: 18px; margin-bottom: 24px; width: 80px; height: 3px;"></div>
+
+    <p style="font-size: 26px; max-width: 850px; line-height: 1.6;">
+      O domínio das 10 classes gramaticais é o alicerce fundamental para a leitura crítica, para o rigor sintático e para a alta precisão na produção textual ao longo de todo o Ensino Fundamental II.
+    </p>
+
+    <div style="margin-top: 36px;" class="explanation-list">
+      <li style="font-size: 22px;"><strong>Próximo Passo no Caderno:</strong> Registrar a síntese da Ponte Morfossintática e concluir os exercícios de fixação propostos.</li>
+    </div>
+
+    <div class="slide-num">18 / 18</div>
+    <img src="../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+</div><!-- /deck -->
+
+<!-- Navegação -->
+<div class="nav">
+  <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+  <div class="nav-counter" id="counter">1 / 18</div>
+  <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+</div>
+
+<script>
+  const order = [
+    's1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12','s13','s14','s15','s16','s17','s18'
+  ];
+  let cur = 0;
+
+  function show(i) {
+    order.forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('active', idx === i);
+      }
+    });
+    
+    document.getElementById('prev').disabled = i === 0;
+    document.getElementById('next').disabled = i === order.length - 1;
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+  }
+
+  function move(step) {
+    const nextIdx = cur + step;
+    if (nextIdx >= 0 && nextIdx < order.length) {
+      cur = nextIdx;
+      show(cur);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      move(1);
+    } else if (e.key === 'ArrowLeft') {
+      move(-1);
+    }
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>
