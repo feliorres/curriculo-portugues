@@ -9,7 +9,7 @@ Este cronograma organiza as 29 aulas de 1 hora do 1º Bimestre do 8º Ano com ba
 
 | Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa |
 | :---: | :--- | :---: | :--- | :---: | :--- | :--- |
-| **1** | Exposição & Prática | `[8.1.1]` | **Revisão Morfossintática I:** Relação entre forma e função; visão geral das 10 classes e seu papel na estruturação oracional. | - | - | Ficha de revisão morfossintática |
+| **1** | Exposição & Prática | `[8.1.1]` | **Revisão Morfossintática I:** Relação entre forma e função; visão geral das 10 classes e seu papel na estruturação oracional. | - | - | - |
 | **2** | Exposição & Prática | `[8.1.1]` | **Revisão Morfossintática II:** Análise morfológica aplicada a enunciados complexos e textos opinativos. | - | - | Exercício de análise em frases |
 | **3** | Exposição & Prática | `[8.1.1]` | **Conectivos Morfológicos:** O papel de pronomes, preposições e conjunções no encadeamento textual. | - | - | Questionário online sobre conectivos |
 | **4** | Exposição & Teoria | `[8.1.2]` | **Substantivos I:** Análise categorial detalhada (concreto/abstrato, coletivos) e nuance de significado em diferentes gêneros. | - | - | Análise de valor de substantivos |
