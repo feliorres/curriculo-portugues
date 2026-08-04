@@ -41,6 +41,56 @@ Este cronograma organiza as 29 aulas de 1 hora do 1º Bimestre do 7º Ano com ba
 
 ---
 
+# Cronograma de Aulas: 7º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Colocação Pronominal, Concordância Verbal e Coesão Textual*
+
+Este cronograma organiza as 29 aulas de 1 hora do 2º Bimestre do 7º Ano. O planejamento detalha os conteúdos dos tópicos `[7.2.1]` a `[7.2.4]`, aprofundando o estudo dos pronomes e colocação pronominal, regras e exceções de concordância verbal, classificação de advérbios e articulação de conectivos (preposições e conjunções) para coesão textual.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **30** | Exposição & Prática | `[7.2.1]` | **Pronomes I (Sistematização e Pessoais):** Revisão aprofundada dos pronomes pessoais retos e oblíquos; funções sintáticas básicas (sujeito vs. complemento). | - | - | Exercícios de identificação de pronomes pessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **31** | Exposição & Teoria | `[7.2.1]` | **Pronomes II (Possessivos e Demonstrativos):** Emprego dos possessivos e demonstrativos em contextos espaciais, temporais e textuais (anáfora/catáfora). | - | - | Reescrita de frases com pronomes demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | `[7.2.1]` | **Pronomes III (Indefinidos e Interrogativos):** Valores semânticos, ambiguidade no uso de pronomes e precisão vocabular. | - | - | Identificação e correção de ambiguidades | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | `[7.2.1]` | **Pronomes IV (Relativos):** Emprego dos pronomes relativos (que, quem, qual, cujo, onde) e regência com preposição anteposta. | - | - | União de orações com pronomes relativos | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | `[7.2.1]` | **Pronomes V (Colocação Pronominal I):** Próclise, ênclise e mesóclise: regras gerais de atração (palavras negativas, advérbios, pronomes). | - | - | Exercícios de próclise e ênclise | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | `[7.2.1]` | **Pronomes VI (Colocação Pronominal II):** Casos especiais de colocação pronominal e correção de vícios de linguagem na escrita formal. | - | - | Ficha de correção de colocação pronominal | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | - | **Oficina de Fixação I (Pronomes):** Exercícios práticos de colocação pronominal, emprego de relativos e coesão anafórica. | - | - | Atividade de fixação de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | `[7.2.2]` | **Concordância Verbal I (Mapeamento de Sujeito):** Regra geral de concordância verbal com sujeito simples, composto (anteposto/posposto) e intercalado. | - | - | Exercícios de concordância verbal geral | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | `[7.2.2]` | **Concordância Verbal II (Expressões Partitivas e Porcentagem):** Concordância com expressões partitivas (a maioria de, um grupo de) e números percentuais/fracionários. | - | - | Lista de concordância partitiva | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | `[7.2.2]` | **Concordância Verbal III (Nomes Próprios no Plural e "Quem/Que"):** Concordância com nomes próprios no plural com artigo e pronomes que / quem. | - | - | Exercícios com pronomes que/quem | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Teoria | `[7.2.2]` | **Concordância Verbal IV (Verbos Impessoais):** Emprego e invariabilidade dos verbos haver (sentido de existir/tempo) e fazer (tempo decorrido). | - | - | Reescrita de frases com verbos impessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Exposição & Teoria | `[7.2.2]` | **Concordância Verbal V (Verbo Ser):** Regras de concordância do verbo ser com predicativo do sujeito, horas, datas e distâncias. | - | - | Exercícios de concordância do verbo ser | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de pronomes, colocação pronominal e regras de concordância verbal. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre pronomes, colocação pronominal e concordância verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | `[7.2.3]` | **Advérbios I (Conceito e Modificação):** Advérbio como modificador de verbo, adjetivo e outro advérbio; locuções adverbiais. | - | - | Identificação de modificadores adverbiais | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | `[7.2.3]` | **Advérbios II (Classificação de Circunstâncias):** Análise de circunstâncias (tempo, lugar, modo, causa, intensidade, negação, dúvida, afirmação). | - | - | Classificação de circunstâncias em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | `[7.2.3]` | **Advérbios III (Posição e Efeitos de Sentido):** Mobilidade do advérbio na frase, pontuação (vírgula em adjuntos adverbiais) e nuances estilísticas. | - | - | Exercícios de pontuação de advérbios deslocados | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Prática | `[7.2.3]` | **Advérbio vs. Adjetivo:** Distinção prática entre adjetivos e advérbios invariáveis em enunciados complexos. | - | - | Exercícios de diferenciação adjetivo/advérbio | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Oficina de Atividades | - | **Oficina de Fixação II (Advérbios):** Exercícios práticos de identificação de circunstâncias adverbiais e pontuação. | - | - | Ficha de atividades de advérbios | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | `[7.2.4]` | **Preposições e Regência I:** Relações de sentido estabelecidas pelas preposições essenciais e acidentais no período. | - | - | Análise do valor semântico das preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | `[7.2.4]` | **Conjunções e Coesão I (Coordenativas):** Papel das conjunções coordenativas (aditivas, adversativas, alternativas, conclusivas, explicativas) na articulação do texto. | - | - | Exercícios de coesão coordenativa | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | `[7.2.4]` | **Conjunções e Coesão II (Subordinativas Causa e Condição):** Introdução às conjunções subordinativas causais (já que, visto que) e condicionais (se, caso). | - | - | Identificação de valor causal e condicional | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | `[7.2.4]` | **Conjunções e Coesão III (Subordinativas Tempo e Concessão):** Estudo de conjunções temporais (quando, assim que) e concessivas (embora, ainda que). | - | - | Reescrita de frases com conjunções concessivas | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | `[7.2.4]` | **Mecanismos de Coesão Textual:** Análise de conectivos e pronomes em parágrafos dissertativos e narrativos. | - | - | Análise de coesão em trechos textuais | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | **Oficina de Fixação III:** Exercícios práticos integrados de advérbios, preposições, conjunções e coesão textual. | - | - | Ficha prática de coesão textual | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização geral sobre pronomes, concordância verbal, advérbios e conectivos de coesão. | - | - | Ficha de revisão integradora II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | - | **Revisão Geral do 2º Bimestre:** Resolução comentada de bateria de exercícios preparatórios para a prova bimestral. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de pronomes, concordância verbal, advérbios, conectivos e coesão textual. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de resultados e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+## 📊 Consolidação da Carga Horária (2º Bimestre)
+
+*   **Aulas de Conteúdo (70%):** 20 aulas (distribuídas entre pronomes, concordância verbal, advérbios e conectivos).
+*   **Aulas de Fixação, Revisão e Provas (30%):** 9 aulas.
+
+---
+
 ## 📊 Consolidação da Carga Horária
 
 *   **Aulas de Conteúdo (70%):** 20 aulas (distribuídas entre os 4 tópicos morfológicos e verbais do 1º Bimestre).

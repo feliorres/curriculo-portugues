@@ -262,16 +262,19 @@
       letter-spacing: 0.04em;
       white-space: nowrap;
     }
+
     .status-concluida {
       background-color: #E6F4EA;
       color: #137333;
       border: 1px solid #CEEAD6;
     }
+
     .status-em-andamento {
       background-color: #FEF7E0;
       color: #B06000;
       border: 1px solid #FDE293;
     }
+
     .status-pendente {
       background-color: #F1F3F4;
       color: #5F6368;
@@ -560,7 +563,8 @@
       font-family: var(--font-sans);
     }
 
-    .turma-select-group, .week-nav-group {
+    .turma-select-group,
+    .week-nav-group {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -575,7 +579,8 @@
       letter-spacing: 0.05em;
     }
 
-    .custom-select, .custom-input {
+    .custom-select,
+    .custom-input {
       font-family: var(--font-sans);
       font-size: 0.9rem;
       padding: 8px 12px;
@@ -587,7 +592,8 @@
       transition: border-color 0.2s ease;
     }
 
-    .custom-select:focus, .custom-input:focus {
+    .custom-select:focus,
+    .custom-input:focus {
       border-color: var(--accent);
     }
 
@@ -725,7 +731,7 @@
       border-left: 4px solid var(--accent);
       border-radius: 6px;
       padding: 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       display: flex;
       flex-direction: column;
@@ -734,7 +740,7 @@
 
     .lesson-card-weekly:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
     }
 
     .card-top-badges {
@@ -884,6 +890,7 @@
       .weekly-calendar-grid {
         grid-template-columns: 1fr;
       }
+
       .day-column {
         min-height: auto;
       }
@@ -922,6 +929,7 @@
           <button class="sub-link" onclick="changeCronogramaYear(6, this)">6º Ano (5th)</button>
           <button class="sub-link" onclick="changeCronogramaYear(7, this)">7º Ano (6th)</button>
           <button class="sub-link" onclick="changeCronogramaYear(8, this)">8º Ano (7th)</button>
+          <button class="sub-link" onclick="changeCronogramaYear(9, this)">9º Ano (8th)</button>
         </div>
         <div id="cronograma-render" class="markdown-body"></div>
       </div>
@@ -934,16 +942,20 @@
             <select id="select-turma-ativa" class="custom-select" onchange="onTurmaSelectChange()">
               <!-- Preenchido via JS -->
             </select>
-            <button class="btn-action primary" onclick="openTurmaModal()"><span class="btn-icon">+</span> Nova Turma</button>
-            <button class="btn-action secondary" onclick="editCurrentTurma()"><span class="btn-icon">✏️</span> Editar</button>
-            <button class="btn-action danger" onclick="deleteCurrentTurma()"><span class="btn-icon">🗑️</span> Excluir</button>
+            <button class="btn-action primary" onclick="openTurmaModal()"><span class="btn-icon">+</span> Nova
+              Turma</button>
+            <button class="btn-action secondary" onclick="editCurrentTurma()"><span class="btn-icon">✏️</span>
+              Editar</button>
+            <button class="btn-action danger" onclick="deleteCurrentTurma()"><span class="btn-icon">🗑️</span>
+              Excluir</button>
           </div>
 
           <div class="week-nav-group">
             <button class="btn-action secondary" onclick="changeWeek(-1)">← Semana Anterior</button>
             <span id="current-week-label" class="week-label">Semana Atual</span>
             <button class="btn-action secondary" onclick="changeWeek(1)">Próxima Semana →</button>
-            <button class="btn-action secondary" onclick="resetToCurrentWeek()" title="Voltar para a semana de hoje">Hoje</button>
+            <button class="btn-action secondary" onclick="resetToCurrentWeek()"
+              title="Voltar para a semana de hoje">Hoje</button>
           </div>
         </div>
 
@@ -958,13 +970,14 @@
       <!-- MODAL DE CADASTRO / EDIÇÃO DE TURMA -->
       <dialog id="turma-modal" class="lesson-modal turma-modal-dialog">
         <div class="modal-header">
-          <h3 id="turma-modal-title" style="font-family: var(--font-serif-title); font-size: 1.5rem; font-weight: 400;">Nova Turma</h3>
+          <h3 id="turma-modal-title" style="font-family: var(--font-serif-title); font-size: 1.5rem; font-weight: 400;">
+            Nova Turma</h3>
           <button class="modal-close" onclick="closeTurmaModal()">&times;</button>
         </div>
         <div class="modal-body" style="padding-top: 15px;">
           <form id="turma-form" onsubmit="handleTurmaFormSubmit(event)">
             <input type="hidden" id="turma-id" value="">
-            
+
             <div class="form-group">
               <label for="turma-nome">Nome da Turma:</label>
               <input type="text" id="turma-nome" class="custom-input" placeholder="Ex: 6º Ano A" required>
@@ -994,7 +1007,8 @@
             <div class="form-group">
               <label for="turma-aula-inicio">Começar a partir da Aula nº:</label>
               <input type="number" id="turma-aula-inicio" class="custom-input" min="1" max="50" value="1" required>
-              <small style="color: var(--text-muted); display: block; margin-top: 4px;">A primeira aula exibida no calendário a partir da data de início.</small>
+              <small style="color: var(--text-muted); display: block; margin-top: 4px;">A primeira aula exibida no
+                calendário a partir da data de início.</small>
             </div>
 
             <div class="form-group">
@@ -1219,6 +1233,50 @@ Este cronograma organiza as 30 aulas do 1º Bimestre do 6º Ano.
 | **28** | Revisão Dirigida | - | Morfologia | Revisão Parcial II: Revisão geral de todo o conteúdo morfológico do 1º Bimestre do 6º Ano. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **29** | Avaliação | - | Morfologia | Prova Bimestral: Avaliação escrita integradora de Morfologia (Classes gramaticais e concordância nominal). | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **30** | Devolutiva & Fechamento | - | Morfologia | Feedback Geral: Correção comentada da avaliação bimestral, análise de dúvidas e encerramento do 1º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 6º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Concordância Verbal, Conectivos e Pontuação Frasal*
+
+Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 6º Ano. O planejamento desdobra os tópicos \`[6.2.1]\` a \`[6.2.7]\`, abrangendo o estudo aprofundado dos pronomes, concordância verbal (sujeito e verbo), emprego de artigos e preposições, pontuação frasal (vírgula, ponto, exclamação), conjunções e interjeições.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **31** | Exposição & Teoria | \`[6.2.1]\` | Morfologia | **Pronomes I (Pessoais Retos e Oblíquos):** Conceito de pronome como substituto do nome; pronomes pessoais retos e oblíquos (átonos e tônicos). | - | - | Exercícios de identificação de pronomes pessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[6.2.1]\` | Morfologia | **Pronomes II (Tratamento):** Pronomes de tratamento, formalidade, concordância de 3ª pessoa e emprego nos discursos. | - | - | Tabela de empregos de pronomes de tratamento | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[6.2.1]\` | Morfologia | **Pronomes III (Possessivos):** Conceito de posse, relação com as pessoas do discurso e efeitos de sentido no texto. | - | - | Reescrita de frases com pronomes possessivos | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[6.2.1]\` | Morfologia | **Pronomes IV (Demonstrativos):** Localização no espaço, no tempo e no texto (este, esse, aquele) e coesão anafórica/catafórica. | - | - | Exercícios de coesão com demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | \`[6.2.5]\` | Morfologia | **Pronomes V (Indefinidos e Interrogativos):** Conceito de indeterminação e questionamento; pronomes variáveis e invariáveis. | - | - | Identificação de pronomes indefinidos no texto | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Exposição & Teoria | \`[6.2.5]\` | Morfologia | **Pronomes VI (Relativos - Introdução):** Noções iniciais sobre o pronome relativo (que, quem, cujo) como conector de frases. | - | - | União de frases usando pronomes relativos | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[6.2.2]\` | Concordância & Regência | **Concordância Verbal I (Regra Geral):** Harmonia entre o sujeito simples e o verbo em pessoa e número. | - | - | Exercícios de concordância de sujeito simples | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[6.2.2]\` | Concordância & Regência | **Concordância Verbal II (Casos Especiais):** Sujeito composto (anteposto e posposto ao verbo) e sujeito coletivo. | - | - | Concordância com sujeito composto e coletivo | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[6.2.3]\` | Morfologia | **Artigos e Preposições I (Revisão e Combinações):** Emprego preciso de artigos (definidos/indefinidos) e preposições essenciais. | - | - | Preenchimento de lacunas com preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Teoria | \`[6.2.3]\` | Morfologia | **Artigos e Preposições II (Contrações):** Contrações prepositivas (de+o=do, em+este=neste, a+o=ao) e introdução à crase. | - | - | Identificação de contrações prepositivas | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | \`[6.2.1]\` / \`[6.2.2]\` | Morfologia & Concordância | **Revisão Parcial I:** Sistematização de pronomes, concordância verbal simples e combinação de conectivos nominais. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | \`[6.2.1]\` / \`[6.2.2]\` | Morfologia & Concordância | **Prova Parcial I:** Avaliação escrita sobre pronomes (pessoais, possessivos, demonstrativos) e concordância verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | \`[6.2.4]\` | Ortografia, Pontuação | **Pontuação I (Ponto Final e Ponto Parágrafo):** Delimitação de frases, encerramento de pensamentos e estruturação de parágrafos. | - | - | Divisão de texto corrido em frases e parágrafos | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[6.2.4]\` | Ortografia, Pontuação | **Pontuação II (Ponto de Exclamação e Interrogação):** Entonação, expressividade, perguntas diretas e emotividade na escrita. | - | - | Inserção de pontuação expressiva em diálogos | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[6.2.4]\` | Ortografia, Pontuação | **Pontuação III (Vírgula I - Separação de Elementos):** Uso da vírgula para separar elementos em enumerações e datas. | - | - | Exercícios de vírgula em enumerações | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[6.2.4]\` | Ortografia, Pontuação | **Pontuação IV (Vírgula II - Vocativo e Explicação):** Isolamento de vocativo e termos explicativos curtos em frases simples. | - | - | Identificação de vocativo e uso da vírgula | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Oficina de Atividades | - | Ortografia, Pontuação | **Oficina de Fixação I:** Exercícios práticos de pontuação frasal e correção de frases mal pontuadas em pequenos textos. | - | - | Ficha prática de pontuação frasal | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Avaliação | \`[6.2.4]\` | Ortografia, Pontuação | **Prova Parcial II:** Avaliação escrita sobre uso da vírgula, ponto final e pontuação expressiva. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | \`[6.2.6]\` | Morfologia | **Conjunções I (Conceito e Conexão):** A função da conjunção como conector entre palavras e orações. | - | - | Identificação de conjunções em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | \`[6.2.6]\` | Morfologia | **Conjunções II (Coordenativas de Adição e Oposição):** Relações de sentido trazidas pelas conjunções aditivas (e, nem) e adversativas (mas, porém). | - | - | Reescrita combinando orações com conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[6.2.6]\` | Morfologia | **Conjunções III (Coordenativas de Alternância, Conclusão e Explicação):** Estudo e emprego de ou...ou, logo, portanto, porque, pois. | - | - | Exercícios de sentido de conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[6.2.7]\` | Morfologia | **Interjeição I (Conceito e Emoção):** Expressão imediata de sentimentos, emoções e estados de espírito no texto. | - | - | Classificação de sentidos de interjeições | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Teoria | \`[6.2.7]\` | Morfologia | **Interjeição II (Locuções Interjeitivas e Pontuação):** Estudo de locuções interjeitivas (ora bolas, valha-me Deus) e articulação com o ponto de exclamação. | - | - | Criação de diálogos com interjeições | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Exposição & Prática | \`[6.2.6]\` / \`[6.2.7]\` | Morfologia | **Análise Morfológica em Trechos Literários:** Identificação de conjunções, interjeições e pronomes em diálogos e narrativas. | - | - | Análise morfológica de trecho textual | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Oficina de Atividades | - | Morfologia & Sintaxe | **Oficina de Fixação II:** Exercícios de análise morfológica completa (pronomes, artigos, preposições, conjunções e interjeições). | - | - | Ficha de análise morfológica integrada | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Oficina de Atividades | - | Concordância & Pontuação | **Oficina de Fixação III:** Prática intensiva de concordância verbal e pontuação de pequenos textos. | - | - | Ficha de concordância e pontuação | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Revisão Dirigida | \`[6.2.1]\` a \`[6.2.7]\` | Morfologia, Concordância | **Revisão Parcial II:** Sistematização e esclarecimento de dúvidas sobre pronomes, concordância verbal, conectivos e pontuação. | - | - | Ficha de revisão integradora | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Revisão Dirigida | \`[6.2.1]\` a \`[6.2.7]\` | Morfologia, Concordância | **Revisão Geral do 2º Bimestre:** Resolução comentada de simulado preparatório para a prova bimestral. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **59** | Avaliação | \`[6.2.1]\` a \`[6.2.7]\` | Morfologia, Concordância | **Prova Bimestral:** Avaliação escrita integradora de classes gramaticais (pronomes, conjunções, interjeições), concordância e pontuação. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **60** | Devolutiva & Fechamento | - | Morfologia | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de resultados e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 `;
 
         const cronograma7Text = `# Cronograma de Aulas: 7º Ano (1º Bimestre)
@@ -1261,6 +1319,49 @@ Este cronograma organiza as 29 aulas de 1 hora do 1º Bimestre do 7º Ano com ba
 | **27** | Revisão Dirigida | - | **Revisão Parcial II:** Revisão geral de todo o conteúdo morfológico e de concordância do 1º Bimestre do 7º Ano. | - | - | Ficha integradora de revisão | <span class="status-badge status-pendente">Pendente</span> |
 | **28** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de Morfologia, Concordância Nominal e Sistema Verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **29** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de notas e encerramento do 1º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 7º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Colocação Pronominal, Concordância Verbal e Coesão Textual*
+
+Este cronograma organiza as 29 aulas de 1 hora do 2º Bimestre do 7º Ano. O planejamento detalha os conteúdos dos tópicos \`[7.2.1]\` a \`[7.2.4]\`, aprofundando o estudo dos pronomes e colocação pronominal, regras e exceções de concordância verbal, classificação de advérbios e articulação de conectivos (preposições e conjunções) para coesão textual.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **30** | Exposição & Prática | \`[7.2.1]\` | **Pronomes I (Sistematização e Pessoais):** Revisão aprofundada dos pronomes pessoais retos e oblíquos; funções sintáticas básicas (sujeito vs. complemento). | - | - | Exercícios de identificação de pronomes pessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **31** | Exposição & Teoria | \`[7.2.1]\` | **Pronomes II (Possessivos e Demonstrativos):** Emprego dos possessivos e demonstrativos em contextos espaciais, temporais e textuais (anáfora/catáfora). | - | - | Reescrita de frases com pronomes demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[7.2.1]\` | **Pronomes III (Indefinidos e Interrogativos):** Valores semânticos, ambiguidade no uso de pronomes e precisão vocabular. | - | - | Identificação e correção de ambiguidades | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[7.2.1]\` | **Pronomes IV (Relativos):** Emprego dos pronomes relativos (que, quem, qual, cujo, onde) e regência com preposição anteposta. | - | - | União de orações com pronomes relativos | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[7.2.1]\` | **Pronomes V (Colocação Pronominal I):** Próclise, ênclise e mesóclise: regras gerais de atração (palavras negativas, advérbios, pronomes). | - | - | Exercícios de próclise e ênclise | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | \`[7.2.1]\` | **Pronomes VI (Colocação Pronominal II):** Casos especiais de colocação pronominal e correção de vícios de linguagem na escrita formal. | - | - | Ficha de correção de colocação pronominal | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | - | **Oficina de Fixação I (Pronomes):** Exercícios práticos de colocação pronominal, emprego de relativos e coesão anafórica. | - | - | Atividade de fixação de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[7.2.2]\` | **Concordância Verbal I (Mapeamento de Sujeito):** Regra geral de concordância verbal com sujeito simples, composto (anteposto/posposto) e intercalado. | - | - | Exercícios de concordância verbal geral | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[7.2.2]\` | **Concordância Verbal II (Expressões Partitivas e Porcentagem):** Concordância com expressões partitivas (a maioria de, um grupo de) e números percentuais/fracionários. | - | - | Lista de concordância partitiva | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[7.2.2]\` | **Concordância Verbal III (Nomes Próprios no Plural e "Quem/Que"):** Concordância com nomes próprios no plural com artigo e pronomes que / quem. | - | - | Exercícios com pronomes que/quem | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Teoria | \`[7.2.2]\` | **Concordância Verbal IV (Verbos Impessoais):** Emprego e invariabilidade dos verbos haver (sentido de existir/tempo) e fazer (tempo decorrido). | - | - | Reescrita de frases com verbos impessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Exposição & Teoria | \`[7.2.2]\` | **Concordância Verbal V (Verbo Ser):** Regras de concordância do verbo ser com predicativo do sujeito, horas, datas e distâncias. | - | - | Exercícios de concordância do verbo ser | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de pronomes, colocação pronominal e regras de concordância verbal. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre pronomes, colocação pronominal e concordância verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[7.2.3]\` | **Advérbios I (Conceito e Modificação):** Advérbio como modificador de verbo, adjetivo e outro advérbio; locuções adverbiais. | - | - | Identificação de modificadores adverbiais | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[7.2.3]\` | **Advérbios II (Classificação de Circunstâncias):** Análise de circunstâncias (tempo, lugar, modo, causa, intensidade, negação, dúvida, afirmação). | - | - | Classificação de circunstâncias em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[7.2.3]\` | **Advérbios III (Posição e Efeitos de Sentido):** Mobilidade do advérbio na frase, pontuação (vírgula em adjuntos adverbiais) e nuances estilísticas. | - | - | Exercícios de pontuação de advérbios deslocados | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Prática | \`[7.2.3]\` | **Advérbio vs. Adjetivo:** Distinção prática entre adjetivos e advérbios invariáveis em enunciados complexos. | - | - | Exercícios de diferenciação adjetivo/advérbio | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Oficina de Atividades | - | **Oficina de Fixação II (Advérbios):** Exercícios práticos de identificação de circunstâncias adverbiais e pontuação. | - | - | Ficha de atividades de advérbios | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | \`[7.2.4]\` | **Preposições e Regência I:** Relações de sentido estabelecidas pelas preposições essenciais e acidentais no período. | - | - | Análise do valor semântico das preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | \`[7.2.4]\` | **Conjunções e Coesão I (Coordenativas):** Papel das conjunções coordenativas (aditivas, adversativas, alternativas, conclusivas, explicativas) na articulação do texto. | - | - | Exercícios de coesão coordenativa | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[7.2.4]\` | **Conjunções e Coesão II (Subordinativas Causa e Condição):** Introdução às conjunções subordinativas causais (já que, visto que) e condicionais (se, caso). | - | - | Identificação de valor causal e condicional | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[7.2.4]\` | **Conjunções e Coesão III (Subordinativas Tempo e Concessão):** Estudo de conjunções temporais (quando, assim que) e concessivas (embora, ainda que). | - | - | Reescrita de frases com conjunções concessivas | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | \`[7.2.4]\` | **Mecanismos de Coesão Textual:** Análise de conectivos e pronomes em parágrafos dissertativos e narrativos. | - | - | Análise de coesão em trechos textuais | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | **Oficina de Fixação III:** Exercícios práticos integrados de advérbios, preposições, conjunções e coesão textual. | - | - | Ficha prática de coesão textual | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização geral sobre pronomes, concordância verbal, advérbios e conectivos de coesão. | - | - | Ficha de revisão integradora II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | - | **Revisão Geral do 2º Bimestre:** Resolução comentada de bateria de exercícios preparatórios para a prova bimestral. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de pronomes, concordância verbal, advérbios, conectivos e coesão textual. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de resultados e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 `;
 
         const cronograma8Text = `# Cronograma de Aulas: 8º Ano (1º Bimestre)
@@ -1303,7 +1404,209 @@ Este cronograma organiza as 29 aulas de 1 hora do 1º Bimestre do 8º Ano com ba
 | **27** | Revisão Dirigida | - | **Revisão Parcial II:** Revisão geral de todo o conteúdo morfológico, verbal e de concordância do 1º Bimestre. | - | - | Ficha integradora de revisão | <span class="status-badge status-pendente">Pendente</span> |
 | **28** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de Morfologia, Concordância Nominal e Sistema Verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **29** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação bimestral, devolução de notas e encerramento do 1º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 8º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Colocação Pronominal, Concordância e Coesão Textual*
+
+Este cronograma organiza as 29 aulas de 1 hora do 2º Bimestre do 8º Ano. O planejamento detalha os conteúdos dos tópicos \`[8.2.1]\` a \`[8.2.4]\`, aprofundando o estudo dos pronomes e colocação pronominal, regras e casos especiais de concordância nominal e verbal, classificação avançada de advérbios (modalizadores) e articulação de conectivos para coesão textual.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **30** | Exposição & Prática | \`[8.2.1]\` | **Pronomes I (Sistematização Avançada):** Pronomes pessoais retos vs. oblíquos em funções sintáticas de complemento (o/a/os/as vs. lhe/lhes). | - | - | Exercícios de regência e pronomes oblíquos | <span class="status-badge status-pendente">Pendente</span> |
+| **31** | Exposição & Teoria | \`[8.2.1]\` | **Pronomes II (Demonstrativos e Coesão):** Valores espaço-temporais e dêitico-discursivos dos demonstrativos; coesão anafórica e catafórica em textos argumentativos. | - | - | Reescrita de parágrafo aplicando demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[8.2.1]\` | **Pronomes III (Relativos e Regência):** Emprego dos relativos (cujo, onde, qual, quem), preposição antecedente e eliminação de ambiguidades. | - | - | União de orações com pronomes relativos | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[8.2.1]\` | **Pronomes IV (Colocação Pronominal I):** Regras de Próclise (fatores de atração: negação, advérbios, pronomes relativos/indefinidos, orações subordinadas). | - | - | Exercícios de próclise obrigatória | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[8.2.1]\` | **Pronomes V (Colocação Pronominal II):** Regras de Ênclise e Mesóclise (futuro do presente e do pretérito) na norma-padrão culta. | - | - | Ficha de colocação pronominal em textos formais | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | \`[8.2.1]\` | **Pronomes VI (Correção Gramatical e Vícios de Linguagem):** Análise e correção de desvios comuns (próclise no início de frase, ambiguidade com possessivos). | - | - | Correção gramatical de trechos com vícios | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | - | **Oficina de Fixação I (Pronomes):** Exercícios práticos de colocação pronominal avançada e reescrita de trechos formais. | - | - | Atividade de fixação de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[8.2.2]\` | **Concordância Nominal I (Aprofundamento):** Regra geral e regras de múltiplos substantivos; adjetivo anteposto e posposto. | - | - | Exercícios de concordância nominal | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[8.2.2]\` | **Concordância Nominal II (Casos Especiais):** Expressões invariáveis e determinantes (alerta, menos, pseudo, haja vista, salvo, é necessário/bom/proibido). | - | - | Lista de casos especiais de concordância nominal | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[8.2.2]\` | **Concordância Verbal I (Casos de Sujeito Composto e Partitivo):** Concordância com sujeito composto anteposto/posposto, ideias numéricas, porcentagem e expressões partitivas. | - | - | Exercícios de concordância verbal partitiva | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Teoria | \`[8.2.2]\` | **Concordância Verbal II (Pronomes Relativos e Impessoalidade):** Concordância com que/quem, um dos que, verbos impessoais (haver, fazer, passar de). | - | - | Reescrita de frases com verbos impessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Exposição & Teoria | \`[8.2.2]\` | **Concordância Verbal III (Verbo Ser e Voz Passiva Sintética):** Concordância do verbo ser (datas, distâncias, quantidades) e com a partícula passivadora se. | - | - | Questionário de concordância do verbo ser e voz passiva | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização teórica sobre pronomes, colocação pronominal e concordância nominal/verbal. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre pronomes, colocação pronominal e concordância nominal/verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[8.2.3]\` | **Advérbios I (Modificação e Locuções):** Função modificadora do advérbio e valor semântico de locuções adverbiais no texto. | - | - | Análise de modificadores adverbiais | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[8.2.3]\` | **Advérbios II (Classificação e Efeitos de Sentido):** Adjuntos adverbiais de modo, causa, meio, instrumento, assunto, dúvida e intensidade. | - | - | Classificação de circunstâncias em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[8.2.3]\` | **Advérbios III (Modalizadores Discursivos):** Advérbios como operadores argumentativos e marcadores da atitude do enunciador (felizmente, certamente, provavelmente). | - | - | Análise de modalização em textos opinativos | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Prática | \`[8.2.3]\` | **Pontuação de Adjuntos Adverbiais:** Regras de vírgula em adjuntos adverbiais de grande e pequena extensão (deslocados ou intercalados). | - | - | Exercícios de pontuação de advérbios deslocados | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Oficina de Atividades | - | **Oficina de Fixação II (Advérbios):** Exercícios práticos de modalização discursiva e pontuação adverbial. | - | - | Ficha prática de advérbios e pontuação | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | \`[8.2.4]\` | **Preposições e Regência:** Valor semântico das preposições nas relações de subordinação e coesão sintática. | - | - | Análise semântica de preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | \`[8.2.4]\` | **Conjunções Coordenativas e Efeitos de Sentido:** Relações de adição, oposição, alternância, conclusão e explicação na argumentação. | - | - | Exercícios de coesão coordenativa | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[8.2.4]\` | **Conjunções Subordinativas I (Causais, Condicionais e Concessivas):** Análise das conjunções causais (já que), condicionais (caso) e concessivas (embora, apesar de que). | - | - | Identificação de valor causal e concessivo | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[8.2.4]\` | **Conjunções Subordinativas II (Conformativas, Comparativas e Consecutivas):** Estudo de conforme, como, tão...que, de modo que na construção da coerência. | - | - | Reescrita de frases com conjunções consecutivas | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | \`[8.2.4]\` | **Coesão Textual Avançada (Referencial e Sequencial):** Encadeamento de ideias, conectivos interparágrafos e eliminação de ambiguidades. | - | - | Análise de coesão em textos dissertativos | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | **Oficina de Fixação III:** Exercícios integrados de concordância, regência, conectivos e coesão textual. | - | - | Ficha prática de coesão textual | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização de pronomes, concordância, advérbios e articulação de conectivos. | - | - | Ficha de revisão integradora II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | - | **Revisão Geral do 2º Bimestre:** Resolução comentada de bateria de questões no modelo de exames formais. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de pronomes, concordância nominal/verbal, advérbios e coesão textual. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da prova bimestral, análise de dúvidas e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 `;
+
+        const cronograma9Text = `# Cronograma de Aulas: 9º Ano (1º Bimestre)
+*Planejamento Aula a Aula com Foco na Nova Matriz Curricular*
+
+Este cronograma organiza as 29 aulas de 1 hora do 1º Bimestre do 9º Ano com base na nova matriz curricular. As aulas focam no aprofundamento das classes gramaticais, substantivos, adjetivos, verbos, pronomes e regência verbal, com 70% das aulas dedicadas ao conteúdo programático e 30% reservadas para atividades práticas, revisões dirigidas e avaliações.
+
+---
+
+## 📅 Distribuição das Aulas (1º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **1** | Exposição & Prática | \`[9.1.1]\` | **Revisão das Classes I:** Panorama morfológico e revisão diagnóstica de classes nominais e conectivos. | - | - | Ficha diagnóstica morfológica | <span class="status-badge status-pendente">Pendente</span> |
+| **2** | Exposição & Prática | \`[9.1.1]\` | **Revisão das Classes II:** Análise morfológica de verbos, advérbios e preposições em contextos frasais. | - | - | Análise morfológica em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **3** | Exposição & Teoria | \`[9.1.2]\` | **Substantivos e Adjetivos I:** Classificação aprofundada, valor semântico e escolhas estilísticas na adjetivação. | - | - | Exercícios de análise estilística | <span class="status-badge status-pendente">Pendente</span> |
+| **4** | Exposição & Teoria | \`[9.1.2]\` | **Substantivos e Adjetivos II:** Flexões complexas de gênero, número e concordância aplicada ao estilo do autor. | - | - | Pluralização de compostos complexos | <span class="status-badge status-pendente">Pendente</span> |
+| **5** | Exposição & Teoria | \`[9.1.3]\` | **Sistema Verbal I (Tempos e Modos):** Emprego avançado dos modos Indicativo, Subjuntivo e Imperativo na dissertação. | - | - | Conjugação e aplicação em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **6** | Exposição & Teoria | \`[9.1.3]\` | **Sistema Verbal II (Vozes Verbais):** Vozes ativa, passiva e reflexiva e a transposição em textos argumentativos. | - | - | Transposição de vozes verbais | <span class="status-badge status-pendente">Pendente</span> |
+| **7** | Exposição & Teoria | \`[9.1.3]\` | **Sistema Verbal III (Regência Verbal Inicial):** Noções iniciais de regência verbal e uso de preposições exigidas pelo verbo. | - | - | Exercícios de regência verbal inicial | <span class="status-badge status-pendente">Pendente</span> |
+| **8** | Oficina de Atividades | - | **Oficina de Fixação I:** Exercícios integrados de morfologia, classes nominais e sistema verbal. | - | - | Ficha prática morfológica | <span class="status-badge status-pendente">Pendente</span> |
+| **9** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de dúvidas sobre classes gramaticais e tempos/modos verbais. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **10** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre revisão de classes, substantivos, adjetivos e sistema verbal. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **11** | Exposição & Teoria | \`[9.1.4]\` | **Pronomes I (Pessoais e Colocação):** Emprego de pronomes pessoais e regras formais de colocação pronominal. | - | - | Exercícios de colocação pronominal | <span class="status-badge status-pendente">Pendente</span> |
+| **12** | Exposição & Teoria | \`[9.1.4]\` | **Pronomes II (Demonstrativos e Possessivos):** Função dêitica e anafórica dos demonstrativos e coesão textual. | - | - | Análise de coesão com demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **13** | Exposição & Teoria | \`[9.1.4]\` | **Pronomes III (Relativos e Regência):** Emprego dos pronomes relativos e preposição anteposta na regência. | - | - | União de orações com pronomes relativos | <span class="status-badge status-pendente">Pendente</span> |
+| **14** | Oficina de Atividades | - | **Oficina de Fixação II:** Prática de colocação pronominal e coesão referencial. | - | - | Ficha de atividades de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **15** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização geral do conteúdo do 1º Bimestre. | - | - | Ficha de revisão integradora | <span class="status-badge status-pendente">Pendente</span> |
+| **16** | Avaliação | - | **Prova Bimestral I:** Avaliação escrita integradora do 1º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **17** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da avaliação e fechamento do 1º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 9º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Concordância, Regência, Crase, Advérbios e Coesão Textual*
+
+Este cronograma organiza as 29 aulas de 1 hora do 2º Bimestre do 9º Ano. O planejamento detalha os conteúdos dos tópicos \`[9.2.1]\` a \`[9.2.4]\`, aprofundando regras e casos especiais de concordância nominal e verbal, regência nominal e verbal com estudo da crase, advérbios modalizadores de estilo e articulação de conectivos para coesão em textos dissertativo-argumentativos.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **30** | Exposição & Prática | \`[9.2.1]\` | **Concordância Nominal I (Sistematização Avançada):** Regra geral e concordância com múltiplos substantivos (adjetivo anteposto e posposto). | - | - | Exercícios de concordância nominal | <span class="status-badge status-pendente">Pendente</span> |
+| **31** | Exposição & Teoria | \`[9.2.1]\` | **Concordância Nominal II (Casos Especiais de Estilo):** Expressões determinantes e invariáveis (haja vista, alerta, menos, pseudo, salvo, é bom/necessário). | - | - | Lista de casos especiais de concordância nominal | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[9.2.1]\` | **Concordância Verbal I (Núcleo do Sujeito e Partitivos):** Concordância com sujeito composto, expressões partitivas, porcentagens e nomes no plural. | - | - | Exercícios de concordância verbal partitiva | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[9.2.1]\` | **Concordância Verbal II (Pronomes Relativos e Verbos Impessoais):** Concordância com que/quem, um dos que e impessoalidade dos verbos haver, fazer e tratar-se de. | - | - | Reescrita de frases com verbos impessoais | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[9.2.1]\` | **Concordância Verbal III (Verbo Ser e Voz Passiva Sintética):** Nuances de concordância do verbo ser e concordância na voz passiva sintética (partícula se). | - | - | Questionário de concordância do verbo ser e voz passiva | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | \`[9.2.1]\` | **Variação Estilística e Exceções na Concordância:** Escolhas de concordância por atração vs. concordância gramatical rigorosa em textos dissertativos e literários. | - | - | Análise estilística de concordância | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | - | **Oficina de Fixação I (Concordância):** Exercícios práticos e análise de casos complexos de concordância nominal e verbal. | - | - | Ficha prática de concordância | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[9.2.2]\` | **Advérbios I (Classificação Categoriais e Locuções):** Análise morfológica e valor de adjuntos e locuções adverbiais no período simples e composto. | - | - | Análise de modificadores adverbiais | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[9.2.2]\` | **Advérbios II (Operadores Discursivos e Modalização):** Advérbios como operadores argumentativos e atitude do enunciador em textos opinativos. | - | - | Análise de modalização em redações | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[9.2.2]\` | **Advérbios III (Estilo e Invariabilidade):** Distinção entre advérbio (invariável) e adjetivo (flexível) e a busca da concisão estilística. | - | - | Exercícios de concisão e estilo | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Prática | \`[9.2.2]\` | **Pontuação de Adjuntos Adverbiais:** Regras de vírgula para adjuntos adverbiais intercalados e deslocados em frases de alta complexidade. | - | - | Exercícios de pontuação de advérbios deslocados | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de concordância nominal/verbal e emprego estilístico dos advérbios. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre concordância nominal/verbal e advérbios modalizadores. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | \`[9.2.4]\` | **Regência Verbal I (Verbos de Dupla Regência):** Análise de verbos de uso frequente com alteração de sentido (aspirar, assistir, visar, querer, responder). | - | - | Exercícios de regência de verbos com alteração de sentido | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[9.2.4]\` | **Regência Verbal II (Verbos Transitivos Indiretos Exigentes):** Regência de obedeço, simpatizar, preferir, ir/chegar a e desvios comuns na linguagem oral. | - | - | Reescrita de frases com desvios de regência | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[9.2.4]\` | **Regência Nominal:** Relação entre nomes (substantivos, adjetivos, advérbios) e suas preposições regidas (acessível a, orgulhoso de, compatível com). | - | - | Tabela de regência nominal e exercícios | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[9.2.4]\` | **Sinal Indicativo de Crase I (Regra Geral):** Fusão da preposição a com o artigo feminino a(s) ou pronomes demonstrativos (aquele). | - | - | Exercícios de crase geral | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Teoria | \`[9.2.4]\` | **Sinal Indicativo de Crase II (Casos Proibidos e Facultativos):** Crase antes de pronomes, verbos, nomes masculinos e casos facultativos. | - | - | Lista de casos proibidos e facultativos de crase | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Oficina de Atividades | - | **Oficina de Fixação II (Regência e Crase):** Exercícios práticos de regência verbal/nominal e aplicação do sinal indicativo de crase. | - | - | Ficha prática de regência e crase | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | \`[9.2.3]\` | **Preposições e Conectivos Complexos:** Relações de sentido (causa, meio, fim, oposição) das preposições e locuções prepositivas. | - | - | Análise semântica de preposições complexas | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | \`[9.2.3]\` | **Conjunções e Articulação Argumentativa:** Emprego de conjunções coordenativas e subordinativas na estruturação de parágrafos dissertativos. | - | - | Exercícios de coesão argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[9.2.3]\` | **Conectivos de Oposição e Concessão:** Contraste entre conectivos adversativos (mas, porém) e concessivos (embora, apesar de que) no debate de ideias. | - | - | Reescrita de frases com concessão | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[9.2.3]\` | **Coesão Referencial e Sequencial Avançada:** Anáfora, catáfora, substituição lexical e encadeamento lógico de parágrafos. | - | - | Análise de coesão em redações | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | \`[9.2.3]\` | **Análise e Correção de Coesão em Redações:** Diagnóstico e reescrita de textos dissertativo-argumentativos com problemas de coesão e regência. | - | - | Oficina de reescrita de textos | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | **Oficina de Fixação III:** Exercícios integrados de regência, crase, concordância e coesão textual. | - | - | Ficha prática de coesão e regência | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização teórica de regência, concordância, crase, advérbios e conectivos. | - | - | Ficha de revisão integradora II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | - | **Revisão Geral do 2º Bimestre:** Resolução comentada de simulado com questões de vestibulares e exames nacionais. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de regência, concordância, advérbios, crase e coesão textual. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da prova bimestral, análise de produções textuais e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 9º Ano (3º Bimestre)
+*Planejamento Aula a Aula com Foco no Período Composto (Coordenação e Subordinação) e Pontuação Estilística*
+
+Este cronograma organiza as 29 aulas de 1 hora do 3º Bimestre do 9º Ano. O planejamento detalha os conteúdos dos tópicos \`[9.3.1]\` a \`[9.3.4]\`, aprofundando a estrutura do período composto por coordenação e subordinação (orações substantivas, adjetivas e adverbiais), orações reduzidas e o emprego estilístico da pontuação em períodos complexos.
+
+---
+
+## 📅 Distribuição das Aulas (3º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **1** | Exposição & Prática | \`[9.3.1]\` | **Período Composto I (Noções Fundamentais):** Período simples vs. período composto; contagem de orações e introdução aos processos de coordenação e subordinação. | - | - | Identificação de orações em períodos | <span class="status-badge status-pendente">Pendente</span> |
+| **2** | Exposição & Teoria | \`[9.3.2]\` | **Orações Coordenadas I (Assindéticas vs. Sindéticas):** Conceito de independência sintática, orações assindéticas e uso da vírgula e ponto e vírgula na coordenação. | - | - | Classificação de orações assindéticas | <span class="status-badge status-pendente">Pendente</span> |
+| **3** | Exposição & Teoria | \`[9.3.2]\` | **Orações Coordenadas II (Aditivas e Adversativas):** Análise das conjunções e valores semânticos das coordenadas aditivas e adversativas (e, mas, porém, todavia, contudo). | - | - | Reescrita combinando orações coordenadas | <span class="status-badge status-pendente">Pendente</span> |
+| **4** | Exposição & Teoria | \`[9.3.2]\` | **Orações Coordenadas III (Alternativas, Conclusivas e Explicativas):** Análise semântica e estrutural das coordenadas alternativas (ou...ou), conclusivas (logo, portanto) e explicativas (porque, pois). | - | - | Exercícios de conjunções coordenadas | <span class="status-badge status-pendente">Pendente</span> |
+| **5** | Exposição & Teoria | \`[9.3.2]\` / \`[9.3.4]\` | **Pontuação em Orações Coordenadas:** Emprego da vírgula antes de conjunções adversativas/explicativas e uso do ponto e vírgula na coordenação assindética. | - | - | Exercícios de pontuação na coordenação | <span class="status-badge status-pendente">Pendente</span> |
+| **6** | Exposição & Prática | \`[9.3.2]\` | **Coordenação na Argumentação:** Utilização estratégica de orações coordenadas para progressão de ideias e contraste em redações. | - | - | Análise de coordenação em redações | <span class="status-badge status-pendente">Pendente</span> |
+| **7** | Oficina de Atividades | - | **Oficina de Fixação I (Orações Coordenadas):** Exercícios práticos de classificação e pontuação de orações coordenadas. | - | - | Ficha prática de coordenação | <span class="status-badge status-pendente">Pendente</span> |
+| **8** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Substantivas I (Conectivos e Função):** Conceito de dependência sintática, conjunções integrantes (que, se) e técnica de substituição pelo pronome "isso". | - | - | Identificação de conjunções integrantes | <span class="status-badge status-pendente">Pendente</span> |
+| **9** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Substantivas II (Subjetivas e Objetivas Diretas):** Identificação e análise de orações subordinadas substantivas subjetivas e objetivas diretas. | - | - | Classificação de subjetivas e objetivas | <span class="status-badge status-pendente">Pendente</span> |
+| **10** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Substantivas III (Objetivas Indiretas e Completivas Nominais):** Distinção entre oração objetiva indireta (completa verbo) e completiva nominal (completa nome). | - | - | Diferenciação entre objeto indireto e completiva nominal | <span class="status-badge status-pendente">Pendente</span> |
+| **11** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Substantivas IV (Predicativas e Apositivas):** Estrutura das orações predicativas (com verbo de ligação) e apositivas (pontuadas com dois-pontos ou travessão). | - | - | Exercícios de orações apositivas e predicativas | <span class="status-badge status-pendente">Pendente</span> |
+| **12** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização de orações coordenadas e orações subordinadas substantivas. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **13** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre período composto por coordenação e orações subordinadas substantivas. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **14** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Adjetivas I (Explicativas vs. Restritivas):** Pronomes relativos (que, quem, cujo), diferenciação semântica e pontuação obrigatória nas explicativas. | - | - | Exercícios de vírgula em orações adjetivas | <span class="status-badge status-pendente">Pendente</span> |
+| **15** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Adjetivas II (Regência com Pronome Relativo):** Anteposição de preposições exigidas pela regência verbal/nominal ao pronome relativo na oração adjetiva. | - | - | Preposição antes do pronome relativo | <span class="status-badge status-pendente">Pendente</span> |
+| **16** | Exposição & Teoria | \`[9.3.3]\` | **Orações Reduzidas I (Infinitivo, Gerúndio e Particípio):** Conceito de oração reduzida, identificação e técnica de desenvolvimento em orações desenvolvidas. | - | - | Desenvolvimento de orações reduzidas | <span class="status-badge status-pendente">Pendente</span> |
+| **17** | Exposição & Teoria | \`[9.3.3]\` | **Orações Reduzidas II (Usos e Nuances no Texto):** Emprego de orações reduzidas para concisão e fluência no estilo jornalístico e literário. | - | - | Análise de estilo de orações reduzidas | <span class="status-badge status-pendente">Pendente</span> |
+| **18** | Exposição & Prática | \`[9.3.3]\` / \`[9.3.4]\` | **Pontuação e Estilo em Orações Adjetivas e Reduzidas:** Uso de vírgulas, travessões e parênteses em orações intercaladas. | - | - | Pontuação de orações intercaladas | <span class="status-badge status-pendente">Pendente</span> |
+| **19** | Oficina de Atividades | - | **Oficina de Fixação II (Adjetivas e Reduzidas):** Exercícios práticos de conversão, pontuação e regência em orações adjetivas. | - | - | Ficha prática de orações adjetivas | <span class="status-badge status-pendente">Pendente</span> |
+| **20** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Adverbiais I (Causais, Comparativas, Concessivas, Condicionais):** Análise das circunstâncias e conectivos causais, comparativos, concessivos e condicionais. | - | - | Classificação de circunstâncias adverbiais | <span class="status-badge status-pendente">Pendente</span> |
+| **21** | Exposição & Teoria | \`[9.3.3]\` | **Subordinadas Adverbiais II (Conformativas, Consecutivas, Finais, Proporcionais, Temporais):** Estudo detalhado das orações conformativas, consecutivas, finais, proporcionais e temporais. | - | - | Exercícios de conjunções subordinativas | <span class="status-badge status-pendente">Pendente</span> |
+| **22** | Exposição & Teoria | \`[9.3.4]\` | **Pontuação em Períodos Complexos I (Adverbiais Deslocadas):** Obrigatoriedade e facultatividade da vírgula em orações subordinadas adverbiais antepostas ou intercaladas. | - | - | Pontuação de orações adverbiais deslocadas | <span class="status-badge status-pendente">Pendente</span> |
+| **23** | Exposição & Teoria | \`[9.3.4]\` | **Pontuação em Períodos Complexos II (Ritmo e Estilo):** Uso expressivo da pontuação (ponto e vírgula, dois-pontos, travessões) no período complexo para construção do estilo do autor. | - | - | Análise estilística de pontuação em clássicos | <span class="status-badge status-pendente">Pendente</span> |
+| **24** | Exposição & Prática | \`[9.3.1]\` a \`[9.3.4]\` | **Análise Sintático-Estilística de Textos Selecionados:** Leitura dirigida e análise da arquitetura frasal em grandes autores da literatura de língua portuguesa. | - | - | Análise frasal em trecho literário | <span class="status-badge status-pendente">Pendente</span> |
+| **25** | Oficina de Atividades | - | **Oficina de Fixação III:** Exercícios integrados de análise sintática do período composto e pontuação complexa. | - | - | Ficha prática de sintaxe do período composto | <span class="status-badge status-pendente">Pendente</span> |
+| **26** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização de orações coordenadas, subordinadas (substantivas, adjetivas, adverbiais) e pontuação. | - | - | Ficha de revisão integradora II | <span class="status-badge status-pendente">Pendente</span> |
+| **27** | Revisão Dirigida | - | **Revisão Geral do 3º Bimestre:** Resolução comentada de bateria de questões no modelo de exames e vestibulares formais. | - | - | Simulado bimestral preparatório | <span class="status-badge status-pendente">Pendente</span> |
+| **28** | Avaliação | - | **Prova Bimestral:** Avaliação escrita integradora de período composto (coordenação e subordinação) e pontuação estilística. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **29** | Devolutiva & Fechamento | - | **Feedback Geral:** Correção comentada da prova bimestral, análise de dúvidas e encerramento do 3º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 9º Ano (4º Bimestre)
+*Planejamento Aula a Aula com Foco em Figuras de Linguagem, Sintaxe Avançada, Coesão Dissertativa e Revisão Geral do Ciclo*
+
+Este cronograma organiza as 29 aulas de 1 hora do 4º Bimestre do 9º Ano. O planejamento detalha os conteúdos dos tópicos \`[9.4.1]\` a \`[9.4.4]\`, aprofundando o estudo das figuras de linguagem (análise crítica semântica), análise sintática avançada (funções essenciais, integrantes e acessórias), coesão/coerência em textos dissertativo-argumentativos e a revisão geral do Ensino Fundamental II aplicada à produção textual.
+
+---
+
+## 📅 Distribuição das Aulas (4º Bimestre)
+
+| Aula | Foco Pedagógico | Tópico Associado | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| **30** | Exposição & Teoria | \`[9.4.1]\` | **Figuras de Linguagem I (Figuras de Palavra / Semânticas):** Metáfora, metonímia, catacrese, sinestesia e aprofundamento dos efeitos de sentido. | - | - | Identificação de figuras de palavra | <span class="status-badge status-pendente">Pendente</span> |
+| **31** | Exposição & Teoria | \`[9.4.1]\` | **Figuras de Linguagem II (Figuras de Pensamento):** Antítese, paradoxo, hipérbole, eufemismo, ironia e gradação no discurso persuasivo e literário. | - | - | Análise de figuras de pensamento | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[9.4.1]\` | **Figuras de Linguagem III (Figuras de Construção / Sintáticas):** Elipse, pleonasmo, anacoluto, hipérbato, polissíndeto e asseíndeto. | - | - | Exercícios de figuras de construção | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[9.4.1]\` | **Figuras de Linguagem IV (Figuras de Som / Sonoras):** Aliteração, assonância, onomatopeia e parononásia na poesia e na publicidade. | - | - | Identificação de figuras sonoras em poemas | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Prática | \`[9.4.1]\` | **Análise Crítica e Estilística em Textos Reais:** Identificação e análise de recursos expressivos em poemas, crônicas, anúncios e editoriais. | - | - | Análise estilística de texto literário | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Prática | \`[9.4.1]\` | **Ironia e Duplo Sentido na Mídia:** Análise crítica do humor, charge, cartum e textos opinativos da imprensa. | - | - | Análise de charges e ironia | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | - | **Oficina de Fixação I (Figuras de Linguagem):** Exercícios práticos de identificação e interpretação de figuras de linguagem em exames e vestibulares. | - | - | Ficha prática de figuras de linguagem | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[9.4.2]\` | **Análise Sintática Avançada I (Termos Essenciais):** Sujeito (tipos, indeterminação e oração sem sujeito) e Predicado (nominal, verbal e verbo-nominal). | - | - | Exercícios de análise de sujeito e predicado | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[9.4.2]\` | **Análise Sintática Avançada II (Termos Integrantes):** Objetos direto e indireto, complemento nominal e agente da passiva em períodos complexos. | - | - | Análise de termos integrantes | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[9.4.2]\` | **Análise Sintática Avançada III (Termos Acessórios):** Adjunto adnominal, adjunto adverbial, aposto e vocativo. | - | - | Identificação de termos acessórios | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Exposição & Teoria | \`[9.4.2]\` | **Distinções Sintáticas Críticas:** Adjunto adnominal vs. complemento nominal; predicativo do sujeito vs. predicativo do objeto. | - | - | Exercícios de diferenciação sintática | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | - | **Revisão Parcial I:** Sistematização teórica de figuras de linguagem e análise sintática das funções oracionais. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | - | **Prova Parcial I:** Avaliação escrita sobre figuras de linguagem e termos essenciais/integrantes/acessórios da oração. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | \`[9.4.3]\` | **Coerência Textual e Projeto de Texto:** Estruturação lógica, não contradição, relevância e desenvolvimento do ponto de vista dissertativo. | - | - | Análise de coerência em textos | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[9.4.3]\` | **Coesão Sequencial e Operadores Argumentativos:** Emprego de conectivos de adição, oposição, causa, consequência, conclusão e concessão na redação. | - | - | Exercícios de coesão sequencial | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[9.4.3]\` | **Coesão Referencial e Cadeias Anafóricas:** Paráfrase, hiperônimos, sinônimos e pronomes para manutenção temática sem repetições. | - | - | Reescrita para eliminação de repetições | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Prática | \`[9.4.3]\` | **Estrutura do Parágrafo Dissertativo-Argumentativo:** Tópico frasal, fundamentação (repertório legítimo) e fechamento do parágrafo. | - | - | Construção de parágrafo argumentativo | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Prática | \`[9.4.3]\` | **Laboratório de Produção Textual:** Escrita orientada de proposta de redação no modelo dos exames do Ensino Médio. | - | - | Elaboração do rascunho de redação | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Oficina de Atividades | - | **Oficina de Fixação II (Coesão e Coerência):** Análise e correção de redações com problemas de encadeamento e articulação sintática. | - | - | Ficha prática de coesão dissertativa | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Exposição & Teoria | \`[9.4.4]\` | **Revisão Geral I (Morfologia e Classes):** Panorama integrador das 10 classes de palavras e seus papéis na norma-padrão. | - | - | Ficha de revisão morfológica | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Exposição & Teoria | \`[9.4.4]\` | **Revisão Geral II (Sintaxe e Regência/Concordância):** Consolidação das regras de concordância nominal/verbal, regência e crase. | - | - | Exercícios de sintaxe e regência | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[9.4.4]\` | **Revisão Geral III (Pontuação e Ortografia):** Síntese de regras ortográficas, acentuação gráfica e pontuação em períodos compostos. | - | - | Exercícios de pontuação e ortografia | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Prática | \`[9.4.4]\` | **Análise Gramatical Aplicada ao Texto:** Técnica de diagnóstico de incorreções gramaticais em produções escritas reais. | - | - | Diagnóstico de incorreções textuais | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | \`[9.4.4]\` | **Reescrita e Aprimoramento Estilístico:** Reescrita de textos visando clareza, concisão, elegância e correção formal. | - | - | Reescrita e aprimoramento de texto | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | **Oficina de Fixação III:** Resolução integradora de questões de exames e vestibulares (Análise Sintática, Semântica e Gramática). | - | - | Bateria de questões integradas | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Revisão Dirigida | - | **Revisão Parcial II:** Sistematização de dúvidas finais de todo o programa do 9º Ano. | - | - | Ficha integradora de revisão final | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | - | **Simulado de Conclusão do Ensino Fundamental II:** Resolução comentada do simulado geral de encerramento do ciclo. | - | - | Simulado de conclusão do ciclo | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Avaliação | - | **Prova Bimestral / Avaliação Final:** Avaliação escrita integradora de Semântica, Sintaxe Avançada, Coesão e Produção Textual. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Devolutiva & Fechamento | - | **Feedback Geral e Conclusão do Ciclo:** Correção comentada da avaliação, entrega de portfólios e encerramento do Ensino Fundamental II. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |`;
+
 
         const cronograma5Text = `# Cronograma de Aulas: 5º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
@@ -1346,6 +1649,50 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A est
 | **28** | Revisão Dirigida | - | Produção Textual | **Revisão Parcial II:** Análise de produções textuais, correção estilística e revisão teórica de redação. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **29** | Avaliação | - | Produção Textual | **Prova Bimestral:** Avaliação unificada de compreensão textual, produção escrita e conteúdos de gramática. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **30** | Devolutiva & Fechamento | - | Produção Textual | **Feedback Geral:** Correção guiada da avaliação, devolução dos portfólios de escrita e encerramento do bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 5º Ano (2º Bimestre)
+*Planejamento Aula a Aula com Foco em Gêneros Textuais, Pontuação Complexa e Morfologia Lexical*
+
+Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O planejamento detalha os conteúdos dos tópicos \`[5.2.1]\` a \`[5.2.7]\`, promovendo o estudo sistemático de gêneros textuais (fábulas, crônicas, entrevistas e notícias), pontuação avançada (travessão, aspas, parênteses), morfologia lexical (família e formação de palavras) e produção textual detalhada.
+
+---
+
+## 📅 Distribuição das Aulas (2º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **31** | Exposição & Teoria | \`[5.2.1]\` | Produção Textual | **Gêneros Textuais I (Fábulas):** Conceito de fábula, estrutura narrativa alegórica, antropomorfismo e a moral da história. | - | - | Leitura de fábula e identificação da moral | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[5.2.1]\` | Produção Textual | **Gêneros Textuais II (Crônicas):** O olhar sobre o cotidiano, brevidade, tom reflexivo e humorístico na crônica. | - | - | Análise de elementos de uma crônica | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[5.2.4]\` | Produção Textual | **Tema e Subtemas I:** Identificação do tema principal em fábulas e crônicas através da síntese textual. | - | - | Exercício de identificação de tema principal | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[5.2.4]\` | Produção Textual | **Tema e Subtemas II:** Mapeamento dos subtemas, tópicos secundários e articulação dos parágrafos. | - | - | Decomposição de texto em subtemas | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Teoria | \`[5.2.1]\` | Produção Textual | **Gêneros Textuais III (Entrevistas):** Estrutura jornalística (título, introdução, perguntas e respostas) e marcas da oralidade. | - | - | Transcrição e análise de mini-entrevista | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Exposição & Teoria | \`[5.2.1]\` | Produção Textual | **Gêneros Textuais IV (Notícias):** Estrutura da notícia, o Lide (o quê, quem, quando, onde, como, por quê) e imparcialidade. | - | - | Identificação dos elementos do Lide em notícia | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[5.2.2]\` | Ortografia, Pontuação | **Pontuação em Textos Complexos I (Travessão):** Uso do travessão no discurso direto (diálogos) e para isolar trechos explicativos. | - | - | Pontuação de diálogos com travessão | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[5.2.2]\` | Ortografia, Pontuação | **Pontuação em Textos Complexos II (Aspas):** Emprego das aspas em citações diretas, destaque de palavras e ironia no texto. | - | - | Reescrita de frases aplicando aspas | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[5.2.2]\` | Ortografia, Pontuação | **Pontuação em Textos Complexos III (Parênteses):** Uso dos parênteses para inserção de observações, datas e explicações complementares. | - | - | Inserção de parênteses em incisos explicativos | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Oficina de Atividades | - | Ortografia, Pontuação | **Oficina de Fixação I:** Exercícios práticos de pontuação complexa (travessão, aspas, parênteses) em trechos de narrativas e notícias. | - | - | Ficha de exercícios de pontuação complexa | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | \`[5.2.7]\` | Produção Textual & Pontuação | **Revisão Parcial I:** Sistematização de gêneros textuais (fábulas, crônicas, notícias) e normas de pontuação complexa. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | \`[5.2.7]\` | Produção Textual & Pontuação | **Prova Parcial I:** Avaliação escrita sobre gêneros textuais, tema/subtemas e pontuação (travessão, aspas, parênteses). | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | \`[5.2.5]\` | Morfologia | **Família de Palavras I:** Conceito de palavras cognatas, radical comum e agrupamento por afinidade morfológica. | - | - | Construção de famílias de palavras | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[5.2.5]\` | Morfologia | **Família de Palavras II:** Distinção entre palavras primitivas e derivadas dentro de uma mesma família lexical. | - | - | Classificação de primitivos e derivados | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[5.2.6]\` | Morfologia | **Formação de Palavras I (Prefixação):** Noções de formação por sufixos e prefixos; papéis dos prefixos (des-, in-, re-, pre-). | - | - | Exercícios de acréscimo de prefixos | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[5.2.6]\` | Morfologia | **Formação de Palavras II (Sufixação):** Formação de substantivos e adjetivos por sufixação (-mente, -eza, -agem, -ável). | - | - | Exercícios de criação de palavras por sufixação | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Exposição & Teoria | \`[5.2.6]\` | Morfologia | **Formação de Palavras III (Noções de Composição):** Junção de palavras para criação de novos significados (palavras compostas). | - | - | Identificação de palavras compostas | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Exposição & Prática | \`[5.2.5]\` / \`[5.2.6]\` | Morfologia | **Morfologia Lexical no Texto:** Análise de famílias de palavras e processos de formação em textos reais. | - | - | Caça-palavras morfológico e análise textual | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Oficina de Atividades | - | Morfologia | **Oficina de Fixação II:** Prática intensiva sobre família de palavras, radicais e processos de derivação/composição. | - | - | Ficha prática de formação de palavras | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Avaliação | \`[5.2.7]\` | Morfologia | **Prova Parcial II:** Avaliação escrita sobre família de palavras e noções de formação de palavras (prefixos, sufixos e composição). | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[5.2.3]\` | Produção Textual | **Produção Textual I (Descrição RICA):** Caracterização detalhada de cenários, objetos e aspectos físicos/psicológicos de personagens. | - | - | Exercício de adjetivação descritiva | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[5.2.3]\` | Produção Textual | **Produção Textual II (Narrativa com Riqueza de Detalhes):** Construção do enredo com introdução envolvente, conflito e clímax. | - | - | Esboço de enredo narrativo | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Prática | \`[5.2.3]\` | Produção Textual | **Produção Textual III (Integração de Diálogos):** Aplicação de travessões e pontuação narrativa dentro da produção de contos. | - | - | Escrita de trecho dialogado | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Exposição & Teoria | \`[5.2.3]\` / \`[5.2.4]\` | Produção Textual | **Produção Textual IV (Articulação de Parágrafos):** Garantia da coesão e coerência na transição de subtemas e ideias. | - | - | Organização de parágrafos em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Oficina de Atividades | \`[5.2.3]\` | Produção Textual | **Laboratório de Redação Guiada:** Oficina de produção individual de um texto narrativo/descritivo completo. | - | - | Elaboração do rascunho de redação | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Exposição & Prática | \`[5.2.3]\` | Produção Textual | **Revisão e Aprimoramento Textual:** Técnica de reescrita, autorrevisão e correção ortográfica/pontuacional dos textos produzidos. | - | - | Reescrita final da produção textual | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Oficina de Atividades | - | Produção Textual & Morfologia | **Oficina de Fixação III:** Exercícios integrados de leitura, interpretação de gêneros, pontuação e morfologia lexical. | - | - | Ficha de atividades integradas | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Revisão Dirigida | \`[5.2.7]\` | Produção Textual, Pontuação & Morfologia | **Revisão Parcial III:** Revisão geral de todo o conteúdo programático do 2º Bimestre do 5º Ano. | - | - | Ficha integradora de revisão bimestral | <span class="status-badge status-pendente">Pendente</span> |
+| **59** | Avaliação | \`[5.2.7]\` | Produção Textual, Pontuação & Morfologia | **Prova Bimestral:** Avaliação escrita unificada de gêneros textuais, pontuação, formação de palavras e produção de texto. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **60** | Devolutiva & Fechamento | \`[5.2.7]\` | Produção Textual | **Feedback Geral:** Correção comentada da prova bimestral, análise de produções textuais e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 `;
 
         const aula1_6Text = `# 6º Ano — Aula 1: Leitura e Vocabulário
@@ -2620,6 +2967,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A est
           cronograma6: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_6o_Ano.md', fallback: cronograma6Text },
           cronograma7: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_7o_Ano.md', fallback: cronograma7Text },
           cronograma8: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_8o_Ano.md', fallback: cronograma8Text },
+          cronograma9: { path: './Acutis/Cronogramas de aulas/Cronograma_Aulas_9o_Ano.md', fallback: cronograma9Text },
 
           aula1_5_aluno: { path: './Acutis/Novo_Padrao/5o_Ano/Aula_1.md', fallback: aula1_5Text },
           aula1_5_prof: { path: './Acutis/Novo_Padrao/5o_Ano/Aula_1.md', fallback: aula1_5Text },
@@ -2902,7 +3250,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A est
         }
 
         async function ensureCronogramasLoaded() {
-          const years = [5, 6, 7, 8];
+          const years = [5, 6, 7, 8, 9];
           for (const yr of years) {
             if (!parsedCronogramas[yr]) {
               const sourceKey = `cronograma${yr}`;
