@@ -5,7 +5,7 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A est
 
 ---
 
-## 📅 Distribuição das Aulas
+## 📅 Distribuição das Aulas (1º Bimestre)
 
 | Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
 | :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -39,14 +39,6 @@ Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A est
 | **28** | Revisão Dirigida | - | Produção Textual | **Revisão Parcial II:** Análise de produções textuais, correção estilística e revisão teórica de redação. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **29** | Avaliação | - | Produção Textual | **Prova Bimestral:** Avaliação unificada de compreensão textual, produção escrita e conteúdos de gramática. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **30** | Devolutiva & Fechamento | - | Produção Textual | **Feedback Geral:** Correção guiada da avaliação, devolução dos portfólios de escrita e encerramento do bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
-
----
-
-## 📊 Consolidação da Carga Horária
-
-*   **Aulas de Leitura Ativa e Interpretação de Texto (40%):** 12 aulas (6 textos clássicos estudados em blocos de 2 aulas).
-*   **Aulas de Teoria Gramatical e Exercícios de Fixação/Aplicação (50%):** 15 aulas.
-*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
 
 ---
 
@@ -94,9 +86,88 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
 
 ---
 
-## 📊 Consolidação da Carga Horária (2º Bimestre)
+# Cronograma de Aulas: 5º Ano (3º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Verbos, Preposições e Produção Argumentativa*
 
-*   **Aulas de Leitura, Gêneros Textuais e Análise (30%):** 9 aulas.
-*   **Aulas de Gramática, Pontuação e Morfologia (40%):** 12 aulas.
-*   **Laboratórios de Produção e Revisão Textual (20%):** 6 aulas.
-*   **Aulas de Avaliação e Devolutiva Comentada (10%):** 3 aulas.
+Este cronograma organiza as 30 aulas de 1 hora do 3º Bimestre do 5º Ano. O planejamento detalha os conteúdos dos tópicos `[5.3.1]` a `[5.3.8]`, promovendo o estudo sistemático de pronomes, verbos noções, preposições, conjunções de coesão e produção de textos argumentativos simples.
+
+---
+
+## 📅 Distribuição das Aulas (3º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **1** | Exposição & Teoria | `[5.3.5]` | Morfologia | **Pronomes I (Conceito e Pronomes Pessoais Retos):** Função de substituição do nome e flexões de pessoa/número. | - | - | Exercício de identificação de pronomes reto | <span class="status-badge status-pendente">Pendente</span> |
+| **2** | Exposição & Teoria | `[5.3.5]` | Morfologia | **Pronomes II (Pronomes Pessoais ObLíquos):** Emprego de me, te, se, o, a, lhe, nos, vos e pronomes de tratamento. | - | - | Exercícios de substituição por pronomes oblíquos | <span class="status-badge status-pendente">Pendente</span> |
+| **3** | Exposição & Teoria | `[5.3.5]` | Morfologia | **Pronomes III (Pronomes Possessivos):** Noção de posse e concordância com a coisa possuída e a pessoa gramatical. | - | - | Aplicação de possessivos em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **4** | Exposição & Teoria | `[5.3.5]` | Morfologia | **Pronomes IV (Pronomes Demonstrativos):** Referência de tempo, lugar e espaço no texto (este, esse, aquele, isto, isso, aquilo). | - | - | Exercícios de pronomes demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **5** | Exposição & Prática | `[5.3.2]` / `[5.3.5]` | Produção Textual | **Coesão Textual por Pronomes:** Substituição de termos repetidos por pronomes para evitar redundâncias na escrita. | - | - | Reescrita de parágrafos eliminando repetições | <span class="status-badge status-pendente">Pendente</span> |
+| **6** | Oficina de Atividades | `[5.3.5]` | Morfologia | **Oficina de Fixação I (Pronomes):** Exercícios práticos de identificação, substituição e reescrita com pronomes. | - | - | Ficha prática de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **7** | Exposição & Teoria | `[5.3.7]` | Morfologia | **Verbo I (Noção de Ação, Estado e Fenômeno):** Conceito de verbo, radical e terminação verbal. | - | - | Identificação de verbos em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **8** | Exposição & Teoria | `[5.3.7]` | Morfologia | **Verbo II (Conjugações Verbais - 1ª, 2ª e 3ª Conjugação):** Verbos terminados em -ar, -er, -ir e identificação da pessoa e número. | - | - | Classificação de verbos por conjugação | <span class="status-badge status-pendente">Pendente</span> |
+| **9** | Exposição & Teoria | `[5.3.7]` | Morfologia | **Verbo III (Tempos Verbais Básicos):** Distinção entre Presente, Pretérito (passado) e Futuro no Modo Indicativo. | - | - | Flexão verbal nos tempos básicos | <span class="status-badge status-pendente">Pendente</span> |
+| **10** | Oficina de Atividades | `[5.3.7]` | Morfologia | **Oficina de Fixação II (Verbos):** Exercícios de conjugação e identificação de tempos verbais em textos curtos. | - | - | Ficha de exercícios de tempos verbais | <span class="status-badge status-pendente">Pendente</span> |
+| **11** | Revisão Dirigida | `[5.3.5]` / `[5.3.7]` | Morfologia | **Revisão Parcial I:** Sistematização de Pronomes e Noções de Verbo. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **12** | Avaliação | `[5.3.5]` / `[5.3.7]` | Morfologia | **Prova Parcial I:** Avaliação escrita sobre pronomes e tempos verbais básicos. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **13** | Exposição & Teoria | `[5.3.8]` | Morfologia | **Preposição I (Conceito e Principais Preposições):** O papel da preposição como conectivo entre palavras (a, de, em, com, por, para, sem). | - | - | Exercício de ligação com preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **14** | Exposição & Teoria | `[5.3.8]` | Morfologia | **Preposição II (Combinações e Contrações):** Junção de preposição + artigo (do, da, no, na, ao, à, pelo, pela). | - | - | Identificação de contrações prepositivas | <span class="status-badge status-pendente">Pendente</span> |
+| **15** | Exposição & Teoria | `[5.3.2]` | Produção Textual | **Uso de Conjunções para Coesão Textual I:** Conectivos de adição (e, também) e oposição (mas, porém). | - | - | Exercícios de coesão aditiva e adversativa | <span class="status-badge status-pendente">Pendente</span> |
+| **16** | Exposição & Teoria | `[5.3.2]` | Produção Textual | **Uso de Conjunções para Coesão Textual II:** Conectivos de causa (porque, pois) e conclusão (portanto, assim). | - | - | Unificação de frases com conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **17** | Exposição & Teoria | `[5.3.6]` | Morfologia | **Classes de Palavras (Panorama Integrado):** Revisão sistemática da função dos substantivos, adjetivos, artigos, pronomes, verbos e preposições. | - | - | Análise morfológica integrada | <span class="status-badge status-pendente">Pendente</span> |
+| **18** | Oficina de Atividades | `[5.3.6]` / `[5.3.8]` | Morfologia | **Oficina de Fixação III:** Análise morfológica de frases e identificação de conectivos. | - | - | Ficha de análise morfológica | <span class="status-badge status-pendente">Pendente</span> |
+| **19** | Revisão Dirigida | - | Morfologia | **Revisão Parcial II:** Sistematização teórica de preposições, conjunções e classes gramaticais. | - | - | Ficha de revisão teórica II | <span class="status-badge status-pendente">Pendente</span> |
+| **20** | Avaliação | - | Morfologia | **Prova Parcial II:** Avaliação escrita sobre preposições, conjunções e classes de palavras. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **21** | Exposição & Teoria | `[5.3.1]` | Produção Textual | **Textos Argumentativos Simples I (Opinião):** Conceito de tese/opinião, diferenciação entre fato e opinião. | - | - | Diferenciação de fato e opinião em textos | <span class="status-badge status-pendente">Pendente</span> |
+| **22** | Exposição & Teoria | `[5.3.1]` | Produção Textual | **Textos Argumentativos Simples II (Justificativa):** Construção de justificativas e argumentos para defender um ponto de vista. | - | - | Elaboração de argumentos justificativos | <span class="status-badge status-pendente">Pendente</span> |
+| **23** | Exposição & Teoria | `[5.3.4]` | Produção Textual | **Organização em Parágrafos I:** Estrutura do parágrafo (ideia central + desenvolvimento) e margens/recuos. | - | - | Estruturação de parágrafos | <span class="status-badge status-pendente">Pendente</span> |
+| **24** | Exposição & Teoria | `[5.3.4]` | Produção Textual | **Organização em Parágrafos II:** Encadeamento de ideias e transição suave entre introdução, desenvolvimento e conclusão. | - | - | Organização lógica de texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **25** | Oficina de Atividades | `[5.3.3]` | Produção Textual | **Laboratório de Redação Opinativa:** Produção individual de um texto argumentativo curto sobre tema do cotidiano escolar. | - | - | Rascunho de texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **26** | Exposição & Prática | `[5.3.3]` | Produção Textual | **Revisão Textual Coletiva:** Análise de trechos de redações, autorrevisão e aprimoramento da coesão com pronomes e conectivos. | - | - | Reescrita final do texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **27** | Oficina de Atividades | - | Produção Textual & Morfologia | **Oficina de Fixação IV:** Atividades integradas de interpretação, gramática e coesão textual. | - | - | Ficha de atividades integradas | <span class="status-badge status-pendente">Pendente</span> |
+| **28** | Revisão Dirigida | - | Produção Textual & Morfologia | **Revisão Parcial III:** Revisão geral do conteúdo programático do 3º Bimestre. | - | - | Ficha integradora de revisão bimestral | <span class="status-badge status-pendente">Pendente</span> |
+| **29** | Avaliação | - | Produção Textual & Morfologia | **Prova Bimestral:** Avaliação escrita unificada de pronomes, verbos, preposições e produção argumentativa. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **30** | Devolutiva & Fechamento | - | Produção Textual | **Feedback Geral:** Correção comentada da prova bimestral e encerramento do 3º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 5º Ano (4º Bimestre)
+*Planejamento Aula a Aula com Foco em Poesia, Leitura Crítica, Cartas Argumentativas e Revisão Anual Consolidada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 4º Bimestre do 5º Ano. O planejamento detalha os conteúdos dos tópicos `[5.4.1]` a `[5.4.8]`, promovendo a leitura poética, redação de cartas argumentativas, revisão ortográfica/pontuacional e consolidação de todo o currículo do 5º Ano.
+
+---
+
+## 📅 Distribuição das Aulas (4º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **31** | Exposição & Teoria | `[5.4.1]` | Produção Textual | **Leitura e Interpretação de Poemas I:** Estrutura poética (verso, estrofe, rima e ritmo). | - | - | Leitura e análise de poema | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | `[5.4.1]` | Produção Textual | **Leitura e Interpretação de Poemas II:** Linguagem figurada e recursos sonoros (onomatopeia e aliteração). | - | - | Identificação de figuras sonoras em poemas | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | `[5.4.5]` | Morfologia | **Interjeição:** Conceito, expressividade e pontuação das interjeições e locuções interjeitivas (Ah!, Oh!, Bravo!, Socorro!). | - | - | Exercício de emprego de interjeições | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | `[5.4.6]` | Morfologia | **Conjunção (Noções Ampliadas):** Papel de ligação entre orações e sentidos expressos. | - | - | Identificação de conjunções em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Prática | `[5.4.1]` / `[5.4.5]` | Produção Textual | **Poesia e Expressividade:** Análise da expressividade em poemas infantojuvenis clássicos. | - | - | Recitação e análise de poema | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | `[5.4.5]` / `[5.4.6]` | Morfologia | **Oficina de Fixação I:** Exercícios de identificação de interjeições e conjunções no texto. | - | - | Ficha prática de interjeições e conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | `[5.4.7]` | Ortografia | **Revisão Ortográfica I:** Regras de acentuação, uso de s/z, g/j, x/ch e r/rr. | - | - | Correção ortográfica de frases | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | `[5.4.7]` | Ortografia | **Revisão Ortográfica II:** Grafia dos porquês (porque, por que, porquê, por quê) e uso de mas/mais, mal/mau. | - | - | Exercícios dos porquês e mas/mais | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | `[5.4.3]` | Ortografia | **Revisão Geral das Regras do Ciclo Inicial I:** Pontuação avançada (vírgula, travessão, aspas, dois-pontos). | - | - | Exercícios de pontuação em parágrafos | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Oficina de Atividades | `[5.4.7]` | Ortografia | **Oficina de Fixação II:** Ditado preparatório e exercícios ortográficos intensivos. | - | - | Ficha prática de ortografia | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | `[5.4.3]` | Ortografia & Pontuação | **Revisão Parcial I:** Sistematização de ortografia, pontuação e poemas. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | `[5.4.3]` | Ortografia & Pontuação | **Prova Parcial I:** Avaliação escrita sobre interpretação poética, interjeições e ortografia. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | `[5.4.2]` | Produção Textual | **Produção de Cartas Argumentativas I:** Estrutura da carta (local, data, vocativo, corpo, despedida e assinatura). | - | - | Análise de estrutura de carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | `[5.4.2]` | Produção Textual | **Produção de Cartas Argumentativas II:** Linguagem formal, respeito ao interlocutor e apresentação de reivindicações sustentadas. | - | - | Esboço de argumentos para carta | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | `[5.4.4]` | Produção Textual | **Leitura Crítica I:** Identificação de intenções do autor, argumento principal e contra-argumento em notícias e cartas de leitor. | - | - | Exercício de leitura crítica de notícias | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | `[5.4.4]` | Produção Textual | **Leitura Crítica II:** Comparação entre diferentes textos sobre o mesmo fato social/escolar. | - | - | Análise comparativa de textos | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Oficina de Atividades | `[5.4.2]` | Produção Textual | **Laboratório de Redação de Carta Argumentativa:** Elaboração individual de rascunho de carta dirigida ao diretor/comunidade. | - | - | Rascunho da carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Exposição & Prática | `[5.4.2]` | Produção Textual | **Autorrevisão e Reescrita:** Correção ortográfica, pontuacional e aprimoramento da carta argumentativa. | - | - | Versão final da carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Oficina de Atividades | - | Produção Textual | **Oficina de Fixação III:** Exercícios práticos integrados de revisão de texto. | - | - | Ficha prática de produção textual | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Avaliação | `[5.4.8]` | Produção Textual | **Prova Parcial II:** Avaliação escrita de produção textual (carta argumentativa/texto opinativo). | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | `[5.4.3]` | Morfologia & Sintaxe | **Revisão Anual de Classes Gramaticais I:** Substantivo, adjetivo, artigo, numeral e pronome. | - | - | Ficha de revisão de classes I | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | `[5.4.3]` | Morfologia & Sintaxe | **Revisão Anual de Classes Gramaticais II:** Verbo, advérbio, preposição, conjunção e interjeição. | - | - | Ficha de revisão de classes II | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Teoria | `[5.4.3]` | Ortografia & Pontuação | **Revisão Anual de Sintaxe e Estilo:** Estrutura de frase, pontuação e organização de parágrafos. | - | - | Ficha de revisão de pontuação | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | Geral | **Bateria de Exercícios Consolidados I:** Questões objetivas e discursivas no modelo de exames formais do 5º ano. | - | - | Bateria de questões consolidadas I | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Oficina de Atividades | - | Geral | **Bateria de Exercícios Consolidados II:** Resolução comentada e tira-dúvidas de revisão anual. | - | - | Bateria de questões consolidadas II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | `[5.4.8]` | Geral | **Simulado Geral de Português (5º Ano):** Aplicação de simulado preparatório abrangendo todo o conteúdo do ano letivo. | - | - | Simulado geral 5º ano | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Revisão Dirigida | `[5.4.8]` | Geral | **Correção Comentada do Simulado:** Análise detalhada das questões e resolução de dúvidas finais. | - | - | Correção de simulado | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Revisão Dirigida | `[5.4.8]` | Geral | **Revisão Geral do 4º Bimestre:** Revisão dos tópicos essenciais para a Prova Bimestral. | - | - | Ficha de revisão bimestral final | <span class="status-badge status-pendente">Pendente</span> |
+| **59** | Avaliação | `[5.4.8]` | Geral | **Prova Bimestral de Fechamento do Ano:** Avaliação escrita unificada final de Português do 5º Ano. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **60** | Devolutiva & Fechamento | `[5.4.8]` | Geral | **Feedback Geral e Encerramento:** Devolutiva comentada da prova bimestral, entrega dos portfólios e celebração do encerramento do 5º Ano. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |

@@ -1,0 +1,139 @@
+# Plano de Ensino: Língua Portuguesa — 5º Ano
+
+## 1º Bimestre
+
+- **Aula 01:** Leitura e Escrita Fluente I: Diagnóstico de ritmo de leitura individual, entonação e clareza vocal.
+- **Aula 02:** Leitura e Escrita Fluente II: Práticas de leitura expressiva conjunta e exercícios de legibilidade da caligrafia.
+- **Aula 03:** Leitura e Escrita Fluente III: Ditado interativo e cópia ativa focando na precisão gráfica.
+- **Aula 04:** Ortografia Especial I: Casos de fonemas com múltiplas representações (s/z/x) e regras básicas de grafia.
+- **Aula 05:** Ortografia Especial II: Regras gerais e aplicação prática do hífen em palavras compostas.
+- **Aula 06:** Ortografia Especial III: Fixação prática de grafias complexas diretamente no contexto de frases.
+- **Aula 07:** Acentuação Gráfica I: Classificação das palavras pela sílaba tônica (oxítonas, paroxítonas e proparoxítonas).
+- **Aula 08:** Acentuação Gráfica II: Regras de acentuação para monossílabos tônicos e palavras oxítonas e proparoxítonas.
+- **Aula 09:** Acentuação Gráfica III: Regras de acentuação de paroxítonas e casos especiais (hiatos/ditongos).
+- **Aula 10:** Oficina de Fixação I: Exercícios interativos de aplicação de ortografia especial e acentuação gráfica.
+- **Aula 11:** Revisão Parcial I: Sistematização de dúvidas do bloco inicial (Fluência, Ortografia e Acentuação).
+- **Aula 12:** Prova Parcial I: Avaliação escrita abrangendo leitura, ortografia especial e acentuação gráfica.
+- **Aula 13:** Pontuação I: O papel do ponto final, ponto de interrogação e exclamação na expressividade das frases.
+- **Aula 14:** Pontuação II: O uso da vírgula para listar itens, separar vocativos e explicações curtas.
+- **Aula 15:** Pontuação III: Uso e expressividade de reticências, dois-pontos e ponto e vírgula.
+- **Aula 16:** Estrutura das Palavras I: Conceito de radical, vogal temática e tema na formação do vocábulo.
+- **Aula 17:** Estrutura das Palavras II: Estudo de afixos (prefixos e sufixos) e como eles modificam o sentido do radical.
+- **Aula 18:** Estrutura das Palavras III: Identificação de desinências nominais e verbais de gênero, número e tempo.
+- **Aula 19:** Oficina de Fixação II: Prática de análise estrutural das palavras e exercícios de pontuação.
+- **Aula 20:** Prova Parcial II: Avaliação escrita sobre pontuação e estrutura morfossintática das palavras.
+- **Aula 21:** Textos Descritivos e Informativos I: Características dos textos descritivos (adjetivação e detalhamento visual).
+- **Aula 22:** Textos Descritivos e Informativos II: Características dos textos informativos (linguagem objetiva, fatos e dados).
+- **Aula 23:** Textos Descritivos e Informativos III: Leitura dirigida para identificação do tema central e subtemas em textos reais.
+- **Aula 24:** Textos Narrativos Elaborados I: A estrutura de enredo tradicional (introdução, complicação, clímax e desfecho).
+- **Aula 25:** Textos Narrativos Elaborados II: Construção rica de personagens, uso de diálogos (discurso direto/indireto) e ambientação.
+- **Aula 26:** Textos Narrativos Elaborados III: Planejamento e organização de ideias para a escrita de contos e crônicas mais complexos.
+- **Aula 27:** Oficina de Produção Textual: Laboratório de escrita individual guiada e reescrita de trechos narrativos.
+- **Aula 28:** Revisão Parcial II: Análise de produções textuais, correção estilística e revisão teórica de redação.
+- **Aula 29:** Prova Bimestral: Avaliação escrita unificada de compreensão textual, produção escrita e conteúdos de gramática.
+- **Aula 30:** Feedback Geral: Correção guiada da avaliação, devolução dos portfólios de escrita e encerramento do bimestre.
+
+---
+
+## 2º Bimestre
+
+- **Aula 31:** Gêneros Textuais I (Fábulas): Conceito de fábula, estrutura narrativa alegórica, antropomorfismo e a moral da história.
+- **Aula 32:** Gêneros Textuais II (Crônicas): O olhar sobre o cotidiano, brevidade, tom reflexivo e humorístico na crônica.
+- **Aula 33:** Tema e Subtemas I: Identificação do tema principal em fábulas e crônicas através da síntese textual.
+- **Aula 34:** Tema e Subtemas II: Mapeamento dos subtemas, tópicos secundários e articulação dos parágrafos.
+- **Aula 35:** Gêneros Textuais III (Entrevistas): Estrutura jornalística (título, introdução, perguntas e respostas) e marcas da oralidade.
+- **Aula 36:** Gêneros Textuais IV (Notícias): Estrutura da notícia, o Lide (o quê, quem, quando, onde, como, por quê) e imparcialidade.
+- **Aula 37:** Pontuação em Textos Complexos I (Travessão): Uso do travessão no discurso direto (diálogos) e para isolar trechos explicativos.
+- **Aula 38:** Pontuação em Textos Complexos II (Aspas): Emprego das aspas em citações diretas, destaque de palavras e ironia no texto.
+- **Aula 39:** Pontuação em Textos Complexos III (Parênteses): Uso dos parênteses para inserção de observações, datas e explicações complementares.
+- **Aula 40:** Oficina de Fixação I: Exercícios práticos de pontuação complexa (travessão, aspas, parênteses) em trechos de narrativas e notícias.
+- **Aula 41:** Revisão Parcial I: Sistematização de gêneros textuais (fábulas, crônicas, notícias) e normas de pontuação complexa.
+- **Aula 42:** Prova Parcial I: Avaliação escrita sobre gêneros textuais, tema/subtemas e pontuação (travessão, aspas, parênteses).
+- **Aula 43:** Família de Palavras I: Conceito de palavras cognatas, radical comum e agrupamento por afinidade morfológica.
+- **Aula 44:** Família de Palavras II: Distinção entre palavras primitivas e derivadas dentro de uma mesma família lexical.
+- **Aula 45:** Formação de Palavras I (Prefixação): Noções de formação por sufixos e prefixos; papéis dos prefixos (des-, in-, re-, pre-).
+- **Aula 46:** Formação de Palavras II (Sufixação): Formação de substantivos e adjetivos por sufixação (-mente, -eza, -agem, -ável).
+- **Aula 47:** Formação de Palavras III (Noções de Composição): Junção de palavras para criação de novos significados (palavras compostas).
+- **Aula 48:** Morfologia Lexical no Texto: Análise de famílias de palavras e processos de formação em textos reais.
+- **Aula 49:** Oficina de Fixação II: Prática intensiva sobre família de palavras, radicais e processos de derivação/composição.
+- **Aula 50:** Prova Parcial II: Avaliação escrita sobre família de palavras e noções de formação de palavras (prefixos, sufixos e composição).
+- **Aula 51:** Produção Textual I (Descrição RICA): Caracterização detalhada de cenários, objetos e aspectos físicos/psicológicos de personagens.
+- **Aula 52:** Produção Textual II (Narrativa com Riqueza de Detalhes): Construção do enredo com introdução envolvente, conflito e clímax.
+- **Aula 53:** Produção Textual III (Integração de Diálogos): Aplicação de travessões e pontuação narrativa dentro da produção de contos.
+- **Aula 54:** Produção Textual IV (Articulação de Parágrafos): Garantia da coesão e coerência na transição de subtemas e ideias.
+- **Aula 55:** Laboratório de Redação Guiada: Oficina de produção individual de um texto narrativo/descritivo completo.
+- **Aula 56:** Revisão e Aprimoramento Textual: Técnica de reescrita, autorrevisão e correção ortográfica/pontuacional dos textos produzidos.
+- **Aula 57:** Oficina de Fixação III: Exercícios integrados de leitura, interpretação de gêneros, pontuação e morfologia lexical.
+- **Aula 58:** Revisão Parcial III: Revisão geral de todo o conteúdo programático do 2º Bimestre do 5º Ano.
+- **Aula 59:** Prova Bimestral: Avaliação escrita unificada de gêneros textuais, pontuação, formação de palavras e produção de texto.
+- **Aula 60:** Feedback Geral: Correção comentada da prova bimestral, análise de produções textuais e encerramento do 2º Bimestre.
+
+---
+
+## 3º Bimestre
+
+- **Aula 61:** Pronomes I (Conceito e Pronomes Pessoais Retos): Função de substituição do nome e flexões de pessoa/número.
+- **Aula 62:** Pronomes II (Pronomes Pessoais Oblíquos): Emprego de me, te, se, o, a, lhe, nos, vos e pronomes de tratamento.
+- **Aula 63:** Pronomes III (Pronomes Possessivos): Noção de posse e concordância com a coisa possuída e a pessoa gramatical.
+- **Aula 64:** Pronomes IV (Pronomes Demonstrativos): Referência de tempo, lugar e espaço no texto (este, esse, aquele, isto, isso, aquilo).
+- **Aula 65:** Coesão Textual por Pronomes: Substituição de termos repetidos por pronomes para evitar redundâncias na escrita.
+- **Aula 66:** Oficina de Fixação I (Pronomes): Exercícios práticos de identificação, substituição e reescrita com pronomes.
+- **Aula 67:** Verbo I (Noção de Ação, Estado e Fenômeno): Conceito de verbo, radical e terminação verbal.
+- **Aula 68:** Verbo II (Conjugações Verbais - 1ª, 2ª e 3ª Conjugação): Verbos terminados em -ar, -er, -ir e identificação da pessoa e número.
+- **Aula 69:** Verbo III (Tempos Verbais Básicos): Distinção entre Presente, Pretérito (passado) e Futuro no Modo Indicativo.
+- **Aula 70:** Oficina de Fixação II (Verbos): Exercícios de conjugação e identificação de tempos verbais em textos curtos.
+- **Aula 71:** Revisão Parcial I: Sistematização de Pronomes e Noções de Verbo.
+- **Aula 72:** Prova Parcial I: Avaliação escrita sobre pronomes e tempos verbais básicos.
+- **Aula 73:** Preposição I (Conceito e Principais Preposições): O papel da preposição como conectivo entre palavras (a, de, em, com, por, para, sem).
+- **Aula 74:** Preposição II (Combinações e Contrações): Junção de preposição + artigo (do, da, no, na, ao, à, pelo, pela).
+- **Aula 75:** Uso de Conjunções para Coesão Textual I: Conectivos de adição (e, também) e oposição (mas, porém).
+- **Aula 76:** Uso de Conjunções para Coesão Textual II: Conectivos de causa (porque, pois) e conclusão (portanto, assim).
+- **Aula 77:** Classes de Palavras (Panorama Integrado): Revisão sistemática da função dos substantivos, adjetivos, artigos, pronomes, verbos e preposições.
+- **Aula 78:** Oficina de Fixação III: Análise morfológica de frases e identificação de conectivos.
+- **Aula 79:** Revisão Parcial II: Sistematização teórica de preposições, conjunções e classes gramaticais.
+- **Aula 80:** Prova Parcial II: Avaliação escrita sobre preposições, conjunções e classes de palavras.
+- **Aula 81:** Textos Argumentativos Simples I (Opinião): Conceito de tese/opinião, diferenciação entre fato e opinião.
+- **Aula 82:** Textos Argumentativos Simples II (Justificativa): Construção de justificativas e argumentos para defender um ponto de vista.
+- **Aula 83:** Organização em Parágrafos I: Estrutura do parágrafo (ideia central + desenvolvimento) e margens/recuos.
+- **Aula 84:** Organização em Parágrafos II: Encadeamento de ideias e transição suave entre introdução, desenvolvimento e conclusão.
+- **Aula 85:** Laboratório de Redação Opinativa: Produção individual de um texto argumentativo curto sobre tema do cotidiano escolar.
+- **Aula 86:** Revisão Textual Coletiva: Análise de trechos de redações, autorrevisão e aprimoramento da coesão com pronomes e conectivos.
+- **Aula 87:** Oficina de Fixação IV: Atividades integradas de interpretação, gramática e coesão textual.
+- **Aula 88:** Revisão Parcial III: Revisão geral do conteúdo programático do 3º Bimestre.
+- **Aula 89:** Prova Bimestral: Avaliação escrita unificada de pronomes, verbos, preposições e produção argumentativa.
+- **Aula 90:** Feedback Geral: Correção comentada da prova bimestral e encerramento do 3º Bimestre.
+
+---
+
+## 4º Bimestre
+
+- **Aula 91:** Leitura e Interpretação de Poemas I: Estrutura poética (verso, estrofe, rima e ritmo).
+- **Aula 92:** Leitura e Interpretação de Poemas II: Linguagem figurada e recursos sonoros (onomatopeia e aliteração).
+- **Aula 93:** Interjeição: Conceito, expressividade e pontuação das interjeições e locuções interjeitivas (Ah!, Oh!, Bravo!, Socorro!).
+- **Aula 94:** Conjunção (Noções Ampliadas): Papel de ligação entre orações e sentidos expressos.
+- **Aula 95:** Poesia e Expressividade: Análise da expressividade em poemas infantojuvenis clássicos.
+- **Aula 96:** Oficina de Fixação I: Exercícios de identificação de interjeições e conjunções no texto.
+- **Aula 97:** Revisão Ortográfica I: Regras de acentuação, uso de s/z, g/j, x/ch e r/rr.
+- **Aula 98:** Revisão Ortográfica II: Grafia dos porquês (porque, por que, porquê, por quê) e uso de mas/mais, mal/mau.
+- **Aula 99:** Revisão Geral das Regras do Ciclo Inicial I: Pontuação avançada (vírgula, travessão, aspas, dois-pontos).
+- **Aula 100:** Oficina de Fixação II: Ditado preparatório e exercícios ortográficos intensivos.
+- **Aula 101:** Revisão Parcial I: Sistematização de ortografia, pontuação e poemas.
+- **Aula 102:** Prova Parcial I: Avaliação escrita sobre interpretação poética, interjeições e ortografia.
+- **Aula 103:** Produção de Cartas Argumentativas I: Estrutura da carta (local, data, vocativo, corpo, despedida e assinatura).
+- **Aula 104:** Produção de Cartas Argumentativas II: Linguagem formal, respeito ao interlocutor e apresentação de reivindicações sustentadas.
+- **Aula 105:** Leitura Crítica I: Identificação de intenções do autor, argumento principal e contra-argumento em notícias e cartas de leitor.
+- **Aula 106:** Leitura Crítica II: Comparação entre diferentes textos sobre o mesmo fato social/escolar.
+- **Aula 107:** Laboratório de Redação de Carta Argumentativa: Elaboração individual de rascunho de carta dirigida ao diretor/comunidade.
+- **Aula 108:** Autorrevisão e Reescrita: Correção ortográfica, pontuacional e aprimoramento da carta argumentativa.
+- **Aula 109:** Oficina de Fixação III: Exercícios práticos integrados de revisão de texto.
+- **Aula 110:** Prova Parcial II: Avaliação escrita de produção textual (carta argumentativa/texto opinativo).
+- **Aula 111:** Revisão Anual de Classes Gramaticais I: Substantivo, adjetivo, artigo, numeral e pronome.
+- **Aula 112:** Revisão Anual de Classes Gramaticais II: Verbo, advérbio, preposição, conjunção e interjeição.
+- **Aula 113:** Revisão Anual de Sintaxe e Estilo: Estrutura de frase, pontuação e organização de parágrafos.
+- **Aula 114:** Bateria de Exercícios Consolidados I: Questões objetivas e discursivas no modelo de exames formais do 5º ano.
+- **Aula 115:** Bateria de Exercícios Consolidados II: Resolução comentada e tira-dúvidas de revisão anual.
+- **Aula 116:** Simulado Geral de Português (5º Ano): Aplicação de simulado preparatório abrangendo todo o conteúdo do ano letivo.
+- **Aula 117:** Correção Comentada do Simulado: Análise detalhada das questões e resolução de dúvidas finais.
+- **Aula 118:** Revisão Geral do 4º Bimestre: Revisão dos tópicos essenciais para a Prova Bimestral.
+- **Aula 119:** Prova Bimestral de Fechamento do Ano: Avaliação escrita unificada final de Português do 5º Ano.
+- **Aula 120:** Feedback Geral e Encerramento: Devolutiva comentada da prova bimestral, entrega dos portfólios e celebração do encerramento do 5º Ano.

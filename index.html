@@ -895,6 +895,85 @@
         min-height: auto;
       }
     }
+  
+    /* ESTILOS PARA A ABA TURMAS E DATABASE */
+    .turma-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .turma-info-main {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .turma-info-title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 0;
+    }
+    .turma-info-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .turma-info-details {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+    }
+    .turma-meet-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.08);
+      color: #2563eb;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+    .turma-meet-link:hover {
+      background: #2563eb;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+    .schedule-tag {
+      display: inline-flex;
+      align-items: center;
+      background: var(--bg-body);
+      border: 1px solid var(--border-soft);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .status-feriado {
+      background: #fef2f2 !important;
+      color: #991b1b !important;
+      border: 1px solid #fecaca !important;
+    }
+    .status-provas {
+      background: #fffbeb !important;
+      color: #92400e !important;
+      border: 1px solid #fde68a !important;
+    }
+
   </style>
 </head>
 
@@ -909,9 +988,10 @@
 
     <!-- NAVEGAÇÃO PRINCIPAL -->
     <nav>
-      <button class="nav-link active" onclick="showTab('matriz')">Matriz Curricular</button>
-      <button class="nav-link" onclick="showTab('cronogramas')">Cronogramas</button>
-      <button class="nav-link" onclick="showTab('planejamento')">Planejamento Semanal</button>
+      <button class="nav-link active" onclick="showTab('matriz', event)">Matriz Curricular</button>
+      <button class="nav-link" onclick="showTab('cronogramas', event)">Cronogramas</button>
+      <button class="nav-link" onclick="showTab('turmas', event)">Turmas</button>
+      <button class="nav-link" onclick="showTab('planejamento', event)">Planejamento Semanal</button>
     </nav>
 
     <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
@@ -932,6 +1012,43 @@
           <button class="sub-link" onclick="changeCronogramaYear(9, this)">9º Ano (8th)</button>
         </div>
         <div id="cronograma-render" class="markdown-body"></div>
+      </div>
+
+      <!-- ABA 3: TURMAS (5º ANO) -->
+      <div id="panel-turmas" class="tab-panel">
+        <div class="sub-nav" style="flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 16px;">
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-right: 4px; font-weight: 600;">5º Ano:</span>
+          <button class="sub-link active" onclick="selectTurma('5ºM1A-F', this)">5ºM1A-F</button>
+          <button class="sub-link" onclick="selectTurma('5ºT2A-M', this)">5ºT2A-M</button>
+          <button class="sub-link" onclick="selectTurma('5ºM3A-F', this)">5ºM3A-F</button>
+
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-left: 12px; margin-right: 4px; font-weight: 600;">6º Ano:</span>
+          <button class="sub-link" onclick="selectTurma('6ºM1A-F', this)">6ºM1A-F</button>
+          <button class="sub-link" onclick="selectTurma('6ºM4A-M', this)">6ºM4A-M</button>
+          <button class="sub-link" onclick="selectTurma('6ºT2A-M', this)">6ºT2A-M</button>
+
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-left: 12px; margin-right: 4px; font-weight: 600;">7º Ano:</span>
+          <button class="sub-link" onclick="selectTurma('7ºM3A-F', this)">7ºM3A-F</button>
+          <button class="sub-link" onclick="selectTurma('7ºM4A-M', this)">7ºM4A-M</button>
+
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-left: 12px; margin-right: 4px; font-weight: 600;">8º Ano:</span>
+          <button class="sub-link" onclick="selectTurma('8ºM1A-F', this)">8ºM1A-F</button>
+
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-left: 12px; margin-right: 4px; font-weight: 600;">9º Ano:</span>
+          <button class="sub-link" onclick="selectTurma('9ºT1B-X', this)">9ºT1B-X</button>
+          <button class="sub-link" onclick="selectTurma('9ºT2A-M', this)">9ºT2A-M</button>
+        </div>
+
+        <div class="sub-nav" style="justify-content: center; gap: 10px; margin-bottom: 25px;">
+          <span style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--text-muted); align-self: center; margin-right: 4px; font-weight: 600;">Bimestre:</span>
+          <button class="sub-link active" onclick="selectTurmaBimestre(1, this)">1º Bimestre</button>
+          <button class="sub-link" onclick="selectTurmaBimestre(2, this)">2º Bimestre</button>
+          <button class="sub-link" onclick="selectTurmaBimestre(3, this)">3º Bimestre</button>
+          <button class="sub-link" onclick="selectTurmaBimestre(4, this)">4º Bimestre</button>
+        </div>
+
+        <div id="turma-info-card" class="turma-info-card"></div>
+        <div id="turma-database-render" class="markdown-body"></div>
       </div>
 
       <!-- ABA 3: PLANEJAMENTO SEMANAL -->
@@ -1608,14 +1725,15 @@ Este cronograma organiza as 29 aulas de 1 hora do 4º Bimestre do 9º Ano. O pla
 | **58** | Devolutiva & Fechamento | - | **Feedback Geral e Conclusão do Ciclo:** Correção comentada da avaliação, entrega de portfólios e encerramento do Ensino Fundamental II. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |`;
 
 
-        const cronograma5Text = `# Cronograma de Aulas: 5º Ano (1º Bimestre)
+        const cronograma5Text = `
+# Cronograma de Aulas: 5º Ano (1º Bimestre)
 *Planejamento Aula a Aula com Foco em Leitura Ativa e Gramática Aplicada*
 
 Este cronograma organiza as 30 aulas de 1 hora do 1º Bimestre do 5º Ano. A estrutura pedagógica segue o modelo de ancoragem: cada tópico inicia com aulas dedicadas à leitura e interpretação de um texto clássico (com glossário e explicação interlinear), seguidas de aulas de conteúdo gramatical com exercícios de fixação e aplicação direta sobre o texto lido.
 
 ---
 
-## 📅 Distribuição das Aulas
+## 📅 Distribuição das Aulas (1º Bimestre)
 
 | Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
 | :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -1693,6 +1811,95 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
 | **58** | Revisão Dirigida | \`[5.2.7]\` | Produção Textual, Pontuação & Morfologia | **Revisão Parcial III:** Revisão geral de todo o conteúdo programático do 2º Bimestre do 5º Ano. | - | - | Ficha integradora de revisão bimestral | <span class="status-badge status-pendente">Pendente</span> |
 | **59** | Avaliação | \`[5.2.7]\` | Produção Textual, Pontuação & Morfologia | **Prova Bimestral:** Avaliação escrita unificada de gêneros textuais, pontuação, formação de palavras e produção de texto. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
 | **60** | Devolutiva & Fechamento | \`[5.2.7]\` | Produção Textual | **Feedback Geral:** Correção comentada da prova bimestral, análise de produções textuais e encerramento do 2º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 5º Ano (3º Bimestre)
+*Planejamento Aula a Aula com Foco em Pronomes, Verbos, Preposições e Produção Argumentativa*
+
+Este cronograma organiza as 30 aulas de 1 hora do 3º Bimestre do 5º Ano. O planejamento detalha os conteúdos dos tópicos \`[5.3.1]\` a \`[5.3.8]\`, promovendo o estudo sistemático de pronomes, verbos noções, preposições, conjunções de coesão e produção de textos argumentativos simples.
+
+---
+
+## 📅 Distribuição das Aulas (3º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **1** | Exposição & Teoria | \`[5.3.5]\` | Morfologia | **Pronomes I (Conceito e Pronomes Pessoais Retos):** Função de substituição do nome e flexões de pessoa/número. | - | - | Exercício de identificação de pronomes reto | <span class="status-badge status-pendente">Pendente</span> |
+| **2** | Exposição & Teoria | \`[5.3.5]\` | Morfologia | **Pronomes II (Pronomes Pessoais ObLíquos):** Emprego de me, te, se, o, a, lhe, nos, vos e pronomes de tratamento. | - | - | Exercícios de substituição por pronomes oblíquos | <span class="status-badge status-pendente">Pendente</span> |
+| **3** | Exposição & Teoria | \`[5.3.5]\` | Morfologia | **Pronomes III (Pronomes Possessivos):** Noção de posse e concordância com a coisa possuída e a pessoa gramatical. | - | - | Aplicação de possessivos em frases | <span class="status-badge status-pendente">Pendente</span> |
+| **4** | Exposição & Teoria | \`[5.3.5]\` | Morfologia | **Pronomes IV (Pronomes Demonstrativos):** Referência de tempo, lugar e espaço no texto (este, esse, aquele, isto, isso, aquilo). | - | - | Exercícios de pronomes demonstrativos | <span class="status-badge status-pendente">Pendente</span> |
+| **5** | Exposição & Prática | \`[5.3.2]\` / \`[5.3.5]\` | Produção Textual | **Coesão Textual por Pronomes:** Substituição de termos repetidos por pronomes para evitar redundâncias na escrita. | - | - | Reescrita de parágrafos eliminando repetições | <span class="status-badge status-pendente">Pendente</span> |
+| **6** | Oficina de Atividades | \`[5.3.5]\` | Morfologia | **Oficina de Fixação I (Pronomes):** Exercícios práticos de identificação, substituição e reescrita com pronomes. | - | - | Ficha prática de pronomes | <span class="status-badge status-pendente">Pendente</span> |
+| **7** | Exposição & Teoria | \`[5.3.7]\` | Morfologia | **Verbo I (Noção de Ação, Estado e Fenômeno):** Conceito de verbo, radical e terminação verbal. | - | - | Identificação de verbos em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **8** | Exposição & Teoria | \`[5.3.7]\` | Morfologia | **Verbo II (Conjugações Verbais - 1ª, 2ª e 3ª Conjugação):** Verbos terminados em -ar, -er, -ir e identificação da pessoa e número. | - | - | Classificação de verbos por conjugação | <span class="status-badge status-pendente">Pendente</span> |
+| **9** | Exposição & Teoria | \`[5.3.7]\` | Morfologia | **Verbo III (Tempos Verbais Básicos):** Distinção entre Presente, Pretérito (passado) e Futuro no Modo Indicativo. | - | - | Flexão verbal nos tempos básicos | <span class="status-badge status-pendente">Pendente</span> |
+| **10** | Oficina de Atividades | \`[5.3.7]\` | Morfologia | **Oficina de Fixação II (Verbos):** Exercícios de conjugação e identificação de tempos verbais em textos curtos. | - | - | Ficha de exercícios de tempos verbais | <span class="status-badge status-pendente">Pendente</span> |
+| **11** | Revisão Dirigida | \`[5.3.5]\` / \`[5.3.7]\` | Morfologia | **Revisão Parcial I:** Sistematização de Pronomes e Noções de Verbo. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **12** | Avaliação | \`[5.3.5]\` / \`[5.3.7]\` | Morfologia | **Prova Parcial I:** Avaliação escrita sobre pronomes e tempos verbais básicos. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **13** | Exposição & Teoria | \`[5.3.8]\` | Morfologia | **Preposição I (Conceito e Principais Preposições):** O papel da preposição como conectivo entre palavras (a, de, em, com, por, para, sem). | - | - | Exercício de ligação com preposições | <span class="status-badge status-pendente">Pendente</span> |
+| **14** | Exposição & Teoria | \`[5.3.8]\` | Morfologia | **Preposição II (Combinações e Contrações):** Junção de preposição + artigo (do, da, no, na, ao, à, pelo, pela). | - | - | Identificação de contrações prepositivas | <span class="status-badge status-pendente">Pendente</span> |
+| **15** | Exposição & Teoria | \`[5.3.2]\` | Produção Textual | **Uso de Conjunções para Coesão Textual I:** Conectivos de adição (e, também) e oposição (mas, porém). | - | - | Exercícios de coesão aditiva e adversativa | <span class="status-badge status-pendente">Pendente</span> |
+| **16** | Exposição & Teoria | \`[5.3.2]\` | Produção Textual | **Uso de Conjunções para Coesão Textual II:** Conectivos de causa (porque, pois) e conclusão (portanto, assim). | - | - | Unificação de frases com conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **17** | Exposição & Teoria | \`[5.3.6]\` | Morfologia | **Classes de Palavras (Panorama Integrado):** Revisão sistemática da função dos substantivos, adjetivos, artigos, pronomes, verbos e preposições. | - | - | Análise morfológica integrada | <span class="status-badge status-pendente">Pendente</span> |
+| **18** | Oficina de Atividades | \`[5.3.6]\` / \`[5.3.8]\` | Morfologia | **Oficina de Fixação III:** Análise morfológica de frases e identificação de conectivos. | - | - | Ficha de análise morfológica | <span class="status-badge status-pendente">Pendente</span> |
+| **19** | Revisão Dirigida | - | Morfologia | **Revisão Parcial II:** Sistematização teórica de preposições, conjunções e classes gramaticais. | - | - | Ficha de revisão teórica II | <span class="status-badge status-pendente">Pendente</span> |
+| **20** | Avaliação | - | Morfologia | **Prova Parcial II:** Avaliação escrita sobre preposições, conjunções e classes de palavras. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **21** | Exposição & Teoria | \`[5.3.1]\` | Produção Textual | **Textos Argumentativos Simples I (Opinião):** Conceito de tese/opinião, diferenciação entre fato e opinião. | - | - | Diferenciação de fato e opinião em textos | <span class="status-badge status-pendente">Pendente</span> |
+| **22** | Exposição & Teoria | \`[5.3.1]\` | Produção Textual | **Textos Argumentativos Simples II (Justificativa):** Construção de justificativas e argumentos para defender um ponto de vista. | - | - | Elaboração de argumentos justificativos | <span class="status-badge status-pendente">Pendente</span> |
+| **23** | Exposição & Teoria | \`[5.3.4]\` | Produção Textual | **Organização em Parágrafos I:** Estrutura do parágrafo (ideia central + desenvolvimento) e margens/recuos. | - | - | Estruturação de parágrafos | <span class="status-badge status-pendente">Pendente</span> |
+| **24** | Exposição & Teoria | \`[5.3.4]\` | Produção Textual | **Organização em Parágrafos II:** Encadeamento de ideias e transição suave entre introdução, desenvolvimento e conclusão. | - | - | Organização lógica de texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **25** | Oficina de Atividades | \`[5.3.3]\` | Produção Textual | **Laboratório de Redação Opinativa:** Produção individual de um texto argumentativo curto sobre tema do cotidiano escolar. | - | - | Rascunho de texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **26** | Exposição & Prática | \`[5.3.3]\` | Produção Textual | **Revisão Textual Coletiva:** Análise de trechos de redações, autorrevisão e aprimoramento da coesão com pronomes e conectivos. | - | - | Reescrita final do texto opinativo | <span class="status-badge status-pendente">Pendente</span> |
+| **27** | Oficina de Atividades | - | Produção Textual & Morfologia | **Oficina de Fixação IV:** Atividades integradas de interpretação, gramática e coesão textual. | - | - | Ficha de atividades integradas | <span class="status-badge status-pendente">Pendente</span> |
+| **28** | Revisão Dirigida | - | Produção Textual & Morfologia | **Revisão Parcial III:** Revisão geral do conteúdo programático do 3º Bimestre. | - | - | Ficha integradora de revisão bimestral | <span class="status-badge status-pendente">Pendente</span> |
+| **29** | Avaliação | - | Produção Textual & Morfologia | **Prova Bimestral:** Avaliação escrita unificada de pronomes, verbos, preposições e produção argumentativa. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **30** | Devolutiva & Fechamento | - | Produção Textual | **Feedback Geral:** Correção comentada da prova bimestral e encerramento do 3º Bimestre. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
+---
+
+# Cronograma de Aulas: 5º Ano (4º Bimestre)
+*Planejamento Aula a Aula com Foco em Poesia, Leitura Crítica, Cartas Argumentativas e Revisão Anual Consolidada*
+
+Este cronograma organiza as 30 aulas de 1 hora do 4º Bimestre do 5º Ano. O planejamento detalha os conteúdos dos tópicos \`[5.4.1]\` a \`[5.4.8]\`, promovendo a leitura poética, redação de cartas argumentativas, revisão ortográfica/pontuacional e consolidação de todo o currículo do 5º Ano.
+
+---
+
+## 📅 Distribuição das Aulas (4º Bimestre)
+
+| Aula | Tipo / Foco | Tópico | Eixo / Coluna | Assunto Detalhado e Dinâmica da Aula | Conteúdo | Slides | Tarefa de casa | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **31** | Exposição & Teoria | \`[5.4.1]\` | Produção Textual | **Leitura e Interpretação de Poemas I:** Estrutura poética (verso, estrofe, rima e ritmo). | - | - | Leitura e análise de poema | <span class="status-badge status-pendente">Pendente</span> |
+| **32** | Exposição & Teoria | \`[5.4.1]\` | Produção Textual | **Leitura e Interpretação de Poemas II:** Linguagem figurada e recursos sonoros (onomatopeia e aliteração). | - | - | Identificação de figuras sonoras em poemas | <span class="status-badge status-pendente">Pendente</span> |
+| **33** | Exposição & Teoria | \`[5.4.5]\` | Morfologia | **Interjeição:** Conceito, expressividade e pontuação das interjeições e locuções interjeitivas (Ah!, Oh!, Bravo!, Socorro!). | - | - | Exercício de emprego de interjeições | <span class="status-badge status-pendente">Pendente</span> |
+| **34** | Exposição & Teoria | \`[5.4.6]\` | Morfologia | **Conjunção (Noções Ampliadas):** Papel de ligação entre orações e sentidos expressos. | - | - | Identificação de conjunções em texto | <span class="status-badge status-pendente">Pendente</span> |
+| **35** | Exposição & Prática | \`[5.4.1]\` / \`[5.4.5]\` | Produção Textual | **Poesia e Expressividade:** Análise da expressividade em poemas infantojuvenis clássicos. | - | - | Recitação e análise de poema | <span class="status-badge status-pendente">Pendente</span> |
+| **36** | Oficina de Atividades | \`[5.4.5]\` / \`[5.4.6]\` | Morfologia | **Oficina de Fixação I:** Exercícios de identificação de interjeições e conjunções no texto. | - | - | Ficha prática de interjeições e conjunções | <span class="status-badge status-pendente">Pendente</span> |
+| **37** | Exposição & Teoria | \`[5.4.7]\` | Ortografia | **Revisão Ortográfica I:** Regras de acentuação, uso de s/z, g/j, x/ch e r/rr. | - | - | Correção ortográfica de frases | <span class="status-badge status-pendente">Pendente</span> |
+| **38** | Exposição & Teoria | \`[5.4.7]\` | Ortografia | **Revisão Ortográfica II:** Grafia dos porquês (porque, por que, porquê, por quê) e uso de mas/mais, mal/mau. | - | - | Exercícios dos porquês e mas/mais | <span class="status-badge status-pendente">Pendente</span> |
+| **39** | Exposição & Teoria | \`[5.4.3]\` | Ortografia | **Revisão Geral das Regras do Ciclo Inicial I:** Pontuação avançada (vírgula, travessão, aspas, dois-pontos). | - | - | Exercícios de pontuação em parágrafos | <span class="status-badge status-pendente">Pendente</span> |
+| **40** | Oficina de Atividades | \`[5.4.7]\` | Ortografia | **Oficina de Fixação II:** Ditado preparatório e exercícios ortográficos intensivos. | - | - | Ficha prática de ortografia | <span class="status-badge status-pendente">Pendente</span> |
+| **41** | Revisão Dirigida | \`[5.4.3]\` | Ortografia & Pontuação | **Revisão Parcial I:** Sistematização de ortografia, pontuação e poemas. | - | - | Ficha de revisão teórica I | <span class="status-badge status-pendente">Pendente</span> |
+| **42** | Avaliação | \`[5.4.3]\` | Ortografia & Pontuação | **Prova Parcial I:** Avaliação escrita sobre interpretação poética, interjeições e ortografia. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **43** | Exposição & Teoria | \`[5.4.2]\` | Produção Textual | **Produção de Cartas Argumentativas I:** Estrutura da carta (local, data, vocativo, corpo, despedida e assinatura). | - | - | Análise de estrutura de carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **44** | Exposição & Teoria | \`[5.4.2]\` | Produção Textual | **Produção de Cartas Argumentativas II:** Linguagem formal, respeito ao interlocutor e apresentação de reivindicações sustentadas. | - | - | Esboço de argumentos para carta | <span class="status-badge status-pendente">Pendente</span> |
+| **45** | Exposição & Teoria | \`[5.4.4]\` | Produção Textual | **Leitura Crítica I:** Identificação de intenções do autor, argumento principal e contra-argumento em notícias e cartas de leitor. | - | - | Exercício de leitura crítica de notícias | <span class="status-badge status-pendente">Pendente</span> |
+| **46** | Exposição & Teoria | \`[5.4.4]\` | Produção Textual | **Leitura Crítica II:** Comparação entre diferentes textos sobre o mesmo fato social/escolar. | - | - | Análise comparativa de textos | <span class="status-badge status-pendente">Pendente</span> |
+| **47** | Oficina de Atividades | \`[5.4.2]\` | Produção Textual | **Laboratório de Redação de Carta Argumentativa:** Elaboração individual de rascunho de carta dirigida ao diretor/comunidade. | - | - | Rascunho da carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **48** | Exposição & Prática | \`[5.4.2]\` | Produção Textual | **Autorrevisão e Reescrita:** Correção ortográfica, pontuacional e aprimoramento da carta argumentativa. | - | - | Versão final da carta argumentativa | <span class="status-badge status-pendente">Pendente</span> |
+| **49** | Oficina de Atividades | - | Produção Textual | **Oficina de Fixação III:** Exercícios práticos integrados de revisão de texto. | - | - | Ficha prática de produção textual | <span class="status-badge status-pendente">Pendente</span> |
+| **50** | Avaliação | \`[5.4.8]\` | Produção Textual | **Prova Parcial II:** Avaliação escrita de produção textual (carta argumentativa/texto opinativo). | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **51** | Exposição & Teoria | \`[5.4.3]\` | Morfologia & Sintaxe | **Revisão Anual de Classes Gramaticais I:** Substantivo, adjetivo, artigo, numeral e pronome. | - | - | Ficha de revisão de classes I | <span class="status-badge status-pendente">Pendente</span> |
+| **52** | Exposição & Teoria | \`[5.4.3]\` | Morfologia & Sintaxe | **Revisão Anual de Classes Gramaticais II:** Verbo, advérbio, preposição, conjunção e interjeição. | - | - | Ficha de revisão de classes II | <span class="status-badge status-pendente">Pendente</span> |
+| **53** | Exposição & Teoria | \`[5.4.3]\` | Ortografia & Pontuação | **Revisão Anual de Sintaxe e Estilo:** Estrutura de frase, pontuação e organização de parágrafos. | - | - | Ficha de revisão de pontuação | <span class="status-badge status-pendente">Pendente</span> |
+| **54** | Oficina de Atividades | - | Geral | **Bateria de Exercícios Consolidados I:** Questões objetivas e discursivas no modelo de exames formais do 5º ano. | - | - | Bateria de questões consolidadas I | <span class="status-badge status-pendente">Pendente</span> |
+| **55** | Oficina de Atividades | - | Geral | **Bateria de Exercícios Consolidados II:** Resolução comentada e tira-dúvidas de revisão anual. | - | - | Bateria de questões consolidadas II | <span class="status-badge status-pendente">Pendente</span> |
+| **56** | Revisão Dirigida | \`[5.4.8]\` | Geral | **Simulado Geral de Português (5º Ano):** Aplicação de simulado preparatório abrangendo todo o conteúdo do ano letivo. | - | - | Simulado geral 5º ano | <span class="status-badge status-pendente">Pendente</span> |
+| **57** | Revisão Dirigida | \`[5.4.8]\` | Geral | **Correção Comentada do Simulado:** Análise detalhada das questões e resolução de dúvidas finais. | - | - | Correção de simulado | <span class="status-badge status-pendente">Pendente</span> |
+| **58** | Revisão Dirigida | \`[5.4.8]\` | Geral | **Revisão Geral do 4º Bimestre:** Revisão dos tópicos essenciais para a Prova Bimestral. | - | - | Ficha de revisão bimestral final | <span class="status-badge status-pendente">Pendente</span> |
+| **59** | Avaliação | \`[5.4.8]\` | Geral | **Prova Bimestral de Fechamento do Ano:** Avaliação escrita unificada final de Português do 5º Ano. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+| **60** | Devolutiva & Fechamento | \`[5.4.8]\` | Geral | **Feedback Geral e Encerramento:** Devolutiva comentada da prova bimestral, entrega dos portfólios e celebração do encerramento do 5º Ano. | - | - | - | <span class="status-badge status-pendente">Pendente</span> |
+
 `;
 
         const aula1_6Text = `# 6º Ano — Aula 1: Leitura e Vocabulário
@@ -3026,12 +3233,6 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
           loadAndRenderMarkdown('matriz', 'matriz-render');
         }
 
-        if (document.readyState === 'loading') {
-          window.addEventListener('DOMContentLoaded', initPage);
-        } else {
-          initPage();
-        }
-
         // Função genérica para buscar arquivo local e renderizar
         async function loadAndRenderMarkdown(sourceKey, targetElementId) {
           const source = sources[sourceKey];
@@ -3066,6 +3267,1253 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
           }
         }
 
+
+        // --- ABA TURMAS: DADOS E DATABASE DE AULAS (5º ANO) ---
+        const turmasMeta = {
+          '5ºM1A-F': { ano: 5, nome: '5ºM1A-F', anoExtenso: '5º Ano (4th Grade)', meet: 'https://meet.google.com/izg-cssi-ndp', meetDisplay: 'meet.google.com/izg-cssi-ndp', horarios: ['Segunda: 09:00 – 10:00', 'Quarta: 09:00 – 10:00', 'Quinta: 08:00 – 09:00'] },
+          '5ºT2A-M': { ano: 5, nome: '5ºT2A-M', anoExtenso: '5º Ano (4th Grade)', meet: 'https://meet.google.com/ijr-oszv-bvi', meetDisplay: 'meet.google.com/ijr-oszv-bvi', horarios: ['Segunda: 15:00 – 16:00', 'Segunda: 16:00 – 17:00', 'Terça: 16:00 – 17:00'] },
+          '5ºM3A-F': { ano: 5, nome: '5ºM3A-F', anoExtenso: '5º Ano (4th Grade)', meet: 'https://meet.google.com/wdz-nits-mda', meetDisplay: 'meet.google.com/wdz-nits-mda', horarios: ['Terça: 09:00 – 10:00', 'Quarta: 08:00 – 09:00', 'Sexta: 07:00 – 08:00'] },
+          '6ºM1A-F': { ano: 6, nome: '6ºM1A-F', anoExtenso: '6º Ano (5th Grade)', meet: 'https://meet.google.com/azs-xgtk-jgx', meetDisplay: 'meet.google.com/azs-xgtk-jgx', horarios: ['Segunda: 10:00 – 11:00', 'Terça: 07:00 – 08:00', 'Quinta: 09:00 – 10:00'] },
+          '6ºM4A-M': { ano: 6, nome: '6ºM4A-M', anoExtenso: '6º Ano (5th Grade)', meet: 'https://meet.google.com/hri-padq-kjg', meetDisplay: 'meet.google.com/hri-padq-kjg', horarios: ['Segunda: 08:00 – 09:00', 'Terça: 08:00 – 09:00', 'Quinta: 07:00 – 08:00'] },
+          '6ºT2A-M': { ano: 6, nome: '6ºT2A-M', anoExtenso: '6º Ano (5th Grade)', meet: 'https://meet.google.com/uwf-ivjj-ctu', meetDisplay: 'meet.google.com/uwf-ivjj-ctu', horarios: ['Segunda: 13:00 – 14:00', 'Terça: 13:00 – 14:00', 'Terça: 14:00 – 15:00'] },
+          '7ºM3A-F': { ano: 7, nome: '7ºM3A-F', anoExtenso: '7º Ano (6th Grade)', meet: 'https://meet.google.com/hee-fwht-jzp', meetDisplay: 'meet.google.com/hee-fwht-jzp', horarios: ['Segunda: 07:00 – 08:00', 'Segunda: 11:00 – 12:00', 'Quinta: 10:00 – 11:00'] },
+          '7ºM4A-M': { ano: 7, nome: '7ºM4A-M', anoExtenso: '7º Ano (6th Grade)', meet: 'https://meet.google.com/ojq-kkdv-zdz', meetDisplay: 'meet.google.com/ojq-kkdv-zdz', horarios: ['Terça: 10:00 – 11:00', 'Quarta: 10:00 – 11:00', 'Quarta: 11:00 – 12:00'] },
+          '8ºM1A-F': { ano: 8, nome: '8ºM1A-F', anoExtenso: '8º Ano (7th Grade)', meet: 'https://meet.google.com/kcz-jxdt-hsa', meetDisplay: 'meet.google.com/kcz-jxdt-hsa', horarios: ['Terça: 11:00 – 12:00', 'Quarta: 07:00 – 08:00', 'Quinta: 11:00 – 12:00'] },
+          '9ºT1B-X': { ano: 9, nome: '9ºT1B-X', anoExtenso: '9º Ano (Calendário Brasileiro)', meet: 'https://meet.google.com/jzk-cwsn-bys', meetDisplay: 'meet.google.com/jzk-cwsn-bys', horarios: ['Quarta: 17:00 – 18:00', 'Quinta: 17:00 – 18:00'] },
+          '9ºT2A-M': { ano: 9, nome: '9ºT2A-M', anoExtenso: '9º Ano (8th Grade)', meet: 'https://meet.google.com/mrb-sjaq-dwk', meetDisplay: 'meet.google.com/mrb-sjaq-dwk', horarios: ['Segunda: 14:00 – 15:00', 'Quarta: 15:00 – 16:00'] }
+        };
+
+        const calendarioCompletoText = `# Calendário Letivo e Mapeamento de Aulas (10/08 a 18/12)
+
+Este documento é a base de dados de referência com o mapeamento completo de cada aula por turma, respeitando os feriados, o período de provas e os dias sem aula regular.
+
+## Informações Gerais
+
+- **Período Letivo**: 10/08/2026 a 18/12/2026
+- **Período de Provas (Sem aulas regulares)**: 30/11/2026 a 11/12/2026
+- **Feriados / Dias sem aula**:
+  - 07/07 (Fora do período letivo)
+  - 12/10 (Segunda-feira)
+  - 13/10 (Terça-feira)
+  - 02/11 (Segunda-feira)
+  - 20/11 (Sexta-feira)
+  - 08/12 (Terça-feira - Feriado no período de provas)
+
+---
+
+# 5º Ano
+
+## Turma 5ºM1A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 29 | 15/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 30 | 19/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 32 | 22/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 33 | 26/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 35 | 29/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 36 | 04/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 37 | 05/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 38 | 09/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 39 | 11/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 40 | 12/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 41 | 16/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 42 | 18/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 43 | 19/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 44 | 23/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 45 | 25/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 46 | 26/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 09/12/2026 | Quarta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 10/12/2026 | Quinta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| Aula 47 | 14/12/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 48 | 16/12/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 49 | 17/12/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 5ºM1A-F**: 49 aulas.
+
+---
+
+## Turma 5ºT2A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 2 | 10/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 3 | 11/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 5 | 17/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 6 | 18/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 8 | 24/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 9 | 25/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 11 | 31/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 12 | 01/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 14 | 07/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 15 | 08/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 17 | 14/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 18 | 15/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 20 | 21/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 21 | 22/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 23 | 28/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 24 | 29/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 26 | 05/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 27 | 06/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 15:00 – 16:00 | **Feriado / Sem Aula** |
+| - | 12/10/2026 | Segunda-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 28 | 19/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 29 | 19/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 31 | 26/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 32 | 26/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 15:00 – 16:00 | **Feriado / Sem Aula** |
+| - | 02/11/2026 | Segunda-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 34 | 03/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 35 | 09/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 36 | 09/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 37 | 10/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 38 | 16/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 39 | 16/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 40 | 17/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 41 | 23/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 42 | 23/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 43 | 24/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| - | 30/11/2026 | Segunda-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 44 | 14/12/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 45 | 14/12/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 46 | 15/12/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 5ºT2A-M**: 46 aulas.
+
+---
+
+## Turma 5ºM3A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 11/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 3 | 14/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 4 | 18/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 6 | 21/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 7 | 25/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 9 | 28/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 10 | 01/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 12 | 04/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 13 | 08/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 15 | 11/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 16 | 15/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 18 | 18/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 19 | 22/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 21 | 25/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 22 | 29/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 24 | 02/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 25 | 06/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 27 | 09/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 13/10/2026 | Terça-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 29 | 16/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 32 | 23/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 35 | 30/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 36 | 03/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 37 | 04/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 38 | 06/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 39 | 10/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 40 | 11/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 41 | 13/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 42 | 17/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 43 | 18/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 20/11/2026 | Sexta-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| Aula 44 | 24/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 45 | 25/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 46 | 27/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 01/12/2026 | Terça-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 04/12/2026 | Sexta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| - | 09/12/2026 | Quarta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 11/12/2026 | Sexta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| Aula 47 | 15/12/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 48 | 16/12/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 49 | 18/12/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 5ºM3A-F**: 49 aulas.
+
+---
+
+# 6º Ano
+
+## Turma 6ºM1A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 2 | 11/08/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 5 | 18/08/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 8 | 25/08/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 11 | 01/09/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 14 | 08/09/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 17 | 15/09/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 20 | 22/09/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 23 | 29/09/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 26 | 06/10/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 10:00 – 11:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| Aula 28 | 15/10/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 29 | 19/10/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 31 | 22/10/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 32 | 26/10/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 34 | 29/10/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 10:00 – 11:00 | **Feriado / Sem Aula** |
+| Aula 35 | 03/11/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 36 | 05/11/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 37 | 09/11/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 38 | 10/11/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 39 | 12/11/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 40 | 16/11/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 41 | 17/11/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 42 | 19/11/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 43 | 23/11/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 44 | 24/11/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 45 | 26/11/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| - | 10/12/2026 | Quinta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| Aula 46 | 14/12/2026 | Segunda-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 47 | 15/12/2026 | Terça-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 48 | 17/12/2026 | Quinta-feira | 09:00 – 10:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 6ºM1A-F**: 48 aulas.
+
+---
+
+## Turma 6ºM4A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 2 | 11/08/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 5 | 18/08/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 8 | 25/08/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 11 | 01/09/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 14 | 08/09/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 17 | 15/09/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 20 | 22/09/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 23 | 29/09/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 26 | 06/10/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 08:00 – 09:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 08:00 – 09:00 | **Feriado / Sem Aula** |
+| Aula 28 | 15/10/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 29 | 19/10/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 31 | 22/10/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 32 | 26/10/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 34 | 29/10/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 08:00 – 09:00 | **Feriado / Sem Aula** |
+| Aula 35 | 03/11/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 36 | 05/11/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 37 | 09/11/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 38 | 10/11/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 39 | 12/11/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 40 | 16/11/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 41 | 17/11/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 42 | 19/11/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 43 | 23/11/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 44 | 24/11/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 45 | 26/11/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 08:00 – 09:00 | **Feriado / Sem Aula** |
+| - | 10/12/2026 | Quinta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| Aula 46 | 14/12/2026 | Segunda-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 47 | 15/12/2026 | Terça-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 48 | 17/12/2026 | Quinta-feira | 07:00 – 08:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 6ºM4A-M**: 48 aulas.
+
+---
+
+## Turma 6ºT2A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 2 | 11/08/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 3 | 11/08/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 5 | 18/08/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 6 | 18/08/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 8 | 25/08/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 9 | 25/08/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 11 | 01/09/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 12 | 01/09/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 14 | 08/09/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 15 | 08/09/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 17 | 15/09/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 18 | 15/09/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 20 | 22/09/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 21 | 22/09/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 23 | 29/09/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 24 | 29/09/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 26 | 06/10/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 27 | 06/10/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 13:00 – 14:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 13:00 – 14:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 14:00 – 15:00 | **Feriado / Sem Aula** |
+| Aula 28 | 19/10/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 29 | 20/10/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 31 | 26/10/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 32 | 27/10/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 13:00 – 14:00 | **Feriado / Sem Aula** |
+| Aula 34 | 03/11/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 35 | 03/11/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 36 | 09/11/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 37 | 10/11/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 38 | 10/11/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 39 | 16/11/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 40 | 17/11/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 41 | 17/11/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 42 | 23/11/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 43 | 24/11/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 44 | 24/11/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 13:00 – 14:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 13:00 – 14:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 14:00 – 15:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 13:00 – 14:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 13:00 – 14:00 | **Feriado / Sem Aula** |
+| - | 08/12/2026 | Terça-feira | 14:00 – 15:00 | **Feriado / Sem Aula** |
+| Aula 45 | 14/12/2026 | Segunda-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 46 | 15/12/2026 | Terça-feira | 13:00 – 14:00 | Aula Letiva |
+| Aula 47 | 15/12/2026 | Terça-feira | 14:00 – 15:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 6ºT2A-M**: 47 aulas.
+
+---
+
+# 7º Ano
+
+## Turma 7ºM3A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 2 | 10/08/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 5 | 17/08/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 8 | 24/08/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 11 | 31/08/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 14 | 07/09/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 17 | 14/09/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 20 | 21/09/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 23 | 28/09/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 26 | 05/10/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| - | 12/10/2026 | Segunda-feira | 11:00 – 12:00 | **Feriado / Sem Aula** |
+| Aula 28 | 15/10/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 29 | 19/10/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 30 | 19/10/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 31 | 22/10/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 32 | 26/10/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 33 | 26/10/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 34 | 29/10/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| - | 02/11/2026 | Segunda-feira | 11:00 – 12:00 | **Feriado / Sem Aula** |
+| Aula 35 | 05/11/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 36 | 09/11/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 37 | 09/11/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 38 | 12/11/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 39 | 16/11/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 40 | 16/11/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 41 | 19/11/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 42 | 23/11/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 43 | 23/11/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 44 | 26/11/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 30/11/2026 | Segunda-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| - | 10/12/2026 | Quinta-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| Aula 45 | 14/12/2026 | Segunda-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 46 | 14/12/2026 | Segunda-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 47 | 17/12/2026 | Quinta-feira | 10:00 – 11:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 7ºM3A-F**: 47 aulas.
+
+---
+
+## Turma 7ºM4A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 11/08/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 3 | 12/08/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 4 | 18/08/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 6 | 19/08/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 7 | 25/08/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 9 | 26/08/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 10 | 01/09/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 12 | 02/09/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 13 | 08/09/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 15 | 09/09/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 16 | 15/09/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 18 | 16/09/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 19 | 22/09/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 21 | 23/09/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 22 | 29/09/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 24 | 30/09/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 25 | 06/10/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 27 | 07/10/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| - | 13/10/2026 | Terça-feira | 10:00 – 11:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 29 | 14/10/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 32 | 21/10/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 35 | 28/10/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 36 | 03/11/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 37 | 04/11/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 38 | 04/11/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 39 | 10/11/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 40 | 11/11/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 41 | 11/11/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 42 | 17/11/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 43 | 18/11/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 44 | 18/11/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 45 | 24/11/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 46 | 25/11/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 47 | 25/11/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+| - | 01/12/2026 | Terça-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 10:00 – 11:00 | **Feriado / Sem Aula** |
+| - | 09/12/2026 | Quarta-feira | 10:00 – 11:00 | **Período de Provas (Sem Aula)** |
+| - | 09/12/2026 | Quarta-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| Aula 48 | 15/12/2026 | Terça-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 49 | 16/12/2026 | Quarta-feira | 10:00 – 11:00 | Aula Letiva |
+| Aula 50 | 16/12/2026 | Quarta-feira | 11:00 – 12:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 7ºM4A-M**: 50 aulas.
+
+---
+
+# 8º Ano
+
+## Turma 8ºM1A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 11/08/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 4 | 18/08/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 7 | 25/08/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 10 | 01/09/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 13 | 08/09/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 16 | 15/09/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 19 | 22/09/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 22 | 29/09/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 25 | 06/10/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| - | 13/10/2026 | Terça-feira | 11:00 – 12:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 29 | 15/10/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 32 | 22/10/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 35 | 29/10/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 36 | 03/11/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 37 | 04/11/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 38 | 05/11/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 39 | 10/11/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 40 | 11/11/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 41 | 12/11/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 42 | 17/11/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 43 | 18/11/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 44 | 19/11/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 45 | 24/11/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 46 | 25/11/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 47 | 26/11/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+| - | 01/12/2026 | Terça-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 11:00 – 12:00 | **Feriado / Sem Aula** |
+| - | 09/12/2026 | Quarta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 10/12/2026 | Quinta-feira | 11:00 – 12:00 | **Período de Provas (Sem Aula)** |
+| Aula 48 | 15/12/2026 | Terça-feira | 11:00 – 12:00 | Aula Letiva |
+| Aula 49 | 16/12/2026 | Quarta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 50 | 17/12/2026 | Quinta-feira | 11:00 – 12:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 8ºM1A-F**: 50 aulas.
+
+---
+
+# 9º Ano
+
+## Turma 9ºT1B-X
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 12/08/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 2 | 13/08/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 3 | 19/08/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 4 | 20/08/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 5 | 26/08/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 6 | 27/08/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 7 | 02/09/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 8 | 03/09/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 9 | 09/09/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 10 | 10/09/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 11 | 16/09/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 12 | 17/09/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 13 | 23/09/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 14 | 24/09/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 15 | 30/09/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 16 | 01/10/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 17 | 07/10/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 18 | 08/10/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 19 | 14/10/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 20 | 15/10/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 21 | 21/10/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 22 | 22/10/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 23 | 28/10/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 24 | 29/10/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 25 | 04/11/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 26 | 05/11/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 27 | 11/11/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 28 | 12/11/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 29 | 18/11/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 30 | 19/11/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 31 | 25/11/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 32 | 26/11/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+| - | 02/12/2026 | Quarta-feira | 17:00 – 18:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 17:00 – 18:00 | **Período de Provas (Sem Aula)** |
+| - | 09/12/2026 | Quarta-feira | 17:00 – 18:00 | **Período de Provas (Sem Aula)** |
+| - | 10/12/2026 | Quinta-feira | 17:00 – 18:00 | **Período de Provas (Sem Aula)** |
+| Aula 33 | 16/12/2026 | Quarta-feira | 17:00 – 18:00 | Aula Letiva |
+| Aula 34 | 17/12/2026 | Quinta-feira | 17:00 – 18:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 9ºT1B-X**: 34 aulas.
+
+---
+
+## Turma 9ºT2A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 3 | 17/08/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 4 | 19/08/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 5 | 24/08/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 6 | 26/08/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 7 | 31/08/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 8 | 02/09/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 9 | 07/09/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 10 | 09/09/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 11 | 14/09/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 12 | 16/09/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 13 | 21/09/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 14 | 23/09/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 15 | 28/09/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 16 | 30/09/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 17 | 05/10/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 18 | 07/10/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 14:00 – 15:00 | **Feriado / Sem Aula** |
+| Aula 19 | 14/10/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 20 | 19/10/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 21 | 21/10/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 22 | 26/10/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 23 | 28/10/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 14:00 – 15:00 | **Feriado / Sem Aula** |
+| Aula 24 | 04/11/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 25 | 09/11/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 26 | 11/11/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 27 | 16/11/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 28 | 18/11/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 29 | 23/11/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 30 | 25/11/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 14:00 – 15:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 14:00 – 15:00 | **Período de Provas (Sem Aula)** |
+| - | 09/12/2026 | Quarta-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| Aula 31 | 14/12/2026 | Segunda-feira | 14:00 – 15:00 | Aula Letiva |
+| Aula 32 | 16/12/2026 | Quarta-feira | 15:00 – 16:00 | Aula Letiva |
+
+**Total de Aulas Letivas da Turma 9ºT2A-M**: 32 aulas.
+
+---
+`;
+
+        const calendario5AnoText = `
+## Turma 5ºM1A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 3 | 13/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 6 | 20/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 9 | 27/08/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 12 | 03/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 15 | 10/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 18 | 17/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 21 | 24/09/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 24 | 01/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 27 | 08/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 29 | 15/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 30 | 19/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 32 | 22/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 33 | 26/10/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 35 | 29/10/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 36 | 04/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 37 | 05/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 38 | 09/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 39 | 11/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 40 | 12/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 41 | 16/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 42 | 18/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 43 | 19/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 44 | 23/11/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 45 | 25/11/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 46 | 26/11/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 03/12/2026 | Quinta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 09/12/2026 | Quarta-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 10/12/2026 | Quinta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| Aula 47 | 14/12/2026 | Segunda-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 48 | 16/12/2026 | Quarta-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 49 | 17/12/2026 | Quinta-feira | 08:00 – 09:00 | Aula Letiva |
+
+## Turma 5ºT2A-M
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 10/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 2 | 10/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 3 | 11/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 4 | 17/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 5 | 17/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 6 | 18/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 7 | 24/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 8 | 24/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 9 | 25/08/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 10 | 31/08/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 11 | 31/08/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 12 | 01/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 13 | 07/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 14 | 07/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 15 | 08/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 16 | 14/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 17 | 14/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 18 | 15/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 19 | 21/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 20 | 21/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 21 | 22/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 22 | 28/09/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 23 | 28/09/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 24 | 29/09/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 25 | 05/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 26 | 05/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 27 | 06/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 12/10/2026 | Segunda-feira | 15:00 – 16:00 | **Feriado / Sem Aula** |
+| - | 12/10/2026 | Segunda-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| - | 13/10/2026 | Terça-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 28 | 19/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 29 | 19/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 31 | 26/10/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 32 | 26/10/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 02/11/2026 | Segunda-feira | 15:00 – 16:00 | **Feriado / Sem Aula** |
+| - | 02/11/2026 | Segunda-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 34 | 03/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 35 | 09/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 36 | 09/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 37 | 10/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 38 | 16/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 39 | 16/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 40 | 17/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 41 | 23/11/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 42 | 23/11/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 43 | 24/11/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+| - | 30/11/2026 | Segunda-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| - | 30/11/2026 | Segunda-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 01/12/2026 | Terça-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 15:00 – 16:00 | **Período de Provas (Sem Aula)** |
+| - | 07/12/2026 | Segunda-feira | 16:00 – 17:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 16:00 – 17:00 | **Feriado / Sem Aula** |
+| Aula 44 | 14/12/2026 | Segunda-feira | 15:00 – 16:00 | Aula Letiva |
+| Aula 45 | 14/12/2026 | Segunda-feira | 16:00 – 17:00 | Aula Letiva |
+| Aula 46 | 15/12/2026 | Terça-feira | 16:00 – 17:00 | Aula Letiva |
+
+## Turma 5ºM3A-F
+
+| Aula nº | Data | Dia da Semana | Horário | Status |
+|---|---|---|---|---|
+| Aula 1 | 11/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 2 | 12/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 3 | 14/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 4 | 18/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 5 | 19/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 6 | 21/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 7 | 25/08/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 8 | 26/08/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 9 | 28/08/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 10 | 01/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 11 | 02/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 12 | 04/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 13 | 08/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 14 | 09/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 15 | 11/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 16 | 15/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 17 | 16/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 18 | 18/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 19 | 22/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 20 | 23/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 21 | 25/09/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 22 | 29/09/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 23 | 30/09/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 24 | 02/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 25 | 06/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 26 | 07/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 27 | 09/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 13/10/2026 | Terça-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| Aula 28 | 14/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 29 | 16/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 30 | 20/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 31 | 21/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 32 | 23/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 33 | 27/10/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 34 | 28/10/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 35 | 30/10/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 36 | 03/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 37 | 04/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 38 | 06/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 39 | 10/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 40 | 11/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 41 | 13/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| Aula 42 | 17/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 43 | 18/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| - | 20/11/2026 | Sexta-feira | 07:00 – 08:00 | **Feriado / Sem Aula** |
+| Aula 44 | 24/11/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 45 | 25/11/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 46 | 27/11/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+| - | 01/12/2026 | Terça-feira | 09:00 – 10:00 | **Período de Provas (Sem Aula)** |
+| - | 02/12/2026 | Quarta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 04/12/2026 | Sexta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| - | 08/12/2026 | Terça-feira | 09:00 – 10:00 | **Feriado / Sem Aula** |
+| - | 09/12/2026 | Quarta-feira | 08:00 – 09:00 | **Período de Provas (Sem Aula)** |
+| - | 11/12/2026 | Sexta-feira | 07:00 – 08:00 | **Período de Provas (Sem Aula)** |
+| Aula 47 | 15/12/2026 | Terça-feira | 09:00 – 10:00 | Aula Letiva |
+| Aula 48 | 16/12/2026 | Quarta-feira | 08:00 – 09:00 | Aula Letiva |
+| Aula 49 | 18/12/2026 | Sexta-feira | 07:00 – 08:00 | Aula Letiva |
+`;
+
+        let selectedTurmaId = '5ºM1A-F';
+        let selectedTurmaBimestre = 1;
+
+        function selectTurma(turmaId, btnElement) {
+          selectedTurmaId = turmaId;
+          if (btnElement && btnElement.parentNode) {
+            btnElement.parentNode.querySelectorAll('.sub-link').forEach(b => b.classList.remove('active'));
+            btnElement.classList.add('active');
+          }
+          renderTurmaDatabase();
+        }
+
+        function selectTurmaBimestre(bimestreNum, btnElement) {
+          selectedTurmaBimestre = bimestreNum;
+          if (btnElement && btnElement.parentNode) {
+            btnElement.parentNode.querySelectorAll('.sub-link').forEach(b => b.classList.remove('active'));
+            btnElement.classList.add('active');
+          }
+          renderTurmaDatabase();
+        }
+
+        function parseCronogramaTable(ano, bimestre) {
+          const fullText = getCronogramaText(ano);
+          if (!fullText) return [];
+
+          const parts = fullText.split(/# Cronograma de Aulas:/i);
+          let targetSection = '';
+          for (let p of parts) {
+            if (p.includes(`${bimestre}º Bimestre`)) {
+              targetSection = p;
+              break;
+            }
+          }
+
+          if (!targetSection) return [];
+
+          const lines = targetSection.split('\n');
+          const lessons = [];
+
+          for (let line of lines) {
+            line = line.trim();
+            if (line.startsWith('|') && !line.includes(':---') && !line.includes('| Aula |')) {
+              const cells = line.split('|').map(c => c.trim()).filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);
+              if (cells.length >= 5) {
+                const aulaStr = cells[0].replace(/\*\*/g, '').trim();
+                if (!isNaN(parseInt(aulaStr))) {
+                  let tipoFoco = cells[1] || '-';
+                  let topico = cells[2] || '-';
+                  let eixo = '-';
+                  let assunto = '-';
+                  let conteudo = '-';
+                  let slides = '-';
+                  let tarefa = '-';
+                  let status = '<span class="status-badge status-pendente">Pendente</span>';
+
+                  if (cells.length >= 9) {
+                    // 5º Ano (9 colunas): [Aula, Foco, Tópico, Eixo, Assunto, Conteúdo, Slides, Tarefa, Status]
+                    eixo = cells[3] || '-';
+                    assunto = cells[4] || '-';
+                    conteudo = cells[5] || '-';
+                    slides = cells[6] || '-';
+                    tarefa = cells[7] || '-';
+                    status = cells[8] || status;
+                  } else {
+                    // 6º, 7º, 8º, 9º Anos (8 colunas): [Aula, Foco, Tópico, Assunto, Conteúdo, Slides, Tarefa, Status]
+                    assunto = cells[3] || '-';
+                    conteudo = cells[4] || '-';
+                    slides = cells[5] || '-';
+                    tarefa = cells[6] || '-';
+                    status = cells[7] || status;
+                  }
+
+                  lessons.push({
+                    aulaBim: parseInt(aulaStr),
+                    tipoFoco,
+                    topico,
+                    eixo,
+                    assunto,
+                    conteudo,
+                    slides,
+                    tarefa,
+                    status
+                  });
+                }
+              }
+            }
+          }
+
+          return lessons;
+        }
+
+        async function fetchCalendarioText() {
+          if (typeof window.calendarioLetivoText !== 'undefined' && window.calendarioLetivoText) return;
+          try {
+            const resp = await fetch('./Acutis/Documentos de referência/calendario_letivo.md');
+            if (resp.ok) {
+              window.calendarioLetivoText = await resp.text();
+            }
+          } catch(e) {}
+        }
+
+        function parseCalendarioTurma(turmaId) {
+          const calText = window.calendarioLetivoText || (typeof calendarioCompletoText !== 'undefined' ? calendarioCompletoText : '');
+          if (!calText) return [];
+          const parts = calText.split(/## Turma /i);
+          let targetPart = parts.find(p => p.startsWith(turmaId));
+          if (!targetPart) return [];
+
+          const lines = targetPart.split('\n');
+          const entries = [];
+          for (let line of lines) {
+            line = line.trim();
+            if (line.startsWith('|') && !line.includes('---|---') && !line.includes('| Aula nº |')) {
+              const cells = line.split('|').map(c => c.trim()).filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);
+              if (cells.length >= 5) {
+                entries.push({
+                  aulaNumStr: cells[0].replace(/\*\*/g, '').trim(),
+                  data: cells[1],
+                  diaSemana: cells[2],
+                  horario: cells[3],
+                  statusText: cells[4]
+                });
+              }
+            }
+          }
+          return entries;
+        }
+
+        const slotsMap = {
+          '5ºM1A-F': [
+            { day: 1, time: '09:00 – 10:00', diaName: 'Segunda-feira' },
+            { day: 3, time: '09:00 – 10:00', diaName: 'Quarta-feira' },
+            { day: 4, time: '08:00 – 09:00', diaName: 'Quinta-feira' }
+          ],
+          '5ºT2A-M': [
+            { day: 1, time: '15:00 – 16:00', diaName: 'Segunda-feira' },
+            { day: 1, time: '16:00 – 17:00', diaName: 'Segunda-feira' },
+            { day: 2, time: '16:00 – 17:00', diaName: 'Terça-feira' }
+          ],
+          '5ºM3A-F': [
+            { day: 2, time: '09:00 – 10:00', diaName: 'Terça-feira' },
+            { day: 3, time: '08:00 – 09:00', diaName: 'Quarta-feira' },
+            { day: 5, time: '07:00 – 08:00', diaName: 'Sexta-feira' }
+          ],
+          '6ºM1A-F': [
+            { day: 1, time: '10:00 – 11:00', diaName: 'Segunda-feira' },
+            { day: 2, time: '07:00 – 08:00', diaName: 'Terça-feira' },
+            { day: 4, time: '09:00 – 10:00', diaName: 'Quinta-feira' }
+          ],
+          '6ºM4A-M': [
+            { day: 1, time: '08:00 – 09:00', diaName: 'Segunda-feira' },
+            { day: 2, time: '08:00 – 09:00', diaName: 'Terça-feira' },
+            { day: 4, time: '07:00 – 08:00', diaName: 'Quinta-feira' }
+          ],
+          '6ºT2A-M': [
+            { day: 1, time: '13:00 – 14:00', diaName: 'Segunda-feira' },
+            { day: 2, time: '13:00 – 14:00', diaName: 'Terça-feira' },
+            { day: 2, time: '14:00 – 15:00', diaName: 'Terça-feira' }
+          ],
+          '7ºM3A-F': [
+            { day: 1, time: '07:00 – 08:00', diaName: 'Segunda-feira' },
+            { day: 1, time: '11:00 – 12:00', diaName: 'Segunda-feira' },
+            { day: 4, time: '10:00 – 11:00', diaName: 'Quinta-feira' }
+          ],
+          '7ºM4A-M': [
+            { day: 2, time: '10:00 – 11:00', diaName: 'Terça-feira' },
+            { day: 3, time: '10:00 – 11:00', diaName: 'Quarta-feira' },
+            { day: 3, time: '11:00 – 12:00', diaName: 'Quarta-feira' }
+          ],
+          '8ºM1A-F': [
+            { day: 2, time: '11:00 – 12:00', diaName: 'Terça-feira' },
+            { day: 3, time: '07:00 – 08:00', diaName: 'Quarta-feira' },
+            { day: 4, time: '11:00 – 12:00', diaName: 'Quinta-feira' }
+          ],
+          '9ºT1B-X': [
+            { day: 3, time: '17:00 – 18:00', diaName: 'Quarta-feira' },
+            { day: 4, time: '17:00 – 18:00', diaName: 'Quinta-feira' }
+          ],
+          '9ºT2A-M': [
+            { day: 1, time: '14:00 – 15:00', diaName: 'Segunda-feira' },
+            { day: 3, time: '15:00 – 16:00', diaName: 'Quarta-feira' }
+          ]
+        };
+
+                function generate2ndSemesterCalendar(turmaId) {
+          const slots = slotsMap[turmaId] || [];
+          const holidays = ['2027-02-15', '2027-02-16', '2027-03-26', '2027-04-21', '2027-05-01', '2027-05-27'];
+          const entries = [];
+          let curr = new Date(2027, 1, 8);
+          const endDate = new Date(2027, 6, 2);
+          let aulaCount = 0;
+
+          while (curr <= endDate) {
+            const dayOfWeek = curr.getDay();
+            const isoDate = curr.toISOString().split('T')[0];
+            const [year, month, day] = isoDate.split('-');
+            const dateFormatted = `${day}/${month}/${year}`;
+            const matchingSlots = slots.filter(s => s.day === dayOfWeek);
+
+            for (let slot of matchingSlots) {
+              if (holidays.includes(isoDate)) {
+                entries.push({
+                  aulaNumStr: '-',
+                  data: dateFormatted,
+                  diaSemana: slot.diaName,
+                  horario: slot.time,
+                  statusText: '**Feriado / Sem Aula**'
+                });
+              } else {
+                aulaCount++;
+                entries.push({
+                  aulaNumStr: `Aula ${aulaCount}`,
+                  data: dateFormatted,
+                  diaSemana: slot.diaName,
+                  horario: slot.time,
+                  statusText: 'Aula Letiva'
+                });
+              }
+            }
+            curr.setDate(curr.getDate() + 1);
+          }
+          return entries;
+        }
+
+        function getCronogramaText(ano) {
+          if (ano === 5 && typeof cronograma5Text !== 'undefined') return cronograma5Text;
+          if (ano === 6 && typeof cronograma6Text !== 'undefined') return cronograma6Text;
+          if (ano === 7 && typeof cronograma7Text !== 'undefined') return cronograma7Text;
+          if (ano === 8 && typeof cronograma8Text !== 'undefined') return cronograma8Text;
+          if (ano === 9 && typeof cronograma9Text !== 'undefined') return cronograma9Text;
+          return '';
+        }
+
+        async function renderTurmaDatabase() {
+          await fetchCalendarioText();
+
+          const infoContainer = document.getElementById('turma-info-card');
+          const renderContainer = document.getElementById('turma-database-render');
+          if (!infoContainer || !renderContainer) return;
+
+          const meta = turmasMeta[selectedTurmaId];
+          if (!meta) return;
+
+          infoContainer.innerHTML = `
+            <div class="turma-info-main">
+              <div class="turma-info-sub">Turma • ${meta.anoExtenso}</div>
+              <h2 class="turma-info-title">${meta.nome}</h2>
+            </div>
+            <div class="turma-info-details">
+              <div class="turma-schedules">
+                ${meta.horarios.map(h => `<span class="schedule-tag">📅 ${h}</span>`).join('')}
+              </div>
+              <a href="${meta.meet}" target="_blank" rel="noopener" class="turma-meet-link">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                Google Meet (${meta.meetDisplay})
+              </a>
+            </div>
+          `;
+
+          const isBrazilianCal = (selectedTurmaId === '9ºT1B-X');
+
+          // No Calendário Brasileiro, a partir de 10/08 é o 2º Semestre do Ano Letivo (3º e 4º Bimestres)
+          let targetBim = selectedTurmaBimestre;
+          if (isBrazilianCal) {
+            if (selectedTurmaBimestre === 1 || selectedTurmaBimestre === 3) {
+              targetBim = 3;
+            } else if (selectedTurmaBimestre === 2 || selectedTurmaBimestre === 4) {
+              targetBim = 4;
+            }
+          }
+
+          const lessons = parseCronogramaTable(meta.ano, targetBim);
+          
+          let calEntries = [];
+          if (isBrazilianCal || selectedTurmaBimestre === 1 || selectedTurmaBimestre === 2) {
+            calEntries = parseCalendarioTurma(selectedTurmaId);
+          } else {
+            calEntries = generate2ndSemesterCalendar(selectedTurmaId);
+          }
+
+          const displayedBimLabel = isBrazilianCal ? `${targetBim}º Bimestre (Calendário Brasileiro)` : `${selectedTurmaBimestre}º Bimestre`;
+          const calTypeDesc = isBrazilianCal ? 'Calendário Brasileiro (2º Semestre: 10/08 - 18/12)' : 'Calendário Americano (10/08 - 18/12)';
+
+          let html = `### Database de Aulas: ${meta.nome} — ${displayedBimLabel}\n\n`;
+          html += `*Mapeamento unificado com numeração da turma, datas exatas das aulas letivas (${calTypeDesc}), horários e planejamento pedagógico*\n\n---\n\n`;
+          html += `| Aula Turma | Aula Bimestre | Data | Dia & Horário | Foco Pedagógico | Tópico | Assunto Detalhado | Conteúdo | Slides | Tarefa | Status |\n`;
+          html += `| :---: | :---: | :---: | :--- | :--- | :---: | :--- | :---: | :---: | :--- | :---: |\n`;
+
+          const isFirstSemesterBlock = (targetBim === 1 || targetBim === 3);
+
+          const startLessonNum = isFirstSemesterBlock ? 1 : (isBrazilianCal ? 30 : 31);
+          const endLessonNum = isFirstSemesterBlock ? (isBrazilianCal ? 29 : 30) : 60;
+
+          let letivaCount = 0;
+          let cronogramIndex = 0;
+
+          for (let entry of calEntries) {
+            const isLetiva = entry.statusText.includes('Aula Letiva');
+            if (isLetiva) letivaCount++;
+
+            const belongsToThisBim = (letivaCount >= startLessonNum && letivaCount <= endLessonNum);
+
+            if (belongsToThisBim || (!isLetiva && letivaCount >= startLessonNum && letivaCount <= endLessonNum)) {
+              if (isLetiva) {
+                const lesson = lessons[cronogramIndex] || {};
+                cronogramIndex++;
+                const statusBadge = lesson.status || '<span class="status-badge status-pendente">Pendente</span>';
+                const aulaBimVal = lesson.aulaBim || cronogramIndex;
+
+                html += `| **${entry.aulaNumStr}** | **${aulaBimVal}** | ${entry.data} | ${entry.diaSemana} (${entry.horario}) | ${lesson.tipoFoco || '-'} | ${lesson.topico || '-'} | ${lesson.assunto || '-'} | ${lesson.conteudo || '-'} | ${lesson.slides || '-'} | ${lesson.tarefa || '-'} | ${statusBadge} |\n`;
+              } else {
+                let badgeClass = 'status-feriado';
+                if (entry.statusText.includes('Provas')) badgeClass = 'status-provas';
+
+                html += `| - | - | ${entry.data} | ${entry.diaSemana} (${entry.horario}) | - | - | **${entry.statusText}** | - | - | - | <span class="status-badge ${badgeClass}">${entry.statusText.replace(/\*\*/g, '')}</span> |\n`;
+              }
+            }
+          }
+
+          if (typeof marked !== 'undefined') {
+            renderContainer.innerHTML = marked.parse(html);
+          } else {
+            renderContainer.innerText = html;
+          }
+        }
+
         // Gerenciador de Abas Principais
         function showTab(tabName, evt) {
           currentTab = tabName;
@@ -3085,6 +4533,8 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
             loadAndRenderMarkdown('matriz', 'matriz-render');
           } else if (tabName === 'cronogramas') {
             loadAndRenderMarkdown(`cronograma${currentCronogramaYear}`, 'cronograma-render');
+          } else if (tabName === 'turmas') {
+            renderTurmaDatabase();
           } else if (tabName === 'planejamento') {
             renderWeeklyCalendar();
           }
@@ -3495,6 +4945,12 @@ Este cronograma organiza as 30 aulas de 1 hora do 2º Bimestre do 5º Ano. O pla
               toast.classList.remove('active');
             }, 3000);
           }
+        }
+
+        if (document.readyState === 'loading') {
+          window.addEventListener('DOMContentLoaded', initPage);
+        } else {
+          initPage();
         }
       </script>
 
