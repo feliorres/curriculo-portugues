@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5º Ano — Aula 4: Ortografia Especial I (S / Z / X / G / J)</title>
+<title>5º Ano — Aula 4: Consoantes, Dígrafos e a Letra H</title>
 <!-- Fontes do projeto Acutis -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +99,7 @@
 
   h1 {
     font-family: var(--font-title);
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 400;
     line-height: 1.1;
     color: var(--text-main);
@@ -139,13 +139,13 @@
     margin-top: 6px;
   }
   ul li {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 400;
     color: var(--text-main);
     line-height: 1.5;
     padding-left: 28px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   ul li::before {
     content: '—';
@@ -164,14 +164,14 @@
     list-style: none;
   }
   .explanation-list li {
-    font-size: 23px;
-    margin-bottom: 14px;
+    font-size: 24px;
+    margin-bottom: 16px;
     color: var(--text-main);
     line-height: 1.5;
   }
   .explanation-list li strong {
     font-family: var(--font-title);
-    font-size: 25px;
+    font-size: 26px;
     color: var(--text-main);
   }
 
@@ -181,7 +181,7 @@
     border: 1px solid rgba(56, 80, 84, 0.2);
     border-left: 4px solid #385054;
     border-radius: 6px;
-    padding: 18px 22px;
+    padding: 16px 22px;
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 1.5;
@@ -190,7 +190,7 @@
   .examples-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
     margin-top: 10px;
   }
 
@@ -198,8 +198,9 @@
     background: #FFF;
     border: 1px solid rgba(56, 80, 84, 0.15);
     border-radius: 6px;
-    padding: 14px 18px;
-    font-size: 22px;
+    padding: 12px 16px;
+    font-size: 21px;
+    line-height: 1.4;
   }
 
   .wrong-text {
@@ -258,155 +259,138 @@
   <!-- Slide 1 (Capa da Aula) -->
   <div class="slide active slide-cover" id="s1">
     <div class="label">5º Ano — Aula 4</div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
-      <h1>Ortografia Especial I</h1>
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 88%;">
+      <h1>Consoantes, Dígrafos e a Letra H</h1>
       <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
-      <p style="margin-bottom: 12px;"><strong>Tópico [5.1.2]:</strong> Fonemas com Múltiplas Representações (S / Z / X / G / J)</p>
-      <p><strong>Objetivo:</strong> Dominar as regras ortográficas fundamentais para palavras de grafia complexa.</p>
+      <p style="margin-bottom: 12px;"><strong>Ortografia Especial:</strong> Regras de Consoantes Mudas, Dobradas, Emprego do H, Dígrafos e Cedilha</p>
+      <p><strong>Objetivo:</strong> Compreender e aplicar com precisão as normas ortográficas na escrita de consoantes e dígrafos.</p>
     </div>
     <div class="slide-num">01</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 2 (1. Sufixos -ês/-esa vs. -ez/-eza) -->
+  <!-- Slide 2 (Consoantes Mudas) -->
   <div class="slide" id="s2">
-    <div class="label">1. S vs. Z</div>
-    <h2>Sufixos -ês / -esa vs. -ez / -eza</h2>
+    <div class="label">1. Ortografia Especial</div>
+    <h2>Consoantes Mudas</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Usam-se <strong>-ês / -esa (com S)</strong> para títulos, origens e nacionalidades.<br>
-      Usam-se <strong>-ez / -eza (com Z)</strong> para substantivos abstratos derivados de adjetivos.
-    </div>
-
-    <div class="examples-grid">
-      <div class="example-card">
-        ❌ <span class="wrong-text">brazileiro</span> → ✅ <span class="correct-text">brasileiro</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">prancez</span> → ✅ <span class="correct-text">francês</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">marqueza</span> → ✅ <span class="correct-text">marquesa</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">nobresa</span> → ✅ <span class="correct-text">nobreza</span>
-      </div>
-      <div class="example-card" style="grid-column: span 2;">
-        ❌ <span class="wrong-text">belesa</span> → ✅ <span class="correct-text">beleza</span>
-      </div>
-    </div>
+    <ul class="explanation-list">
+      <li><strong>Não pronunciadas:</strong> Não se escrevem as consoantes que não são pronunciadas na fala oficial.<br>
+        • <em>Exemplos:</em> asma, diretor, salmo.</li>
+      <li style="margin-top: 14px;"><strong>Constantemente pronunciadas:</strong> Conservam-se na escrita as consoantes efetivamente pronunciadas.<br>
+        • <em>Exemplos:</em> cooptar, dicção, eucalipto.</li>
+      <li style="margin-top: 14px;"><strong>Variação entre países lusófonos:</strong> Em caso de dupla pronúncia, a grafia torna-se facultativa.<br>
+        • <em>Exemplos:</em> contacto ou contato | subtil ou sutil | sumptuoso ou suntuoso.</li>
+    </ul>
 
     <div class="slide-num">02</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 3 (2. Verbos em -izar vs. -isar) -->
+  <!-- Slide 3 (Consoantes Dobradas: rr e ss) -->
   <div class="slide" id="s3">
-    <div class="label">1. S vs. Z</div>
-    <h2>Verbos em -izar vs. -isar</h2>
+    <div class="label">2. Consoantes Dobradas</div>
+    <h2>Consoantes Dobradas (rr e ss)</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Se a palavra primitiva <strong>não possui S</strong> na última sílaba, usa-se <strong>-izar (com Z)</strong>.<br>
-      Se a palavra primitiva <strong>já possui S</strong>, mantém-se <strong>-isar (com S)</strong>.
-    </div>
-
-    <div class="examples-grid">
-      <div class="example-card">
-        ❌ <span class="wrong-text">organisar</span> → ✅ <span class="correct-text">organizar</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">modernisar</span> → ✅ <span class="correct-text">modernizar</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">analizar</span> → ✅ <span class="correct-text">analisar</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">pesquizar</span> → ✅ <span class="correct-text">pesquisar</span>
-      </div>
-    </div>
+    <ul class="explanation-list">
+      <li><strong>Apenas entre vogais:</strong> Escrevem-se com consoantes dobradas (<em>rr</em> e <em>ss</em>) somente quando entre duas vogais.<br>
+        • <em>Exemplos:</em> correr, antessala.</li>
+      <li style="margin-top: 14px;"><strong>Início de palavras:</strong> No início de palavras, usa-se sempre a forma simples.<br>
+        • <em>Exemplos:</em> rezar, saúde.</li>
+      <li style="margin-top: 14px;"><strong>Outras grafias do som /s/:</strong> Em outras posições, o fonema /s/ pode ser grafado por <em>c, ç, x</em> ou <em>z</em>.<br>
+        • <em>Exemplos:</em> cedo, caça, máximo, vez.</li>
+    </ul>
 
     <div class="slide-num">03</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 4 (3. Emprego do X após Ditongos e ME-) -->
+  <!-- Slide 4 (A Letra H) -->
   <div class="slide" id="s4">
-    <div class="label">2. X vs. CH</div>
-    <h2>Emprego do X (Ditongos & Sílaba ME-)</h2>
+    <div class="label">3. Emprego do H</div>
+    <h2>A Letra H (Inicial, Medial e Final)</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Escreve-se <strong>X</strong> após ditongos e após a sílaba inicial <strong>me-</strong> (exceção: <em>mecha</em> de cabelo).
-    </div>
-
-    <div class="examples-grid">
-      <div class="example-card">
-        ❌ <span class="wrong-text">peiche</span> → ✅ <span class="correct-text">peixe</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">caicha</span> → ✅ <span class="correct-text">caixa</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">mecher</span> → ✅ <span class="correct-text">mexer</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">mechilhão</span> → ✅ <span class="correct-text">mexilhão</span>
-      </div>
-    </div>
+    <ul class="explanation-list">
+      <li><strong>H Inicial:</strong> Mantido por tradição histórica e etimologia.<br>
+        • <em>Exemplos:</em> honra, hóstia.</li>
+      <li style="margin-top: 14px;"><strong>H Medial:</strong> Eliminado no interior das palavras, a menos que venha após hífen.<br>
+        • <em>Sem hífen:</em> desarmonia, reaver.<br>
+        • <em>Com hífen:</em> anti-horário, sub-humano.</li>
+      <li style="margin-top: 14px;"><strong>H Final:</strong> Mantido ao final de algumas interjeições.<br>
+        • <em>Exemplos:</em> ah!, eh!, oh!</li>
+    </ul>
 
     <div class="slide-num">04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 5 (4. Emprego do G vs. J) -->
+  <!-- Slide 5 (Dígrafos com H e Origem Hebraica) -->
   <div class="slide" id="s5">
-    <div class="label">3. G vs. J</div>
-    <h2>Emprego do G vs. J</h2>
+    <div class="label">4. Dígrafos e Origem Hebraica</div>
+    <h2>Dígrafos com H e Nomes Próprios</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Escrevem-se com <strong>G</strong> os substantivos terminados em <strong>-agem, -igem, -ugem</strong>.<br>
-      Escrevem-se com <strong>J</strong> as formas derivadas de verbos terminados em <strong>-jar</strong>.
-    </div>
-
-    <div class="examples-grid">
-      <div class="example-card">
-        ❌ <span class="wrong-text">viajem</span> (substantivo) → ✅ <span class="correct-text">viagem</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">garajem</span> → ✅ <span class="correct-text">garagem</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">arrange</span> → ✅ <span class="correct-text">arranje</span>
-      </div>
-      <div class="example-card">
-        ❌ <span class="wrong-text">viaje</span> (verbo) → ✅ <span class="correct-text">viaje</span>
-      </div>
-    </div>
+    <ul class="explanation-list">
+      <li><strong>Dígrafos com H (ch, lh, nh):</strong> Formam dígrafos que representam fonemas simples.<br>
+        • <em>Exemplos:</em> chamamento, calhar, ganho.</li>
+      <li style="margin-top: 14px;"><strong>Nomes Próprios Bíblicos / Hebraicos (ch, ph, th):</strong> Conservam-se se houver pronúncia efetiva.<br>
+        • <em>Exemplos:</em> Baruch ou Baruc | Loth ou Lot.</li>
+      <li style="margin-top: 14px;"><strong>Sem pronúncia:</strong> Se não forem pronunciados, devem ser eliminados na grafia em português.<br>
+        • <em>Exemplos:</em> José (em vez de "Joseph") | Nazaré (em vez de "Nazareth").</li>
+    </ul>
 
     <div class="slide-num">05</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 6 (Atividade em Sala no Caderno) -->
+  <!-- Slide 6 (Cedilha) -->
   <div class="slide" id="s6">
-    <div class="label">4. Atividade em Sala</div>
-    <h2>Fixação no Caderno</h2>
+    <div class="label">5. Uso da Cedilha</div>
+    <h2>A Cedilha (Ç)</h2>
     <div class="rule"></div>
 
-    <ul class="explanation-list">
-      <li><strong>1. Exercício:</strong> Reescreva as palavras a seguir no caderno corrigindo a ortografia:
-        <br><br>
-        • ❌ <em>portuguez</em> → ✅ <strong>português</strong><br>
-        • ❌ <em>analizar</em> → ✅ <strong>analisar</strong><br>
-        • ❌ <em>mecher</em> → ✅ <strong>mexer</strong><br>
-        • ❌ <em>garajem</em> → ✅ <strong>garagem</strong>
-      </li>
-    </ul>
+    <div class="rule-box">
+      <strong>Regra da Cedilha:</strong> Coloca-se a cedilha sob a letra <strong>c</strong> antes das vogais <strong>a, o, u</strong> para representar o fonema <strong>/s/</strong>.
+    </div>
+
+    <div class="examples-grid">
+      <div class="example-card">
+        ✅ <strong>caça</strong> (som /s/ antes de <em>a</em>)
+      </div>
+      <div class="example-card">
+        ✅ <strong>açúcar</strong> (som /s/ antes de <em>u</em>)
+      </div>
+      <div class="example-card">
+        ✅ <strong>moço</strong> (som /s/ antes de <em>o</em>)
+      </div>
+      <div class="example-card">
+        ❌ <em>Nunca usar Ç antes de <strong>e</strong> ou <strong>i</strong>!</em>
+      </div>
+    </div>
 
     <div class="slide-num">06</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+  <!-- Slide 7 (Resumo das Regras) -->
+  <div class="slide" id="s7">
+    <div class="label">6. Resumo Geral</div>
+    <h2>Síntese da Aula: Consoantes & H</h2>
+    <div class="rule"></div>
+
+    <div class="checklist-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px;">
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>Consoantes Mudas:</strong> Só escrevemos as pronunciadas (salmo vs. dicção).</div>
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>RR e SS:</strong> Uso de duplas somente entre vogais (correr).</div>
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>H Inicial:</strong> Mantido por etimologia (honra, hóstia).</div>
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>H Medial:</strong> Eliminado sem hífen (reaver, anti-horário).</div>
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>Dígrafos:</strong> CH, LH, NH representam fonemas únicos.</div>
+      <div style="font-size: 21px; line-height: 1.5;">✔ <strong>Cedilha:</strong> Usada apenas antes de A, O, U (caça, açúcar).</div>
+    </div>
+
+    <div class="slide-num">07</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
@@ -415,13 +399,13 @@
 <!-- Navegação -->
 <div class="nav">
   <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
-  <div class="nav-counter" id="counter">1 / 6</div>
+  <div class="nav-counter" id="counter">1 / 7</div>
   <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
 </div>
 
 <script>
   const order = [
-    's1','s2','s3','s4','s5','s6'
+    's1','s2','s3','s4','s5','s6','s7'
   ];
   let cur = 0;
 

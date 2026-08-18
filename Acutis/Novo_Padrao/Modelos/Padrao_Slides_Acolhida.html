@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slides — Acolhida e Organização da Turma</title>
+  <!-- Fontes do projeto Acutis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Forum&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-slide: #FFFDF7;
+      --text-main: #385054;
+      --text-soft: #385054;
+      --text-muted: rgba(56, 80, 84, 0.75);
+      --rule-color: #385054;
+      --nav-bg: rgba(56, 80, 84, 0.05);
+      --nav-border: rgba(56, 80, 84, 0.25);
+      --font-title: 'Forum', Georgia, serif;
+      --font-body: 'EB Garamond', Georgia, serif;
+      --font-ui: 'Inter', sans-serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      overflow: hidden;
+    }
+
+    /* ── Deck container ── */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-slide);
+    }
+
+    /* ── Individual slide ── */
+    .slide {
+      position: absolute;
+      inset: 0;
+      background: var(--bg-slide);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      padding: 50px 8%;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .45s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    /* ── Cover slide ── */
+    .slide-cover {
+      background: var(--bg-slide);
+      color: var(--text-main);
+    }
+
+    /* ── Logo Acutis no canto inferior direito ── */
+    .slide-logo {
+      position: absolute;
+      bottom: 24px;
+      right: 36px;
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ── Slide number ── */
+    .slide-num {
+      position: absolute;
+      bottom: 28px;
+      left: 40px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── Typography ── */
+    .label {
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--text-main);
+      letter-spacing: .01em;
+    }
+
+    h2 {
+      font-family: var(--font-title);
+      font-size: 44px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
+    blockquote {
+      font-family: var(--font-body);
+      font-size: 30px;
+      line-height: 1.5;
+      color: var(--text-main);
+      font-weight: 400;
+      border-left: 3px solid var(--text-main);
+      padding-left: 28px;
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    ul li {
+      font-size: 25px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.55;
+      padding-left: 32px;
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--text-main);
+      opacity: 0.7;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 36px;
+      margin-top: 12px;
+    }
+
+    .checklist-grid div {
+      font-size: 22px;
+      line-height: 1.5;
+      color: var(--text-main);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .checklist-grid div span.icon {
+      color: #385054;
+      font-weight: 600;
+    }
+
+    .rule {
+      width: 50px;
+      height: 2px;
+      background: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .explanation-list {
+      list-style: none;
+    }
+
+    .explanation-list li {
+      font-size: 25px;
+      margin-bottom: 18px;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .explanation-list li strong {
+      font-family: var(--font-title);
+      font-size: 27px;
+      color: var(--text-main);
+    }
+
+    /* ── Navigation ── */
+    .nav {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 20;
+    }
+
+    .nav-btn {
+      background: var(--nav-bg);
+      border: 1px solid var(--nav-border);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(56, 80, 84, 0.12);
+      border-color: var(--text-main);
+    }
+
+    .nav-btn:disabled {
+      opacity: .3;
+      cursor: default;
+    }
+
+    .nav-counter {
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      color: var(--text-main);
+      min-width: 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="deck" id="deck">
+
+    <!-- Slide 1 (Capa) -->
+    <div class="slide active slide-cover" id="s1">
+      <div class="label">Acutis Academy — Boas-Vindas</div>
+      <div
+        style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 88%;">
+        <h1>Acolhida e Organização da Turma</h1>
+        <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
+        <p style="margin-bottom: 12px;"><strong>Início do Semestre:</strong> Guia de Convivência, Organização e Boas
+          Práticas</p>
+        <p><strong>Objetivo:</strong> Integração da turma, apresentação da disciplina e combinados para um semestre de
+          excelência acadêmica e formação humana.</p>
+      </div>
+      <div class="slide-num">01</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 2 (1. Boas-vindas) -->
+    <div class="slide" id="s2">
+      <div class="label">I. Boas-Vindas</div>
+      <h2>Sejam Todos Bem-Vindos!</h2>
+      <div class="rule"></div>
+      <blockquote>
+        "Sejam todos muito bem-vindos à Acutis Academy! É uma alegria iniciar este semestre com vocês. Nossa escola
+        acredita que a educação vai muito além da transmissão de conteúdos. Queremos formar alunos comprometidos com a
+        verdade, com o conhecimento, com a virtude e com os valores cristãos."
+      </blockquote>
+      <p style="margin-top: 12px;">Desejamos que tenhamos um semestre de muito aprendizado, respeito e crescimento
+        mútuo!</p>
+      <div class="slide-num">02</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 3 (2. Apresentação do professor) -->
+    <div class="slide" id="s3">
+      <div class="label">II. Conheça seu Professor</div>
+      <h2>Apresentação do Professor</h2>
+      <div class="rule"></div>
+      <ul class="explanation-list">
+        <li><strong>Quem é o seu professor:</strong> Nome, trajetória acadêmica e formação.</li>
+        <li style="margin-top: 14px;"><strong>Nossa Disciplina:</strong> Qual matéria estudaremos juntos neste semestre.
+        </li>
+        <li style="margin-top: 14px;"><strong>Experiência & Curiosidades:</strong> Atuação profissional, hobbies e
+          interesses.</li>
+        <li style="margin-top: 14px;"><strong>Expectativa para a Turma:</strong> O que esperamos construir e alcançar
+          juntos ao longo das aulas.</li>
+      </ul>
+      <div class="slide-num">03</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 4 (3. Apresentação da disciplina) -->
+    <div class="slide" id="s4">
+      <div class="label">III. Nossa Jornada de Estudos</div>
+      <h2>Apresentação da Disciplina</h2>
+      <div class="rule"></div>
+      <ul>
+        <li><strong>Principais Conteúdos:</strong> Panorama dos temas e habilidades que desenvolveremos.</li>
+        <li><strong>Condução das Aulas:</strong> Como nossas aulas serão estruturadas (exposições, leituras, debates e
+          exercícios).</li>
+        <li><strong>Sistema de Avaliação:</strong> Como funcionarão os trabalhos, provas e participações.</li>
+        <li><strong>Canais para Dúvidas:</strong> Como e quando solicitar ajuda ao professor.</li>
+        <li><strong>Uso do Moodle:</strong> Acesso aos materiais didáticos, cronogramas e entregas de atividades.</li>
+      </ul>
+      <div class="slide-num">04</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 5 (4. Apresentação dos alunos) -->
+    <div class="slide" id="s5">
+      <div class="label">IV. Integração da Turma</div>
+      <h2>Queremos Conhecer Você!</h2>
+      <div class="rule"></div>
+      <p style="font-size: 24px; margin-bottom: 20px;">Agora é a sua vez de se apresentar! Compartilhe com a turma:</p>
+      <ul>
+        <li><strong>Seu nome completo;</strong></li>
+        <li><strong>A cidade ou país onde você mora;</strong></li>
+        <li><strong>O que você mais gosta de estudar;</strong></li>
+        <li><strong>Um hobby ou curiosidade sobre você;</strong></li>
+        <li><strong>Sua principal expectativa para este semestre.</strong></li>
+      </ul>
+      <div class="slide-num">05</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 6 (5. Regras de convivência - Abertura) -->
+    <div class="slide" id="s6">
+      <div class="label">V. Convivência e Postura</div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start;">
+        <h2>Regras de Convivência da Acutis Academy</h2>
+        <div class="rule"></div>
+        <p>Para que nossas aulas ocorram com organização, respeito e excelente aproveitamento, observaremos juntos um
+          conjunto de orientações fundamentais para o ambiente virtual.</p>
+      </div>
+      <div class="slide-num">06</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 7 (5. Regras: Câmera e Microfone) -->
+    <div class="slide" id="s7">
+      <div class="label">V. Regras de Convivência | Presença Virtual</div>
+      <h2>📷 Câmera & 🎤 Microfone</h2>
+      <div class="rule"></div>
+      <ul class="explanation-list">
+        <li><strong>📷 Câmera Ligada:</strong> Durante as aulas, a câmera deverá permanecer ligada (salvo autorização
+          prévia). A câmera ligada favorece a sua participação, interação e acompanhamento pedagógico.</li>
+        <li style="margin-top: 18px;"><strong>🎤 Microfone Consciente:</strong> Mantenha seu microfone desligado durante
+          as explicações. Ligue-o apenas quando autorizado pelo professor ou ao participar ativamente da aula.</li>
+      </ul>
+      <div class="slide-num">07</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 8 (5. Regras: Chat e Identificação) -->
+    <div class="slide" id="s8">
+      <div class="label">V. Regras de Convivência | Plataforma Online</div>
+      <h2>💬 Uso do Chat & 👤 Identificação</h2>
+      <div class="rule"></div>
+      <ul class="explanation-list">
+        <li><strong>💬 Uso do Chat:</strong> Utilize o chat exclusivamente quando o professor autorizar. Mensagens
+          paralelas ou inadequadas não serão permitidas.</li>
+        <li style="margin-top: 18px;"><strong>👤 Identificação Correta:</strong> Utilize sempre seu nome completo na
+          plataforma. Apelidos ou nomes fictícios não são permitidos.</li>
+      </ul>
+      <div class="slide-num">08</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 9 (5. Regras: Pontualidade, Ambiente e Apresentação) -->
+    <div class="slide" id="s9">
+      <div class="label">V. Regras de Convivência | Preparação para a Aula</div>
+      <h2>⏰ Pontualidade, 🏡 Ambiente & 👕 Apresentação</h2>
+      <div class="rule"></div>
+      <ul class="explanation-list">
+        <li><strong>⏰ Pontualidade:</strong> Entre na sala alguns minutos antes do início da aula. Evite atrasos e
+          permaneça até o encerramento.</li>
+        <li style="margin-top: 16px;"><strong>🏡 Ambiente de Estudo:</strong> Participe em um local silencioso,
+          organizado e bem iluminado, evitando distrações.</li>
+        <li style="margin-top: 16px;"><strong>👕 Apresentação Pessoal:</strong> Use vestimenta adequada ao ambiente
+          escolar. A aula online exige a mesma postura de uma aula presencial.</li>
+      </ul>
+      <div class="slide-num">09</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 10 (5. Regras: Tecnologia, Participação e Respeito) -->
+    <div class="slide" id="s10">
+      <div class="label">V. Regras de Convivência | Atitude em Aula</div>
+      <h2>💻 Tecnologia, 🙋 Participação & 🤝 Respeito</h2>
+      <div class="rule"></div>
+      <ul class="explanation-list">
+        <li><strong>💻 Uso Responsável da Tecnologia:</strong> Mantenha o foco na atividade. Não acesse redes sociais ou
+          sites alheios à aula.</li>
+        <li style="margin-top: 14px;"><strong>🙋 Participação Ativa:</strong> Participe das discussões, faça perguntas e
+          responda aos questionamentos. A aprendizagem acontece com o envolvimento de todos!</li>
+        <li style="margin-top: 14px;"><strong>🤝 Respeito Irrestrito:</strong> Trate colegas, professores e
+          colaboradores com respeito. Ofensas, brincadeiras inadequadas e interrupções não serão aceitas.</li>
+      </ul>
+      <div class="slide-num">10</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 11 (6. Organização do semestre) -->
+    <div class="slide" id="s11">
+      <div class="label">VI. Rotina Acadêmica</div>
+      <h2>Organização do Nosso Semestre</h2>
+      <div class="rule"></div>
+      <p style="font-size: 24px; margin-bottom: 14px;">Para acompanhar a disciplina com tranquilidade e sucesso:</p>
+      <ul>
+        <li><strong>Materiais didáticos:</strong> Saiba exatamente onde encontrar os arquivos e leituras de cada aula.
+        </li>
+        <li><strong>Atividades e Avaliações:</strong> Fique atento às datas e aos locais de envio na plataforma.</li>
+        <li><strong>Prazos de Entrega:</strong> Organize-se para evitar atrasos nas suas tarefas.</li>
+        <li><strong>Moodle Diário:</strong> Acompanhe diariamente os comunicados oficiais e atualizações da escola.</li>
+      </ul>
+      <div class="slide-num">11</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 12 (7. Espaço para dúvidas) -->
+    <div class="slide" id="s12">
+      <div class="label">VII. Esclarecimentos</div>
+      <h2>Espaço para Dúvidas</h2>
+      <div class="rule"></div>
+      <p style="font-size: 26px; margin-bottom: 20px;">Você tem alguma pergunta? Este é o momento para esclarecer
+        dúvidas sobre:</p>
+      <ul>
+        <li><strong>O funcionamento da Acutis Academy;</strong></li>
+        <li><strong>O uso do Moodle e das ferramentas online;</strong></li>
+        <li><strong>A nossa disciplina e seus conteúdos;</strong></li>
+        <li><strong>O cronograma e as avaliações do semestre.</strong></li>
+      </ul>
+      <div class="slide-num">12</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 13 (8. Mensagem de encerramento) -->
+    <div class="slide" id="s13">
+      <div class="label">VIII. Mensagem de Encerramento</div>
+      <h2>Construindo um Excelente Semestre</h2>
+      <div class="rule"></div>
+      <blockquote>
+        "Desejo que este seja um semestre de muito crescimento, aprendizado e amizade. Aproveitem cada aula, participem,
+        façam perguntas, estudem com dedicação e contem comigo durante toda essa caminhada. Vamos construir juntos um
+        ambiente de respeito, excelência acadêmica e formação humana, vivendo os valores da Acutis Academy."
+      </blockquote>
+      <div class="slide-num">13</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 14 (Etiqueta da Aula Online - Checklist) -->
+    <div class="slide" id="s14">
+      <div class="label">IX. Guia Prático</div>
+      <h2>Etiqueta da Aula Online — Lembrete Rápido</h2>
+      <div class="rule"></div>
+      <div class="checklist-grid">
+        <div><span class="icon">✔</span> Seja pontual.</div>
+        <div><span class="icon">✔</span> Mantenha a câmera ligada.</div>
+        <div><span class="icon">✔</span> Microfone ligado só quando autorizado.</div>
+        <div><span class="icon">✔</span> Identifique-se com nome completo.</div>
+        <div><span class="icon">✔</span> Mantenha postura respeitosa e cordial.</div>
+        <div><span class="icon">✔</span> Participe ativamente das aulas.</div>
+        <div><span class="icon">✔</span> Utilize o chat de forma responsável.</div>
+        <div><span class="icon">✔</span> Evite distrações durante a aula.</div>
+        <div><span class="icon">✔</span> Acompanhe diariamente o Moodle.</div>
+        <div><span class="icon">✔</span> Em dúvida, consulte o professor.</div>
+      </div>
+      <div class="slide-num">14</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+    <!-- Slide 15 (Reflexão Final) -->
+    <div class="slide" id="s15">
+      <div class="label">Acutis Academy — Compromisso com o Saber</div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start;">
+        <h2>Crescer em Conhecimento e Virtudes</h2>
+        <div class="rule"></div>
+        <blockquote style="font-size: 32px; line-height: 1.5; margin-top: 16px;">
+          Lembre-se: cada aula é uma oportunidade de crescer no conhecimento, nas virtudes e no compromisso com a
+          verdade.<br><br>
+          <strong>Vamos fazer deste semestre um tempo de dedicação, respeito e aprendizado para todos!</strong>
+        </blockquote>
+      </div>
+      <div class="slide-num">15</div>
+      <img src="../../../logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+    </div>
+
+  </div><!-- /deck -->
+
+  <!-- Navegação -->
+  <div class="nav">
+    <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+    <div class="nav-counter" id="counter">1 / 15</div>
+    <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
+  </div>
+
+  <script>
+    const order = [
+      's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13', 's14', 's15'
+    ];
+    let cur = 0;
+
+    function show(i) {
+      order.forEach((id, idx) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.toggle('active', idx === i);
+        }
+      });
+
+      document.getElementById('prev').disabled = i === 0;
+      document.getElementById('next').disabled = i === order.length - 1;
+      document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
+    }
+
+    function move(step) {
+      const nextIdx = cur + step;
+      if (nextIdx >= 0 && nextIdx < order.length) {
+        cur = nextIdx;
+        show(cur);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        move(1);
+      } else if (e.key === 'ArrowLeft') {
+        move(-1);
+      }
+    });
+
+    show(0);
+  </script>
+
+</body>
+
+</html>
