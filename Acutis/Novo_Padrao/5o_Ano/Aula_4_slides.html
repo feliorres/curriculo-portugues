@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
 <title>5º Ano — Aula 4: Consoantes, Dígrafos e a Letra H</title>
+=======
+<title>5º Ano — Aula 4: Ortografia Especial I</title>
+>>>>>>> Stashed changes
 <!-- Fontes do projeto Acutis -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +38,6 @@
     overflow: hidden;
   }
 
-  /* ── Deck container ── */
   .deck {
     position: relative;
     width: 100vw;
@@ -42,41 +45,32 @@
     background: var(--bg-slide);
   }
 
-  /* ── Individual slide ── */
   .slide {
     position: absolute; inset: 0;
     background: var(--bg-slide);
     color: var(--text-main);
     display: flex; flex-direction: column;
-    padding: 45px 7%;
+    padding: 40px 7%;
     opacity: 0;
     pointer-events: none;
     transition: opacity .45s ease;
   }
   .slide.active { opacity: 1; pointer-events: all; }
 
-  /* ── Cover slide ── */
-  .slide-cover {
-    background: var(--bg-slide);
-    color: var(--text-main);
-  }
-
-  /* ── Logo Acutis ── */
   .slide-logo {
     position: absolute;
     bottom: 24px;
     right: 36px;
-    height: 48px;
+    height: 44px;
     width: auto;
     object-fit: contain;
     pointer-events: none;
     z-index: 10;
   }
 
-  /* ── Slide number ── */
   .slide-num {
     position: absolute;
-    bottom: 28px; left: 40px;
+    bottom: 24px; left: 40px;
     font-family: var(--font-ui);
     font-size: 12px;
     font-weight: 500;
@@ -85,37 +79,40 @@
     text-transform: uppercase;
   }
 
-  /* ── Typography ── */
   .label {
     font-family: var(--font-ui);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--text-main);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     opacity: 0.9;
   }
 
   h1 {
     font-family: var(--font-title);
+<<<<<<< Updated upstream
     font-size: 60px;
+=======
+    font-size: 54px;
+>>>>>>> Stashed changes
     font-weight: 400;
     line-height: 1.1;
     color: var(--text-main);
-    letter-spacing: .01em;
   }
 
   h2 {
     font-family: var(--font-title);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     color: var(--text-main);
     line-height: 1.15;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   p {
+<<<<<<< Updated upstream
     font-size: 24px;
     font-weight: 400;
     line-height: 1.55;
@@ -140,9 +137,12 @@
   }
   ul li {
     font-size: 23px;
+=======
+    font-size: 22px;
+>>>>>>> Stashed changes
     font-weight: 400;
-    color: var(--text-main);
     line-height: 1.5;
+<<<<<<< Updated upstream
     padding-left: 28px;
     position: relative;
     margin-bottom: 12px;
@@ -150,16 +150,18 @@
   ul li::before {
     content: '—';
     position: absolute; left: 0;
+=======
+>>>>>>> Stashed changes
     color: var(--text-main);
-    opacity: 0.7;
   }
 
   .rule {
     width: 50px; height: 2px;
     background: var(--text-main);
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
+<<<<<<< Updated upstream
   .explanation-list {
     list-style: none;
   }
@@ -183,10 +185,20 @@
     border-radius: 6px;
     padding: 16px 22px;
     margin-bottom: 16px;
+=======
+  .text-box {
+    background: #FFF;
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 16px 20px;
+>>>>>>> Stashed changes
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 14px;
   }
 
+<<<<<<< Updated upstream
   .examples-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,6 +213,41 @@
     padding: 12px 16px;
     font-size: 21px;
     line-height: 1.4;
+=======
+  .dynamic-box {
+    background: rgba(56, 80, 84, 0.05);
+    border: 1px dashed rgba(56, 80, 84, 0.3);
+    border-radius: 6px;
+    padding: 14px 18px;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #385054;
+  }
+  .dynamic-box strong {
+    color: #385054;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+  .matrix-table th, .matrix-table td {
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    padding: 10px 14px;
+    text-align: left;
+  }
+  .matrix-table th {
+    background: rgba(56, 80, 84, 0.08);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+>>>>>>> Stashed changes
   }
 
   .wrong-text {
@@ -208,16 +255,14 @@
     text-decoration: line-through;
     font-weight: 500;
   }
-
   .correct-text {
     color: #1E8449;
     font-weight: 600;
   }
 
-  /* ── Navigation ── */
   .nav {
     position: absolute;
-    bottom: 22px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -234,18 +279,15 @@
     font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
-    padding: 10px 22px;
+    padding: 8px 18px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background .2s, border-color .2s;
   }
-  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
   .nav-btn:disabled { opacity: .3; cursor: default; }
   .nav-counter {
     font-family: var(--font-ui);
     font-size: 13px;
     font-weight: 500;
-    letter-spacing: .1em;
     color: var(--text-main);
     min-width: 60px;
     text-align: center;
@@ -256,6 +298,7 @@
 
 <div class="deck" id="deck">
 
+<<<<<<< Updated upstream
   <!-- Slide 1 (Capa da Aula) -->
   <div class="slide active slide-cover" id="s1">
     <div class="label">5º Ano — Aula 4</div>
@@ -264,11 +307,28 @@
       <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
       <p style="margin-bottom: 12px;"><strong>Ortografia Especial:</strong> Regras de Consoantes Mudas, Dobradas, Emprego do H, Dígrafos e Cedilha</p>
       <p><strong>Objetivo:</strong> Compreender e aplicar com precisão as normas ortográficas na escrita de consoantes e dígrafos.</p>
+=======
+  <!-- Slide 1 -->
+  <div class="slide active" id="s1">
+    <div class="label">5º Ano — Aula 4 | [5.1.2] Ortografia Especial I</div>
+    <h2>Slide 1: Texto & Noticing</h2>
+    <div class="rule"></div>
+
+    <div class="text-box">
+      "A <strong>princesa</strong> fez uma <strong>pesquisa</strong> para <strong>organizar</strong> o <strong>enxame</strong> e demonstrar a <strong>nobreza</strong> do reino."
+>>>>>>> Stashed changes
     </div>
-    <div class="slide-num">01</div>
+
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa — Leitura e Varredura (1 min):</strong><br>
+      Caça visual de 3 palavras com som de /z/ escritas com letras diferentes → 2 alunos chamados no microfone.
+    </div>
+
+    <div class="slide-num">01 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+<<<<<<< Updated upstream
   <!-- Slide 2 (Consoantes Mudas) -->
   <div class="slide" id="s2">
     <div class="label">1. Ortografia Especial</div>
@@ -302,11 +362,80 @@
       <li style="margin-top: 14px;"><strong>Outras grafias do som /s/:</strong> Em outras posições, o fonema /s/ pode ser grafado por <em>c, ç, x</em> ou <em>z</em>.<br>
         • <em>Exemplos:</em> cedo, caça, máximo, vez.</li>
     </ul>
+=======
+  <!-- Slide 2 -->
+  <div class="slide" id="s2">
+    <div class="label">5º Ano — Aula 4 | [5.1.2] Ortografia Especial I</div>
+    <h2>Slide 2: Esquema & Contraste</h2>
+    <div class="rule"></div>
 
-    <div class="slide-num">03</div>
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th>Regra de Ouro</th>
+          <th>Critério Morfológico</th>
+          <th>Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Radical com S vs. Z</strong></td>
+          <td>Radical tem S? Mantém S. Radical não tem? Usa Z.</td>
+          <td>análise → anali<strong>s</strong>ar<br>útil → utili<strong>z</strong>ar</td>
+        </tr>
+        <tr>
+          <td><strong>2. Adjetivo → Substantivo Abstrato</strong></td>
+          <td>Sufixo <strong>-eza</strong> (com Z)</td>
+          <td>rico → riqu<strong>eza</strong></td>
+        </tr>
+        <tr>
+          <td><strong>3. Pós-Ditongo / Pós-EN-</strong></td>
+          <td>Usa-se <strong>X</strong></td>
+          <td>c<strong>ai</strong>xa, <strong>en</strong>xada</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="dynamic-box">
+      <strong>✍️ Dinâmica Ativa — Registro Ativo (3 min):</strong><br>
+      Copiar a matriz no caderno → Pergunta de contraste no microfone: <em>"Por que avisar é com S e cicatrizar é com Z?"</em>
+    </div>
+
+    <div class="slide-num">02 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+  <!-- Slide 3 -->
+  <div class="slide" id="s3">
+    <div class="label">5º Ano — Aula 4 | [5.1.2] Ortografia Especial I</div>
+    <h2>Slide 3: Treino & Diagnóstico</h2>
+    <div class="rule"></div>
+
+    <div class="text-box" style="margin-bottom: 10px;">
+      <strong>📝 Treino:</strong> Derivação imediata de 3 palavras no caderno:
+      <ol style="margin-left: 20px; margin-top: 6px; font-size: 20px;">
+        <li>pesquisa → ____________________</li>
+        <li>firme → ____________________</li>
+        <li>en- + -ada → ____________________</li>
+      </ol>
+    </div>
+
+    <div class="text-box" style="border-left-color: #A93226;">
+      <strong>⚠️ Diagnóstico de Erro:</strong><br>
+      "O cientista fez a <span class="wrong-text">pesquiza</span> para <span class="wrong-text">analizar</span> o vírus."
+    </div>
+>>>>>>> Stashed changes
+
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa (2 min no caderno):</strong><br>
+      Aluno no microfone explica por que <em>pesquiza</em> e <em>analizar</em> violam o radical original.
+    </div>
+
+    <div class="slide-num">03 / 04</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+<<<<<<< Updated upstream
   <!-- Slide 4 (A Letra H) -->
   <div class="slide" id="s4">
     <div class="label">3. Emprego do H</div>
@@ -322,11 +451,37 @@
       <li style="margin-top: 14px;"><strong>H Final:</strong> Mantido ao final de algumas interjeições.<br>
         • <em>Exemplos:</em> ah!, eh!, oh!</li>
     </ul>
+=======
+  <!-- Slide 4 -->
+  <div class="slide" id="s4">
+    <div class="label">5º Ano — Aula 4 | [5.1.2] Ortografia Especial I</div>
+    <h2>Slide 4: Manipulação & Exit Ticket</h2>
+    <div class="rule"></div>
 
-    <div class="slide-num">04</div>
+    <div class="text-box">
+      <strong>🔄 Operação no Caderno:</strong><br>
+      Reescrever a frase convertendo o adjetivo em substantivo abstrato:<br>
+      <em>"O líder era nobre."</em> → <strong>"A ________________ do líder..."</strong>
+    </div>
+
+    <div class="text-box" style="background: rgba(56, 80, 84, 0.04);">
+      <strong>📷 Exit Ticket — Grafia pós-ditongo/EN-:</strong><br>
+      Como se escreve o termo correto?<br>
+      • <strong>1 dedo na câmera</strong> = FAIXA<br>
+      • <strong>2 dedos na câmera</strong> = FAICHA
+    </div>
+>>>>>>> Stashed changes
+
+    <div class="dynamic-box">
+      <strong>🙋‍♂️ Dinâmica Ativa:</strong><br>
+      Leitura oral da frase reescrita no mic → Votação gestual simultânea na câmera!
+    </div>
+
+    <div class="slide-num">04 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+<<<<<<< Updated upstream
   <!-- Slide 5 (Dígrafos com H e Origem Hebraica) -->
   <div class="slide" id="s5">
     <div class="label">4. Dígrafos e Origem Hebraica</div>
@@ -395,28 +550,36 @@
   </div>
 
 </div><!-- /deck -->
+=======
+</div>
+>>>>>>> Stashed changes
 
 <!-- Navegação -->
 <div class="nav">
   <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+<<<<<<< Updated upstream
   <div class="nav-counter" id="counter">1 / 7</div>
+=======
+  <div class="nav-counter" id="counter">1 / 4</div>
+>>>>>>> Stashed changes
   <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
 </div>
 
 <script>
+<<<<<<< Updated upstream
   const order = [
     's1','s2','s3','s4','s5','s6','s7'
   ];
+=======
+  const order = ['s1','s2','s3','s4'];
+>>>>>>> Stashed changes
   let cur = 0;
 
   function show(i) {
     order.forEach((id, idx) => {
       const el = document.getElementById(id);
-      if (el) {
-        el.classList.toggle('active', idx === i);
-      }
+      if (el) el.classList.toggle('active', idx === i);
     });
-    
     document.getElementById('prev').disabled = i === 0;
     document.getElementById('next').disabled = i === order.length - 1;
     document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
@@ -431,11 +594,8 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight' || e.key === ' ') {
-      move(1);
-    } else if (e.key === 'ArrowLeft') {
-      move(-1);
-    }
+    if (e.key === 'ArrowRight' || e.key === ' ') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
   });
 
   show(0);

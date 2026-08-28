@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
 <title>5º Ano — Aula 5: Letra Inicial Maiúscula e Sufixação</title>
+=======
+<title>5º Ano — Aula 5: Ortografia Especial II (O Hífen)</title>
+>>>>>>> Stashed changes
 <!-- Fontes do projeto Acutis -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +38,6 @@
     overflow: hidden;
   }
 
-  /* ── Deck container ── */
   .deck {
     position: relative;
     width: 100vw;
@@ -42,41 +45,32 @@
     background: var(--bg-slide);
   }
 
-  /* ── Individual slide ── */
   .slide {
     position: absolute; inset: 0;
     background: var(--bg-slide);
     color: var(--text-main);
     display: flex; flex-direction: column;
-    padding: 45px 7%;
+    padding: 40px 7%;
     opacity: 0;
     pointer-events: none;
     transition: opacity .45s ease;
   }
   .slide.active { opacity: 1; pointer-events: all; }
 
-  /* ── Cover slide ── */
-  .slide-cover {
-    background: var(--bg-slide);
-    color: var(--text-main);
-  }
-
-  /* ── Logo Acutis ── */
   .slide-logo {
     position: absolute;
     bottom: 24px;
     right: 36px;
-    height: 48px;
+    height: 44px;
     width: auto;
     object-fit: contain;
     pointer-events: none;
     z-index: 10;
   }
 
-  /* ── Slide number ── */
   .slide-num {
     position: absolute;
-    bottom: 28px; left: 40px;
+    bottom: 24px; left: 40px;
     font-family: var(--font-ui);
     font-size: 12px;
     font-weight: 500;
@@ -85,18 +79,18 @@
     text-transform: uppercase;
   }
 
-  /* ── Typography ── */
   .label {
     font-family: var(--font-ui);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--text-main);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     opacity: 0.9;
   }
 
+<<<<<<< Updated upstream
   h1 {
     font-family: var(--font-title);
     font-size: 58px;
@@ -106,12 +100,15 @@
     letter-spacing: .01em;
   }
 
+=======
+>>>>>>> Stashed changes
   h2 {
     font-family: var(--font-title);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     color: var(--text-main);
     line-height: 1.15;
+<<<<<<< Updated upstream
     margin-bottom: 14px;
   }
 
@@ -146,20 +143,18 @@
     padding-left: 28px;
     position: relative;
     margin-bottom: 12px;
-  }
-  ul li::before {
-    content: '—';
-    position: absolute; left: 0;
-    color: var(--text-main);
-    opacity: 0.7;
+=======
+    margin-bottom: 10px;
+>>>>>>> Stashed changes
   }
 
   .rule {
     width: 50px; height: 2px;
     background: var(--text-main);
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
+<<<<<<< Updated upstream
   .explanation-list {
     list-style: none;
   }
@@ -183,10 +178,20 @@
     border-radius: 6px;
     padding: 16px 22px;
     margin-bottom: 16px;
+=======
+  .text-box {
+    background: #FFF;
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    border-left: 4px solid #385054;
+    border-radius: 6px;
+    padding: 16px 20px;
+>>>>>>> Stashed changes
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 14px;
   }
 
+<<<<<<< Updated upstream
   .examples-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -204,9 +209,52 @@
   }
 
   /* ── Navigation ── */
+=======
+  .dynamic-box {
+    background: rgba(56, 80, 84, 0.05);
+    border: 1px dashed rgba(56, 80, 84, 0.3);
+    border-radius: 6px;
+    padding: 14px 18px;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #385054;
+  }
+  .dynamic-box strong {
+    color: #385054;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+    font-size: 19px;
+  }
+  .matrix-table th, .matrix-table td {
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    padding: 9px 12px;
+    text-align: left;
+  }
+  .matrix-table th {
+    background: rgba(56, 80, 84, 0.08);
+    font-family: var(--font-ui);
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .wrong-text {
+    color: #A93226;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+
+>>>>>>> Stashed changes
   .nav {
     position: absolute;
-    bottom: 22px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -223,18 +271,15 @@
     font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
-    padding: 10px 22px;
+    padding: 8px 18px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background .2s, border-color .2s;
   }
-  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
   .nav-btn:disabled { opacity: .3; cursor: default; }
   .nav-counter {
     font-family: var(--font-ui);
     font-size: 13px;
     font-weight: 500;
-    letter-spacing: .1em;
     color: var(--text-main);
     min-width: 60px;
     text-align: center;
@@ -245,6 +290,7 @@
 
 <div class="deck" id="deck">
 
+<<<<<<< Updated upstream
   <!-- Slide 1 (Capa da Aula) -->
   <div class="slide active slide-cover" id="s1">
     <div class="label">5º Ano — Aula 5</div>
@@ -253,11 +299,28 @@
       <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
       <p style="margin-bottom: 12px;"><strong>Ortografia Especial:</strong> Normas para o Emprego de Letras Maiúsculas e Sufixos Ortográficos</p>
       <p><strong>Objetivo:</strong> Compreender a aplicação correta da inicial maiúscula em textos, nomes próprios, obras, datas e títulos de cortesia.</p>
+=======
+  <!-- Slide 1 -->
+  <div class="slide active" id="s1">
+    <div class="label">5º Ano — Aula 5 | [5.1.2] Ortografia Especial II</div>
+    <h2>Slide 1: Texto & Noticing</h2>
+    <div class="rule"></div>
+
+    <div class="text-box">
+      "O <strong>super-homem</strong> ligou o <strong>micro-ondas</strong> na <strong>autoestrada</strong> para combater a atitude <strong>antissocial</strong> do vilão."
+>>>>>>> Stashed changes
     </div>
-    <div class="slide-num">01</div>
+
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa — Varredura Silenciosa (45 s):</strong><br>
+      Localizar 1 palavra onde o prefixo grudou e 1 palavra onde houve separação por hífen → Chamada nominal no microfone.
+    </div>
+
+    <div class="slide-num">01 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+<<<<<<< Updated upstream
   <!-- Slide 2 (Início de Períodos, Versos e Citações) -->
   <div class="slide" id="s2">
     <div class="label">1. Emprego de Letra Maiúscula</div>
@@ -292,11 +355,85 @@
       <li style="margin-top: 14px;"><strong>Astros, Lugares, Edifícios e Vias públicas:</strong> Corpos celestes, países, ruas, prédios e embarcações.<br>
         • <em>Exemplos:</em> a Terra, Espanha, Avenida Paulista, Rio Amazonas.</li>
     </ul>
+=======
+  <!-- Slide 2 -->
+  <div class="slide" id="s2">
+    <div class="label">5º Ano — Aula 5 | [5.1.2] Ortografia Especial II</div>
+    <h2>Slide 2: Esquema & Contraste</h2>
+    <div class="rule"></div>
 
-    <div class="slide-num">03</div>
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th>Regra ("Mecânica dos Ímãs")</th>
+          <th>Critério Estrutural</th>
+          <th>Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Letras Iguais</strong></td>
+          <td>Separa com hífen (se repelem)</td>
+          <td>micro-ondas, anti-inflamatório</td>
+        </tr>
+        <tr>
+          <td><strong>2. Letras Diferentes</strong></td>
+          <td>Junta sem hífen (se atraem)</td>
+          <td>autoescola, infraestrutura</td>
+        </tr>
+        <tr>
+          <td><strong>3. Vogal + R / S</strong></td>
+          <td>Junta e dobra para RR / SS</td>
+          <td>antirreflexo, antissocial, ultrassom</td>
+        </tr>
+        <tr>
+          <td><strong>4. Base iniciada por H</strong></td>
+          <td>Sempre separa com hífen</td>
+          <td>super-homem, anti-higiénico</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="dynamic-box">
+      <strong>✍️ Dinâmica Ativa — Registro no Caderno (3 min):</strong><br>
+      Copiar a tabela no caderno → Checagem conceitual rápida: <em>"O que acontece quando o prefixo termina em vogal e a palavra seguinte começa com S?"</em>
+    </div>
+
+    <div class="slide-num">02 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+  <!-- Slide 3 -->
+  <div class="slide" id="s3">
+    <div class="label">5º Ano — Aula 5 | [5.1.2] Ortografia Especial II</div>
+    <h2>Slide 3: Treino & Diagnóstico</h2>
+    <div class="rule"></div>
+
+    <div class="text-box" style="margin-bottom: 10px;">
+      <strong>📝 Treino:</strong> Unir os 3 pares prefixo + base no caderno:
+      <ol style="margin-left: 20px; margin-top: 6px; font-size: 20px;">
+        <li>auto + observação → ____________________</li>
+        <li>contra + regra → ____________________</li>
+        <li>semi + aberto → ____________________</li>
+      </ol>
+    </div>
+
+    <div class="text-box" style="border-left-color: #A93226;">
+      <strong>⚠️ Diagnóstico de Erro:</strong><br>
+      "O projeto pedagógico é <span class="wrong-text">anti-social</span> e ultrapassado."
+    </div>
+>>>>>>> Stashed changes
+
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa (2 min cronometrados no caderno):</strong><br>
+      Aluno dita no microfone a forma correta das 3 junções e justifica a duplicação do <em>ss</em> em <em>antissocial</em>.
+    </div>
+
+    <div class="slide-num">03 / 04</div>
+    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
+  </div>
+
+<<<<<<< Updated upstream
   <!-- Slide 4 (Títulos de Obras) -->
   <div class="slide" id="s4">
     <div class="label">3. Títulos de Obras</div>
@@ -312,11 +449,37 @@
       <li style="margin-top: 12px;"><strong>Teatro e Tragédia:</strong> <em>Antígona</em>, <em>Hamlet</em>.</li>
       <li style="margin-top: 12px;"><strong>Artes e Periódicos:</strong> <em>Céu e Inferno</em>, <em>Jornal do Commercio</em>.</li>
     </ul>
+=======
+  <!-- Slide 4 -->
+  <div class="slide" id="s4">
+    <div class="label">5º Ano — Aula 5 | [5.1.2] Ortografia Especial II</div>
+    <h2>Slide 4: Manipulação & Exit Ticket</h2>
+    <div class="rule"></div>
 
-    <div class="slide-num">04</div>
+    <div class="text-box">
+      <strong>🔄 Operação no Caderno:</strong><br>
+      Substituição sintática por termo composto:<br>
+      <em>"uma substância que combate vírus"</em> → <strong>"substância ____________________"</strong> (antivírica / antiviral)
+    </div>
+
+    <div class="text-box" style="background: rgba(56, 80, 84, 0.04);">
+      <strong>📷 Exit Ticket — Regra das letras iguais:</strong><br>
+      Qual é a grafia correta?<br>
+      • <strong>1 dedo na câmera</strong> = MICRO-ORGANISMO (com hífen)<br>
+      • <strong>2 dedos na câmera</strong> = MICROORGANISMO (sem hífen)
+    </div>
+>>>>>>> Stashed changes
+
+    <div class="dynamic-box">
+      <strong>🙋‍♂️ Dinâmica Ativa:</strong><br>
+      1 aluno lê a frase transformada no mic → Todos mostram os dedos na câmera para a votação!
+    </div>
+
+    <div class="slide-num">04 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
+<<<<<<< Updated upstream
   <!-- Slide 5 (Eras Históricas, Datas e Fatos Solenes) -->
   <div class="slide" id="s5">
     <div class="label">4. Eras e Fatos Solenes</div>
@@ -375,28 +538,36 @@
   </div>
 
 </div><!-- /deck -->
+=======
+</div>
+>>>>>>> Stashed changes
 
 <!-- Navegação -->
 <div class="nav">
   <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
+<<<<<<< Updated upstream
   <div class="nav-counter" id="counter">1 / 7</div>
+=======
+  <div class="nav-counter" id="counter">1 / 4</div>
+>>>>>>> Stashed changes
   <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
 </div>
 
 <script>
+<<<<<<< Updated upstream
   const order = [
     's1','s2','s3','s4','s5','s6','s7'
   ];
+=======
+  const order = ['s1','s2','s3','s4'];
+>>>>>>> Stashed changes
   let cur = 0;
 
   function show(i) {
     order.forEach((id, idx) => {
       const el = document.getElementById(id);
-      if (el) {
-        el.classList.toggle('active', idx === i);
-      }
+      if (el) el.classList.toggle('active', idx === i);
     });
-    
     document.getElementById('prev').disabled = i === 0;
     document.getElementById('next').disabled = i === order.length - 1;
     document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
@@ -411,11 +582,8 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight' || e.key === ' ') {
-      move(1);
-    } else if (e.key === 'ArrowLeft') {
-      move(-1);
-    }
+    if (e.key === 'ArrowRight' || e.key === ' ') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
   });
 
   show(0);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5º Ano — Aula 6: Ortografia Especial III (Grafias Complexas em Frases)</title>
+<title>5º Ano — Aula 6: Ortografia Especial III (Homófonos em Contexto)</title>
 <!-- Fontes do projeto Acutis -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,6 @@
     overflow: hidden;
   }
 
-  /* ── Deck container ── */
   .deck {
     position: relative;
     width: 100vw;
@@ -42,41 +41,32 @@
     background: var(--bg-slide);
   }
 
-  /* ── Individual slide ── */
   .slide {
     position: absolute; inset: 0;
     background: var(--bg-slide);
     color: var(--text-main);
     display: flex; flex-direction: column;
-    padding: 45px 7%;
+    padding: 40px 7%;
     opacity: 0;
     pointer-events: none;
     transition: opacity .45s ease;
   }
   .slide.active { opacity: 1; pointer-events: all; }
 
-  /* ── Cover slide ── */
-  .slide-cover {
-    background: var(--bg-slide);
-    color: var(--text-main);
-  }
-
-  /* ── Logo Acutis ── */
   .slide-logo {
     position: absolute;
     bottom: 24px;
     right: 36px;
-    height: 48px;
+    height: 44px;
     width: auto;
     object-fit: contain;
     pointer-events: none;
     z-index: 10;
   }
 
-  /* ── Slide number ── */
   .slide-num {
     position: absolute;
-    bottom: 28px; left: 40px;
+    bottom: 24px; left: 40px;
     font-family: var(--font-ui);
     font-size: 12px;
     font-weight: 500;
@@ -85,131 +75,87 @@
     text-transform: uppercase;
   }
 
-  /* ── Typography ── */
   .label {
     font-family: var(--font-ui);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--text-main);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     opacity: 0.9;
-  }
-
-  h1 {
-    font-family: var(--font-title);
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: var(--text-main);
-    letter-spacing: .01em;
   }
 
   h2 {
     font-family: var(--font-title);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     color: var(--text-main);
     line-height: 1.15;
-    margin-bottom: 14px;
-  }
-
-  p {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.55;
-    color: var(--text-main);
-  }
-
-  blockquote {
-    font-family: var(--font-body);
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--text-main);
-    font-weight: 400;
-    border-left: 3px solid var(--text-main);
-    padding-left: 24px;
-    margin-top: 12px;
-    margin-bottom: 16px;
-  }
-
-  ul {
-    list-style: none;
-    margin-top: 6px;
-  }
-  ul li {
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--text-main);
-    line-height: 1.5;
-    padding-left: 28px;
-    position: relative;
     margin-bottom: 10px;
-  }
-  ul li::before {
-    content: '—';
-    position: absolute; left: 0;
-    color: var(--text-main);
-    opacity: 0.7;
   }
 
   .rule {
     width: 50px; height: 2px;
     background: var(--text-main);
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
-  .explanation-list {
-    list-style: none;
-  }
-  .explanation-list li {
-    font-size: 23px;
-    margin-bottom: 14px;
-    color: var(--text-main);
-    line-height: 1.5;
-  }
-  .explanation-list li strong {
-    font-family: var(--font-title);
-    font-size: 25px;
-    color: var(--text-main);
-  }
-
-  /* ── Boxes de Regra e Exemplos ── */
-  .rule-box {
-    background: rgba(56, 80, 84, 0.04);
+  .text-box {
+    background: #FFF;
     border: 1px solid rgba(56, 80, 84, 0.2);
     border-left: 4px solid #385054;
     border-radius: 6px;
     padding: 16px 20px;
+    font-size: 22px;
+    line-height: 1.6;
     margin-bottom: 14px;
-    font-size: 21px;
-    line-height: 1.5;
   }
 
-  .example-block {
-    background: #FFF;
-    border: 1px solid rgba(56, 80, 84, 0.15);
+  .dynamic-box {
+    background: rgba(56, 80, 84, 0.05);
+    border: 1px dashed rgba(56, 80, 84, 0.3);
     border-radius: 6px;
     padding: 14px 18px;
-    font-size: 21px;
+    font-family: var(--font-ui);
+    font-size: 15px;
     line-height: 1.5;
+    color: #385054;
+  }
+  .dynamic-box strong {
+    color: #385054;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .matrix-table th, .matrix-table td {
+    border: 1px solid rgba(56, 80, 84, 0.2);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .matrix-table th {
+    background: rgba(56, 80, 84, 0.08);
+    font-family: var(--font-ui);
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
   }
 
   .wrong-text {
     color: #A93226;
+    text-decoration: line-through;
     font-weight: 500;
   }
 
-  .correct-text {
-    color: #1E8449;
-    font-weight: 600;
-  }
-
-  /* ── Navigation ── */
   .nav {
     position: absolute;
-    bottom: 22px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -226,18 +172,15 @@
     font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
-    padding: 10px 22px;
+    padding: 8px 18px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background .2s, border-color .2s;
   }
-  .nav-btn:hover { background: rgba(56, 80, 84, 0.12); border-color: var(--text-main); }
   .nav-btn:disabled { opacity: .3; cursor: default; }
   .nav-counter {
     font-family: var(--font-ui);
     font-size: 13px;
     font-weight: 500;
-    letter-spacing: .1em;
     color: var(--text-main);
     min-width: 60px;
     text-align: center;
@@ -248,144 +191,144 @@
 
 <div class="deck" id="deck">
 
-  <!-- Slide 1 (Capa da Aula) -->
-  <div class="slide active slide-cover" id="s1">
-    <div class="label">5º Ano — Aula 6</div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items: flex-start; text-align: left; width: 100%; max-width: 85%;">
-      <h1>Ortografia Especial III</h1>
-      <div class="rule" style="margin-top: 24px; margin-bottom: 24px;"></div>
-      <p style="margin-bottom: 12px;"><strong>Tópico [5.1.2]:</strong> Grafias Complexas no Contexto de Frases</p>
-      <p><strong>Objetivo:</strong> Dominar o emprego dos porquês, há/a, onde/aonde e mal/mau em frases.</p>
+  <!-- Slide 1 -->
+  <div class="slide active" id="s1">
+    <div class="label">5º Ano — Aula 6 | [5.1.2] Ortografia Especial III</div>
+    <h2>Slide 1: Texto & Noticing</h2>
+    <div class="rule"></div>
+
+    <div class="text-box">
+      "— <strong>Por que</strong> você não foi à <strong>sessão</strong> de cinema ontem?<br>
+      — Eu não fui <strong>porque</strong> estava me sentindo <strong>mal</strong>."
     </div>
-    <div class="slide-num">01</div>
+
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa — Leitura Expressiva:</strong><br>
+      Identificar duas palavras que têm o mesmo som, mas que mudariam o sentido se trocadas → 2 alunos chamados no microfone.
+    </div>
+
+    <div class="slide-num">01 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 2 (1. O Uso dos Quatro Porquês) -->
+  <!-- Slide 2 -->
   <div class="slide" id="s2">
-    <div class="label">1. Os Porquês</div>
-    <h2>O Uso dos Quatro "Porquês"</h2>
+    <div class="label">5º Ano — Aula 6 | [5.1.2] Ortografia Especial III</div>
+    <h2>Slide 2: Esquema & Contraste</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Por que:</strong> Pergunta direta/indireta ou equivalente a "pelo qual".<br>
-      <strong>Por quê:</strong> Fim de frase ou isolado.<br>
-      <strong>Porque:</strong> Resposta, explicação ou causa.<br>
-      <strong>Porquê:</strong> Substantivo (motivo/razão), acompanhado de artigo (<em>o porquê</em>).
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th>Termo</th>
+          <th>Teste de Substituição Sintática</th>
+          <th>Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Por que / Porque / Por quê / Porquê</strong></td>
+          <td>• <strong>Por que</strong> = por qual razão<br>• <strong>Porque</strong> = pois / já que<br>• <strong>Por quê</strong> = fim de frase<br>• <strong>Porquê</strong> = o motivo (substantivo)</td>
+          <td>Por que saiu?<br>Saiu porque choveu.<br>Você não vem por quê?<br>Não entendi o porquê.</td>
+        </tr>
+        <tr>
+          <td><strong>Sessão / Seção / Cessão</strong></td>
+          <td>• <strong>Sessão</strong> = reunião / tempo (cinema)<br>• <strong>Seção</strong> = divisão / setor da loja<br>• <strong>Cessão</strong> = ato de ceder / doar</td>
+          <td>Sessão das 15h.<br>Seção de brinquedos.<br>Cessão de direitos.</td>
+        </tr>
+        <tr>
+          <td><strong>Mau vs. Mal</strong></td>
+          <td>• <strong>Mau</strong> = oposto de BOM<br>• <strong>Mal</strong> = oposto de BEM</td>
+          <td>Homem mau (= bom).<br>Passou mal (= bem).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="dynamic-box">
+      <strong>✍️ Dinâmica Ativa — Cópia da Tabela de Atalhos (3 min):</strong><br>
+      Copiar a matriz no caderno → Pergunta rápida no mic: <em>"Qual teste você faz mentalmente para saber se é mau com U ou mal com L?"</em>
     </div>
 
-    <div class="example-block">
-      ❌ <span class="wrong-text">Porque você faltou? Não sei por que. Faltei por que estava doente e não sei o por que de tanto drama.</span><br><br>
-      ✅ <span class="correct-text">Por que você faltou? Não sei por quê. Faltei porque estava doente e não sei o porquê de tanto drama.</span>
-    </div>
-
-    <div class="slide-num">02</div>
+    <div class="slide-num">02 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 3 (2. Há vs. A) -->
+  <!-- Slide 3 -->
   <div class="slide" id="s3">
-    <div class="label">2. Há vs. A</div>
-    <h2>Há (Haver/Passado) vs. A (Futuro/Distância)</h2>
+    <div class="label">5º Ano — Aula 6 | [5.1.2] Ortografia Especial III</div>
+    <h2>Slide 3: Treino & Diagnóstico</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Usa-se <strong>Há</strong> (do verbo haver) para tempo decorrido (passado) ou sentido de existir.<br>
-      Usa-se <strong>A</strong> para tempo futuro ou distância espacial.
+    <div class="text-box" style="margin-bottom: 10px;">
+      <strong>📝 Treino:</strong> Preenchimento das lacunas no caderno:
+      <ol style="margin-left: 20px; margin-top: 6px; font-size: 20px;">
+        <li>Cheguei atrasado ___________ perdi o ônibus.</li>
+        <li>Dirigi-me à ___________ de roupas masculinas.</li>
+        <li>O aluno é ___________ educado.</li>
+      </ol>
     </div>
 
-    <div class="example-block">
-      ❌ <span class="wrong-text">A dois anos não vejo meu irmão, mas o encontro ocorrerá há dez minutos daqui.</span><br><br>
-      ✅ <span class="correct-text">Há dois anos não vejo meu irmão, mas o encontro ocorrerá a dez minutos daqui.</span>
+    <div class="text-box" style="border-left-color: #A93226;">
+      <strong>⚠️ Diagnóstico de Falha de Sentido:</strong><br>
+      "Fui à <span class="wrong-text">sessão</span> de esportes da loja porque não sei <span class="wrong-text">porquê</span> fecharam."
     </div>
 
-    <div class="slide-num">03</div>
+    <div class="dynamic-box">
+      <strong>🎙️ Dinâmica Ativa (2 min no caderno):</strong><br>
+      Aluno explica no microfone as duas correções necessárias na frase do diagnóstico (<em>seção</em> de departamento e <em>por que</em> separado).
+    </div>
+
+    <div class="slide-num">03 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 4 (3. Onde vs. Aonde) -->
+  <!-- Slide 4 -->
   <div class="slide" id="s4">
-    <div class="label">3. Onde vs. Aonde</div>
-    <h2>Onde (Permanência) vs. Aonde (Movimento)</h2>
+    <div class="label">5º Ano — Aula 6 | [5.1.2] Ortografia Especial III</div>
+    <h2>Slide 4: Manipulação & Exit Ticket</h2>
     <div class="rule"></div>
 
-    <div class="rule-box">
-      <strong>Regra:</strong> Usa-se <strong>Onde</strong> para indicar permanência ou lugar fixo (verbos estáticos).<br>
-      Usa-se <strong>Aonde</strong> para indicar movimento ou destino (verbos que regem a preposição <em>a</em>, como <em>ir, chegar</em>).
+    <div class="text-box">
+      <strong>🔄 Operação — Deslocamento Sintático:</strong><br>
+      Mova o <em>por que</em> do início para o final da frase, forçando a alteração gráfica:<br>
+      <em>"<strong>Por que</strong> você não estudou para a prova?"</em><br>
+      → <strong>"Você não estudou para a prova ____________________?"</strong>
     </div>
 
-    <div class="example-block">
-      ❌ <span class="wrong-text">Aonde você mora? Onde você vai com tanta pressa?</span><br><br>
-      ✅ <span class="correct-text">Onde você mora? Aonde você vai com tanta pressa?</span>
+    <div class="text-box" style="background: rgba(56, 80, 84, 0.04);">
+      <strong>📷 Exit Ticket — Votação Gestual com Parônimos:</strong><br>
+      Como se escreve a palavra composta?<br>
+      • <strong>1 dedo na câmera</strong> = MAU-HUMORADO<br>
+      • <strong>2 dedos na câmera</strong> = MAL-HUMORADO
     </div>
 
-    <div class="slide-num">04</div>
+    <div class="dynamic-box">
+      <strong>🙋‍♂️ Dinâmica Ativa:</strong><br>
+      Leitura da frase manipulada no microfone → Votação gestual final na câmera!
+    </div>
+
+    <div class="slide-num">04 / 04</div>
     <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
   </div>
 
-  <!-- Slide 5 (4. Mal vs. Mau) -->
-  <div class="slide" id="s5">
-    <div class="label">4. Mal vs. Mau</div>
-    <h2>Mal (Bem) vs. Mau (Bom)</h2>
-    <div class="rule"></div>
-
-    <div class="rule-box">
-      <strong>Regra:</strong> Usa-se <strong>Mal</strong> quando for o oposto de <em>Bem</em>.<br>
-      Usa-se <strong>Mau</strong> quando for o oposto de <em>Bom</em>.
-    </div>
-
-    <div class="example-block">
-      ❌ <span class="wrong-text">Ele dormiu mau porque é um menino mal-humorado e mau.</span><br><br>
-      ✅ <span class="correct-text">Ele dormiu mal porque é um menino mal-humorado e mau.</span>
-    </div>
-
-    <div class="slide-num">05</div>
-    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
-  </div>
-
-  <!-- Slide 6 (Atividade em Sala no Caderno) -->
-  <div class="slide" id="s6">
-    <div class="label">5. Atividade em Sala</div>
-    <h2>Fixação no Caderno</h2>
-    <div class="rule"></div>
-
-    <ul class="explanation-list">
-      <li><strong>1. Exercício:</strong> Reescreva as frases a seguir no caderno preenchendo as lacunas corretamente:
-        <br><br>
-        • _____ (Por que / Porque) o trânsito parou?<br>
-        • Não entendi o _____ (por que / porquê) da pressa.<br>
-        • Moramos _____ (onde / aonde) o clima é agradável.<br>
-        • O ônibus passará daqui _____ (há / a) cinco minutos.
-      </li>
-    </ul>
-
-    <div class="slide-num">06</div>
-    <img src="logo_acutis.png" alt="Acutis Academy" class="slide-logo">
-  </div>
-
-</div><!-- /deck -->
+</div>
 
 <!-- Navegação -->
 <div class="nav">
   <button class="nav-btn" id="prev" onclick="move(-1)" disabled>← Anterior</button>
-  <div class="nav-counter" id="counter">1 / 6</div>
+  <div class="nav-counter" id="counter">1 / 4</div>
   <button class="nav-btn" id="next" onclick="move(1)">Próximo →</button>
 </div>
 
 <script>
-  const order = [
-    's1','s2','s3','s4','s5','s6'
-  ];
+  const order = ['s1','s2','s3','s4'];
   let cur = 0;
 
   function show(i) {
     order.forEach((id, idx) => {
       const el = document.getElementById(id);
-      if (el) {
-        el.classList.toggle('active', idx === i);
-      }
+      if (el) el.classList.toggle('active', idx === i);
     });
-    
     document.getElementById('prev').disabled = i === 0;
     document.getElementById('next').disabled = i === order.length - 1;
     document.getElementById('counter').textContent = (i + 1) + ' / ' + order.length;
@@ -400,11 +343,8 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight' || e.key === ' ') {
-      move(1);
-    } else if (e.key === 'ArrowLeft') {
-      move(-1);
-    }
+    if (e.key === 'ArrowRight' || e.key === ' ') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
   });
 
   show(0);

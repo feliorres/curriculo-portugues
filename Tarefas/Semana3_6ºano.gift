@@ -1,0 +1,83 @@
+::Q01 - Identificacao de Substantivo::
+Como se pode testar e confirmar se uma palavra funciona como substantivo na frase, de acordo com o critério prático apresentado nas fontes? {
+~Verificando se a palavra indica uma ação realizada no passado.
+=Verificando se a palavra aceita ser acompanhada por um artigo ou pronome (como "o/a", "um/uma", "meu/minha").
+~Verificando se a palavra termina obrigatoriamente com a consoante "s".
+~Verificando se a palavra pode ser escrita apenas em letra maiúscula.
+}
+
+::Q02 - Substantivos Proprios::
+Assinale a alternativa que apresenta apenas substantivos próprios, os quais designam seres únicos e específicos e devem ser grafados com letra inicial maiúscula\: {
+~país, rio, garoto
+~menina, rei, cidade
+=Brasil, Tietê, Jesus
+~homem, escola, livro
+}
+
+::Q03 - Substantivos Abstratos::
+Substantivos abstratos são aqueles que dependem de outro ser para existir. Qual das alternativas a seguir contém apenas substantivos abstratos? {
+~cadeira, vento, água
+=fome, beleza, coragem
+~homem, Deus, celular
+~mesa, garrafa, pedra
+}
+
+::Q04 - Substantivos Compostos::
+Substantivos compostos são aqueles formados por dois ou mais radicais (raízes). Qual das palavras a seguir é um substantivo composto? {
+~chuva
+~flor
+=guarda-chuva
+~tempo
+}
+
+::Q05 - Substantivos Derivados::
+Substantivos derivados são aqueles que procedem de outra palavra existente na língua. Qual alternativa apresenta o substantivo derivado correspondente à palavra primitiva "pedra"? {
+~mar
+=pedreiro
+~papel
+~fogo
+}
+
+::Q06 - Substantivos Sobrecomuns::
+Substantivos sobrecomuns possuem um único gênero gramatical fixo e invariável, de modo que o artigo antecedente nunca muda para indicar o sexo do ser. Assinale a alternativa que apresenta um substantivo sobrecomum\: {
+~o estudante / a estudante
+~o gato / a gata
+=a criança
+~a cobra macho / a cobra fêmea
+}
+
+::Q07 - Substantivos Epicenos::
+Nos substantivos epicenos, a distinção entre o sexo masculino e feminino dos animais é feita acrescentando-se as palavras\: {
+~"o" e "a"
+="macho" e "fêmea"
+~"menino" e "menina"
+~"grande" e "pequeno"
+}
+
+::Q08 - Plural em ao::
+O plural dos substantivos terminados em "-ão" pode ser formado com as terminações "-ões", "-ães" ou "-s". Assinale a alternativa em que TODAS as palavras formam o plural com a terminação "-ões"\: {
+~alemão, cão, capelão
+~cidadão, cristão, irmão
+=balão, botão, casarão
+~cão, irmão, balão
+}
+
+::Q09 - Plural com Metafonia::
+Em alguns substantivos da língua portuguesa, ocorre a alteração do timbre da vogal tônica no plural\: a vogal pronunciada com o som "ô" (fechado) no singular passa a ser pronunciada com o som "ó" (aberto) no plural. Assinale a opção que apresenta um exemplo dessa alteração\: {
+~acordo -> acordos
+~adorno -> adornos
+~moço -> moços
+=ovo -> ovos
+}
+
+::Q10 - Excecoes de Plural::
+Analise os dois grupos de substantivos quanto à flexão de número\:
+Grupo I\: Palavras como "lápis", "pires" e "atlas".
+Grupo II\: Palavras paroxítonas terminadas em "-il", como "fóssil" e "réptil".
+
+Com base nas regras de plural apresentadas nas fontes, assinale a afirmação correta\: {
+=As palavras do Grupo I não alteram sua forma no plural (o plural é marcado pelo artigo), enquanto as palavras do Grupo II trocam a terminação "-il" por "-eis" (fósseis, répteis).
+~Ambas as palavras do Grupo I e do Grupo II acrescentam "-es" ao final para formar o plural.
+~As palavras do Grupo I trocam a consoante final por "-is", e as do Grupo II ficam invariáveis no plural.
+~As palavras do Grupo I formam plural em "-ões", e as do Grupo II formam plural em "-ardis".
+}
