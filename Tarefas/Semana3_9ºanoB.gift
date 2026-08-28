@@ -1,4 +1,4 @@
-::Q01 - Definicao de Oracao 9B::
+::Q01::
 O que é uma oração? {
 ~Qualquer conjunto de substantivos sem verbo.
 =Reunião de palavras com verbo.
@@ -6,7 +6,7 @@ O que é uma oração? {
 ~Um grupo isolado de advérbios.
 }
 
-::Q02 - Definicao de Periodo 9B::
+::Q02::
 Como é definido um período na análise gramatical? {
 =Conjunto de orações.
 ~Palavra invariável sem sentido completo.
@@ -14,7 +14,7 @@ Como é definido um período na análise gramatical? {
 ~Parágrafo formado por um único substantivo.
 }
 
-::Q03 - Periodo Simples 9B::
+::Q03::
 Assinale a definição correta de período simples\: {
 ~Período com mais de uma oração.
 =Período com uma única oração.
@@ -22,7 +22,7 @@ Assinale a definição correta de período simples\: {
 ~Período formado obrigatoriamente por três orações.
 }
 
-::Q04 - Periodo Composto 9B::
+::Q04::
 Qual é a definição de período composto? {
 ~Período com uma única oração.
 ~Período sem nenhuma oração.
@@ -30,62 +30,62 @@ Qual é a definição de período composto? {
 ~Frase constituída apenas por preposições.
 }
 
-::Q05 - Como Identificar Verbo 9B::
+::Q05::
 Qual é o procedimento correto para identificar se uma palavra é um verbo em um texto? {
 ~Verificar se a palavra começa por consoante maiúscula.
+~Perceber se a palavra tem significado de ação, como "corrida".
 =Encaixar a palavra em alguma conjugação (eu, tu, ele, nós, vós, eles).
-~Substituir a palavra por um adjetivo pátrio.
-~Contar o número de sílabas da palavra.
+~Considerar exclusivamente se pode ser substantivada.
 }
 
-::Q06 - Verbos Soneto Estrofe 1::
+::Q06::
 Considere a primeira estrofe do soneto apresentado:\:
 "Verdade, amor, razão, merecimento,
 Qualquer alma farão segura e forte;
 Porém, fortuna, caso, tempo e sorte,
 Têm do confuso mundo o regimento."
 
-Quais são as duas formas verbais presentes nessa estrofe que constam na lista de verbos da fonte? {
+Quais são as duas formas verbais presentes nessa estrofe? {
 =farão / têm
 ~razão / tempo
-~alma / sorte
+~merecimento / sorte
 ~confuso / forte
 }
 
-::Q07 - Verbos Soneto Estrofe 2::
-Na segunda estrofe do soneto ("Efeitos mil revolve o pensamento / E não sabe a que causa se reporte..."), qual das seguintes palavras é classificada como verbo segundo a fonte? {
+::Q07::
+Na segunda estrofe do soneto ("Efeitos mil revolve o pensamento / E não sabe a que causa se reporte..."), qual das seguintes palavras é classificada como verbo? {
 ~causa
 ~pensamento
 =revolve
 ~mil
 }
 
-::Q08 - Periodo Simples e Composto::
+::Q08::
 Considere as duas afirmações abaixo sobre a estrutura do período\:
 
 I. Um período constituído por uma única oração é chamado de período simples.
 II. Um período constituído por mais de uma oração é chamado de período composto.
 
 Sobre as afirmações I e II, assinale a alternativa correta\: {
-=Ambas as afirmações I e II são corretas.
+=Ambas as afirmações são corretas.
 ~Apenas a afirmação I é correta.
 ~Apenas a afirmação II é correta.
-~Ambas as afirmações I e II são incorretas.
+~Ambas as afirmações são incorretas.
 }
 
-::Q09 - Lista de Verbos Soneto Camoes::
-Ao analisar os termos do soneto transcrito na fonte, assinale a alternativa que contém exclusivamente palavras registradas como verbos do texto\: {
+::Q09::
+Ao analisar os termos do soneto transcrito, assinale a alternativa que contém exclusivamente verbos do texto\: {
 ~razão, tempo, alma, sorte
 =farão, revolve, reporte, darão
 ~humano, confuso, forte, causa
 ~pensamento, entendimento, razões, experiências
 }
 
-::Q10 - Sintese Conceitual Oracao Periodo Verbo::
-nalise as seguintes afirmativas\:
+::Q10::
+Analise as seguintes afirmativas\:
 
 I. Uma oração é definida essencialmente como a reunião de palavras contendo um verbo.
-II. Para confirmar se uma palavra em um texto é um verbo, deve-se tentar encaixá-la em uma conjugação verbal com pronomes pessoais.
+II. Para confirmar se uma palavra em um texto é um verbo, deve-se tentar encaixá-la em uma conjugação verbal com pronomes pessoais retos.
 III. O conjunto formado por uma ou mais orações constitui um período.
 
 Está correto o que se afirma em\: {

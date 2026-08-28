@@ -1,12 +1,12 @@
-::Q01 - Identificacao de Substantivo::
-Como se pode testar e confirmar se uma palavra funciona como substantivo na frase, de acordo com o critério prático apresentado nas fontes? {
+::Q01::
+Como se pode testar e confirmar se uma palavra funciona como substantivo na frase? {
 ~Verificando se a palavra indica uma ação realizada no passado.
 =Verificando se a palavra aceita ser acompanhada por um artigo ou pronome (como "o/a", "um/uma", "meu/minha").
 ~Verificando se a palavra termina obrigatoriamente com a consoante "s".
 ~Verificando se a palavra pode ser escrita apenas em letra maiúscula.
 }
 
-::Q02 - Substantivos Proprios::
+::Q02::
 Assinale a alternativa que apresenta apenas substantivos próprios, os quais designam seres únicos e específicos e devem ser grafados com letra inicial maiúscula\: {
 ~país, rio, garoto
 ~menina, rei, cidade
@@ -14,15 +14,15 @@ Assinale a alternativa que apresenta apenas substantivos próprios, os quais des
 ~homem, escola, livro
 }
 
-::Q03 - Substantivos Abstratos::
-Substantivos abstratos são aqueles que dependem de outro ser para existir. Qual das alternativas a seguir contém apenas substantivos abstratos? {
+::Q03::
+Substantivos abstratos são aqueles que dependem de outro ser para serem concebidos. Qual das alternativas a seguir contém apenas substantivos abstratos? {
 ~cadeira, vento, água
 =fome, beleza, coragem
 ~homem, Deus, celular
 ~mesa, garrafa, pedra
 }
 
-::Q04 - Substantivos Compostos::
+::Q04::
 Substantivos compostos são aqueles formados por dois ou mais radicais (raízes). Qual das palavras a seguir é um substantivo composto? {
 ~chuva
 ~flor
@@ -30,23 +30,23 @@ Substantivos compostos são aqueles formados por dois ou mais radicais (raízes)
 ~tempo
 }
 
-::Q05 - Substantivos Derivados::
+::Q05::
 Substantivos derivados são aqueles que procedem de outra palavra existente na língua. Qual alternativa apresenta o substantivo derivado correspondente à palavra primitiva "pedra"? {
-~mar
+~perfeição
 =pedreiro
 ~papel
-~fogo
+~primeiro
 }
 
-::Q06 - Substantivos Sobrecomuns::
-Substantivos sobrecomuns possuem um único gênero gramatical fixo e invariável, de modo que o artigo antecedente nunca muda para indicar o sexo do ser. Assinale a alternativa que apresenta um substantivo sobrecomum\: {
+::Q06::
+Substantivos sobrecomuns possuem um único gênero gramatical fixo e invariável, de modo que o artigo antecedente nunca muda para indicar o gênero (masculino/feminino) do ser. Assinale a alternativa que apresenta um substantivo sobrecomum\: {
 ~o estudante / a estudante
 ~o gato / a gata
 =a criança
 ~a cobra macho / a cobra fêmea
 }
 
-::Q07 - Substantivos Epicenos::
+::Q07::
 Nos substantivos epicenos, a distinção entre o sexo masculino e feminino dos animais é feita acrescentando-se as palavras\: {
 ~"o" e "a"
 ="macho" e "fêmea"
@@ -54,7 +54,7 @@ Nos substantivos epicenos, a distinção entre o sexo masculino e feminino dos a
 ~"grande" e "pequeno"
 }
 
-::Q08 - Plural em ao::
+::Q08::
 O plural dos substantivos terminados em "-ão" pode ser formado com as terminações "-ões", "-ães" ou "-s". Assinale a alternativa em que TODAS as palavras formam o plural com a terminação "-ões"\: {
 ~alemão, cão, capelão
 ~cidadão, cristão, irmão
@@ -62,7 +62,7 @@ O plural dos substantivos terminados em "-ão" pode ser formado com as terminaç
 ~cão, irmão, balão
 }
 
-::Q09 - Plural com Metafonia::
+::Q09::
 Em alguns substantivos da língua portuguesa, ocorre a alteração do timbre da vogal tônica no plural\: a vogal pronunciada com o som "ô" (fechado) no singular passa a ser pronunciada com o som "ó" (aberto) no plural. Assinale a opção que apresenta um exemplo dessa alteração\: {
 ~acordo -> acordos
 ~adorno -> adornos
@@ -70,12 +70,12 @@ Em alguns substantivos da língua portuguesa, ocorre a alteração do timbre da 
 =ovo -> ovos
 }
 
-::Q10 - Excecoes de Plural::
+::Q10::
 Analise os dois grupos de substantivos quanto à flexão de número\:
 Grupo I\: Palavras como "lápis", "pires" e "atlas".
 Grupo II\: Palavras paroxítonas terminadas em "-il", como "fóssil" e "réptil".
 
-Com base nas regras de plural apresentadas nas fontes, assinale a afirmação correta\: {
+Com base nas regras de flexão de plural dos substantivos, assinale a afirmação correta\: {
 =As palavras do Grupo I não alteram sua forma no plural (o plural é marcado pelo artigo), enquanto as palavras do Grupo II trocam a terminação "-il" por "-eis" (fósseis, répteis).
 ~Ambas as palavras do Grupo I e do Grupo II acrescentam "-es" ao final para formar o plural.
 ~As palavras do Grupo I trocam a consoante final por "-is", e as do Grupo II ficam invariáveis no plural.
