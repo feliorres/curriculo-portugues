@@ -223,3 +223,102 @@ pelos
 pelas
 
 
+31/08/2026
+Aula 10
+
+Objetivos
+Revisão das formas combinadas de artigo;
+Crase;
+Uso do artigo;
+Formas combinados do artigo indefinido.
+
+1. Crase
+Fenômeno de fusão entre preposição “a” + artigo “a”.
+Vou a + a cidade = Vou à cidade.
+A crase é marcada com acento grave: à.
+Como descobrir que há crase?
+Vou a + a cidade = Vou à cidade.
+Vou a + o bairro = Vou ao bairro.
+
+Preposição: palavra que liga duas palavras. 
+a, ante, até, com, contra, de, desde, em, entre, para, perante, por, sem, sob, sobre, trás
+
+2. Uso do artigo
+Preposição + artigo neste caso → Aconselhável separar os dois.
+– Estou-me esforçando, Sr. Juiz, por conservar o jeito especial de o garoto falar. 
+
+
+3. Formas combinadas do artigo indefinido
+em + [artigo indefinido] = num, numa, nuns, numas
+de + [artigo indefinido] = dum, duma, duns, dumas
+
+
+
+
+01/09/2026
+Aulas 11 e 12
+
+Objetivos
+Valor de determinação dos artigos;
+Substantivação por meio de artigos;
+Mudança de sentido, gênero e número por meio dos artigos.
+O que é adjetivo;
+Identificação de adjetivos no texto.
+
+1. Valor de determinação dos artigos
+
+Foi chegando um menininho, com um papelão na mão. Então disse um viajante ao menininho:…
+
+Foi chegando o menininho, com o papelão na mão.
+
+Artigos definidos fazem referência a algo já dito ou falado.
+
+2. Substantivação por meio de artigos
+Processo de transformação de uma palavra em substantivo por meio de artigo.
+“O ato literário é o conjunto do escrever e do ler.” (F. Namora)
+Artigo + verbo infinitivo = substantivo
+O + escrever = escrever
+“Tudo no mundo começou com um sim” (C. Lispector)
+“Que motivo é este do ‘não sei quê', pergunta o Leitor.”
+
+3. Revisão: definição de artigo
+Palavra que determina ou indetermina um substantivo.
+Definidos: o, os, a, as
+Indefinidos: um, uns, uma, umas
+
+4. Mudança de sentido, gênero e número por meio de artigos
+Sentido
+A cabeça = parte do corpo | O cabeça = líder
+A caixa = objeto | O caixa = parte do mercado
+Gênero
+O estudante = masculino 
+A estudante = feminina
+Número
+O lápis = Singular 
+Os lápis = Plural
+
+
+Aula 12
+
+5. O que é adjetivo
+Palavra que caracteriza um substantivo.
+
+6. Identificação de adjetivos no texto
+
+“Deus”, Casimiro de Abreu
+Eu me lembro! eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E, erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+Eu disse a minha mãe nesse momento:
+“Que dura orquestra! Que furor insano!
+
+Que pode haver maior do que o oceano,
+Ou que seja mais forte do que o vento?!”
+
+Minha mãe a sorrir olhou pros céus
+E respondeu: – “Um Ser que nós não vemos
+É maior do que o mar que nós tememos,
+Mais forte que o tufão! meu filho, é – Deus!”
+

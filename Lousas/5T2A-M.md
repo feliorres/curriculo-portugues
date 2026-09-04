@@ -199,3 +199,148 @@ ca-ne-ta, li-vro, fá-cil
 	3.3 Proparoxítonas
 Antepenúltima sílaba é tônica.
 ár-vo-re, mé-di-co, mú-si-ca
+
+
+31/08/2026
+Aulas 10 e 11
+
+Objetivos
+Acentuação
+Monossílabos tônicos;
+Palavras oxítonas;
+Palavras proparoxítonas;
+Palavras paroxítonas;
+Hiato;
+Ditongos abertos.
+Pontuação
+Ponto final;
+
+1. Monossílabos tônicos
+Palavras com uma única sílaba pronunciada com intensidade.
+1 - Acentuam-se os terminados em: -A(s), -E(s), -O(s)
+pá / pás → pa
+pé / pés → pe
+pó / pós → po
+gás
+três
+2 - Ditongos abertos tônicos: -ÉI(s), -ÉU(s), -ÓI(s)
+céu / céus → ceus
+véu / véus → veu
+dói → doi
+sóis
+
+
+2. Palavras oxítonas
+1) Acentuam-se terminadas em: -A(s), -E(s), -O(s), -EM, -ENS
+sofá / sofás → sofa
+café / café → cafe
+cipó / cipós → cipo
+também
+parabéns
+
+2) Ditongos abertos tônicos na última sílaba: -ÉI(s), -ÉU(s), -ÓI(s)
+papéis → papeis
+troféu / troféus → trofeus
+herói / heróis → heroi
+
+3) Formas verbais + pronomes (-lo, -la, -los, -las)
+Regra geral: cortar -R, -S ou -Z final
+comprar + o → comprá-lo
+fazer + o → fazê-lo
+compor + a → compô-la
+
+3. Palavras proparoxítonas
+Regra geral: TODAS são acentuadas.
+sí-la-ba
+tô-ni-ca
+o-xí-to-na
+mé-di-co
+4. Palavras paroxítonas
+NÃO são acentuadas as terminadas em -A(s), -E(s), -O(s), -EM(s), -ENS(s).
+mesa
+pele
+copo
+item / itens
+
+Exemplos de paroxítonas acentuadas
+re-pór-ter → reporter
+tó-rax → torax
+fá-cil → facil
+jú-ri → juri
+ví-rus → virus
+ór-fão → orfão
+bên-ção → benção
+ál-bum → album
+
+4. Hiato
+Acentuam-se I e U tônicos quando formam hiato da seguinte forma:
+sa-í-da
+sa-ú-de
+pa-ís
+ba-ú
+Outros casos
+ra-i-nha | fei-u-ra
+5. Ditongos abertos (ÉI, ÉU, ÓI)
+Acentuam-se somente monossílabos tônicos e palavras oxítonas.
+céu
+réu
+pas-téis
+he-rói
+tro-féu
+Perderam acento as seguintes palavras:
+ideia
+heroico
+jiboia
+assembleia
+6. Pontuação
+Reconstrução escrita do movimento da fala.
+
+7. Ponto final
+Marca a pausa máxima depois de uma fala ou de uma frase.
+“Estou parada, sozinha, na frente da casa da estância, olhando para o poente. O sol parece uma grande laranja temporã, cujo sumo escorre pelas faces da tarde.” (É. Verissimo)
+Marca abreviações.
+Doutor → Dr.
+Professor → Prof. 
+Página → pág.
+Et cetera → etc.
+01/09/2026
+Aula 12
+
+Objetivos
+Pontuação
+Ponto de interrogação;
+Ponto de exclamação.
+
+1. Ponto de interrogação
+Serve para fazer perguntas de modo direto.
+– Então a coisa sai mesmo?
+– Se sai? Já saiu! Não viu os jornais?
+(É. Verissimo)
+– Vão para África, então? O Paulo decidiu-se? 
+(Luandino Vieira)
+Para fazer perguntas envolvendo dúvidas → Juntar reticências (“...”).
+– Então?... que foi isso?.. a comadre?...
+(Artur Azevedo)
+– Quem está aí?...
+Para fazer perguntas envolvendo surpresa:
+Ah, é a senhora?! Pois entre, a casa é sua… 
+(A. M. Machado)
+Quem é que não conhece Coimbra?!!!
+(Branquinho da Fonseca)
+
+
+2. Ponto de exclamação
+Ponto que marca exclamação: surpresa, ira, etc.
+Interjeições ou termos semelhantes: 
+Que pureza e correção de linhas! Que fidalguia de olhar e falar! 
+(C. Castelo Branco)
+Adeus, senhor, adeus! (Ó. Ribas)
+Depois de um imperativo:
+– Não vás! Volta, meu filho! Não vás! (Érico Verissimo)
+Ide, ide de mim! (F. Pessoa)
+Combinação com ponto de interrogação:
+– Estás a ver se disfarças?... (Alves Redol)
+– Coitada!... quem diria… quem imaginaria que acabaria assim!?
+(A. de Assis Júnior)
+
+

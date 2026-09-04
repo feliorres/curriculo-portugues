@@ -262,3 +262,169 @@ ferrovia(s), pontapé(s)
 
 4.2 Casos em que os plurais podem variar.
 Couves-flor/couves-flores; obras-primas; grão-mestres; guarda-roupas.
+
+31/08/2026
+Aula 10
+
+Objetivos
+Plural de substantivos compostos;
+O que é adjetivo;
+Substitutos do adjetivo;
+Flexões do adjetivo.
+
+4.3 Palavra invariável + substantivo ou adjetivo → Só o segundo vai para o plural.
+guarda-chuva → guarda-chuvas
+vice-presidente → vice-presidentes
+abaixo-assinado → abaixo-assinados
+
+4.4 Palavra por preposição → Só o primeiro termo vai para o plural
+água-de-colônia → águas-de-colônia
+pé-de-meia → pés-de-meia
+
+4.5 Outros casos
+navio-escola → navios-escola
+salário-família →  salários-família
+tenente-coronel → tenentes-coronéis
+vitória-régia → vitórias-régias
+
+
+
+
+
+1. O que é adjetivo?
+Palavra que qualifica o substantivo.
+
+Meu Deus, que estais pendente em um madeiro,
+Em cuja lei protesto de viver,
+Em cuja santa lei hei de morrer
+Animoso, constante, firme e inteiro.
+
+Felipe está pendente.
+Maria é santa.
+Valentina está animosa.
+Bianca é constante.
+Letícia é firme.
+
+Mui grande é vosso amor, e meu delito,
+Porém pode ter fim todo o pecar,
+E não o vosso amor, que é infinito.
+
+
+
+31/08/2026
+Aula 11
+
+Objetivo
+O que é adjetivo? 
+Identificação de adjetivo no texto;
+Substantivação do adjetivo;
+Substitutos dos adjetivos.
+
+1. Identificação de adjetivo no texto.
+
+Meu Deus, que estais pendente em um madeiro,
+Em cuja lei protesto de viver,
+Em cuja santa lei hei de morrer
+Animoso, constante, firme e inteiro.
+
+Felipe está pendente.
+Maria é santa.
+Valentina está animosa.
+Bianca é constante.
+Letícia é firme.
+
+Mui grande é vosso amor, e meu delito,
+Porém pode ter fim todo o pecar,
+E não o vosso amor, que é infinito.
+
+Neste lance, por ser o derradeiro,
+Pois vejo a minha vida anoitecer,
+É, meu Jesus, a hora de se ver
+A brandura de um Pai manso Cordeiro.
+
+Deus, Casimiro de Abreu
+
+Eu me lembro! Eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+E eu disse a minha mãe nesse momento:
+“Que dura orquestra! Que furor insano!
+“Que pode haver maior que o oceano,
+“Ou que seja mais forte do que o vento?!”
+
+2. Substantivação do adjetivo
+
+O céu cinzento indica chuva.
+O cinzento do céu indica chuva.
+
+O céu cinzento indica chuva.
+“Cinzento” está qualificando “céu”.
+O cinzento do céu indica chuva.
+"Cinzento” é um substantivo qualificado por “do céu”.
+
+Aquele homem simples é sábio.
+O simples deve ser bem feito.
+
+
+3. Substitutos dos adjetivos
+
+Substantivo + substantivo:
+O tio Joaquim.
+Moça cabeça-de-vento
+Preposição + substantivo:
+Barco a vela (= veleiro)
+Coração de anjo (= angélico)
+Preposição + advérbio
+Jornal de hoje (= hodierno)
+Patas de trás (= traseiras)
+
+
+03/09/2026
+Aula 12
+
+Objetivos
+Graus dos adjetivos
+Comparativo
+Superlativo
+
+1. Graus do adjetivo
+Níveis de intensidade de significado dos adjetivos.
+Os graus do adjetivo são o comparativo e o superlativo.
+
+
+
+2. Comparativo
+Pode indicar:
+que um ser possui determinada qualidade em grau superior, inferior ou igual a outro:
+Pedro é mais estudioso do que Paulo.
+Paulo é menos estudioso do que Pedro.
+Álvaro é tão estudioso quanto Pedro.
+que um ser tem em si mesmo graus diferentes de qualidades diferentes:
+Pedro é mais inteligente que estudioso.
+menos… que…
+tão… quanto…
+
+3. Superlativo
+Pode denotar:
+que um ser apresenta elevado grau de determinada qualidade (superlativo absoluto):
+Paulo é inteligentíssimo.
+Paulo é muito inteligente.
+que um ser se sobressai à totalidade dos seres em determinada qualidade (superlativo relativo)
+Carlos é o aluno mais estudioso do Colégio.
+Paulo é o aluno menos estudioso do Colégio.
+
+
+
+4. Superlativos absolutos
+Sintético
+Expresso por uma só palavra (adj. + sufixo)
+amigo → amicíssimo
+estudioso → estudiosíssimo
+triste → tristíssimo
+Analítico
+Expresso com ajuda de outra palavra, geralmente adv.
+muito amigo
+grandemente estudioso
+imensamente triste

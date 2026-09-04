@@ -269,3 +269,152 @@ Lâmpada
 Sílaba
 Tônica
 Oxítona
+
+01/09/2026
+Aula 10
+
+Objetivos
+Acentuação
+Palavras paroxítonas;
+Hiato;
+Ditongos abertos.
+Pontuação
+Para que serve pontuação?
+Ponto final;
+
+1. Acentuação: paroxítona
+NÃO são acentuadas as terminadas em: -A(s), -E(s), -O(s), -EM, -ENS.
+mesa → mêsa
+pele → péle
+copo → cópo
+item / itens → íten
+
+
+Outros casos acentuados
+repórter
+tórax
+hífen
+fácil
+júri
+vírus
+órfão
+bênção
+álbum
+história
+
+2. Hiato
+Acentuam-se I e U tônicas nos casos a seguir:
+sa-í-da
+sa-ú-de
+pa-ís
+ba-ú
+NÃO se acentuam estas:
+ra-i-nha
+fei-u-ra
+
+
+
+3. Ditongos abertos (ÉI, ÉU, ÓI)
+Acentuam-se exclusivamente em monossílabos tônicos e palavras oxítonas.
+céu;
+réu;
+pastéis;
+herói;
+troféu.
+Perderam o acento as paroxítonas:
+ideia;
+heroico;
+jiboia;
+assembleia.
+
+
+Pontuação
+
+0. Para que serve a pontuação?
+Para reproduzir a elocução oral.
+
+1. Ponto final
+Ponto que marca pausa máxima ou final de frase. 
+“Estou parada, sozinha, na frente da casa da estância, olhando para o poente. O sol parece uma grande laranja temporã, cujo sumo escorre pelas faces da tarde.” 
+(É. Verissimo)
+
+
+
+02/09/2026
+Aula 11
+
+Objetivos
+Ponto final;
+Ponto de interrogação;
+Ponto de exclamação.
+
+1. Ponto final
+Também serve para marcar abreviaturas.
+Padre → Pe. 
+Doutor → Dr.
+Et cetera → Etc.
+Ltda., cia., etc.
+
+
+2. Ponto de interrogação
+Para fazer perguntas.
+– Então a coisa sai mesmo?
+– Se sai? Já saiu! Não viu os jornais?
+(É. Verissimo)
+
+Vão para África, então? O Paulo decidiu-se?
+(Luandino Vieira)
+
+Ponto de interrogação + ponto de exclamação → Pergunta com surpresa/ira/etc.
+– Estás a ver se disfarças?!... (Alves Redol)
+– Coitada!... quem diria… quem imaginaria que acabaria assim!? (A. de Assis Júnior)
+
+Interrogação + reticências → Pergunta com certa dúvida, hesitação.
+– Quem está aí?... 
+– Então?... que foi isso?... a comadre?... (Artur Azevedo)
+
+
+3. Ponto de exclamação
+Marcar surpresa, intensidade, ênfase.
+Depois de interjeições ou termos equivalentes:
+Que pureza e correção de linhas! Que fidalguia de olhar e falar! (C. Castelo Branco)
+Adeus, senhor, adeus! (Ó. Ribas)
+Depois de um imperativo:
+– Não vás! Volta, meu filho! Não vás! (É. Verissimo)
+Ide, ide de mim! (F. Pessoa)
+
+
+– Ah, é a senhora?! Pois entre, a casa é sua…
+(A. M. Machado)
+
+– Quem é que não conhece Coimbra?!!! 
+(Branquinho da Fonseca)
+
+
+04/09/2026
+Aula 12 - Pontuação II
+
+Objetivos
+Vírgula;
+Reticências;
+Análise de pontuação em poema.
+
+1. Vírgula
+Serve para marcar pausa curta no texto.
+1) Separar elementos de mesma função sem e, ou ou nem.
+Achava os homens declamadores, grosseiros, cansativos, pesados, frívolos, chulos, triviais. (Machado de Assis)
+2) e, ou e nem
+Abrem-se lírios, e jasmins, e rosas. (A. de Oliveira)
+Nem eu, nem tu, nem ela, nem qualquer outra pessoa desta história poderia responder mais. (M. de Assis)
+3) Isolar aposto (ou elemento explicativo)
+Alice, a menina, estava feliz. (F. Namora)
+A meu pai, com efeito, ninguém fazia falta. (O. Lara Resende)
+4) Isolar o vocativo.
+– Como é que tu te chamas, ó rapaz? (L. B. Honwana)
+– Bom dia, Maria.
+– Comigo, Júlia, está tudo bem.
+5) Isolar elementos repetidos.
+– Nada, nada – dizia Vilaça todo amável – cá o nosso solzinho português sempre é melhor. (Eça de Queirós)
+6) Isolar circunstâncias (adjuntos adverbiais).
+Lá fora, a chuvada despenhou-se por fim. (C. de Oliveira)
+À noite, às vezes, fazia barulho. (A. F. Schmidt)

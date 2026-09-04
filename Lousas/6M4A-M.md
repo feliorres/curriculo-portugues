@@ -244,3 +244,155 @@ Definidos:
 Indefinidos:
 “Atravessaram um pátio, deixaram numa escuridão um chiqueiro e um curral, vazios, de porteiras abertas, um carro de bois que apodrecia, uns juazeiros.” 
 
+
+31/08/2026
+Aula 10
+
+Objetivos
+Formas combinadas dos artigos definidos;
+Crase;
+Uso do artigo definido.
+
+1. Formas combinadas dos artigos definidos
+
+Preposição
+Artigo definido
+o
+a
+os
+as
+a
+ao
+à
+aos
+às
+de
+do
+da
+dos
+das
+em
+no
+na
+nos
+nas
+por (per)
+pelo
+pela
+pelos
+pelas
+
+
+
+Dei um presente ao meu pai
+Dei um presente a a (à) minha mãe.
+
+
+2. Crase
+Fenômeno de fusão de preposição “a” + artigo “a”.
+Vou a (preposição) + a (artigo) cidade 
+Vou à cidade.
+O fenômeno de crase é marcado com o acento grave (à).
+Prática: quando saber se ocorre crase ou não?
+Trocar para o masculino. Se for “ao”, ocorre crase.
+Vou à cidade → Vou ao bairro.
+
+3. Uso do artigo definido
+Preposição antecede artigo definido que faz parte do título de obras:
+Evitar contração:
+Camões é o autor de Os Lusíadas.
+Mark Twain é o autor de As Aventuras de Tom Sawyer.
+Indicar pelo apóstrofo a supressão da vogal da preposição:
+Camões é o autor d’Os Lusíadas.
+Mark Twain é o autor d’As Aventuras de Tom Sawyer.
+
+Quando preposição que antecede artigo está relacionada com o verbo → aconselhável que preposição e artigo fiquem separados.
+– Estou-me esforçando, Sr. Juiz, por conservar o jeito especial de o garoto falar. (A. M. Machado)
+
+
+01/09/2026
+Aula 11
+
+Objetivos
+Artigos
+Formas combinadas de artigo indefinido;
+Valor dos artigos;
+Substantivação por meio de artigo.
+Mudança de sentido a partir de mudança de gênero e número.
+
+1. Formas combinadas de artigo indefinido
+Um, uns, uma, umas
+Em + [artigo indefinido] = Num, nuns, numa, numas
+De + [artigo indefinido] = Dum, duns, duma, dumas
+
+2. Valor dos artigos
+
+Foi chegando um menininho magro, com um papelão na mão.
+Foi chegando o meninho magro, com o papelão na mão.
+
+Os artigos determinam com base na referência ao que foi ou não dito.
+
+Aquele menino é um aluno.
+Aquele menino é o aluno.
+
+
+
+3. Substantivação por meio de artigo
+
+Substantivação é o processo em que uma palavra se torna substantivo.
+“O ato literário é o conjunto do escrever e do ler” (F. Namora)
+Escrever = forma nominal → forma de nome. Nome = substantivo, adjetivo, pronome que vale por substantivo, etc.
+“Tudo no mundo começou com um sim” (C. Lispector)
+“Que motivo é este do ‘não sei quê’, pergunta o Leitor” (A. Meyer)
+
+
+4. Revisão: como identificar um substantivo
+
+[artigo/pronome/adjetivo] → [palavra] = substantivo
+O mundo = substantivo
+Este mundo = substantivo
+O grande mundo = substantivo
+
+
+
+03/09/2026
+Aula 12
+
+Objetivos
+Mudança de sentido, gênero e número a partir de artigos;
+O que é adjetivo;
+Identificação de adjetivos em textos.
+
+1. Mudança de sentido, gênero e número a partir de artigos
+Sentido
+A cabeça = parte do corpo | O cabeça = líder
+Gênero
+A artista = fem. | O artista = masc.
+Número
+O lápis = sing. | Os lápis = plural
+
+
+2. O que é adjetivo
+Palavra que qualifica o substantivo.
+
+
+
+"Deus”, Casimiro de Abreu
+
+Eu me lembro! eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E, erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+“Os Lusíadas”, II
+
+"Ó caso grande, estranho e não cuidado,
+Ó milagre claríssimo e evidente,
+Ó descoberto engano inopinado,
+Ó pérfida, inimiga e falsa gente!
+Quem poderá do mal aparelhado
+Livrar-se sem perigo sabiamente,
+Se lá de cima a Guarda soberana
+Não acudir à fraca força humana?
+
+[Corrigir na próxima aula]

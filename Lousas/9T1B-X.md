@@ -27,3 +27,9 @@ Mas o melhor de tudo é crer em Cristo.
 Verbos totais: farão, têm, revolve, sabe, reporte, sabe, é, alcança, darão, são, é, há, passam, há, é.
 
 [Nesta questão 8, colocar como alternativas outros conjuntos de palavras do texto]
+
+
+02/09/2026 e 03/09/2026
+Orações subordinadas substantivas;
+Orações subordinadas adjetivas;
+Introdução às orações subordinadas adverbiais. 

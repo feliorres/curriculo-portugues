@@ -256,3 +256,127 @@ Vou à praia = Vou para a praia.
 Deu um presente à avó = Deu um presente para a avó.
 Disse uma coisa à pessoa = Disse uma coisa para a pessoa.
 
+31/08/2026
+Aula 10 - Artigos II
+
+Objetivos
+Uso de artigo;
+Formas combinadas do artigo indefinido;
+Valores do artigo.
+
+1. Uso de artigos
+Preposição + artigo neste caso específico → Aconselhável a separação entre um e outro.
+– Estou-me esforçando, Sr. Juiz, por conservar o jeito especial de o garoto falar. (A. M. Machado)
+
+2. Formas combinadas do artigo indefinido
+Preposições + artigos indefinidos
+em + um = num
+em + uma = numa
+em + uns = nuns
+em + umas = numas
+de + um = dum
+de  + uma = duma
+de  + uns = duns
+de + umas  = dumas
+
+3. Valores do artigo
+
+O artigo tem valor de determinação de significado.
+Exemplo 1
+Foi chegando um meninho magro, com um papelão na mão.
+Foi chegando o menininho magro, com aquele papelão na mão.
+Exemplo 2
+Aquela menina é uma aluna.
+Aquela menina é a aluna.
+
+“O ato literário é o conjunto do escrever e do ler” (F. Namora)
+
+“Tudo no mundo começou com um sim” (C. Lispector)
+
+“Que motivo é este do ‘não sei quê’, pergunta o Leitor” (A. Meyer)
+
+
+
+01/09/2026
+Aula 11
+
+Objetivos
+Artigos
+Mudança de significado a partir de mudança de gênero;
+Flexão de número a partir dos artigos.
+Adjetivos
+O que é adjetivo;
+Identificação de adjetivos no texto.
+
+1. Mudança de significado a partir de mudança de gênero
+
+A cabeça = parte do corpo | O cabeça = líder
+A capital = cidade principal | O capital = patrimônio; dinheiro; recursos
+
+2. Flexão de número a partir dos artigos
+O lápis | Os lápis
+
+
+3. O que é adjetivo?
+Palavra que caracteriza o substantivo.
+
+4. Identificação de adjetivos no texto
+
+Deus, Casimiro de Abreu
+
+Eu me lembro! eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E, erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+Eu disse a minha mãe nesse momento:
+“Que dura orquestra! Que furor insano!
+Que pode haver maior do que o oceano,
+Ou que seja mais forte do que o vento?!”
+
+Minha mãe a sorrir olhou pros céus
+E respondeu: – “Um Ser que nós não vemos
+É maior do que o mar que nós tememos,
+Mais forte que o tufão! meu filho, é – Deus!”
+
+
+
+03/09/2026
+Aula 12 - Adjetivo II
+
+Objetivo
+Flexão de gênero dos adjetivos;
+Flexão de número dos adjetivos;
+Substantivação dos adjetivos.
+
+1. Flexão de gênero dos adjetivos
+Seguem o gênero dos substantivos.
+
+
+2. Flexão de número dos adjetivos
+Simples e compostos.
+Simples
+Adjetivos com um radical só.
+Seguem as mesmas regras do substantivos.
+Compostos
+Regra geral: apenas o último elemento recebe forma de plural.
+Consultório médico-cirúrgico
+Consultórios médico-cirúrgicos
+Instituto afro-asiático
+Institutos afro-asiáticos
+Exceção: surdo-mudo → surdos-mudos
+
+3. Substantivação dos adjetivos
+
+O [céu] cinzento indicava chuva.
+O [cinzento] do céu indicava chuva.
+
+[Substantivo] [Adjetivo] → [Verbo] → [Complemento]
+
+Tenho medo de lugar escuro.
+Tenho medo do escuro.
+
+Substantivação do adjetivo → Determinação via artigo, pronome ou adjetivo.
+Escuro (adj.) ≠ O escuro (subst.)
+Cinzento (adj.) ≠ O cinzento (subst.)
+

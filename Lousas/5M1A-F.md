@@ -231,4 +231,110 @@ dói → doi
 sóis 
 
 
+31/08/2026
+Aula 10
+
+Objetivos
+Acentuação
+Oxítonas
+Proparoxítonas
+
+1. Acentuação: oxítonas
+Acentuam-se palavras oxítonas terminadas em: -A(s), -E(s), -O(s), -EM, -ENS
+sofá / sofás → sofa
+café / cafés → cafe
+cipó / cipós → cipo
+também → tambem
+parabéns → parabens
+
+Ditongos abertos tônicos na última sílaba: -ÉI(s), -ÉU(s), -ÓI(s)
+papéis → papeis
+troféu / troféus → trofeus
+herói / heróis → heroi / herois
+
+Formas verbais + pronomes (-lo, -la, -los, -las)
+Regra geral: cortar -R, -S ou -Z no final:
+comprar + o = comprá-lo → compra-lo
+fazer + o = fazê-lo → faze-lo
+compor + a = compô-la. → compo-la
+
+2. Acentuação: proparoxítonas
+Regra geral: todas são acentuadas.
+oxítona
+sílaba
+máquina
+
+02/09/2026
+Aula 11
+
+Objetivos
+Acentuação
+Paroxítonas;
+Hiato;
+Comentário sobre a utilidade da ortografia para a vida humana.
+
+
+1. Acentuação: paroxítonas
+NÃO são acentuadas as paroxítonas terminadas em -A(s), -E(s), -O(s), -EM, -ENS
+mesa; → mêsa
+pele; → péle
+copo; → cópo
+item / itens. → ítens
+
+Outros casos:
+repórter
+tórax
+fácil 
+júri
+vírus
+órfão
+bênção
+álbum
+história
+
+
+2. Hiato
+Acentuam-se I e U tônicos nestes casos:
+sa-í-da
+sa-ú-de
+pa-ís
+ba-ú
+
+
+03/09/2026
+Aula 12
+
+Objetivos
+Acentuação: ditongos abertos
+Pontuação
+Para que serve pontuação?
+Ponto final;
+Ponto de exclamação;
+Ponto de interrogação.
+
+1. Acentuação: ditongos abertos (ÉI, ÉU, ÓI)
+Acentuam-se somente monossílabos tônicos e palavras oxítonas.
+céu
+réu
+pastéis
+herói
+troféu
+Perderam acento as palavras paroxítonas.
+ideia → idéia
+assembleia → assembléia
+jiboia → jibóia
+
+
+2. Para que serve pontuação?
+Reconstituir a entonação da fala.
+
+3. Ponto final
+Marcar fim de frase.
+“Estou parada, sozinha, na frente da casa de estância, olhando para o poente. O sol parece uma grande laranja temporã, cujo somo escorre pelas faces da tarde.” (Érico Verissimo).
+Abreviaturas
+Pe. → Padre
+Dr. → Doutor
+Ltda. → Limitada
+Cia. → Companhia
+Etc. → Et cetera
 

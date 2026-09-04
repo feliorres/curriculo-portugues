@@ -334,3 +334,126 @@ Intensificação e notoriedade
 Jogaço, problemão, filmaço
 
 
+01/09/2026
+Aula 10
+
+Objetivos
+O que é adjetivo;
+Identificação de adjetivos no texto.
+
+1. O que é adjetivo
+Palavra que qualifica um substantivo.
+
+2. Identificação de adjetivos no texto
+
+"Deus”, Casimiro de Abreu
+Eu me lembro! eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E, erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+Eu disse a minha mãe nesse momento:
+“Que dura orquestra! Que furor insano!
+Que pode haver maior do que o oceano,
+Ou que seja mais forte do que o vento?!”
+
+Minha mãe a sorrir olhou pros céus
+E respondeu: – “Um Ser que nós não vemos
+É maior do que o mar que nós tememos,
+Mais forte que o tufão! meu filho, é – Deus!”
+
+
+02/09/2026
+Aulas 11 e 12
+
+Objetivos
+Análise morfológica em textos: substantivos e adjetivos;
+Adjetivos
+Substantivação dos adjetivos;
+Flexão de número de adjetivos;
+Flexão de gênero de adjetivos;
+Graus de adjetivos:
+Comparativo;
+Superlativo.
+
+1. Análise morfológica em textos: substantivos e adjetivos
+
+“Os Lusíadas” (Luís de Camões) - I, 1
+As armas e os Barões assinalados
+Que, da Ocidental praia Lusitana,
+Por mares nunca de antes navegados
+Passaram ainda além da Taprobana,
+Em perigos e guerras esforçados,
+Mais do que prometia a força humana,
+E entre gente remota edificaram
+Novo reino, que tanto sublimaram;
+
+I, 6
+E vós, ó bem nascida segurança
+Da Lusitana antiga liberdade,
+E não menos certíssima esperança
+De aumento da pequena Cristandade;
+Vós, ó novo temor da Maura lança,
+Maravilha fatal da nossa idade,
+Dada ao mundo por Deus, que todo o mande,
+Para do mundo a Deus dar parte grande;
+
+2. Substantivação dos adjetivos
+Processo de transformação de uma palavra de outra classe em substantivo.
+O céu cinzento indica chuva.
+O cinzento do céu indica chuva.
+
+3. Flexão de número de adjetivos
+Formas no singular e no plural:
+Aluno estudioso | Alunos estudiosos.
+Adjetivos simples seguem as regras a que obedecem os substantivos.
+
+Plural de adjetivos compostos
+Somente o último elemento vai para o plural.
+Consultório médico-cirúrgico; 
+Consultórios médico-cirúrgicos
+Instituto afro-asiático;
+Institutos afro-asiáticos
+Letra anglo-germânica.
+Letras anglo-germânicas.
+Exceção: surdo-mudo → surdos-mudos
+
+4. Flexão de gênero de adjetivos
+O adjetivo assume o gênero (masc. ou fem.) do substantivo.
+
+
+5. Graus de adjetivos
+Comparativo e superlativo.
+
+
+
+Comparativo
+Indica:
+que um ser possui determinada qualidade em grau superior, igual ou inferior a outro:
+Pedro é mais estudioso do que Paulo.
+Álvaro é tão estudioso quanto Pedro.
+que num mesmo ser determinada qualidade é superior, igual ou inferior a outra:
+Paulo é mais inteligente que estudioso.
+Álvaro é menos inteligente do que estudioso.
+
+Superlativo
+Pode denotar:
+que um ser apresenta elevado grau de determinada qualidade (superlativo absoluto):
+Paulo é inteligentíssimo.
+Pedro é muito inteligente.
+que, em comparação com a totalidade dos seres, um se sobressai (superlativo relativo):
+Carlos é o aluno mais estudioso do Colégio.
+João é o aluno menos estudioso do Colégio.
+
+Superlativo absoluto sintético
+Expresso por uma só palavra
+amigo → amicíssimo
+estudioso → estudiosíssimo
+triste → tristíssimo
+
+Superlativo absoluto analítico
+Formado com outra palavra, geralmente advérbio:
+estudioso → muito estudioso
+triste → imensamente triste
+prejudicial → grandemente prejudicial
+

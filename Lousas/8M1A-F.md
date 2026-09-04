@@ -161,3 +161,136 @@ tenente-coronel → tenentes-coronéis
 vitória-régia → vitórias-régias
 
 
+01/09/2026
+Aula 10
+
+Objetivos
+Valores de significado em substantivos
+Graus aumentativo e diminutivo;
+Valores de sentido em textos.
+
+1. Graus aumentativo e diminutivo
+Grau aumentativo: nível de sentido de aumento.
+boca → bocarra
+jogo → jogaço
+Grau diminutivo: nível de sentido de diminuição.
+mãe → mãezinha
+jornal → jornaleco
+
+
+2. Valores de sentido em textos
+A avó, Olavo Bilac
+A avó, que tem oitenta anos,
+Está tão fraca e velhinha!...
+Teve tantos desenganos!
+Ficou branquinha, branquinha,
+Com os desgostos humanos.
+
+
+Os Lusíadas I, 3
+Cessem do sábio Grego e do Troiano
+As navegações grandes que fizeram;
+Cale-se de Alexandro e de Trajano
+A fama das vitórias que tiveram;
+Que eu canto o peito ilustre Lusitano,
+A quem Netuno e Marte obedeceram.
+Cesse tudo o que a Musa antiga canta,
+Que outro valor mais alto se levanta.
+
+Afetividade, delicadeza
+Expressão de intimidade, ternura. Atenuação de ordens ou pedidos.
+
+Intensificação e notoriedade
+jogaço, problemão, filmaço
+Ironia e sarcasmo
+Que filmaço, hein!
+
+Pejoratividade e desprezo
+Expressar rebaixamento de valor moral, estético ou social de algo.
+Jornal → Jornaleco
+Livro → Livreco
+Papel → Papelão
+Tipo → Tipinho
+
+
+02/09/2026
+Aula 11
+
+Objetivos
+O que é adjetivo;
+Identificação de adjetivos em textos: “Soneto de Natal” (Machado de Assis) e “Os Lusíadas” (I, 1).
+
+1. O que é adjetivo
+Palavra que qualifica o substantivo.
+
+
+2. Identificação de adjetivos em textos
+
+"Soneto de Natal”, Machado de Assis
+
+Um homem, — era aquela noite amiga,
+Noite cristã, berço do Nazareno, —
+Ao relembrar os dias de pequeno,
+E a viva dança, e a lépida cantiga,
+
+Quis transportar ao verso doce e ameno
+As sensações da sua idade antiga,
+Naquela mesma velha noite amiga,
+Noite cristã, berço do Nazareno.
+
+(...)
+
+
+TEXTO 2
+
+As armas e os Barões assinalados
+Que, da Ocidental praia Lusitana,
+Por mares nunca de antes navegados
+Passaram ainda além da Taprobana,
+Em perigos e guerras esforçados,
+Mais do que prometia a força humana,
+E entre gente remota edificaram
+Novo reino, que tanto sublimaram;
+
+
+03/09/2026
+Aula 12
+
+Objetivos
+Flexão de gênero dos adjetivos;
+Flexão de número dos adjetivos;
+Substantivação dos adjetivos;
+Graus dos adjetivos.
+Comparativo;
+Superlativo.
+
+1. Flexão de gênero dos adjetivos
+Seguem o gênero dos substantivos → Concordância nominal.
+
+2. Flexão de número dos adjetivos
+Adjetivos simples
+Seguem as mesmas regras dos substantivos simples.
+Adjetivos compostos
+O último elemento recebe forma de plural.
+Consultório médico-cirúrgico
+Consultórios médico-cirúrgicos
+Instituto afro-asiático
+Institutos afro-asiáticos
+Letra anglo-germânica
+Letras anglo-germânicas
+Exceção: surdo-mudo → surdos-mudos
+
+
+3. Substantivação dos adjetivos
+
+O céu cinzento indicava chuva.
+
+O cinzento do céu indicava chuva.
+
+Substantivo + adjetivo + verbo
+
+—
+
+Tenho medo de lugar escuro.
+
+Tenho medo do escuro.
