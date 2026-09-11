@@ -380,3 +380,41 @@ Substantivação do adjetivo → Determinação via artigo, pronome ou adjetivo.
 Escuro (adj.) ≠ O escuro (subst.)
 Cinzento (adj.) ≠ O cinzento (subst.)
 
+10/09/2026
+Aula 13 - Adjetivo III
+
+Objetivos
+Revisão da substantivação dos adjetivos;
+Graus dos adjetivos
+Comparativo;
+Superlativo.
+
+1. Revisão da substantivação dos adj.
+
+Tenho | medo | de | lugar | escuro.
+
+Tenho | medo | do | escuro.
+
+Processo de transformação de um adj. em subst.
+Pode ocorrer por meio de uso de art., pron. ou adj.
+Art.: escuro → o escuro
+Pron.: escuro → este escuro
+adj.: escuro → escuro amedrontador
+
+2. Graus dos adjetivos
+Níveis de intensidade de significado dos adjetivos.
+Comparativo e superlativo.
+
+3. Comparativo
+Pode indicar:
+que um ser possui determinada qualidade em grau superior, inferior ou igual a outro:
+Pedro é mais estudioso do que Paulo. → Superior.
+Paulo é menos estudioso do que Pedro. → Inferior.
+Álvaro é tão estudioso quanto Pedro. → Iguald.
+que um ser tem em si mesmo graus diferentes de qualidades diferentes:
+Pedro é mais inteligente do que estudioso.
+menos… que…
+tão… quanto…
+
+4. Superlativo
+Super → sobre; muito

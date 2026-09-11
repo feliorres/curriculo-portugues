@@ -25,4 +25,10 @@ PASSO 3
 
 Converta as questões aprovadas abaixo para GIFT. Preserve literalmente o texto e o gabarito. Use nomes únicos, deixe uma linha em branco entre as questões e escape os caracteres especiais. Entregue um único bloco de texto simples em UTF-8.
 
+===
+
+DIRETRIZES
+
 O título das questões deve constar somente do número das questões, exemplo: Q01.
+
+Não coloque nas questões referências diretas às fontes ou "ao que foi apresentado em aula", etc. Elimine coisas do gênero: "De acordo com as regras de acentuação apresentadas na fonte...".

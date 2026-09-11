@@ -457,3 +457,155 @@ estudioso → muito estudioso
 triste → imensamente triste
 prejudicial → grandemente prejudicial
 
+08/09/2026
+Aula 13
+
+Objetivos
+Correção da Tarefa - Semana 3;
+Introdução à concordância nominal.
+
+1. Correção da Tarefa - Semana 3
+
+O advérbio “não” significa circunstância de negação. O adv. "hoje” significa circunstância de tempo.
+
+Substantivos concretos: consigo imaginá-los diretamente por si mesmos. Ex.: elefante. Substantivos abstratos: preciso imaginar outra coisa para imaginá-los. Ex.: alimentação.
+
+Aglutinação → Formação de substantivos com supressão de sons ou alteração. 
+Planalto → Plano + alto
+
+Substantivos sobrecomuns possuem apenas um gênero gramatical fixo, e o artigo não se altera para indicar outro gênero da palavra.
+O cônjuge
+A testemunha
+A vítima
+
+Substantivo primitivo é aquele que não provém de outra palavra da língua, enquanto o substantivo derivado procede de um primitivo. Exemplos: dente → dentista; pedra → pedreiro.
+2. Concordância nominal
+Concordância nominal = concordância dos nomes. 
+Nomes = Substantivo e adjetivo.
+Regra geral: Adjetivo segue gênero e número do substantivo a que se refere.
+Disse o mostrengo, e rodou três vezes,
+Três vezes rodou imundo e grosso…
+(Fernando Pessoa)
+
+09/09/2026
+Aulas 14 e 15 - Concordância nominal I
+
+Objetivos
+Introdução à concordância nominal;
+Casos de concordância entre substantivos e um adjetivo;
+Casos especiais de concordância nominal.
+
+1. Introdução à concordância nominal
+Concordância nominal = concordância dos nomes. 
+Nomes = Substantivo e adjetivo.
+Regra geral: Adjetivo segue gênero e número do substantivo a que se refere.
+Disse o mostrengo, e rodou três vezes,
+Três vezes rodou imundo e grosso…
+(Fernando Pessoa)
+
+
+2. Casos de concordância entre substantivos e um adjetivo;
+
+Adjetivo vem antes do substantivo → Concordar o gênero e o número com o substantivo mais próximo. 
+Vivia em tranquilos bosques e montanhas.
+Vivia em tranquilas montanhas e bosques.
+
+Adjetivo vem depois do substantivo
+Substantivos de mesmo gênero e no singular → Adjetivo toma o gênero dos substantivos. E, quanto ao número, vai para:
+o singular (mais comum):
+A professora estava com um vestido e um chapéu escuro.
+o plural (mais raro):
+A professora estava com um vestido eum chapéu escuros.
+
+Substantivos com gêneros diferentes e no singular → Adjetivo pode concordar:
+Com o substantivo mais próximo (mais comum)
+A professora estava com uma saia e um chapéu escuro.
+com os substantivos com conjunto, indo para o masc. pl. (mais raro).
+A professora estava com uma saia e um chapéu escuros.
+
+= Gênero / ≠ Número → O adjetivo pode ir para o plural:
+Ela comprou dois vestidos e um chapéu escuros.
+
+
+≠ Gênero / Número: plural → Adjetivo para o plural.
+Ela comprou saias e chapéus escuros.
+
+≠ Gênero / ≠ Número
+Mais comum:
+Ela comprou saias e chapéu escuros.
+Outra possibilidade:
+Estudo o idioma e as tradições portuguesas.
+
+Adjetivo como predicativo
+= Gênero / = Número → Adjetivo concorda plenamento.
+O livro e o caderno são novos.
+A porta e a janela estavam abertas.
+≠ Gênero → Adj. vai normalmente para o masc. pl.
+O livro e a caneta são novos.
+A janela e o portão estavam abertos.
+Verbo de ligação anteposto → Verbo concorda com o nome mais próximo.
+Era novo o livro e a caneta.
+Estava aberta a janela e o portão.
+
+
+
+3. Casos especiais de concordância
+
+	3.1 Anexo e incluso
+Concordância padrão:
+“O documento segue anexo.”
+“Os documentos seguem anexos.”
+“A planilha segue anexa.”
+“A taxa está inclusa no valor”.
+“Em anexo”
+“O documento segue em anexo.”
+“Seguem em anexo as faturas.”
+
+3.2 Mesmo e próprio
+Concordância padrão
+“Ela mesma elaborou o parecer técnico”
+“Eles mesmos arcaram com os custos”
+“Ela própria elaborou o parecer técnico”
+Eles próprios arcaram com os custos”
+Ponto de confusão: mesmo
+“Elas vão mesmo viajar hoje?” → mesmo = realmente, de fato
+“O mesmo”
+INCORRETO: “O réu foi ouvido e o mesmo confessou o crime”.
+CORRETO: “O réu foi ouvido e confirmou o crime”,
+
+
+
+
+3.3 Só
+“A  criança ficou só na sala”
+Só = somente OU Só = sozinha
+
+“Os irmãos ficaram sós após a partida dos pais”.
+Sós = sozinhos
+
+“Ele queria ficar a sós” = “Ele queria ficar sozinho.”
+INCORRETO: “Ele queria ficar a só”
+
+3.4 Bastante
+Encontramos bastantes inconsistências na pesquisa.
+Encontramos muitas…
+Havia motivos bastantes para o cancelamento.
+Havia motivos suficientes…
+Isto é o bastante.
+Isto é o suficiente.
+Advérbio
+Eles são bastante competentes.
+Eles são muito competentes.
+Ela estudou bastante para o exame.
+Ela estudou muito para o exame.
+
+
+3.5 É bom / É necessário / É proibido / É permitido
+Sem determinante
+Paciência é necessário.
+Entrada é proibido.
+Com determinante
+A paciência é necessária.
+A entrada é proibida.
+É proibido entrada de veículos.
+É proibida a entrada de veículo.

@@ -428,3 +428,40 @@ Expresso com ajuda de outra palavra, geralmente adv.
 muito amigo
 grandemente estudioso
 imensamente triste
+
+10/09/2026
+Aula 13 - Concordância nominal I
+
+Objetivos
+Definição;
+Casos de concordância entre adj. + substantivos
+Casos especiais de concordância.
+
+1. Definição
+Concordância entre nomes: substantivos e adjetivos.
+Regra geral: adj. segue gênero e número do subst. a que se refere.
+Disse o mostrengo, e rodou três vezes,
+Três vezes rodou imundo e grosso…
+(Fernando Pessoa)
+Os homens continuam a passar, indiferentes. (O. Mendes)
+
+2. Casos de concordância entre adj. + substantivos
+Adj. vem antes do substantivo.
+Adj. concorda com o subst. mais próximo.
+Vivia em tranquilos bosques e montanhas.
+Vivia em tranquilas montanhas e bosques.
+
+
+Adj. vem depois dos subst.
+= Gênero / = Singular
+Mais comum: A professora estava com um vestido e um chapéu escuro.
+Mais rara: A professora estava com um vestido e um chapéu escuros.
+≠ Gênero / = Singular 
+Adj. concorda com o mais próximo
+A professora estava com uma saia e um chapéu escuros.
+= Gênero / ≠ Número
+A professora comprou dois vestido  e um chapéu escuros.
+
+
+A criança ficou só na sala.
+Só = somente / Só = sozinha

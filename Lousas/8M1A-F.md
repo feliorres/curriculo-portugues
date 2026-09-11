@@ -294,3 +294,119 @@ Substantivo + adjetivo + verbo
 Tenho medo de lugar escuro.
 
 Tenho medo do escuro.
+
+08/09/2026
+Aula 13
+
+Objetivos
+Correção da Tarefa - Semana 3
+
+
+Correção da Tarefa - Semana 3
+Qual é o objeto de estudo da Sintaxe? Relação entre as palavras nas orações: o que as palavras “fazem”; as funções das palavras.
+Conectivos (preposições e conjunções) atuam apenas como conectivos e não possuem função sintática.
+
+
+09/09/2026
+Aula 14
+
+Objetivos
+Apresentação dos adjetivos superlativos em trecho de “Dom Casmurro”, de Machado de Assis.
+Graus dos adjetivos
+Comparativo;
+Superlativo.
+
+1. "Dom Casmurro”, Machado de Assis
+
+Capítulo IV
+José Dias amava os superlativos. Era um modo de dar feição monumental às ideias; não as havendo, servia a prolongar as frases. Levantou-se para ir buscar o gamão, que estava no interior da casa. Cosi-me muito à parede, e vi-o passar com as suas calças brancas engomadas, presilhas, rodaque e gravata de mola. Foi dos últimos que usaram presilhas no Rio de Janeiro, e talvez neste mundo. Trazia as calças curtas para que lhe ficassem bem esticadas. A gravata de cetim preto, com um arco de aço por dentro, imobilizava-lhe o pescoço; era então moda. O rodaque de chita, veste caseira e leve, parecia nele uma casaca de cerimônia. Era magro, chupado, com um princípio de calva; teria os seus cinqüenta e cinco anos. Levantou-se com o passo vagaroso do costume, não aquele vagar arrastado se era dos preguiçosos, mas um vagar calculado e deduzido, um silogismo completo, a premissa antes da conseqüência, a conseqüência antes da conclusão. Um dever amaríssimo! (amargo → amaríssimo)
+
+Capítulo CXLIII
+Morreu sereno, após uma agonia curta. Pouco antes ouviu que o céu estava lindo, e pediu que abríssemos a janela. 
+
+– Não, o ar pode fazer-lhe mal. 
+– Que mal? Ar é vida. 
+
+Abrimos a janela. Realmente, estava um céu azul e claro. José Dias soergueu-se e olhou para fora; após alguns instantes, deixou cair a cabeça, murmurando: “Lindíssimo!”. Foi a última palavra que proferiu neste mundo. Pobre José Dias! Por que hei de negar que chorei por ele?
+
+
+2. Graus dos adjetivos
+Níveis de intensidade de significado dos adjetivos.
+Os graus são: comparativo e superlativo.
+
+3. Comparativo
+Para indicar:
+que um ser tem determinada qualidade em grau superior, igual ou inferior a outro ser.
+Pedro é mais estudioso do que Paulo. → superior.
+Paulo é menos estudioso do que Pedro. → inferior.
+Álvaro é tão estudioso quanto Pedro. → iguald.
+que, em um mesmo ser, duas qualidades têm graus distintos.
+Pedro é mais estudioso do que humilde. → superior.
+Paulo é menos estudioso do que humilde. → inferior.
+Álvaro é tão estudioso quanto humilde. → igual.
+
+
+4. Superlativo
+Denota:
+que um ser tem elevado grau de determinada qualidade (superlativo absoluto)
+Paulo é inteligentíssimo.
+Lindíssimo!
+Muito lindo!
+
+10/09/2026
+Aula 15
+
+Objetivos
+Conceito de superlativo;
+Formação do superlativo: sintético e analítico.
+
+
+
+1. Superlativo
+Denota:
+que um ser tem elevado grau de determinada qualidade (superlativo absoluto)
+Paulo é inteligentíssimo.
+Lindíssimo!
+Muito lindo!
+que um ser, em comparação com a totalidades dos seres, é superior em determinada qualidade (superlativo relativo)
+Paulo é o mais inteligente do Colégio.
+João é o menos inteligente do Colégio.
+
+Absoluto = completo por si mesmo. | Relativo = tem relação com outros.
+
+
+2. Superlativo absoluto
+
+Sintético = resumido; uno | Analítico = detalhado; separado; expandido
+
+
+2.1 Sintético
+Expresso por um só palavra.
+Inteligentíssimo.
+Tristíssimo.
+
+2.2 Analítico
+Expresso por mais de uma palavra.
+Muito inteligente.
+Muito triste.
+
+
+3. Formação do superlativo absoluto sintético
+
+Acréscimo de -íssimo:
+Fértil → Fertilíssimo
+Original → Originalíssimo
+Vogal → Suprime-se a vogal e acrescenta-se -íssimo:
+Belo → Belíssimo
+Lindo → Lindíssimo
+Terminam em -vel com forma latina:
+Amável → Amabilíssimo
+Terrível → Terribilíssimo
+Terminam em -z → -císsimo
+Capaz → Capacíssimo
+Feliz → Felicíssimo
+Terminam em vogal nasal → -níssimo
+Comum → Comuníssimo
+Terminam em -ão → -aníssimo
+Pagão → Paganíssimo
+Vã → Vaníssima

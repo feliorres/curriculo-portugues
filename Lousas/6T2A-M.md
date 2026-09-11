@@ -322,3 +322,58 @@ E respondeu: – “Um Ser que nós não vemos
 É maior do que o mar que nós tememos,
 Mais forte que o tufão! meu filho, é – Deus!”
 
+08/09/2026
+Aulas 13 e 14
+
+Objetivos
+Correção da Tarefa - Semana 3
+Flexão de gênero dos adjetivos;
+Flexão de número dos adjetivos;
+Substantivação dos adjetivos.
+
+
+1. Correção da Tarefa - Semana 3
+
+Como se pode testar e confirmar se uma palavra funciona como substantivo na frase? Verificando se a palavra aceita ser acompanhada por um artigo ou pronome (como "o/a", "um/uma", "meu/minha").
+Pássaro → O pássaro (correto: é substantivo)
+voou → O voou (errado: não é substantivo)
+
+Substantivos próprios designam seres únicos e específicos e devem ser grafados com letra inicial maiúscula.
+Brasil, Thiago, Anchieta
+
+Substantivos abstratos são aqueles que dependem de outro ser para serem concebidos.
+fome, beleza, alimentação
+
+Substantivos derivados são aqueles que procedem de outra palavra existente na língua.
+pedra → pedreiro, pedraria, pedreira
+
+Substantivos sobrecomuns possuem um único gênero gramatical fixo e invariável. O artigo nunca muda para indicar o gênero (masc./fem.) do ser.
+A criança
+A vítima
+O cônjuge
+
+
+2. Flexão de gênero dos adjetivos
+Assumem gênero do substantivo a que se referem.
+O monstro assombroso.
+
+3. Flexão de número dos adjetivos
+Adjetivos simples → Têm somente um radical. Exemplos: estudioso, grande, brasileiro.
+Seguem as mesmas regras dos substantivos.
+
+Adjetivos compostos → Têm mais de um radical. 
+O último elemento vai para o plural.
+Consultório médico-cirúrgico 
+Plural: Consultórios médico-cirúrgicos
+Instituto afro-asiático
+Plural: Institutos afro-asiáticos
+Letra anglo-germânica
+Plural: Letras anglo-germânicas
+
+Exceção: surdo-mudo → surdos-mudos
+4. Substantivação dos adjetivos
+Processo de transformação de uma palavra que não é substantivo em substantivo.
+O céu             |  cinzento | indica | chuva.
+O cinzento |  do céu       | indica | chuva
+
+

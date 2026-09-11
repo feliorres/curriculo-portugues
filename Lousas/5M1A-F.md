@@ -338,3 +338,36 @@ Ltda. → Limitada
 Cia. → Companhia
 Etc. → Et cetera
 
+10/09/2026
+Aula 13 - Pontuação I
+
+Objetivos
+Ponto de interrogação;
+Ponto de exclamação;
+Vírgula.
+
+1. Ponto de interrogação
+Para fazer perguntas.
+
+
+– Então a coisa sai mesmo? 
+– Se sai? Já saiu! Não viu os jornais? 
+(Érico Verissimo)
+
+– Vão para África, então? O Paulo decidiu-se? 
+(Luandino Vieira)
+
+Interrogação + reticências → Pergunta com certo receio, hesitação. 
+– Quem está aí?...
+– Então?... que foi isso?... a comadre?... (Artur Azevedo)
+
+Interrogação + exclamação → Pergunta com supresa, ira, etc.
+– Estás a ver se disfarças?!... (Alves Redol)
+– Coitada!... quem diria… quem imaginaria que acabaria assim!? (A. de Assis Júnior)
+
+
+3. Ponto de exclamação
+Marcar surpresa, intensidade, ênfase.
+Depois de interjeições ou termos equivalentes.
+Que pureza e correção de linhas! Que fidalguia de olhar e falar! (Camilo Castelo Branco)
+Adeus, senhor, adeus! (Ó. Ribas)

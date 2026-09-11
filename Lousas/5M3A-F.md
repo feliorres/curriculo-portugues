@@ -418,3 +418,61 @@ A meu pai, com efeito, ninguém fazia falta. (O. Lara Resende)
 6) Isolar circunstâncias (adjuntos adverbiais).
 Lá fora, a chuvada despenhou-se por fim. (C. de Oliveira)
 À noite, às vezes, fazia barulho. (A. F. Schmidt)
+
+08/09/2026
+Aula 13
+
+Objetivos
+Correção da Tarefa - Semana 3
+
+Revisão (correção da tarefa - Semana 3)
+
+Terminam em -izar palavras que não têm -s no radical.
+útil → utilizar
+
+Terminam em -eza os substantivos abstratos.
+nobreza
+beleza
+
+Usa-se X após ditongos (duas vogais na mesma sílaba).
+peixe
+faixa
+
+“Regra dos ímãs” no uso de hífen: letras iguais se repelem; letras diferentes se atraem.
+micro-ondas → iguais se repelem
+autoescola → diferentes se atraem
+
+11/09/2026
+Aula 14
+
+Objetivos
+Reticências;
+Ponto e vírgula;
+Dois pontos.
+
+1. Reticências (...)
+Omissão de algo que se deveria informar; interrupção; hesitação.
+Marcam interrupção da frase e suspensão da melodia.
+Quanto ao seu pai… Às vezes penso… Asseguro-lhe que é verdade. (M. J. de Carvalho)
+Marcam suspensões provocadas por hesitação, surpresa, dúvida, timidez:
+Eu… eu… queria… um agasalho – respondeu. (Graça Aranha)
+Marcam alegria, tristeza, cólera, sarcasmo.
+– Há que tempos eu não chorava!... Pois me vieram lágrimas… (Simões Lopes Neto)
+
+
+2. Ponto e vírgula (;)
+Intermediário entre o ponto e a vírgula.
+Seu emprego depende substancialmente do contexto.
+Não sabe mostrar-se magoada; é toda perdão e carinho. (Machado de Assis)
+Chamo-me Inácio; ele, Benedito. (Machado de Assis)
+
+3. Dois pontos (:)
+Marcar sensível suspensão da voz na melodia não concluída.
+Citação
+Como ele nada dissesse, o pai perguntou:
+– Queres ou não queres ir?
+(É. Verissimo)
+Enumeração
+À sua volta, tudo lhe parece chorar: as árvores, o capim, os insetos. (Ó. Ribas)
+Resumo, esclarecimento do que é dito
+Não era desgosto: era cansaço e vergonha.

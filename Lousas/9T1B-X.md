@@ -33,3 +33,16 @@ Verbos totais: farão, têm, revolve, sabe, reporte, sabe, é, alcança, darão,
 Orações subordinadas substantivas;
 Orações subordinadas adjetivas;
 Introdução às orações subordinadas adverbiais. 
+
+10/09/2026
+
+Orações subordinadas adverbiais
+Causal
+Comparativa
+Concessiva
+Condicional
+Conformativa
+Proporcional
+Consecutiva
+Final
+Temporal

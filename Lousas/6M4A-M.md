@@ -396,3 +396,66 @@ Se lá de cima a Guarda soberana
 Não acudir à fraca força humana?
 
 [Corrigir na próxima aula]
+
+08/09/2026
+Aula 13
+
+Correção da tarefa da Semana 3.
+
+O CABELO
+MEU CABELO
+CABELO PRETO
+
+
+O ANDEI
+MEU ANDEI
+ANDEI PRETO
+
+
+Como se pode testar e confirmar se uma palavra funciona como substantivo na frase?
+Verificando se a palavra aceita ser acompanhada por um artigo ou pronome (como "o/a", "um/uma", "meu/minha").
+
+Exemplos de substantivos próprios: Brasil, Tietê, Jesus.
+Exemplos de substantivos comuns: homem, escola, livro.
+
+Exemplo de substantivo composto: guarda-chuva
+Exemplo de substantivo simples: chuva
+
+
+Substantivo primitivo: pedra. 
+Substantivo derivado: pedreiro, pedreira, pedraria.
+
+
+
+10/09/2026
+Aula 14
+
+Objetivos
+Flexão de gênero dos adjetivos;
+Flexão de número dos adjetivos;
+Substantivação dos adjetivos.
+
+1. Flexão de gênero dos adjetivos
+Seguem o gênero dos substantivos a que se referem.
+Disse o Mostrengo, e rodou três vezes,
+Três vezes rodou, imundo e grosso…
+(Fernando Pessoa)
+
+2. Flexão de número dos adjetivos
+Adjetivos simples e compostos.
+Simples
+Têm um só radical. → imundo, bom, etc.
+Seguem as mesmas regras dos substantivos.
+Compostos
+Regra geral: apenas o último elemento recebe forma de plural.
+Consultório médico-cirúrgico
+Consultórios médico-cirúrgicos
+Instituto afro-asiático
+Institutos afro-asiáticos
+Exceção: surdo-mudo → surdos-mudos
+
+3. Substantivação dos adjetivos
+Processo de transformação de um adjetivo em substantivo.
+
+O céu            | cinzento | indicava | chuva.
+O cinzento | do céu        | indicava | chuva.

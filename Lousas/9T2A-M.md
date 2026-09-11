@@ -294,3 +294,26 @@ Advérbio é palavra que qualifica o verbo, o adjetivo ou outro advérbio.
 
 O menino dorme tranquilo.
 Os meninos dormem tranquilos.
+
+09/09/2026
+Aula 13
+
+Objetivos
+Identificar superlativos, adjetivos e seus significados em trecho literário: “Dom Casmurro”, de Machado de Assis.
+
+"Dom Casmurro”, Machado de Assis
+
+Capítulo IV
+José Dias amava os superlativos. Era um modo de dar feição monumental às ideias; não as havendo, servia a prolongar as frases. 
+
+Era um modo de dar aparência grandiosa às ideias; não as [ideias] havendo, [usar os superlativos] servia a prolongar as frases. 
+
+Levantou-se para ir buscar o gamão, que estava no interior da casa. Cosi-me muito à parede, e vi-o passar com as suas calças brancas engomadas, presilhas, rodaque e gravata de mola. Foi dos últimos que usaram presilhas no Rio de Janeiro, e talvez neste mundo. Trazia as calças curtas para que lhe ficassem bem esticadas. A gravata de cetim preto, com um arco de aço por dentro, imobilizava-lhe o pescoço; era então moda. O rodaque de chita, veste caseira e leve, parecia nele uma casaca de cerimônia. Era magro, chupado, com um princípio de calva; teria os seus cinqüenta e cinco anos. Levantou-se com o passo vagaroso do costume, não aquele vagar arrastado se era dos preguiçosos, mas um vagar calculado e deduzido, um silogismo completo, a premissa antes da conseqüência, a conseqüência antes da conclusão. Um dever amaríssimo!
+
+Capítulo CXLIII
+Morreu sereno, após uma agonia curta. Pouco antes ouviu que o céu estava lindo, e pediu que abríssemos a janela. 
+
+– Não, o ar pode fazer-lhe mal. 
+– Que mal? Ar é vida. 
+
+Abrimos a janela. Realmente, estava um céu azul e claro. José Dias soergueu-se e olhou para fora; após alguns instantes, deixou cair a cabeça, murmurando: “Lindíssimo!”. Foi a última palavra que proferiu neste mundo. Pobre José Dias! Por que hei de negar que chorei por ele?

@@ -303,6 +303,7 @@ Doutor → Dr.
 Professor → Prof. 
 Página → pág.
 Et cetera → etc.
+
 01/09/2026
 Aula 12
 
@@ -343,4 +344,26 @@ Combinação com ponto de interrogação:
 – Coitada!... quem diria… quem imaginaria que acabaria assim!?
 (A. de Assis Júnior)
 
+08/09/2026
+Aula 13
+
+Objetivo
+Correção da Tarefa - Semana 3
+
+1. Correção da Tarefa - Semana 3
+O verbo é grafado com a terminação -izar (com Z) se não possuir a letra "s" no radical de sua palavra primitiva.
+Útil → Utilizar
+O sufixo -ez / -eza (com Z) é utilizado na formação de substantivos abstratos.
+Nobreza
+Pobreza
+Limpeza
+
+Ditongo: encontro de vogais na mesma sílaba.
+Vo - gais
+Pei - xe
+Fei - xe
+
+Regra de hífen com R e S: juntar e dobrar a letra.
+auto + suficiente = autossuficiente
+auto + referente = autorreferente
 
