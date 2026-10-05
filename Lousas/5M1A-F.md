@@ -371,3 +371,216 @@ Marcar surpresa, intensidade, ênfase.
 Depois de interjeições ou termos equivalentes.
 Que pureza e correção de linhas! Que fidalguia de olhar e falar! (Camilo Castelo Branco)
 Adeus, senhor, adeus! (Ó. Ribas)
+
+10/09/2026
+Aula 13 - Pontuação I
+
+Objetivos
+Ponto de interrogação;
+Ponto de exclamação.
+
+1. Ponto de interrogação
+Para fazer perguntas.
+
+
+– Então a coisa sai mesmo? 
+– Se sai? Já saiu! Não viu os jornais? 
+(Érico Verissimo)
+
+– Vão para África, então? O Paulo decidiu-se? 
+(Luandino Vieira)
+
+Interrogação + reticências → Pergunta com certo receio, hesitação. 
+– Quem está aí?...
+– Então?... que foi isso?... a comadre?... (Artur Azevedo)
+
+Interrogação + exclamação → Pergunta com supresa, ira, etc.
+– Estás a ver se disfarças?!... (Alves Redol)
+– Coitada!... quem diria… quem imaginaria que acabaria assim!? (A. de Assis Júnior)
+
+
+3. Ponto de exclamação
+Marcar surpresa, intensidade, ênfase.
+Depois de interjeições ou termos equivalentes.
+Que pureza e correção de linhas! Que fidalguia de olhar e falar! (Camilo Castelo Branco)
+Adeus, senhor, adeus! (Ó. Ribas)
+
+
+14/09/2026
+Aula 14
+
+Objetivo
+Correção da Tarefa - Semana 4
+
+1. Qual é a principal função dos sinais de pontuação na escrita? Reconstituir a entonação da fala e reproduzir a elocução oral.
+
+2. Ponto final também pode ser usado para abreviaturas. Ex.: etc., Dr.
+
+3. NÃO são acentuadas as paroxítonas terminadas em -A(s), -E(s), -O(s), -EM, -ENS
+mesa; → mêsa
+pele; → péle
+copo; → cópo
+item / itens. → ítens
+
+
+16/09/2026
+Aula 15
+
+Objetivos
+Vírgula;
+Reticências;
+Ponto e vírgula.
+
+1. Vírgula
+Marca pausa curta.
+1) Separar elementos.
+Achava os homens declamadores, grosseiros, cansativos… (M. de Assis)
+2) e, ou e nem
+Abrem-se lírios, e jasmins, e rosas. (A. de Oliveira)
+Nem eu, nem tu, nem ela…
+3) Isolar aposto
+Alice, a menina, estava feliz. (F. Namora)
+A meu pai, que é durão, nada faz falta.
+4) Isolar vocativo → SEMPRE isolado por vírgula.
+Bom dia, meninas.
+Filho, venha aqui!
+5) Separar elementos repetidos
+Santo, Santo, Santo! 
+Nada, nada que você diga vai bastar!
+6) Isolar circunstâncias
+À noite, às vezes, fazia barulho. (A. Schmidt)
+Lá fora, a chuvada desepenhou-se por fim. (C. de Oliveira)
+
+17/09/2026
+Aula 16
+
+Objetivos
+Reticências;
+Ponto e vírgula;
+Dois pontos.
+
+1. Reticências (...)
+Marcar interrupção da frase ou suspensão da melodia.
+Quanto ao seu pai… Às vezes penso… Asseguro-lhe que é verdade. (M. J. de Carvalho)
+Marcar hesitação, surpresa, timidez:
+Eu… eu… queria… um agasalho (Graça Aranha).
+Marcar alegria, tristeza, sarcasmo.
+Há tempos que eu não chorava!... 
+– A senhora ia dizer que…
+– Nada… nada… 
+
+2. Ponto e vírgula (;)
+Intermediário entre ponto e vírgula: pausa maior do que a vírgula e menor do que o ponto.
+Exemplos
+Não sabe mostrar-se magoada; é toda perdão e carinho. (M. de Assis)
+Chamo-me Inácio; ele, Benedito. (M. de Assis).
+
+3. Dois pontos (:)
+Marcam uma suspensão na melodia não concluída.
+Citação
+O pai perguntou: “Queres ou não queres ir?”.
+Enumeração
+À sua volta, tudo lhe parece chorar: as árvores, o capim, os insetos (Ó. Ribas)
+Esclarecimento
+Não era desgosto: era cansaço e vergonha.
+
+
+
+
+
+21/09/2026
+Aula 17
+
+Objetivo
+Correção da Tarefa - Semana 5
+
+1. "– Vão para África, então? O Paulo decidiu-se?" 
+Qual é a função da pontuação no trecho?
+Indicar formulação de pergunta direta.
+
+2. "Estou parada, sozinha, na frente da casa de estância, olhando para o poente. O sol parece uma grande laranja temporã, cujo sumo escorre pelas faces da tarde." 
+No texto, os pontos finais foram empregados com a finalidade de:
+Marcar pausa máxima para mudança de contexto.
+
+ANOTAR QUESTÃO 2 ASSIM: Os pontos finais são empregados com a finalidade de marcar pausa máxima.
+
+3. Frases abaixo:
+1) "O sol parece uma grande laranja temporã." 
+2) "Compareceram o Dr. Silva e representantes da firma Ltda."
+Qual é a diferença entre os usos do ponto final nas frases acima?
+1) Marcar pausa máxima.
+2) Abreviação.
+
+ANOTAR QUESTÃO 3 ASSIM: O ponto final marca também abreviações. Ex.: Dr. → Doutor
+4. “Que pureza e correção de linhas! Que fidalguia de olhar e falar!”
+– Silêncio!
+– Não aguento mais isso!
+
+Ênfase = Destaque, atenção maior sobre algo
+
+
+5. Ponto de interrogação + ponto de exclamação = ?!
+Para marcar uma dúvida com intensidade emocional.
+– Sério?
+
+
+23/09/2026
+Aula 18
+
+Objetivos
+
+PONTUAÇÃO
+Heloísa
+Bella
+Nardelli
+Elena
+Pietra
+Luíza
+Catarina
+
+4) O feirante vendeu isto: banana, maçã e mamão.
+
+5) Corra, corra!
+
+6) Que dia maravilhoso e ensolarado!
+
+7) O palestrante olhou para a plateia e declarou: “A educação transforma vidas”.
+
+8) Eu gostaria de falar sobre aquilo… mas talvez seja melhor esperar.
+
+9) Minha avó gosta de plantar flores, meu avô, da horta.
+
+10) Apenas uma coisa me preocupa agora: a saúde do meu irmão!
+
+11) O diretor entrou na sala e perguntou: “Quem quebrou a vidraça?!”.
+
+12) Comigo, meu amigo, está tudo bem.
+
+
+24/09/2026
+Aula 19
+
+Objetivos
+Estrutura de palavras
+Radical;
+Desinência;
+Desinências nominais;
+Desinências verbais.
+
+1. O que é o radical de uma palavra?
+Parte da palavra que contém o significado da família de palavras.
+Exemplo: amo, amor, amas, amaria, amador
+
+2. O que é desinência?
+Parte final da palavra que indica gênero, número e pessoa de uma palavra.
+Menino → -o = masculino
+Meninas → -a = feminino | -s = plural
+Falamos → 1º pessoa do plural = nós
+
+O que é gênero? Masculino e feminino.
+
+O que é número? Singular e plural.
+
+O que é pessoa? Eu, tu, ele, nós, vós, eles.
+
+

@@ -367,3 +367,163 @@ Regra de hífen com R e S: juntar e dobrar a letra.
 auto + suficiente = autossuficiente
 auto + referente = autorreferente
 
+14/09/2026
+Aulas 14 e 15
+
+Objetivos
+Correção da Tarefa - Semana 4
+
+1. Correção da Tarefa - Semana 4
+
+1. Qual é a principal função dos sinais de pontuação na escrita?
+Reconstituir a entonação da fala.
+
+2. O ponto final também é empregado para assinalar abreviaturas, como em "Dr." e "Etc.".
+
+3. NÃO são acentuadas as paroxítonas terminadas em -A(s), -E(s), -O(s), -EM(s), -ENS(s).
+mesa → mêsa
+pele → péle
+copo → cópo
+item / itens → ítem / ítens
+
+4. Hiato: encontro de duas vogais, mas em sílabas diferentes.
+Hi - a - to
+Pi - e - tro
+Ga - bri - el
+
+
+MEMORIZEM ISTO AQUI: 
+5. Classificação das palavras
+5.1 Oxítonas: Última sílaba é tônica.
+ca-fé, co-ra-ção
+	5.2 Paroxítonas: Penúltima sílaba é tônica.
+ca-ne-ta, li-vro
+	5.3 Proparoxítonas: Antepenúltima sílaba é tônica.
+ár-vo-re, mé-di-co
+
+5.4 Exercício: sílaba tônica
+Fe-li-pe → li → Paroxítona
+Ar-thur → thur → Oxítona
+Sa-mu-el → el → Oxítona
+Com-pu-ta-dor → dor → Oxítonas
+Fu-te-bol → bol → Oxítona
+Mé-xi-co → Mé → Proparoxítona
+Ben-ja-min → min → Oxítona
+
+
+15/09/2026
+Aula 16
+
+Objetivos
+Vírgula
+Separação de elementos;
+e e nem;
+Aposto;
+Vocativo;
+Isolar elementos repetidos;
+Isolar circunstâncias.
+Reticências
+Ponto e vírgula
+
+1. Vírgula
+Marcar pausa curta no texto.
+1) Separar elementos de mesma função.
+Achava os homens declamadores, grosseiros, cansativos, pesados, frívolos… (M. de Assis)
+2) e e nem
+Abrem-se lírios, e jasmins, e rosas.  (A. de Olveira) 
+Nem eu, nem tu, nem ela. 
+3) Vocativo - Sempre separado por vírgula. 
+Samuel, atenção aqui!
+Felipe, o microfone está aberto!
+Bom dia, Arthur.
+
+4) Aposto - Elemento explicativo.
+Alice, a menina, estava feliz. (F. Namora)
+A meu pai, de fato, ninguém fazia falta.
+5) Isolar elementos repetidos.
+– Nada, nada – dizia ele – é melhor que isso.
+6) Isolar circunstâncias
+Não, queremos descansar. 
+À noite, às vezes, fazia barulho. (A. F. Schmidt)
+
+
+2. Reticências (...)
+Marcar interrupção da frase e suspensão da melodia.
+Quanto ao seu pai… Às vezes penso… Asseguro-lhe que é verdade (M. J. de Carvalho)
+
+
+
+21/09/2026
+Aulas 17 e 18
+
+Objetivos
+Correção da Tarefa - Semana 5;
+Ponto e vírgula;
+Dois pontos;
+Ditado de pontuação.
+
+1. Correção da Tarefa - Semana 5
+
+1. Qual é a função do ponto de interrogação?
+Marcar pergunta.
+
+2. Para que os pontos finais foram usados no trecho abaixo?
+"Estou parada, sozinha, na frente da casa de estância, olhando para o poente. O sol parece uma grande laranja temporã, cujo sumo escorre pelas faces da tarde."
+Um dos usos do ponto final é marcar pausa máxima em um texto, entre frases ou no final.
+
+3. Além de marcar final de texto, o ponto final pode ser usado para quê?
+Para abreviações. Ex.: Dr. → Doutor.
+
+4. Qual é a função do ponto de exclamação?
+Marcar surpresa, intensidade emocional ou ênfase. 
+
+
+5. O que sinaliza ponto de interrogação + ponto de exclamação (?!)?
+Dúvida ou pergunta com surpresa, intensidade emocional ou ênfase.
+
+6. Interrogação + reticências (?...) marcam o quê?
+Marcam dúvida com receio (hesitação).
+Exemplo: – Então?... que foi isso?... a comadre?..." (Artur Azevedo)
+
+2. Ponto e vírgula (;)
+Marca pausa maior que a vírgula e menor que o ponto final.
+Seu emprego depende do contexto.
+Não sabe mostrar-se magoada; é toda perdão e carinho. (M. de Assis)
+Chamo-me Inácio; ele, Benedito. (M. de Assis)
+
+3. Dois pontos (:)
+Marcam suspensão na melodia da fala em uma frase não concluída.
+Citação:
+O pai perguntou: 
+– Queres ou não queres ir? (É. Verissimo)
+Enumeração:
+À  sua volta, tudo lhe parece chorar: as árvores, o capim, os insetos. (Ó. Ribas)
+
+
+Esclarecimento:
+Não era desgosto: era cansaço e vergonha.
+A razão é clara: eu não quero.
+
+4. Ditado de pontuação
+Bom dia, Maria. Você já terminou a leitura do livro?
+Santos Dumont, o pai da aviação, era brasileiro.
+Naquela manhã, eles decidiram partir.
+O feirante vendeu isto: banana, maçã e mamão.
+“Corra, corra!”, ele gritou.
+Que dia maravilhoso e ensolarado!
+
+
+22/09/2026
+Aula 19 
+
+Objetivos
+Finalização do ditado de pontuação e correção.
+
+
+1. Finalização do ditado de pontuação e correção
+O palestrante olhou para a plateia e declarou: “A educação transforma vidas”.
+Eu gostaria de falar sobre aquilo… mas talvez seja melhor esperar.
+Minha avó gosta de plantar flores; meu avô, da horta.
+ Apenas uma coisa me preocupa agora: a saúde do meu irmão.
+ O diretor entrou na sala e perguntou: “Quem quebrou a vidraça?”.
+ Comigo, meu amigo, está tudo sob controle.

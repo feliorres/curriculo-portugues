@@ -465,3 +465,244 @@ A professora comprou dois vestido  e um chapéu escuros.
 
 A criança ficou só na sala.
 Só = somente / Só = sozinha
+
+14/09/2026
+Aulas 14 e 15
+
+Objetivos
+Correção da Tarefa - Semana 4
+Concordância nominal II
+
+1. Qual é a função da classe gram. dos adj. na língua port.? Qualificar ou caracterizar o subst.. Exemplos: Rubia é alta.
+
+2. Superlativo = Grau de grande intensidade de um adj.
+Absouto = Não tem relação com outra coisa, somente consigo.
+Sintético = 1 palavra só.
+Analítico = 2 ou mais palavras.
+Exemplos = inteligentíssimo (sint.) / muito inteligente (anal.)	
+
+3. Comparativo de igualdade 
+→ Álvaro é tão estudioso quanto Pedro. = Os dois são igualmente estudiosos.
+
+4. Substantivação: processo pelo qual uma palavra assume função de substantivo. Exemplo: cinzento (adj.) → o cinzento (subst.)
+
+
+2. Concordância nominal II
+
+2.1 Concordância do predicativo
+= Gênero / = Singular → Adj. vai para o plural.
+O livro e o caderno são novos.
+A porta e a janela estavam fechadas.  
+
+≠ Gênero / = Singular → Adj. vai para masc. pl.
+O livro e a caneca são novos.
+A janela e o portão estão fechados.    
+
+É justo | que uma nação venere os seus poetas. 
+É justo [isto] → [Isto] é justo. 
+É honroso | morrer pela pátria.
+
+Adjetivo é palavra que qualifica substantivo.
+
+Aquele homem é justo.
+O justo vive da fé.
+O justo vale a pena. 
+
+
+
+
+17/09/2026
+Aula 16
+
+Objetivos
+Casos especiais de concordância.
+
+ 1. Anexo e incluso
+ANEXO
+“Seguem em anexas as faturas”  
+“Os documentos seguem anexo”       
+Correto: 
+“Seguem em anexo as faturas”  
+“Os documentos seguem anexos”
+INCLUSO
+“A taxa está inclusa no valor total”.
+A taxa foi incluída no valor total.
+“Os comprovantes estão inclusos no processo.”    
+
+
+
+2. Mesmo e próprio
+
+MESMO = PRÓPRIO
+Foi ele mesmo que escreveu.
+Foi ela mesma que escreveu.
+= Foi ela própria que escreveu. 
+Foi ela mesmo que escreveu. 
+Eles mesmo escreveram.
+
+MESMO = REALMENTE
+Eles vão mesmo viajar?
+Eles vão realmente viajar? 
+Ela vai mesma viajar?  
+Ela vai realmente viajar?
+
+MESMO → “O MESMO”
+Não usar “o mesmo”.
+“O réu foi ouvido e o mesmo confessou o crime”  
+“O réu foi ouvido e confessou o crime”.   
+
+
+3. Só
+Adjetivo
+Comporta-se como adjetivo.
+A criança estava só na sala.
+A criança estava sozinha na sala.
+As crianças estavam sós na sala.
+…estavam sozinhas na sala.
+
+Advérbio
+É invariável.
+Trouxeram só duas caixas.
+Trouxeram somente duas caixas.
+É só uma coisa.
+É somente uma coisa.
+
+A sós	
+Invariável.
+A criança estava a sós.
+As crianças estavam a sós.
+
+
+21/09/2026
+Aulas 17 e 18
+
+Objetivo
+Correção da Tarefa - Semana 5;
+Casos especiais de concordância nominal.
+
+1. Correção da Tarefa - Semana 5
+
+1. Qual é a função gramatical principal do adjetivo?
+Caracterizar um substantivo. Exemplo: O céu (subst.) é azul (adj.).
+
+2. Considere as duas construções a seguir: 
+1) O céu cinzento indica chuva. 
+2) O cinzento do céu indica chuva. 
+Na frase 2, a palavra "cinzento" passou por qual processo morfossintático?
+Substantivação, pois na frase 2 “cinzento” está sendo tomado como um ser. 
+
+
+
+Substantivação: não substantivo → substantivo
+Céu (subst.) cinzento (adj.) → O cinzento me desagrada.
+Este lugar (subst.) é escuro → Tenho medo do escuro.
+ 
+Substantivo: palavra que nomeia substâncias, seres.
+Adjetivo: palavra que dá característica ao substantivo.
+
+
+3. Na frase "Pedro é mais estudioso do que Paulo", o adjetivo "estudioso" encontra-se empregado em qual grau?
+Comparativo de superioridade.
+
+Superlativo = alto grau da qualidade
+- Fulano é muito estudioso / estudiosíssimo.
+
+
+4. Qual é o superlativo absoluto sintético de "amigo"?
+Amicíssimo.
+
+O grau superlativo absoluto sintético dos adjetivos é expresso por uma só palavra mediante o acréscimo de um sufixo ao adjetivo. 
+
+
+Forte | Bonito | Veloz
+Superlativo = forte → muito forte / fortíssimo / o mais forte
+Superlativo = Bonito → muito bonito
+Superlativo = Veloz → muito veloz / velocíssimo / o mais veloz
+
+
+
+5. 
+“Disse o mostrengo, e rodou três vezes, 
+Três vezes rodou imundo e grosso…" 
+
+As palavras "imundo" e "grosso" estão flexionadas no masculino singular para concordar gramaticalmente com qual termo do texto?
+Mostrengo.
+
+6. Quando um adjetivo vem posicionado antes de dois ou mais substantivos, como na frase "Vivia em tranquilos bosques e montanhas", a regra de concordância determina que o adjetivo deve seguir o subst. mais próximo.
+
+“Vivia em tranquilas montanhas e bosques”.
+
+Quando adj. vem antes de dois ou mais subst., como o adj. deve concordar com eles? 
+O adj. deve seguir o subst. mais próximo. Ex.: “Vivia em tranquilas montanhas e bosques”.
+
+7. “Paulo é inteligentíssimo”. Em qual grau está o adjetivo?
+Superlativo absoluto sintético.
+
+Superlativo = Alto grau da qualidade.
+Absoluto = Não faz referência a outro ser.
+Sintético = Expresso em 1 palavra só.
+
+
+8. “Aquele cavalo é o mais forte daqui”. Em qual grau está o adjetivo?
+Superlativo relativo.
+
+Relativo = Tem relação com outros.
+
+
+9. “A criança ficou só na sala”. Quais são as duas formas de compreender essa frase?
+A criança ficou sozinha na sala.
+A criança ficou somente na sala.
+
+10. “A professora estava com uma saia e um chapéu escuro”. 
+O que posso ter certeza de que é escuro? Somente o chapéu. Para ter certeza de que os dois são escuros, seria necessário ser “escuros”.
+2. Casos especiais de concordância nominal (continuação)
+
+2.1 Bastante
+Pronome ou adjetivo
+Correto
+Havia bastantes pessoas lá. (= muitas)
+Havia motivos bastantes para a nota. (=suficientes)
+Errado
+Havia bastante pessoas lá.
+Havia motivos bastante para a nota.
+Advérbio
+Correto
+Eles são bastante virtuosos. (=muito)
+Errado
+Eles são bastantes virtuosos (=muito)
+
+“Bastante” se comporta igual a “Muito".
+
+
+
+24/09/2026
+Aula 19
+
+Objetivos
+Casos especiais de concordância nominal;
+Introdução ao verbo.
+
+1. É bom / É necessário / É proibido / É permitido
+
+1.1 Sem determinante → O adj. fica invariável no masculino singular.
+Água mineral é bom para a digestão.
+Proibido entrada após 22h.
+
+1.2 Com determinante → O adj. concorda com o subst.
+A água mineral é boa para a digestão.
+É proibida a entrada após 22h.
+
+
+2. O que é verbo?
+Palavra que significa ação, estado ou fenômeno da natureza com tempo e pessoa.
+Exemplos: 
+Corri → Passado, 1º pessoa (eu)
+Choverá → Futuro
+
+3. Como identificar um verbo no texto?
+Encaixar a palavra em uma conjugação.
+Exemplo: eu corri (correto). | eu corrida (não é verbo).
+
+Perguntar-se: “Esta palavra está no passado, no presente ou no futuro?”. Se sim, é verbo. Caso contrário, não é.
+
+4. 

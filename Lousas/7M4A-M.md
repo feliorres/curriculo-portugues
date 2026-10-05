@@ -609,3 +609,687 @@ A paciência é necessária.
 A entrada é proibida.
 É proibido entrada de veículos.
 É proibida a entrada de veículo.
+
+15/09/2026
+Aula 16 
+
+Objetivo
+Correção da Tarefa - Semana 4
+
+1. Correção da Tarefa - Semana 4
+
+Superlativo absoluto → Sem comparação: Paulo é inteligentíssimo.
+Superlativo relativo → Comparação com outros seres: Paulo é o mais inteligente do Colégio.
+
+Superlativo absoluto
+Sintético → Uma só palavra → Inteligentíssimo.
+Analítico → Mais de uma palavra → Muito inteligente.
+ 
+Substantivação: tornar uma palavra substantivo.
+Céu cinzento → O cinzento do céu.
+
+
+Superlativação
+Superlativo + ação = Ação de tornar algo superlativo
+
+
+
+16/09/2026
+Aulas 17 e 18
+
+Objetivos
+Verbos
+
+
+
+1. Definição
+Palavra que significa ação, estado e fenômeno natural com tempo e pessoa.
+Um dia, Aparício desapereceu para sempre. (A. Meyer)
+A mulher foi educada por minha mãe. (M. de Assis)
+Como estavam velhos!
+Anoitecera já de todo.
+
+
+2. Identificação em texto
+
+“Os Lusíadas” (Luís de Camões) - I, 1
+As armas e os Barões assinalados
+Que, da Ocidental praia Lusitana,
+Por mares nunca de antes navegados
+Passaram ainda além da Taprobana,
+Em perigos e guerras esforçados,
+Mais do que prometia a força humana,
+E entre gente remota edificaram
+Novo reino, que tanto sublimaram;
+E também as memórias gloriosas
+Daqueles Reis que foram dilatando
+A Fé, o Império, e as terras viciosas
+De África e de Ásia andaram devastando,
+E aqueles que por obras valerosas
+Se vão da lei da Morte libertando:
+Cantando espalharei por toda parte,
+Se a tanto me ajudar o engenho e arte.
+
+
+3. Flexões dos verbais
+Número
+Pessoa
+Modo
+Tempo
+Voz
+
+
+
+
+
+4. Número dos verbos
+Singular: eu estudo; tu estudas; ele estuda.
+Plural: nós estudamos; vós estudais; eles estudam.
+
+5. Pessoas verbais
+1º, 2º e 3º no singular e no plural: eu, tu, ele, nós, vós e eles.
+Todos os verbos se encaixam em uma dessas pessoas verbais no sing. ou no pl.
+
+6. Modos verbais
+Indicativo, subjuntivo e imperativo.
+Indicativo: significa afirmação (indicação).
+Subjuntivo: significa possibilidade.
+Imperativo: significa ordem ou pedido.
+
+7. Tempos verbais
+Presente, pretérito e futuro.
+Pretérito
+Imperfeito
+Perfeito
+Mais-que-perfeito
+Futuro
+do presente
+do pretérito
+
+
+
+8. Voz verbal
+Ativa ou passiva
+Ativa: estuda
+Passiva: é estudado
+
+9. Conjugações verbais
+1º conjugação: -ar
+estud-ar
+fal-ar
+2º conjugação: -er
+com-er
+tem-er
+3º conjugação: -ir
+part-ir
+sorr-ir
+
+
+10. Exemplo de conjugação no indicativo
+
+1º Conjugação: -ar
+
+
+m.q.p
+perfeito
+imperfeit.
+pres.
+fut. pres.
+fut. pret.
+Eu
+cantara
+cantei
+cantava
+canto
+cantarei
+cantaria
+Tu
+cantaras
+cantaste
+cantavas
+cantas
+cantarás
+cantarias
+Ele
+cantara
+cantou
+cantava
+canta
+cantará
+cantaria
+Nós
+cantáramos
+cantamos
+cantávamos
+cantamos
+cantaremos
+cantaríamos
+Vós
+cantáreis
+cantastes
+cantá                                                                                                                                                                                                                                         veis
+cantais
+cantareis
+cantaríeis
+Eles
+cantaram
+cantaram
+cantavam
+cantam
+cantarão
+cantariam
+
+
+2º Conjugação: -er
+
+
+m.q.p
+perfeito
+imperfeit.
+pres.
+fut. pres.
+fut. pret.
+Eu
+correra
+corri
+corria
+corro
+correrei
+correria
+Tu
+correrras
+correste
+corrias
+corres
+correrás
+correrias
+Ele
+correra
+correu
+corria
+corre
+correrá
+correria
+Nós
+corrêramos
+corremos
+corríamos
+corremos
+corremos
+correríamos
+Vós
+corrêreis
+correstes
+corríeis
+correis
+correreis
+corríeis
+Eles
+correram
+correram
+corriam
+correm
+correrão
+correriam
+
+
+
+3º Conjugação: -ir
+
+
+
+m.q.p
+perfeito
+imperfeit.
+pres.
+fut. pres.
+fut. pret.
+Eu
+Sorrira
+Sorri
+Sorria
+Sorrio (abro)
+Sorrirei
+Sorriria
+Tu
+Sorriras
+Sorriste
+Sorrias
+Sorris (abres)
+Sorrirás
+Sorririas
+Ele
+Sorrira
+Sorriu
+Sorria
+Sorri (abre)
+Sorrirá
+Sorriria
+Nós
+Sorríamos
+Sorrimos
+Sorríamos
+Sorrimos (abrimos)
+Sorriremos
+Sorriríamos
+Vós
+Sorríeis
+Sorristes
+Sorríeis
+Sorrides (abris)
+Sorrireis
+Sorriríeis
+Eles
+Sorriram
+Sorriram
+Sorriam
+Sorriem (abrem)
+Sorrirão
+Sorririam
+
+
+Verbo ser
+
+
+
+m.q.p
+perfeito
+imperfeit.
+pres.
+fut. pres.
+fut. pret.
+Eu
+fora
+fui
+era
+sou
+serei
+seria
+Tu
+foras
+foste
+eras
+és
+serás
+serias
+Ele
+fora
+foi
+era
+é
+será
+seria
+Nós
+fôramos
+fomos
+éramos
+somos
+seremos
+seríamos
+Vós
+fôreis
+fostes
+éreis
+sois
+sereis
+seríeis
+Eles
+foram
+foram
+eram
+são
+serão
+seriam
+
+
+
+22/09/2026
+Aula 19
+
+Objetivo
+Correção da Tarefa - Semana 5
+
+1. Qual é a função do adjetivo?
+Qualificar um substantivo. Ex.: lápis feio.
+
+2. Por qual processo passou a palavra “cinzento"?
+a) O céu cinzento indicava chuva.
+b) O cinzento do céu indicava chuva.
+Substantivação. 
+
+3. O que é substantivação?
+Processo de transformação de uma palavra em substantivo.
+
+4. Quais são os graus dos adjetivos?
+Comparativo e superlativo.
+
+5. O que é o grau comparativo do adjetivo?
+Grau de comparação de uma qualidade em seres diferentes ou de diversas qualidades em um mesmo ser. 
+Exemplos:
+Marcos é mais estudioso que Paulo.
+Marcos é mais estudioso que humilde.
+
+
+6. Quais são os tipos de comparativo?
+Superioridade, inferioridade e igualdade.
+
+7. O que é o grau superlativo do adjetivo?
+Grau que significa alto grau de intensidade do adjetivo.
+Amargo → Muito amargo / amaríssimo
+
+Ou que significa superioridade sobre todos os seres considerados.
+Este é o mais amargo.
+
+8. Quais são os tipos de superlativo?
+Absoluto e relativo.
+
+9. O que é superlativo absoluto?
+Superlativo com sentido completo por si mesmo. Ex.: muito amargo / amaríssimo.
+
+10. O que é superlativo relativo?
+Superlativo que tem relação com outros seres. Ex.: Este é o mais amargo.
+
+11. Quais são os tipos de superlativo absoluto?
+Sintético e analítico.
+
+12. O que é superlativo absoluto sintético?
+Superlativo absoluto expresso por uma só palavra. Ex.: amaríssimo.
+
+13. O que é superlativo absoluto analítico?
+Superlativo absoluto expresso por mais de uma palavra. Ex.: muito amargo.
+
+23/09/2026
+Aulas 20 e 21
+
+Objetivos
+Revisão de questões da última aula;
+Conjugação completa no indicativo: 3º conjugação;
+Conjugaçãocompleta no indicativo: verbo ser;
+Identificação dos verbos na oração do pai-nosso;
+Introdução ao modo subjuntivo;
+Introdução ao modo imperativo.
+
+1. Identificação dos verbos na oração do pai-nosso.
+
+Pai Nosso que estais nos Céus, 
+santificado seja o vosso Nome, 
+venha a nós o vosso Reino, 
+seja feita a vossa vontade 
+assim na terra como no Céu. 
+O pão nosso de cada dia nos dai hoje, 
+perdoai-nos as nossas ofensas 
+assim como nós perdoamos 
+a quem nos tem ofendido, 
+e não nos deixeis cair em tentação, 
+mas livrai-nos do Mal.
+
+
+Introdução ao modo subjuntivo
+
+1. O que é o modo subjuntivo?
+Modo verbal que pode significar desejo, possibilidade.
+
+2. Qual é a diferença entre indicativo e subjuntivo?
+Indicativo afirma; subjuntivo sugere.
+Exemplo: 
+Indicativo: Ela estuda.
+Subjuntivo: Que ela estude.
+
+3. Como conjugar verbos no subjuntivo?
+
+
+
+
+1º conj. = -ar
+
+
+
+imperfeit.
+pres.
+fut.
+Eu
+(se) cantesse
+(que) cante
+(quando) cantar
+Tu
+(se) cantasses
+(que) cantes
+(quando) cantares
+Ele
+(se) cantasse
+(que) cante
+(quando) cantar
+Nós
+(se) cantássemos
+(que) cantemos
+(quando) cantarmos
+Vós
+(se) cantásseis
+(que) canteis
+(quando) cantardes
+Eles
+(se) cantassem
+(que) cantem
+(quando) cantarem
+
+
+2º conj. = -er
+
+
+
+imperfeit.
+pres.
+fut.
+Eu
+(se) corresse
+(que) corra
+(quando) correr
+Tu
+(se) corresses
+(que) corras
+(quando) correres
+Ele
+(se) corresse
+(que) corra
+(quando) correr
+Nós
+(se) corrêssemos
+(que) corramos
+(quando) corrermos
+Vós
+(se) corrêsseis
+(que) corrais
+(quando) correrdes
+Eles
+(se) corressem
+(que) corram
+(quando) correrem
+
+
+
+3º conj. = -ir
+
+
+
+imperfeit.
+pres.
+fut.
+Eu
+(se) abrisse
+(que) abra
+(quando) abrir
+Tu
+(se) abrisses
+(que) abras
+(quando) abrires
+Ele
+(se) abrisse
+(que) abra
+(quando) abrir
+Nós
+(se) abríssemos
+(que) abramos
+(quando) abrirmos
+Vós
+(se) abrísseis
+(que) abrais
+(quando) abrirdes
+Eles
+(se) abrissem
+(que) abram
+(quando) abrirem
+
+
+Verbo ser
+
+
+
+imperfeit.
+pres.
+fut.
+Eu
+(se) fosse
+(que) seja
+(quando) for
+Tu
+(se) fosses
+(que) sejas 
+(quando) fores
+Ele
+(se) fosse
+(que) seja
+(quando) for
+Nós
+(se) fôssemos
+(que) sejamos
+(quando) formos
+Vós
+(se) fôsseis
+(que) sejais
+(quando) fordes
+Eles
+(se) fossem
+(que) sejam
+(quando) forem
+
+
+
+4. O que é o modo imperativo?
+Modo verbal que expressa ordem ou pedido.
+
+5. 1º conjugação no imperativo (-ar)
+
+
+
+Afirmativo
+Negativo
+Eu
+–
+–
+Tu
+ama
+(não) ames
+Ele
+ame
+(não)  ame
+Nós
+amemos
+(não) amemos
+Vós
+amai
+(não) ameis
+Eles
+amem
+(não) amem
+
+
+6. 2º conjugação no imperativo (-er)
+
+
+
+Afirmativo
+Negativo
+Eu
+–
+–
+Tu
+corre
+(não) corras
+Ele
+corra
+(não) corra
+Nós
+corramos
+(não) corramos
+Vós
+correi
+(não) corrais
+Eles
+corram
+(não) corram
+
+
+
+6. 3º conjugação no imperativo (-ir)
+
+
+
+Afirmativo
+Negativo
+Eu
+–
+–
+Tu
+abre
+(não) abras
+Ele
+abra
+(não) abra
+Nós
+abramos
+(não) abramos
+Vós
+abri
+(não) abrais
+Eles
+abram
+(não) abram
+
+
+6. Verbo ser no imperativo
+
+
+
+Afirmativo
+Negativo
+Eu
+–
+–
+Tu
+sê
+(não) sejas
+Ele
+seja
+(não) seja
+Nós
+sejamos
+(não) sejamos
+Vós
+sede
+(não) sejais
+Eles
+sejam
+(não) sejam
+
+
+
+7. Caso da oração do Anjo da Guarda
+
+…sempre me rege, me guarde, me governe, me ilumine.
+
+Rege → Tu
+Guarde, governe e ilumine → Você (ele)
+
+…se a TI me confiou
+
+…sempre me rege, me guarda, me governa, me ilumina.

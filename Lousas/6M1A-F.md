@@ -418,3 +418,245 @@ tão… quanto…
 
 4. Superlativo
 Super → sobre; muito
+
+14/09/2026
+Aula 14
+
+Objetivo
+Correção da Tarefa - Semana 4
+
+1. Qual é a função básica dos adj. na língua portuguesa? Caracterizar ou qualificar o substantivo. Exemplo: 
+aula interessante.
+
+2. Substantivação: processo de transformação de uma palavra em substantivo. Exemplo: sim (adv.) → um sim (subst.).
+
+3. Crase = preposição “a” + artigo “a” = à
+
+
+
+Seres não mencionados anteriormente:
+Foi chegando um menininho magro, com um papelão na mão.
+
+Seres já mencionados anteriormente:
+Foi chegando o menininho magro, com o papelão na mão.
+
+
+15/09/2026
+Aula 15 - Adjetivo IV
+
+Objetivos
+Graus dos adjetivos: superlativo;
+
+1. Superlativo
+Super → sobre; muito 
+Por denotar:
+que um ser tem elevado grau de determinada qualidade (superlativo absoluto):
+Paulo é inteligentíssimo.
+Paulo é muito inteligente.
+que um ser se sobressai à totalidade dos outros em certa qualidade (superlativo relativo)
+Carlos é o aluno mais estudioso do Colégio.
+Paulo é o aluno menos estudioso do Colégio.
+
+Absoluto: completo por si mesmo; único 
+Relativo: relação com outros seres.
+
+
+
+2. Superlativos absolutos
+
+2.1 Sintético
+Expresso por uma só palavra.
+amigo → amicíssimo
+estudioso → estudiosíssimo
+triste → tristíssimo
+
+2.2 Analítico
+Expresso por mais de uma palavra.
+amigo → muito amigo
+estudioso → grandemente estudioso
+triste → imensamente triste
+
+
+
+17/09/2026
+Aula 16 - Concordância nominal I
+
+Objetivos
+Definição;
+Regra geral;
+Casos de concordância.
+
+1. Definição - Concordância nominal
+Harmonia entre coisas.
+Cor, corda, cordis = coração
+Concordância = os corações estarem unidos.
+Relação entre elementos.
+Nominal = relativo a nome.
+Relação entre substantivos e adjetivos.
+
+2. Regra geral
+Adj. segue gênero e número do subst. a que se refere.
+Disse o mostrengo, e rodou três vezes
+Três vezes rodou, imundo e grosso…
+(F. Pessoa) 
+
+
+
+
+3. Casos de concordância
+= Gênero | = Singular → Adj. vai para masc./fem. pl.
+A professora estava com um vestido e um chapéu escuros.
+saia e uma bota escuras.
+
+≠ Gênero | = Singular → Adj. vai para masc. pl.
+A professora estava com uma saia e um chapéu escuros.
+
+
+≠ Gênero | ≠ Número → Adj. vai para masc. pl.  
+	A professora comprou duas saias e um chapéu escuros.
+
+Caso especial
+É justo que uma nação venere seus poetas.
+
+
+21/09/2026
+Aula 17
+
+Objetivos
+Correção da Tarefa - Semana 5
+
+1. Qual é a função do adjetivo?
+Caracterizar um substantivo. Ex.: chuva forte.
+
+2. Qual é a diferença entre “a cabeça” e “o cabeça”? E entre “o capital” e “a capital”?
+Há mudança de sentido por meio da alteração do artigo.
+A cabeça = parte do corpo. 
+O cabeça = o líder.
+A capital = cidade principal de um país/estado.
+O capital = Patrimônio, valor financeiro
+
+Quanto menos conhecimento se tem, menos se dá falta dele.
+
+
+3. Como se flexionam os adjetivos simples em gênero?
+Flexionam-se de acordo com o gênero do substantivo a que se referem.
+Exemplo: o teste amedrontador | a prova amedrontadora
+
+
+4. Como se forma o plural dos adjetivos compostos?
+Somente o último termo vai para o plural.
+Literatura luso-brasileira → Literaturas luso-brasileiras.
+
+5. “...a branca escuma para o céu sereno”
+Qual é a classe gramatical de:
+Branca - Adjetivo
+Escuma - Substantivo
+Céu - Subst.
+Sereno - Adj.
+
+6. 
+1) O céu cinzento indicava chuva. 
+2) O cinzento do céu indicava chuva. 
+Na passagem da frase 1 para a frase 2, a palavra "cinzento" passou pelo processo de:
+Substantivação. 
+
+Substantivação = Processo de transformação de uma palavra em substantivo. Cantar (verbo) → O cantar (subst.) dos pássaros 
+
+
+
+
+22/09/2026
+Aula 18
+
+Objetivos
+Numerais
+
+1. O que são numerais?
+Palavras que indicam quantidade.
+
+2. Quais são os tipos de numerais?
+Cardinais, ordinais, multiplicativos e fracionários.
+
+3. O que são numerais cardinais?
+Os números básicos. 
+Exemplos:
+Dois mais dois são quatro.
+Estavam ali três pessoas pelo menos.
+
+4. O que são números ordinais?
+Números que expressam uma posição em uma sequência.
+Exemplos:
+Tornou-se a primeira de sua classe.
+Isso deve ficar em segundo lugar.
+
+
+5. O que são numerais multiplicativos?
+Numerais que indicam relações de multiplicação.
+Exemplos:
+Ele tem o dobro do tamanho dela.
+Ele está devendo o quádruplo do valor.
+
+6. O que são numerais fracionários?
+Numerais que expressam valor de fração.
+Exemplo:
+Já pagamos metade da dívida.
+Precisamos de dois terços de presença.
+
+7. O que são numerais coletivos?
+Numerais únicos que designam quantidade exata.
+Exemplos: dezena, década, dúzia, centena, cento, etc.
+
+Ambos = numeral que significa “dois”. 
+Exemplos: ambos os pés; ambas as mãos.
+
+
+8. Uso dos numerais multiplicativos
+8.1 São invariáveis quando equivalem a substantivos.
+Exemplo: Ele tem o triplo da minha idade.
+
+8.2 São variáveis quando equivalem a adjetivos.
+Exemplo: Ele toma os remédios em doses duplas.
+9. Meio-dia e meia ou meio?
+Meia, pois é “meia hora”, não “meio dia”.
+
+
+24/09/2026
+Aula 19 - Verbo I
+
+Objetivos
+Introdução aos verbos;
+Definição;
+Conjugações;
+Número;
+Pessoa.
+
+
+
+
+
+1. O que é verbo?
+Palavra que significa ação, estado ou fenômeno da natureza com tempo e pessoa.
+Exemplos: amo, falei, corremos, andaríamos
+
+2. Identificação de verbos em texto.
+
+Eu me lembro! eu me lembro! – Era pequeno
+E brincava na praia; o mar bramia
+E, erguendo o dorso altivo, sacudia
+A branca escuma para o céu sereno.
+
+Eu disse a minha mãe nesse momento:
+“Que dura orquestra! Que furor insano!
+Que pode haver maior do que o oceano,
+Ou que seja mais forte do que o vento?!”
+
+3. Como identificar um verbo no texto?
+Coloque a palavra exatamente em uma conjugação.
+Exemplo: “andaram” → eu andaram, tu andaram… eles andaram (correto).
+
+Perguntar-se: “Esta palavra está no presente, no passado ou no futuro?”. Se sim, é verbo. Caso contrário, não é.
+
+4. Conjugações
+1º conjugação = -ar → cantar
+2º conjugação = -er → correr
+3º conjugação = -ir → abrir

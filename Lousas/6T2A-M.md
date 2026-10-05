@@ -377,3 +377,265 @@ O céu             |  cinzento | indica | chuva.
 O cinzento |  do céu       | indica | chuva
 
 
+14/09/2026
+Aula 15
+
+Objetivo
+Correção da Tarefa - Semana 4
+
+Correção da Tarefa - Semana 4
+
+1. Qual é a função básica dos adjetivos na língua portuguesa? Caracterizar ou qualificar o substantivo. Exemplo: aula interessante.
+
+2. Substantivação: processo de transformação de uma palavra em substantivo. Ex.: sim (adv.) → o sim (subst.)
+
+3. Substantivo = Palavra que significa nome de objetos, seres e conceitos. 
+Lápis, Francisco, aluno, verdade
+
+4.	de + o = do
+de + a = da
+de + um = dum
+de + umas = dumas
+
+
+
+
+
+15/09/2026
+Aulas 16 e 17
+
+Objetivos
+Graus dos adjetivos;
+Comparativo;
+Superlativo.
+Superlativos
+Absoluto;
+Relativo.
+Concordância nominal I
+Definição;
+Regra geral;
+Casos de concordância.
+
+1. Graus dos adjetivos
+Grau = nível
+Adjetivo é palavra que qualifica o substantivo.
+Graus dos adjetivos = níveis de intensidade de qualificação.
+Os graus são dois: comparativo e superlativo.
+
+
+
+2. Comparativo
+Pode indicar:
+que um ser tem uma qualidade em grau superior, igual ou inferior a outro ser:
+Pedro é mais estudioso do que Paulo.
+Paulo é menos estudioso do que Pedro.
+Álvaro é tão estudioso quanto Pedro.
+que um ser tem em si mesmo graus diferentes de qualidades diferentes:
+Pedro é mais inteligente que estudioso.
+Paulo é menos inteligente que estudioso.
+Álvaro é tão inteligente quanto estudioso.
+
+3. Superlativo
+Super = muito; acima; elevado; em cima.
+Pode denotar:
+que um ser tem uma qualidade em alto grau (superlativo absoluto):
+Paulo é inteligentíssimo.
+Paulo é muito inteligente.
+que um ser se sobressai aos outros em determinada qualidade (superlativo relativo):
+Paulo é o mais inteligente da família.
+Pedro é o menos inteligente da família.
+
+
+4. Superlativos absolutos
+4.1 Sintéticos
+Expressos por uma só palavra.
+Rafael é estudiosíssimo.
+João está tristíssimo.
+
+4.2 Analíticos
+Expressos por mais de uma palavra.
+Rafael é muito estudioso.
+João está imensamente triste.
+
+
+
+5. Concordância nominal
+Um nome seguir o outro.
+Nome = substantivo e adjetivo.
+Adjetivo seguir gênero e número do substantivo.
+
+
+6. Regra geral
+Adjetivo segue gênero e número do substantivo.
+Disse o mostrengo, e rodou três vezes,
+Três vezes rodou imundo e grosso…
+(F. Pessoa)
+
+Gênero = masc. e fem. | Número = singular e plural
+
+
+7. Casos de concordância
+= Gênero | = Singular → Adjetivo vai para o mesmo gênero e para o plural.
+Estudo a língua e a literatura portuguesas.
+A professora estava com um vestido e um chapéu escuros.
+
+
+21/09/2026
+Aula 18
+
+Objetivo
+Correção da Tarefa - Semana 5
+
+1. Qual é a função do adjetivo?
+Qualificar ou caracterizar o substantivo. Ex.: Este lápis é verde.
+
+2. Qual é a diferença entre “a cabeça” e “o cabeça”?
+“A cabeça” é a parte do corpo. “O cabeça” é o líder. Os artigos diferentes modificam o sentido de certas palavras.
+
+3. Qual é a regra de flexão de gênero dos adjetivos simples?
+Os adj. simples seguem o gênero do subst. a que se referem.
+
+4. Qual é a regra geral de formação do plural dos adj. compostos?
+Somente o último termo vai para o plural. Ex.: Centros médico-cirúrgicos.
+
+5. Cite uma exceção à regra geral acima.
+Surdo-mudo → surdos-mudos
+
+6. "A branca escuma para o céu sereno”. Quais são as classes gramaticais das palavras abaixo?
+Branca - Adj.
+Escuma - Subst.
+Céu - Subst.
+Sereno - Adj.
+
+7. 
+1) O céu cinzento indicava chuva. 
+2) O cinzento do céu indicava chuva. 
+Na passagem da frase 1 para a frase 2, a palavra "cinzento" passou pelo processo de:
+Substantivação. 
+
+8. O que é substantivação? 
+Transformação de uma palavra que não é substantivo em substantivo.
+Exemplos:
+O céu cinzento (adj.) → O cinzento (subst.) do céu
+Cantar (verbo) → O cantar (subst.) dos pássaros
+
+9. Como identificar substantivação?
+Por meio da percepção de artigo, adjetivo ou pronome determinando a palavra.
+O céu cinzento (adj.) → O cinzento (subst.) do céu
+Cantar (verbo) → O cantar (subst.) dos pássaros
+
+
+22/09/2026
+Aulas 19 e 20
+
+Objetivos
+Finalização da correção da Tarefa - Semana 5;
+Concordância nominal;
+Numerais;
+Verbos.
+
+1. Finalização da correção da Tarefa - Semana 5;
+
+Considere a estrofe poética reproduzida abaixo: 
+
+"Eu disse a minha mãe nesse momento: 
+‘Que dura orquestra! Que furor insano! 
+Que pode haver maior do que o oceano, 
+Ou que seja mais forte do que o vento?!’" 
+(Casimiro de Abreu) 
+
+Sobre as classes gramaticais e os processos morfossintáticos presentes no texto, analise as afirmativas: 
+
+I. Os termos "dura" (que qualifica "orquestra") e "insano" (que qualifica "furor") funcionam no texto como adjetivos. 
+
+II. Caso a expressão "dura orquestra" fosse alterada para "o duro da orquestra", a palavra "duro" passaria por substantivação devido à presença do artigo "o". 
+
+III. A palavra "vento" é classificada como adjetivo composto por caracterizar a tempestade.
+2. Casos de concordância nominal
+Substantivos de mesmo gênero e no singular → Adj. vai para o mesmo gênero e para o plural. 
+Estudo a língua e a literatura portuguesas.
+
+Substantivos de gêneros diferentes no singular → Adj. vai para masculino e plural.
+Estudo o idioma e a literatura portugueses.
+
+Substantivos de gêneros e números diferentes → Adj. vai para masculino e plural.
+Ele fez duas assistências e um gol absurdos.
+
+3. Concordância com predicativo
+Substantivos de mesmo gênero e no singular:
+O livro e o caderno são novos.
+
+Substantivos de gêneros diferentes → Adj. vai para masc. plural.
+O livro e a caneta são novos.
+
+4. Concordância com “É bom", “É necessário”, etc.
+Sempre no masculino singular:
+É justo que uma nação venere os seus poetas.
+É necessário fazermos isso.
+
+
+
+NUMERAIS
+
+5. O que são numerais?
+Palavras que significam quantidade.
+
+6. Quais são os tipos de numerais?
+Cardinais, ordinais, multiplicativos e fracionários.
+
+7. O que são os numerais cardinais?
+Significam números comuns. Ex.: Havia cinco pessoas lá.
+
+8. O que são numerais ordinais? 
+Numerais referentes a uma posição em uma ordem. 
+Ex.: chegou em primeiro lugar; eu fui o terceiro colocado.
+
+9. O que são numerais multiplicativos?
+Numerais referentes a uma proporção de multiplicação.
+Ele tinha o dobro da minha altura.
+O valor é o quádrulo do esperado.
+
+10. O que são numerais fracionários?
+Numerais que exprimem fração/parcela.
+Já pagamos a metade da dívida.
+Recebemos dois terços do valor.
+
+11. Numerais coletivos
+Numerais que caracterizam em uma palavra uma quantidade exata plural.
+Exemplos: dezena, década, centena, cento.
+
+12. Ambos/ambas
+Significa “os dois”.
+Exemplos:
+Ambos os pés
+Ambas as mães
+
+13. Multiplicativos
+São invariáveis quando funcionam como substantivos.
+Ele tem o triplo da minha idade.
+
+São variáveis quando funcionam como adjetivos.
+Eu tomo o remédio em doses duplas.
+
+Meio-dia e meia, não meio-dia e meio.
+
+
+
+
+VERBOS
+
+
+
+1. O que é verbo?
+Palavra que significa ação com tempo e pessoa.
+
+2. O que significa "tempo”? 
+Passado, presente e futuro.
+
+3. E “pessoa”?
+Eu, tu, ele, nós, vós, eles.
+
+4. Exemplos
+Amo → Eu, presente
+Amarás → Tu, futuro
+Amou → Ele, passado

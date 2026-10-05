@@ -1,0 +1,176 @@
+// ==========================================
+// QUESTÕES FÁCEIS (Q01 a Q12)
+// ==========================================
+
+::Q01::
+Na gramática normativa, o termo "nominal" provém do latim nomen, nominis e designa aquilo que tem a ver com um nome. Quais classes gramaticais integram o grupo nominal? {
+=Substantivos, adjetivos, artigos, numerais e pronomes.
+~Verbos, advérbios, preposições, conjunções e interjeições.
+~Apenas substantivos e adjetivos qualificativos.
+~Substantivos, verbos, advérbios e preposições.
+}
+
+::Q02::
+Em relação à definição gramatical de substantivo, o conceito de "substância" corresponde a\: {
+=Aquilo que uma coisa é em si mesma.
+~Uma qualidade acidental pertencente a um ser.
+~Uma ação ou estado situado no tempo.
+~Uma circunstância que modifica o verbo.
+}
+
+::Q03::
+O teste prático para verificar se uma palavra funciona como substantivo consiste em averiguar se ela aceita ser antecedida por artigo ou pronome. Em qual das frases a palavra destacada funciona como substantivo por esse teste? {
+="O SILÊNCIO tomou conta de todo o auditório."
+~"ELE permaneceu calado durante a reunião."
+~"ELES cantaram alegremente durante a viagem."
+~"NÓS caminhamos bastante pelo parque."
+}
+
+::Q04::
+Considerando a etimologia e a função do pronome (do latim pro- \= em lugar de + nome), qual é a diferença entre pronome adjetivo e pronome substantivo? {
+=O pronome adjetivo acompanha o substantivo, enquanto o pronome substantivo substitui o substantivo.
+~O pronome adjetivo substitui o verbo, enquanto o pronome substantivo acompanha o adjetivo.
+~O pronome adjetivo expressa qualidade, enquanto o pronome substantivo expressa quantidade exata.
+~O pronome adjetivo é sempre invariável, enquanto o pronome substantivo varia em grau.
+}
+
+::Q05::
+O advérbio é a palavra invariável que modifica o sentido de um verbo, de um adjetivo ou de outro advérbio. Na oração "Aquele remédio era extremamente amargo", o vocábulo "extremamente" modifica o sentido de\: {
+=Um adjetivo ("amargo").
+~Um verbo ("era").
+~Um substantivo ("remédio").
+~Um pronome ("Aquele").
+}
+
+::Q06::
+A classe de palavras invariáveis com significado emocional súbito, definida como "uma espécie de grito com que traduzimos de modo vivo nossas emoções", é a\: {
+=Interjeição.
+~Conjunção.
+~Preposição.
+~Advérbio.
+}
+
+::Q07::
+Substantivos concretos nomeiam seres concebidos por si mesmos (independentes de outros), enquanto os abstratos nomeiam conceitos, ações, estados ou sentimentos que dependem de outro ser para existirem. Assinale a alternativa que apresenta um substantivo abstrato\: {
+=Generosidade
+~Leopardo
+~Duende
+~Muralha
+}
+
+::Q08::
+No estudo da morfologia e da estrutura das palavras, o que é o radical? {
+=A raiz ou elemento mórfico base que não muda e contém a significação fundamental de uma família de palavras.
+~A terminação flexional responsável por indicar exclusivamente o gênero feminino.
+~O processo de junção de duas palavras que sofrem perda de letras e sons.
+~A palavra primitiva que dá origem a novas formas na língua portuguesa.
+}
+
+::Q09::
+A composição de palavras por aglutinação ocorre quando há união de termos com supressão ou alteração fonética. Qual dos vocábulos abaixo é formado por aglutinação? {
+=Pernalta (perna + alta).
+~Guarda-roupa (guarda + roupa).
+~Porta-copos (porta + copos).
+~Pé-de-vento (pé + de + vento).
+}
+
+::Q10::
+Os substantivos uniformes sobrecomuns são aqueles que\: {
+=Possuem um gênero gramatical fixo e invariável para designar homens e mulheres.
+~Têm uma única forma, mas diferenciam o gênero por meio do artigo antecedente (o/a).
+~Diferenciam o sexo biológico dos animais pelo acréscimo das palavras macho e fêmea.
+~Apresentam duas formas distintas\: uma para o masculino e outra para o feminino.
+}
+
+::Q11::
+Qual é a regra geral de concordância nominal na língua portuguesa? {
+=O adjetivo concorda em gênero e número com o substantivo a que se refere.
+~O substantivo concorda em pessoa e número com o verbo antecedente.
+~O adjetivo permanece sempre no masculino singular diante de múltiplos substantivos.
+~O adjetivo concorda exclusivamente em número, permanecendo invariável em gênero.
+}
+
+::Q12::
+Assinale a oração que exemplifica o grau comparativo de igualdade do adjetivo\: {
+="O novo estagiário é tão dedicado quanto o supervisor."
+~"Aquele atleta é mais veloz do que o concorrente."
+~"O percurso da serra foi menos cansativo que o da praia."
+~"A pesquisa acadêmica revelou-se utilíssima para a sociedade."
+}
+
+// ==========================================
+// QUESTÕES MÉDIAS (Q13 a Q18)
+// ==========================================
+
+::Q13::
+Analise morfologicamente os termos destacados na frase\: "Quatro bravos soldados defenderam a fronteira." A classificação correta e sequencial de "Quatro", "bravos", "soldados" e "defenderam" é\: {
+=Numeral cardinal, adjetivo, substantivo e verbo.
+~Numeral ordinal, substantivo, adjetivo e verbo.
+~Artigo definido, adjetivo, substantivo e advérbio.
+~Pronome adjetivo, advérbio, substantivo e verbo.
+}
+
+::Q14::
+Na frase "O sítio instalou três novos cata-ventos para bombear água", a flexão de plural da palavra "cata-ventos" justifica-se porque\: {
+=O primeiro elemento ("cata") é uma forma verbal, flexionando-se apenas a palavra variável que se segue.
+~Ambos os termos são substantivos simples, devendo ambos ir para o plural pela regra geral.
+~O segundo termo determina a finalidade do primeiro, sendo este último o único que se flexiona.
+~Trata-se de uma palavra composta por aglutinação que dispensa a concordância nominal.
+}
+
+::Q15::
+Na frase "O ministro participou de encontros político-sociais na capital", a terminação do adjetivo composto "político-sociais" está correta porque\: {
+=Na regra geral dos adjetivos compostos, apenas o último elemento varia em gênero e número para concordar com o substantivo.
+~O primeiro elemento é uma palavra invariável por ser um verbo reduzido.
+~Ambos os termos deveriam ir obrigatoriamente para o plural ("políticos-sociais").
+~Os adjetivos compostos são palavras invariáveis que nunca admitem terminação de plural.
+}
+
+::Q16::
+A substantivação ocorre quando um adjetivo assume a função de substantivo ao ser determinado por um artigo ou pronome. Em qual das alternativas a palavra destacada sofreu substantivação? {
+="O BELO atrai a atenção dos artistas."
+~"O RAPAZ comprou um belo casaco."
+~"Aquela PINTURA retrata um belo poente."
+~"Eles viveram um MOMENTO muito belo."
+}
+
+::Q17::
+Na frase "O marceneiro construiu uma mesa e um banco rústicos", o adjetivo "rústicos" foi empregado no masculino plural porque\: {
+=Qualifica dois substantivos de gêneros diferentes ("mesa" e "banco"), prevalecendo o masculino plural ao concordar com ambos.
+~Concorda unicamente com o substantivo feminino mais distante na oração.
+~Todo adjetivo colocado depois de substantivos deve permanecer no singular.
+~Funciona como advérbio invariável de modo, modificando a ação verbal.
+}
+
+::Q18::
+A palavra "bastante" pode atuar como pronome/adjetivo (variável quando equivale a "muitos" ou "suficientes") ou como advérbio (invariável quando equivale a "muito"). Assinale a frase gramaticalmente CORRETA\: {
+="Eles apresentaram bastantes justificativas durante o julgamento."
+~"Os voluntários ficaram bastantes cansados ao término da ação."
+~"Havia bastante razões para cancelar o projeto."
+~"As alunas eram bastantes atenciosas durante a explicação."
+}
+
+// ==========================================
+// QUESTÕES DIFÍCEIS (Q19 a Q20)
+// ==========================================
+
+::Q19::
+Na oração "Estava trancada a porta e o portão da residência", a concordância da palavra "trancada" no singular feminino está correta porque\: {
+=Estando o verbo de ligação e o adjetivo antepostos ao sujeito composto, o adjetivo pode concordar diretamente com o núcleo mais próximo ("a porta").
+~O adjetivo anteposto a substantivos de gêneros diferentes deve ficar obrigatoriamente no masculino plural.
+~O adjetivo qualifica apenas o segundo substantivo ("o portão"), por atração fonética.
+~A palavra atua como advérbio invariável de lugar, não estabelecendo concordância com o sujeito.
+}
+
+::Q20::
+Analise o emprego e a concordância das palavras "anexo", "mesmo" e "só" nos períodos a seguir\:
+I. A declaração solicitada segue anexa ao processo judicial.
+II. As autoras mesmas redigiram os capítulos finais do livro.
+III. Ao final do turno, os guardas permaneceram sós na guarita.
+IV. Seguem em anexas as listagens de todos os candidatos.
+Estão plenamente CORRETOS apenas os períodos\: {
+=I, II e III.
+~I e IV.
+~II e IV.
+~III e IV.
+}

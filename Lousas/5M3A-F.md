@@ -476,3 +476,271 @@ Enumeração
 À sua volta, tudo lhe parece chorar: as árvores, o capim, os insetos. (Ó. Ribas)
 Resumo, esclarecimento do que é dito
 Não era desgosto: era cansaço e vergonha.
+
+15/09/2026
+Aula 15
+
+Objetivo
+Correção da Tarefa - Semana 4
+
+1. Correção da Tarefa - Semana 4
+
+1. Qual é a principal função dos sinais de pontuação na escrita? Reconstituir a entonação da fala.
+
+2. Ponto final também se usa para marcar abreviaturas. 
+Ex.: Dr. / Etc.
+
+3. NÃO são acentuadas as paroxítonas terminadas em: -A(s), -E(s), -O(s), -EM, -ENS.
+mesa → mêsa
+pele → péle
+
+4. Hiato: encontro de vogais, mas que estão em sílabas diferentes.
+Ma-ri-a 
+He-lo-i-sa 
+Hi-a-to 
+
+
+16/09/2026
+Aula 16
+
+Objetivos
+Exercícios e correção - Pontuação
+
+Bom dia Maria você já terminou a leitura do livro
+Bom dia, Maria. Você já terminou a leitura do livro?
+
+Santos Dumont pai da aviação criou o avião.
+Santos Dumont, pai da aviação, criou o avião.
+
+Naquela manhã decidiram partir.
+Naquela manhã, decidiram partir.
+
+Uma coisa me preocupa a saúde dele.
+Uma coisa me preocupa: a saúde dele.
+
+A avó, que tem oitenta anos,
+Está tão fraca e velhinha!…
+Teve tantos desenganos!
+Ficou branquinha, branquinha
+Com os desgostos humanos.
+
+"Corra, corra!”, gritou o homem, enquanto subia a escada.
+18/09/2026
+Aula 17 - Estrutura de palavras I
+
+Objetivos
+Radical;
+Desinência.
+
+1. Radical
+Parte da palavra que reúne palavras de mesma família mantendo o significado comum.
+Amo, amas, amor, amar, amador
+Falo, falas, falar, falador
+
+Acrescentam-se ao radical:
+Desinência;
+Afixo;
+Ou vogal temática.
+
+
+2. Desinência
+Parte final da palavra que indica: 
+Gênero e número de subst., de adj. e de certos pronomes.
+Número e pessoa dos verbos.
+Gênero (gramatical): masculino e feminino.
+Número (gramatical): singular e plural.
+Exemplos
+Renovamos
+-a → conjugação
+-mos → pessoa do verbo
+Ermas
+-a → feminino
+-s → plural
+
+
+22/09/2026
+Aula 18
+
+Objetivo
+Correção da Tarefa - Semana 5
+
+1. Qual é a função do ponto de interrogação?
+Marcar uma pergunta.
+
+2. Qual é a principal função do ponto final?
+Marcar pausa máxima para finalizar frase ou texto.
+
+3. Cite outro uso do ponto final.
+Abreviação. Ex.: Dr. → Doutor.
+
+4. O que o ponto de exclamação expressa?
+Intensidade emocional e ênfase.
+
+Ênfase = destaque, foco em algo.
+
+
+5. O que interrogação + exclamação (?!) expressa?
+Pergunta com intensidade emocional ou ênfase.
+
+
+6. O que as reticências (...) expressam? 
+Interrupção e hesitação.
+
+Hesitação = Receio; não agir com firmeza. 
+
+
+7. O que interrogação + reticências (?...) expressa?
+Pergunta com hesitação. (A pergunta fica no ar).
+
+
+
+23/09/2026
+Aula 19
+
+Objetivos
+Estrutura de palavras
+Radical;
+Desinência;
+Desinências nominais;
+
+1. O que é radical de uma palavra?
+Parte da palavra que reúne palavras de mesma família mantendo o significado comum.
+Amo, amas, amor, amar, amador
+
+
+2. O que é desinência?
+Parte final da palavra que marca gênero, número e pessoa.
+
+O que é gênero? Masculino e feminino.
+O que é número? Singular e plural.
+O que é pessoa (verbal)? Eu, tu, ele, nós, vós, eles.
+
+
+Exemplo: sozinhas
+-a → feminino
+-s → plural
+
+3. Quais são os tipos de desinência?
+Nominais e verbais.
+
+O que significa “nominal”? Relativo a nome. O que não é verbo.
+
+
+
+4. O que são desinências nominais?
+
+
+Gênero
+Número
+Masc.
+Fem.
+Sing.
+Plural
+-o
+-a
+-
+-s
+
+
+Exemplos:
+Menino → -o → Masculino
+Meninos
+-o → Masculino
+-s → Plural
+
+
+
+25/09/2026
+Aula 20
+
+Objetivo
+Desinências verbais
+
+1. O que são desinências verbais?
+Desinências que alteram sentido dos verbos.
+
+Presente
+Pretérito
+Perfeito
+Infinitivo
+pessoal
+Pessoa
+Sing.
+Pl.
+Sing.
+Pl.
+Sing.
+Pl.
+1º
+-o
+-mos
+-i
+-mos
+–
+-mos
+2º
+-s
+-is(des)
+-ste
+-stes
+-es
+-des
+3º
+–
+-m
+-u
+-ram
+–
+-em
+
+
+O que é verbo? Palavra que significa ação ou estado.
+
+Exemplos: falo, falamos, falei, choveu, estava
+
+
+2. Exemplos
+Falo        |       Falamos
+Falas      |       Falais
+Fala        |       Falam
+
+
+
+Presente
+Pretérito
+Perfeito
+Infinitivo
+pessoal
+Pessoa
+Sing.
+Pl.
+Sing.
+Pl.
+Sing.
+Pl.
+1º
+-o
+-mos
+-i
+-mos
+–
+-mos
+2º
+-s
+-is(des)
+-ste
+-stes
+-es
+-des
+3º
+–
+-m
+-u
+-ram
+–
+-em
+
+
+Falei          |       Falamos
+Falaste      |       Falastes
+Falou         |       Falaram

@@ -459,3 +459,238 @@ Processo de transformação de um adjetivo em substantivo.
 
 O céu            | cinzento | indicava | chuva.
 O cinzento | do céu        | indicava | chuva.
+
+14/09/2026
+Aula 15
+
+Objetivo
+Correção da tarefa - Semana 4
+
+1. Função dos adjetivos = qualificar ou caracterizar substantivo. Exemplo: céu sereno.
+2. Substantivação: processo de transformação de uma palavra em substantivo. Exemplo: “Tudo no mundo começou com um sim”.
+3. Crase = preposição “a” + artigo “a” = à. Exemplo: Fui à Bahia.
+
+
+15/09/2026
+Aula 16
+
+Objetivos
+Revisar substantivação dos adjetivos;
+Graus dos adjetivos:
+Comparativo;
+Superlativo.
+
+1. Graus dos adjetivos
+Grau = nível.
+Há dois graus: comparativo e superlativo.
+Felipe é alto.
+Felipe é muito alto.
+Felipe é o mais alto da turma.
+Felipe é mais alto que o Estevan.
+Flávio é menos estudioso do que Estevan.
+
+Comparativo: comparação. Superlativo: alto grau.
+
+
+17/09/2026
+Aula 17
+
+Objetivo
+Comparativo
+Superlativo
+Absoluto
+Relativo
+Superlativos sintético e analítico
+
+
+
+1. Comparativo
+Pode indicar:
+que um ser tem uma qualidade em grau superior, igual ou inferior a outro:
+Pedro é mais estudioso do que Paulo.
+Paulo é menos estudioso do que Pedro.
+Álvaro é tão estudioso quanto Pedro. → Álvaro = Pedro
+tão/tanto… quanto… → igualdade
+tal qual → igualdade
+que um ser tem em si mesmo graus diferentes de qualidades diferentes:
+Pedro é mais inteligente que estudioso.
+menos.. que…
+tão… quanto…
+
+
+2. Superlativo
+Super = acima do comum; elevado; sobre.
+Pode denotar:
+que um ser tem elevado grau de determinada qualidade (superlativo absoluto)
+Paulo é inteligentíssimo.
+Paulo é muito inteligente.
+que um ser se sobressai à totalidade dos seres em uma qualidade (superlativo relativo)
+Carlos é o aluno mais estudioso do Colégio.
+Paulo é o aluno menos estudioso do Colégio.
+
+3. Superlativos absolutos
+Sintéticos
+Expressos por uma só palavra.
+Paulo é inteligentíssimo.
+Carlos é estudiosíssimo.
+Analíticos
+Expressos por mais de uma palavra.
+Paulo é muito inteligente.
+Carlos é imensamente estudioso.
+
+
+
+4. Concordância nominal
+Concordância = estar como o coração no mesmo lugar. Um elemento seguir o outro.
+Nominal = relativo a nome. Nomes = Subst. e adj.																									
+
+
+
+21/09/2026
+Aula 18											
+Objetivo
+Correção da Tarefa - Semana 5
+
+1. Qual é a função gramatical do adjetivo?
+Caracterizar o substantivo. Ex: O sofá (subst.) é lindo (adj).
+
+2. Dê o exemplo de uma palavra cuja mudança de gênero pelo artigo altera seu sentido de "parte do corpo" para "líder"?
+Parte do corpo = a cabeça | líder = o cabeça
+
+3. Qual é a regra geral de flexão de gênero dos adjetivos?
+Os adj. seguem o gênero dos subst. a que se referem.
+Ex.: o monstro assustador | a prova assustadora
+
+O que é gênero gramatical? Masculino e feminino.
+
+
+4. Qual é a regra geral da formação do plural nos adj. compostos?
+Apenas o segundo termo vai para o plural. Ex.: Centros médico-cirúrgicos.
+
+
+5. Mencione uma exceção à regra geral do plural dos adj. compostos.
+Surdo-mudo → Surdos-mudos.
+
+6. "A branca escuma para o céu sereno." As palavras "branca" e "sereno" exercem no verso a função de:
+Adjetivo.
+
+7. 1) O céu cinzento indicava chuva. 2) O cinzento do céu indicava chuva. Na passagem da frase 1 para a frase 2, a palavra "cinzento" passou pelo processo de:
+Substantivação. 
+O menino negro andava na rua.
+O negro andava na rua.
+
+
+8. "Eu disse a minha mãe nesse momento: 
+‘Que dura orquestra! Que furor insano! 
+Que pode haver maior do que o oceano, 
+Ou que seja mais forte do que o vento?!’" 
+(Casimiro de Abreu) 
+
+
+I. Os termos "dura" (que qualifica "orquestra") e "insano" (que qualifica "furor") funcionam no texto como adjetivos. - Verdadeira
+II. Caso a expressão "dura orquestra" fosse alterada para "o duro da orquestra", a palavra "duro" passaria por substantivação devido à presença do artigo "o". - Verdadeira
+III. A palavra "vento" é classificada como adjetivo composto por caracterizar a tempestade. - Falso
+
+
+22/09/2026
+Aula 19
+
+Objetivos
+Casos de concordância nominal 
+
+1. O que é concordância nominal? 
+Concordância nominal é a harmonia entre substantivo e adjetivo.	
+Concordância = estar como o coração no mesmo lugar. Um elemento seguir o outro.
+Nominal = relativo a nome. 
+Nomes = Subst. e adj.
+
+2. Qual é a regra geral da concordância nominal?
+O adj. segue gênero e número do subst. a que se refere.
+Exemplo: Era um monstro imundo e assustador.
+
+3. Casos de concordância com + de 1 subst.
+3.1 Adj. antes do subst.
+O adj. concorda em gênero e número com o subst. mais próximo.
+Vivia em tranquilos bosques e montanhas.
+Vivia em tranquilas montanhas e bosques.
+
+
+3.2 Adj. depois dos subst.
+Substantivos de mesmo gênero e no singular → adj. no mesmo gênero e no plural.
+Estudo a língua e a literatura portuguesas.
+
+Substantivos de gêneros diferentes e no singular → adj. vai para o masc. plural.
+A professora estava com uma saia e um chapéu escuros.
+
+Substantivos de gêneros diferentes e números diferentes → adj. vai para masc. plural.
+O jogador fez duas assistências e um gol absurdos.
+
+3.3 Predicativos
+Substantivos de mesmo gênero e no singular → Adj. vai para o mesmo gênero e para o plural.
+O livro e o caderno são novos.
+A porta e a janela são novas.
+
+Substantivos de gênero diferente e número diferente → Adj. vai para o masc. e para o plural.
+Os livros e a caneta são novos.
+
+
+
+3.4 Caso especial
+Sempre masculinho e singular.
+É justo que uma nação venere seus poetas.
+É necessário fazer algo.
+
+
+
+
+24/09/2026
+Aula 20
+
+Objetivos
+Numerais
+
+0.1 Quantas classes gramaticais existem? 10.
+0.2 O que são classes gramaticais? Classificações de diferentes tipos de palavras.
+
+1. O que são numerais?
+Palavras que indicam quantidade.
+
+2. Quais são os tipos de numerais?
+Cardinais, ordinais, multiplicativos e fracionários.
+
+3. O que são numerais cardinais?
+Os números básicos.
+Exemplo: Estavam ali três pessoas.
+
+4. O que são numerais ordinais?
+Palavras que expressam uma posição determinada em uma sequência.
+Exemplos:
+Tornou-se a primeira de sua classe.
+Isso deve ficar em segundo lugar.
+5. O que são numerais multiplicativos?
+Numerais que indicam relação de multiplicação.
+Exemplos:
+Ele tem o dobro do tamanho dela.
+Ele está devendo o quádruplo do valor.
+
+6. O que são numerais fracionários?
+Numerais que expressam valor de fração (parte).
+Exemplos:
+Já pagamos metade da dívida.
+Precisamos de dois terços de presença.
+
+7. O que são numerais coletivos? 
+Palavras únicas que designam quantidade exata.
+Exemplos: dezena, década, dúzia, centena, cento.
+
+Ambos/ambas = Numeral que significa “dois”.
+Exemplos: ambos os pés; ambas as mãos.
+
+
+8. Uso dos numerais multilicativos
+8.1 São invariáveis quando equivalem a substantivos.
+Exemplo: Ele tem o triplo da minha idade.
+8.2 São variáveis quando equivalem a adjetivos.
+Exemplo: Ele toma os remédios em doses duplas.
+9. Meio-dia e meia ou meio?
+Meia, pois é “meia hora", não “meio dia”.

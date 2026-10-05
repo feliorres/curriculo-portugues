@@ -317,3 +317,275 @@ Morreu sereno, após uma agonia curta. Pouco antes ouviu que o céu estava lindo
 – Que mal? Ar é vida. 
 
 Abrimos a janela. Realmente, estava um céu azul e claro. José Dias soergueu-se e olhou para fora; após alguns instantes, deixou cair a cabeça, murmurando: “Lindíssimo!”. Foi a última palavra que proferiu neste mundo. Pobre José Dias! Por que hei de negar que chorei por ele?
+
+14/09/2026
+Aula 14
+
+Objetivos
+Revisarmos identificação de adjetivos;
+Papel dos adjetivos na significação do texto;
+Anteposição e posposição de adjetivos.
+Sistema Verbal I
+Identificação dos verbos em texto;
+Verbos vs. formas nominais.
+
+Morreu sereno, após uma agonia curta. Pouco antes ouviu que o céu estava lindo, e pediu que abríssemos a janela. 
+
+– Não, o ar pode fazer-lhe mal. 
+– Que mal? Ar é vida. 
+
+Abrimos a janela. Realmente, estava um céu azul e claro. José Dias soergueu-se e olhou para fora; após alguns instantes, deixou cair a cabeça, murmurando: “Lindíssimo!”. Foi a última palavra que proferiu neste mundo. Pobre José Dias! Por que hei de negar que chorei por ele?
+
+2. Anteposição e posposição de adjetivos
+
+Os adjetivos antes ou depois podem alterar o significado da adjetivação.
+
+Pobre homem → Exlamação semelhante a “coitado”.
+Homem pobre → Literalmente: sem dinheiro.
+
+Homem grande → Característica de altura.
+Grande homem → Característica de elevação moral.
+
+Cessem do sábio grego e do Troiano
+As navegações grandes que fizeram
+
+Navegações grandes = longas, distantes.
+Grandes navegações = importantes; magníficas.
+
+Em outros casos, não há alteração.
+…A branca escuma para o céu sereno.
+…A escuma branca para o céu sereno.
+Ar atmosférico / Atmosférico ar
+
+
+
+
+3. Sistema Verbal I
+
+
+Conceito de verbo: palavra que significa ação com tempo e pessoa.
+
+Morreu (ele, passado) sereno, após uma agonia curta. Pouco antes ouviu (ele, passado) que o céu estava (ele, passado)  lindo, e pediu (ele, passado) que abríssemos (nós, passado) a janela. 
+
+– Não, o ar pode fazer-lhe mal. 
+– Que mal? Ar é vida. 
+
+Abrimos a janela. Realmente, estava um céu azul e claro. José Dias soergueu-se e olhou para fora; após alguns instantes, deixou cair a cabeça, murmurando: “Lindíssimo!”. Foi a última palavra que proferiu neste mundo. Pobre José Dias! Por que hei de negar que chorei por ele?
+
+Verbos vs. formas nominais
+Verbos → Têm tempo e pessoa. É possível colocar em alguma conjugação perfeitamente (eu, tu, ele, nós, vós, eles).
+Formas nominais → Verbos em forma de nome.
+Infinitivo → -ar, -er, -ir
+Gerúndio → -ando, -endo, -indo
+Particípio → -ado, -ido
+Exemplos
+1
+Verbo: falo
+Forma nominal: falar, falado, falando
+2
+Verbo: andamos
+Forma nominal: andar, andado, andando
+
+
+
+16/09/2026
+Aula 15
+
+Objetivos
+Modos verbais e seus usos
+Indicativo.
+
+1. Indicativo
+Significa afirmação direta.
+
+1.1 PRESENTE 
+Presente momentâneo:
+Cai chuva. É noite. Uma pequena brisa
+Substitui o calor. (F. Pessoa)
+Presente durativo:
+A Terra gira em torno do próprio eixo.
+Todos são iguais perante a lei.
+Presente habitual:
+Como pouco…
+Sou tímido.
+Presente histórico:
+A Avenida é o mar dos foliões. Serpentinas cortam o ar carregado (..._), rolam das sacadas… (Marques Rebelo)
+Presente com valor de futuro:
+Amanha mesmo vou para Belo Horizonte.
+
+
+2. PRETÉRITO IMPERFEITO
+Ex.: falava, cantava, sorria, etc.
+Descrever algo que foi presente no passado:
+O frio ia aumentando e o vento despenteava o cabelo de ambos (M. J. Carvalho)
+Descrever ações simultâneas:
+Falava alto quando as pessoas acordaram.
+Hábito no passado:
+Se o cacique marchava, a tribo inteira o acompanhava. (J. Cortesão).
+Forma de cortesia:
+Tive alta ontem, e vinha agradecer a V. Exª.
+Conto de tempo vago:
+Numa toca no chão vivia um Hobbit. (Tolkien)
+Era uma vez…
+
+
+
+21/09/2026
+
+Aula 16
+
+Objetivos
+Usos dos tempos verbais
+
+1. PRETÉRITO PERFEITO
+
+Forma simples: Ação completamente concluída no passado.
+Jantei com um apetite devorador e dormi como um anjo. (M. Torga)
+Forma composta: Repetição ou continuidade de um ato até o presente em que se fala.
+– Tenho lutado contra a adversidade e tenho compreendido os homens.
+
+2. PRETÉRITO MAIS-QUE-PERFEITO
+Indicar ação que ocorreu antes de outra já passada.
+Samuel aproximou-se para avisar que o táxi tinha chegado. (C. Drummon de Andrade)
+
+Para atenuar afirmação ou pedido.
+– Eu tinha vindo para convencê-lo de que Pedro é seu amigo.
+
+Uso literário
+Oh! se lutei!... mas devera (= deveria)
+Expor-te em pública praça…
+
+3. Revisão dos tempos verbais
+
+Pret. Mais-que-perfeito
+Pret. Imperfeito
+Pret. Perfeito
+Presente
+Futuro do presente
+Futuro do pretérito
+
+
+Amara         |    Amava     |  Amei         |   Amo          |   Amarei      |  Amaria
+
+
+
+4. FUTURO DO PRESENTE
+
+4.1 Indicar fatos posteriores ao momento presente
+As aulas começarão depois de amanhã.
+
+4.2 Incerteza (probabilidade, dúvida, suposição) sobre fatos atuais:
+Quem está aqui? Será um ladrão? (G. Ramos)
+
+4.3 Forma polida do presente
+Não, não posso ser acusado. Dirá o senhor: mas como foi que aconteceram? E eu lhe direi: sei lá. (C. Drummond de Andrade)
+“Ora”, direis, “ouvir estrelas!” (Olavo Bilac)
+
+4.4 Ordem atenuada
+Honrarás pai e mãe. 
+
+4.5 Afirmação condicionadas prováveis
+Se assim fizeres, dominarás a rainha. (Ó. Ribas)
+
+
+5. SUBSTITOS DO FUTURO DO PRESENTE SIMPLES
+
+5.1 Verbo haver + de + infinitivo
+Hei de castigá-los; havemos de castigá-los (Machado de Assis)
+
+5.2 Verbo ter + de + infinitivo
+Temos de resolver isso em primeiro lugar. (Pepetela)
+
+5.3 Verbo ir + infinitivo
+Vamos entrar no mar.
+
+5.4 Futuro do presente composto → Indicar que ação futura estará consumada antes de outra.
+Amanhã já terei conversado com ele.
+
+5.5 Expressar incerteza
+Terá passado o furacão? (C. dos Anjos)
+Quanto tempo terá passado até então? 
+
+2. Empregos do modo subjuntivo
+Modo subjuntivo é usado para coisas incertas, duvidosas, eventuais.
+Exemplos de verbos no subj.: que eu faça, tu faças, ele faça, nós façamos, façais, façam.
+
+2.1 Desejo
+Chovam hinos de glória na tua alma! (A. de Quental)
+
+2.2 Hipótese
+Que a tua música
+seja o ritmo de uma conquista! (F. J. Tenreiro)
+
+2.2 Ordem ou proibição
+Que não se apague este lume! (A. Meyer)
+6. FUTURO DO PRETÉRITO
+
+6.1 Ações posteriores ao agora:
+Depois de instalada, a Academia se transformaria em sua outra casa. 
+
+6.2 Incerteza sobre fatos passados
+Eu teria, talvez, uns doze anos. 
+Era ela, seria ela? (M. J. Carvalho)
+
+6.3 Forma polida de presente (em geral, desejo):
+Desajaríamos ouvi-lo sobre o crime (C. Drummond de Andrade).
+
+
+23/09/2026
+Aula 17
+
+Objetivos
+Emprego do modo indicativo.
+Emprego do modo subjuntivo.
+
+6.4 Frases interrogativas e exclamativas
+O nosso amor morreu… Quem o diria? (F. Espanca)
+
+6.5 Fatos ainda não realizados
+Se não hovesse diferenças, nós seríamos uma pessoa só. (G. Ramos)
+
+6.6 Composto: indicar fato que teria acontecido no passado
+Teria sido diferente, se eu o amasse?
+
+6.7 Composto: possibilidade de um fato passado
+Sem ti, teria sido uma grande cantora.
+
+
+MODO SUBJUNTIVO
+
+1. O que é o modo subjuntivo?
+Modo verbal que expressa incerteza, possibilidade.
+Indicativo: Eu amo.
+Subjuntivo: Se eu amasse; que eu ame; quando eu amar.
+
+2. Empregos do subjuntivo
+
+2.1 Desejo
+Chovam hinos de glória na tua alma! (Quental)
+
+2.2 Hipótese
+Que a tua música
+seja o ritmo de uma conquista! (Tenreiro)
+
+2.3 Dúvida
+Um cachorro talvez rosnasse ou mordesse. (Adonias Filho)
+
+2.4 Ordem
+Que não se apague este lume! (A. Meyer)
+
+2.5 Vontade
+Em todo o caso, gostava que me considerasse um amigo.
+
+2.6 Sentimento
+– Pior será | que nos enxotem | daqui…
+
+
+2.7 Dúvida
+– Não acredito que ela chore aqui.
+
+SUBSTITUTOS DO SUBJUNTIVO
+
+2.8 Infinitivo
+O professor mandou que o aluno lesse.
+O professor mandou o aluno ler.
