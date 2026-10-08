@@ -1,0 +1,191 @@
+// ==========================================
+// QUESTÕES FÁCEIS (Q01 a Q12)
+// ==========================================
+
+::Q01::
+No estudo gramatical, qual é a diferença fundamental entre a Morfologia e a Sintaxe? {
+=A Morfologia estuda a palavra isoladamente (o que ela é), enquanto a Sintaxe estuda a relação entre as palavras na oração (o que ela faz).
+~A Morfologia estuda apenas a pontuação do texto, enquanto a Sintaxe analisa o significado histórico das palavras.
+~A Morfologia estuda os sons e a pronúncia das palavras, enquanto a Sintaxe analisa exclusivamente as regras de acentuação.
+~A Morfologia estuda os períodos compostos, enquanto a Sintaxe classifica as dez classes de palavras isoladas.
+}
+
+::Q02::
+Considere a oração\: "A tempestade destruiu a antiga ponte da cidade." O termo destacado "A tempestade" desempenha sintaticamente a função de\: {
+=Sujeito da oração.
+~Objeto direto do verbo "destruir".
+~Adjunto adverbial de tempo.
+~Complemento nominal de "ponte".
+}
+
+::Q03::
+Na organização dos termos da oração, qual é a função sintática própria e privativa do verbo? {
+=Núcleo do predicado.
+~Adjunto adnominal do sujeito.
+~Complemento nominal do objeto.
+~Núcleo do vocativo oracional.
+}
+
+::Q04::
+Qual é o papel exercido pelas preposições e pelas conjunções no interior da estrutura sintática? {
+=Atuam exclusivamente como conectivos, ligando palavras ou orações sem possuir função sintática própria.
+~Exercem sempre a função sintática de adjuntos adverbiais da oração.
+~Funcionam privativamente como complementos nominais dos verbos transitivos.
+~Desempenham o papel sintático de predicativos do sujeito na oração.
+}
+
+::Q05::
+Substantivos concretos nomeiam seres concebíveis por si mesmos, enquanto os abstratos nomeiam ações, estados ou qualidades que dependem de outro ser para existirem. Na frase "A dedicação dos funcionários garantiu o êxito do projeto", a palavra "dedicação" classifica-se como\: {
+=Substantivo abstrato, pois não pode ser imaginado de forma direta e independente.
+~Substantivo concreto, pois pode ser imaginado de forma direta e independente.
+~Substantivo concreto, por indicar uma entidade única no contexto da empresa.
+~Substantivo abstrato, por indicar um indivíduo único no contexto da empresa
+}
+
+::Q06::
+Na frase "Os motoristas percorreram várias rodovias estaduais durante a viagem", a forma plural "rodovias" justifica-se porque\: {
+=Os substantivos compostos grafados sem hífen flexionam-se apenas no final, como se fossem substantivos simples.
+~Trata-se de uma palavra composta ligada por preposição oculta.
+~Ambos os radicais deveriam ter ido para o plural separadamente.
+~A palavra é invariável em número, recebendo a terminação apenas por atração do artigo.
+}
+
+::Q07::
+Nos substantivos compostos hifenizados formados por nomes de orações (como "ave-maria"), a flexão de plural correta ocorre\: {
+=Flexionando-se apenas o segundo elemento da palavra composta (como em ave-marias).
+~Flexionando-se obrigatoriamente ambos os elementos (como em aves-marias).
+~Flexionando-se apenas o primeiro elemento (como em aves-maria).
+~Mantendo-se os dois elementos rigorosamente invariáveis no plural.
+}
+
+::Q08::
+O uso dos graus aumentativo e diminutivo pode gerar ambiguidade semântica no texto dependendo do contexto. Na frase "O gerente referiu-se ao novo funcionário chamando-o de RAPAZINHO", a palavra destacada gera duplicidade de sentido porque\: {
+=Pode indicar tanto a pouca idade ou estatura do funcionário (sentido literal) quanto uma atitude de desdém e desvalorização profissional (valor pejorativo).
+~Pode funcionar sintaticamente tanto como sujeito paciente quanto como adjunto adverbial de tempo.
+~Pode ser classificada morfologicamente tanto como verbo de ligação quanto como pronome demonstrativo.
+~Pode expressar simultaneamente um grau comparativo de igualdade e um superlativo relativo de superioridade.
+}
+
+::Q09::
+O fenômeno da substantivação do adjetivo ocorre quando\: {
+=Um adjetivo assume a função de substantivo ao ser acompanhado por um determinante (como artigo ou pronome).
+~Um substantivo passa a qualificar outro substantivo na mesma oração.
+~Um verbo perde sua terminação original para atuar como advérbio.
+~Dois adjetivos se unem por hífen para formar uma locução adjetiva.
+}
+
+::Q10::
+O grau comparativo de superioridade pode estabelecer o confronto entre duas qualidades atribuídas a um mesmo ser. Assinale a oração que exemplifica esse tipo de comparativo\: {
+="O jovem soldado foi mais corajoso do que prudente durante o combate."
+~"O jovem soldado foi mais corajoso do que o capitão antigo da tropa."
+~"O jovem soldado foi tão corajoso quanto o capitão da tropa."
+~"O jovem soldado foi o combatente mais corajoso e destemido de todo o batalhão."
+}
+
+::Q11::
+Qual é o princípio fundamental que define a regra geral de concordância nominal na língua portuguesa? {
+=Os nomes (adjetivos, pronomes, artigos e numerais) adaptam-se em gênero e número ao substantivo a que se referem.
+~O sujeito composto exige que todos os termos da oração permaneçam no singular.
+~O adjetivo deve flexionar-se exclusivamente em número, permanecendo invariável em gênero.
+~O adjetivo concorda em pessoa gramatical com o verbo principal da oração.
+}
+
+::Q12::
+Quanto ao uso da palavra "menos" na norma culta da língua portuguesa, assinale a afirmação correta\: {
+=A palavra "menos" é rigorosamente invariável em gênero e número (a forma "menas" não existe).
+~A palavra "menos" deve variar para "menas" sempre que acompanhar substantivos femininos plurais.
+~A palavra "menos" varia exclusivamente em número, admitindo a forma "menoses" no plural.
+~A palavra "menos" concorda em gênero feminino sempre que anteceder um adjetivo feminino.
+}
+
+// ==========================================
+// QUESTÕES MÉDIAS (Q13 a Q18)
+// ==========================================
+
+::Q13::
+Analise sintaticamente o adjetivo "forte" nas duas frases a seguir\:
+I. "O vento forte derrubou vários galhos da árvore."
+II. "O vento estava forte durante a madrugada."
+A função sintática de "forte" em I e em II é, respectivamente\: {
+=Adjunto adnominal e predicativo do sujeito.
+~Predicativo do sujeito em ambas as frases.
+~Adjunto adverbial de modo em I e adjunto adnominal em II.
+~Objeto direto em I e predicativo do objeto em II.
+}
+
+::Q14::
+Na frase "A prefeitura enviou três caminhões-pipa para abastecer o vilarejo", apenas o primeiro elemento da palavra composta "caminhões-pipa" foi flexionado no plural porque\: {
+=O segundo substantivo ("pipa") especifica o tipo ou a finalidade do primeiro ("caminhões").
+~O primeiro elemento é uma forma verbal que exige a marcação de plural.
+~Trata-se de uma palavra composta ligada por preposição oculta que impede a flexão do primeiro.
+~Palavras terminadas em vogal são sempre invariáveis em substantivos compostos.
+}
+
+::Q15::
+Na frase "A atitude dos voluntários durante o resgate foi ________ (muito louvável)", o superlativo absoluto sintético correspondente a "muito louvável" é: {
+=louvabilíssima.
+~louvavelíssima.
+~louvavelzíssima.
+~louvavelzérrima.
+}
+
+::Q16::
+Analise a concordância das expressões destacadas nas duas frases\:
+I. "A fotografia solicitada segue ANEXA ao formulário de inscrição."
+II. "As planilhas orçamentárias seguem EM ANEXO ao relatório final."
+Sobre a concordância dessas frases, é correto afirmar que\: {
+=Ambas as frases estão corretas, pois a palavra "anexo" concorda com o substantivo a que se refere, e a locução "em anexo" é invariável.
+~Apenas a frase I está correta, pois a locução "em anexo" deveria concordar no feminino plural ("em anexas").
+~Apenas a frase II está correta, pois a palavra "anexo" é invariável em qualquer contexto.
+~Ambas as frases estão incorretas, pois termos pospostos ao verbo devem permanecer no masculino singular.
+}
+
+::Q17::
+Considere o emprego da palavra "bastante" nos períodos abaixo\:
+I. "Os advogados apresentaram bastantes provas durante a audiência."
+II. "Os jurados mostraram-se bastante atentos aos depoimentos."
+A análise morfossintática correta da palavra "bastante" nos dois casos revela que\: {
+=Em I, atua como adjetivo/pronome (variável, equivale a "muitas")\; em II, atua como advérbio (invariável, equivale a "muito").
+~Em ambos os períodos, a palavra atua como advérbio invariável de intensidade.
+~Em I, a frase está incorreta, pois a palavra "bastante" nunca admite flexão de plural.
+~Em II, a forma correta deveria ser "bastantes", concordando com o adjetivo "atentos".
+}
+
+::Q18::
+Observe a concordância nas duas orações a seguir\:
+1. "Entrada de pessoas não autorizadas é proibido neste local."
+2. "A entrada de pessoas não autorizadas é proibida neste local."
+A concordância observada em ambas as frases justifica-se porque\: {
+=Sem artigo determinante, a expressão permanece invariável no masculino singular\; com o artigo ("A"), o adjetivo concorda em gênero com o substantivo.
+~A primeira oração está incorreta, pois a palavra "proibido" deve sempre concordar com o substantivo feminino "entrada".
+~A segunda oração está incorreta, pois expressões que indicam ordem nunca sofrem flexão de gênero.
+~O termo "proibido" funciona como verbo intransitivo na primeira frase e como advérbio na segunda.
+}
+
+// ==========================================
+// QUESTÕES DIFÍCEIS (Q19 a Q20)
+// ==========================================
+
+::Q19::
+Considere a concordância nominal e o sentido das seguintes frases\:
+I. "O viajante carregava uma mala e um baú pesados."
+II. "O viajante carregava uma mala e um baú pesado."
+Em relação ao grau de certeza e à ambiguidade do significado, é correto afirmar que\: {
+=Na frase I há certeza de que ambos os objetos eram pesados, enquanto na frase II há menor certeza, pois a concordância gera ambiguidade sobre a mala também ser ou não pesada.
+~Na frase II há maior certeza de que ambos eram pesados, ao passo que a frase I deixa em dúvida se o adjetivo se refere a um ou a dois objetos.
+~Em ambas as frases há a mesma certeza de sentido, pois a regra gramatical elimina qualquer margem de ambiguidade na interpretação.
+~Na frase I o adjetivo no plural gera dúvida sobre qual elemento era pesado, enquanto na frase II há certeza absoluta de que apenas a mala era pesada.
+}
+
+::Q20::
+Analise a correção gramatical da concordância nominal nos seguintes períodos\:
+I. "Os engenheiros mesmos realizaram a vistoria técnica da usina."
+II. "Após o encerramento do expediente, os seguranças ficaram sós no edifício."
+III. "A assembleia foi remarcada, haja vista as fortes chuvas na região."
+IV. "Todos os concorrentes foram entrevistados, salvos as duas candidatas ausentes."
+Estão plenamente CORRETOS apenas os períodos\: {
+=I, II e III.
+~I e IV.
+~II e IV.
+~III e IV.
+}

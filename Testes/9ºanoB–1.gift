@@ -1,0 +1,177 @@
+// ==========================================
+// QUESTÕES FÁCEIS (Q01 a Q08, Q11 a Q14)
+// ==========================================
+
+::Q01::
+Na análise gramatical, o que caracteriza e define essencialmente uma oração? {
+=É uma reunião de palavras construída obrigatoriamente em torno de um verbo (ou locução verbal).
+~É qualquer frase que termine com ponto de exclamação.
+~É um agrupamento de substantivos e adjetivos desprovido de verbo.
+~É uma sequência de conectivos que ligam dois parágrafos.
+}
+
+::Q02::
+Como se diferenciam o período simples e o período composto na estrutura sintática? {
+=O período simples possui apenas uma única oração, enquanto o período composto possui duas ou mais orações.
+~O período simples contém apenas substantivos, enquanto o período composto contém adjetivos.
+~O período simples é formado por orações subordinadas, e o composto apenas por orações coordenadas.
+~O período simples não possui verbo, enquanto o período composto possui obrigatoriamente um verbo.
+}
+
+::Q03::
+As orações coordenadas são sintaticamente autônomas entre si. Quanto à presença ou ausência de conjunção que as una, elas se dividem em\: {
+=Assindéticas (quando não vêm introduzidas por conjunção, separadas por vírgula) e Sindéticas (quando vêm introduzidas por conjunção).
+~Principais (quando possuem verbo) e Secundárias (quando não possuem verbo).
+~Subordinadas (quando dependem de outra) e Absolutas (quando formam período simples).
+~Reduzidas (quando possuem conectivo) e Desenvolvidas (quando não possuem conectivo).
+}
+
+::Q04::
+A subordinação ocorre quando uma oração funciona como termo sintático de outra. De acordo com a função desempenhada em relação à oração principal, as orações subordinadas dividem-se em três grandes grupos\: {
+=Substantivas (exercem funções próprias de substantivo, como sujeito e objeto), Adjetivas (caracterizam um substantivo) e Adverbiais (indicam circunstâncias, como tempo ou causa).
+~Assindéticas, sindéticas e orações principais.
+~Orações simples, orações compostas e orações nominais.
+~Orações do indicativo, orações do subjuntivo e orações do imperativo.
+}
+
+::Q05::
+No período "O sino tocou, os operários guardaram as ferramentas e o silêncio desceu sobre a fábrica", há quantas orações? {
+=Três orações, pois há três verbos ("tocou", "guardaram" e "desceu").
+~Apenas uma oração, pois trata-se de um período simples.
+~Duas orações, pois a conjunção "e" anula a contagem da última oração.
+~Quatro orações, pois o sujeito é composto por operários e ferramentas.
+}
+
+::Q06::
+Qual é a diferença fundamental entre uma oração coordenada e uma oração principal? {
+=A oração coordenada tem sentido autônomo e não tem subordinada ligada a si\; a oração principal é aquela à qual se liga uma oração subordinada.
+~A oração coordenada é sempre incompleta, enquanto a oração principal nunca possui verbo.
+~A oração coordenada é obrigatoriamente reduzida de gerúndio, e a principal é sempre desenvolvida.
+~Não há diferença, pois ambos os termos designam exatamente o mesmo tipo de oração.
+}
+
+::Q07::
+Os verbos flexionados apresentam marcas de tempo e pessoa, encaixando-se em conjugações pessoais. Já as formas nominais não trazem essas marcas. Assinale a alternativa que apresenta uma forma nominal no particípio\: {
+="concluído"
+~"concluíram"
+~"concluiremos"
+~"concluíeis"
+}
+
+::Q08::
+Assinale a alternativa que apresenta um período simples (formado por uma única oração)\: {
+="As águas do riacho corriam mansas entre as pedras verdes da serra."
+~"As águas corriam e os pássaros cantavam alegremente no bosque."
+~"O viajante percebeu que as águas do riacho estavam límpidas."
+~"Quando a noite desceu, as águas cobriram toda a margem do rio."
+}
+
+// ==========================================
+// QUESTÕES MÉDIAS (Q09 e Q10)
+// ==========================================
+
+::Q09::
+O que caracteriza uma oração reduzida na análise sintática do período? {
+=Apresenta o verbo em uma das formas nominais (infinitivo, gerúndio ou particípio) e não é introduzida por conectivo.
+~É uma oração curta que não possui sujeito nem predicado.
+~É uma oração coordenada que foi eliminada da frase por elipse.
+~É uma frase nominal que não possui nenhum tipo de verbo.
+}
+
+::Q10::
+Na oração "A luz da manhã dourou as antigas muralhas da cidade", a identificação correta do verbo, do termo que faz a ação (sujeito) e do complemento verbal é\: {
+=Verbo\: "dourou"\; Sujeito\: "A luz da manhã"\; Complemento\: "as antigas muralhas da cidade".
+~Verbo\: "manhã"\; Sujeito\: "A luz"\; Complemento\: "dourou as muralhas".
+~Verbo\: "muralhas"\; Sujeito\: "da cidade"\; Complemento\: "a luz da manhã".
+~Verbo\: "dourou"\; Sujeito\: "as antigas muralhas"\; Complemento\: "a luz da manhã".
+}
+
+// ==========================================
+// 10 QUESTÕES DE PASSOS ÚNICOS NA ANÁLISE SINTÁTICA DO PERÍODO
+// (Q11 a Q14: Fáceis | Q15 a Q18: Médias | Q19 e Q20: Difíceis)
+// ==========================================
+
+::Q11::
+No período "O capitão afirmou que o navio suportaria a tempestade", a oração "que o navio suportaria a tempestade" completa o sentido do verbo "afirmou". Ela classifica-se como\: {
+=Oração subordinada substantiva (objetiva direta), pois funciona como complemento do verbo da oração principal.
+~Oração coordenada sindética aditiva, com sentido autônomo.
+~Oração principal, que comanda a regência de todo o período.
+~Oração subordinada adjetiva (restritiva) ligada ao sujeito "capitão".
+}
+
+::Q12::
+No período "Todos sabiam que a verdade viria à tona", qual trecho constitui a oração principal? {
+="Todos sabiam"
+~"que a verdade"
+~"viria à tona"
+~"que a verdade viria à tona"
+}
+
+::Q13::
+No período "O fogo crepitava na lareira e a chuva batia no telhado", a oração "e a chuva batia no telhado" é introduzida pela conjunção "e". Ela classifica-se como\: {
+=Oração coordenada sindética (aditiva), pois possui estrutura autônoma e vem ligada por conjunção coordenativa.
+~Oração coordenada assindética, pois não tem ligação sintática com o período.
+~Oração subordinada adverbial (temporal).
+~Oração principal de todo o período.
+}
+
+::Q14::
+Considere o período\: "O guarda apitou, os motoristas frearam e os pedestres atravessaram a avenida."
+A oração "os motoristas frearam" classifica-se como\: {
+=Oração coordenada assindética.
+~Oração coordenada sindética adversativa.
+~Oração subordinada substantiva subjetiva.
+~Oração subordinada adverbial causal.
+}
+
+::Q15::
+Considere o período\: "O caçador ergueu a lanterna e avistou um vulto que se movia entre as árvores."
+A análise das relações entre as orações desse período revela que\: {
+=As duas primeiras orações são coordenadas entre si ("ergueu a lanterna" / "e avistou um vulto"), e a terceira ("que se movia...") é uma oração subordinada adjetiva (restritiva) dependente da segunda.
+~Todas as três orações são coordenadas autônomas e independentes entre si.
+~Todas as três orações são subordinadas a uma oração principal oculta.
+~Trata-se de um período simples com três predicados nominais.
+}
+
+::Q16::
+No período "Quando a aurora rompeu no horizonte, os camponeses iniciaram a colheita", a oração "Quando a aurora rompeu no horizonte" classifica-se como\: {
+=Oração subordinada adverbial, ligada à oração principal "os camponeses iniciaram a colheita".
+~Oração coordenada assindética com sentido completo e independente.
+~Oração subordinada adjetiva (restritiva) ligada ao substantivo "horizonte".
+~Oração principal que recebe o complemento da oração seguinte.
+}
+
+::Q17::
+Considere o trecho\: "O velho carpinteiro media a tábua, ajustava o esquadro e cantava uma melodia que aprendera na infância."
+No interior desse período, a oração "e cantava uma melodia" exerce uma dupla função sintática\: {
+=É uma oração coordenada sindética em relação às anteriores e, simultaneamente, oração principal da subordinada adjetiva (restritiva) "que aprendera na infância".
+~É exclusivamente uma oração subordinada substantiva ao sujeito da primeira oração.
+~É uma oração reduzida de gerúndio com valor de tempo.
+~É uma oração coordenada assindética que não se relaciona com a oração seguinte.
+}
+
+::Q18::
+No período "As memórias que guardamos no coração iluminam os dias difíceis", a oração "que guardamos no coração" qualifica o substantivo antecedente "memórias". Ela classifica-se como\: {
+=Oração subordinada adjetiva (restritiva), pois qualifica e delimita o substantivo antecedente ("memórias").
+~Oração subordinada substantiva (objetiva direta), funcionando como complemento do verbo.
+~Oração coordenada sindética adversativa com sentido completo e autônomo.
+~Oração subordinada adverbial causal que explica o motivo da iluminação dos dias.
+}
+
+::Q19::
+Analise a estrutura do seguinte período\:
+"A tempestade castigava a serra, mas os guardas sabiam que a ponte resistiria à força das águas que desciam vorazes."
+A correta descrição da relação sintática entre as orações é\: {
+=A oração "mas os guardas sabiam" é coordenada sindética à primeira e atua como principal da subordinada substantiva "que a ponte resistiria...", a qual é oração principal da subordinada adjetiva (restritiva) "que desciam vorazes".
+~As quatro orações são coordenadas sindéticas aditivas independentes entre si.
+~A primeira oração é subordinada adverbial à segunda, e as duas últimas são coordenadas assindéticas.
+~A oração "que a ponte resistiria" é a oração principal de todo o período, sendo todas as outras subordinadas a ela.
+}
+
+::Q20::
+No período "O vigia fechou os portões de ferro, apagou as luzes do pátio e percebeu que alguém rondava as muralhas", a oração "e percebeu" classifica-se exatamente como\: {
+=Oração coordenada sindética em relação às anteriores e oração principal da subordinada substantiva (objetiva direta) "que alguém rondava as muralhas".
+~Oração subordinada adverbial temporal que indica o momento em que os portões foram fechados.
+~Oração coordenada assindética que não estabelece nenhuma conexão sintática com o período.
+~Oração subordinada adjetiva (restritiva) ligada ao substantivo "pátio".
+}
