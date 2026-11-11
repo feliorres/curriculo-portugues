@@ -1,0 +1,182 @@
+// ==========================================
+// QUESTÕES FÁCEIS (Q01 a Q12)
+// ==========================================
+
+::Q01::
+Na língua portuguesa, qual é a regra geral da concordância verbal? {
+=O verbo concorda em número (singular e plural) e pessoa com o núcleo do sujeito.
+~O verbo deve flexionar-se obrigatoriamente no plural sempre que houver mais de um substantivo na oração.
+~O verbo deve concordar em gênero (masculino e feminino) e número com o primeiro substantivo da frase.
+~O verbo permanece invariável no singular, independentemente da pessoa gramatical do sujeito.
+}
+
+::Q02::
+Na sintaxe da oração, como se define o conceito de sujeito? {
+=O termo que realiza ou pratica a ação expressa pelo verbo.
+~O termo invariável que indica unicamente o tempo e o lugar da oração.
+~A palavra que expressa uma circunstância de modo modificando um adjetivo.
+~O elemento que serve exclusivamente para determinar se o verbo está no passado ou no futuro.
+}
+
+::Q03::
+Quando uma oração apresenta sujeito composto anteposto (colocado antes do verbo), como em "Paulo e Jorge fizeram a tarefa", qual é a regra de concordância verbal aplicável? {
+=O verbo vai obrigatoriamente para a forma plural.
+~O verbo pode concordar no singular ou no plural com o núcleo mais próximo.
+~O verbo deve permanecer sempre na 3ª pessoa do singular.
+~O verbo concorda apenas com o primeiro núcleo do sujeito composto.
+}
+
+::Q04::
+Em relação à concordância verbal, como deve ser empregado o verbo "haver" quando possui o sentido de "existir"? {
+=Permanece sempre no singular (por exemplo: "Houve problemas durante o teste").
+~Deve flexionar-se no plural sempre que o termo seguinte estiver no plural.
+~Admite dupla concordância facultativa, tanto no singular quanto no plural.
+~Concorda obrigatoriamente em número e pessoa com a palavra que o antecede.
+}
+
+::Q05::
+Quando o verbo "fazer" é utilizado para indicar tempo decorrido ou clima, a norma-padrão determina que ele\: {
+=Permaneça sempre no singular (por exemplo: "Fazia anos que não o via").
+~Flexione-se no plural quando indicar uma quantidade maior do que um ano ou dia.
+~Concorde no plural com o substantivo no plural que vier logo após ele.
+~Apresente flexão obrigatória na 1ª pessoa do plural.
+}
+
+::Q06::
+No estudo dos tempos verbais do modo indicativo, como se caracteriza o pretérito perfeito? {
+=Expressa um fato pontual e determinado no passado que já foi concluído (completo).
+~Expressa uma ação contínua ou habitual no passado que não foi finalizada.
+~Expressa um fato passado que ocorreu antes de outro acontecimento também no passado.
+~Expressa uma ação hipotética que depende de uma condição presente para se realizar.
+}
+
+::Q07::
+No modo indicativo, como se caracteriza o pretérito imperfeito? {
+=Expressa um fato contínuo ou habitual situado no passado.
+~Expressa um fato momentâneo e pontual totalmente concluído no passado.
+~Expressa uma ordem, pedido ou orientação direta ao interlocutor.
+~Expressa uma ação futura garantida em relação ao momento da fala.
+}
+
+::Q08::
+A forma simples "falara" corresponde semanticamente à forma composta\: {
+="tinha falado"
+~"estava falando"
+~"iria falar"
+~"deve falar"
+}
+
+::Q09::
+Na oração "Ontem, Mariana entregou o relatório final da equipe", a forma verbal em destaque "entregou" classifica-se no\: {
+=Pretérito perfeito.
+~Pretérito imperfeito.
+~Pretérito mais-que-perfeito.
+~Presente do indicativo.
+}
+
+::Q10::
+Na gramática da língua portuguesa, o que é um advérbio? {
+=Uma palavra invariável que modifica o sentido de um verbo, de um adjetivo ou de outro advérbio, acrescentando uma circunstância.
+~Uma palavra variável em gênero e número cuja função principal é nomear ações, estados e seres.
+~Um termo que substitui o substantivo para indicar unicamente a pessoa do discurso.
+~Uma palavra que liga duas orações estabelecendo apenas relações de tempo futuro.
+}
+
+::Q11::
+Na oração "O forte enfrenta a humilhação pacientemente", a palavra destacada "pacientemente" classifica-se como advérbio de\: {
+=Modo.
+~Tempo.
+~Lugar.
+~Negação.
+}
+
+::Q12::
+Como se define uma locução adverbial na língua portuguesa? {
+=A reunião de duas ou mais palavras com o mesmo valor e função de um advérbio.
+~Uma única palavra invariável que modifica exclusivamente substantivos próprios.
+~A junção de um artigo definido com um verbo no modo imperativo.
+~Um conjunto de orações coordenadas sem conjunção entre si.
+}
+
+// ==========================================
+// QUESTÕES MÉDIAS (Q13 a Q18)
+// ==========================================
+
+::Q13::
+Considere a concordância verbal na frase\: "De manhã, surgiu/surgiram o sol e uma estrela"
+De acordo com a norma culta, por que ambas as opções ("surgiu" e "surgiram") estão gramaticalmente corretas? {
+=Porque, estando o sujeito composto posposto ao verbo, este pode concordar no plural com todos os núcleos ou no singular com o núcleo mais próximo.
+~Porque o verbo exprime tempo decorrido, caso em que a concordância é sempre livre.
+~Porque os núcleos do sujeito são acompanhados por artigo definido, o que torna a concordância neutra.
+~Porque verbos intransitivos dispensam qualquer tipo de concordância com o sujeito da oração.
+}
+
+::Q14::
+Na oração "O cabeça dos assaltantes fugiu da polícia", a forma verbal "fugiu" foi flexionada na 3ª pessoa do singular porque\: {
+=O verbo concorda em número e pessoa com o núcleo do sujeito ("cabeça"), que está no singular.
+~A palavra "assaltantes" funciona como o núcleo principal do predicado verbal.
+~Todos os verbos terminados em "-ir" são invariáveis quando colocados no pretérito.
+~O termo "da polícia" atua como sujeito paciente da oração, determinando o singular.
+}
+
+::Q15::
+Analise a concordância dos verbos destacados nas frases a seguir\:
+I. "Na floresta, não HAVIA esperanças."
+II. "Ali, FAZIA verões escaldantes."
+A respeito dessas frases, é correto afirmar que\: {
+=Ambas estão corretas, pois o verbo "haver" com sentido de existir e o verbo "fazer" indicando clima são impessoais e permanecem no singular.
+~Apenas a frase I está correta, pois na frase II o verbo deveria concordar com "verões escaldantes" ("faziam verões").
+~Ambas estão incorretas, pois os termos no plural "esperanças" e "verões" exigem os verbos "haviam" e "faziam".
+~Apenas a frase II está correta, pois o verbo "haver" deveria flexionar-se no plural ("haviam flores").
+}
+
+::Q16::
+Na frase "Enquanto o professor explicava a matéria, os alunos faziam anotações", os verbos "explicava" e "faziam" foram empregados no pretérito imperfeito porque\: {
+=Expressam ações contínuas e duradouras que se desenvolviam simultaneamente no passado.
+~Indicam ações pontuais que foram concluídas antes do início da aula.
+~Designam fatos finalizados de forma definitiva em um momento anterior ao relato.
+~Expressam acontecimentos que obrigatoriamente se concretizarão no momento presente.
+}
+
+::Q17::
+Na oração "O autor revisou o capítulo que escrevera na noite anterior", a forma verbal "escrevera" está no pretérito mais-que-perfeito porque indica\: {
+=Uma ação passada concluída antes de outro fato também passado ("revisou").
+~Um hábito frequente e contínuo que se repetia todas as noites.
+~Uma dúvida sobre se o autor conseguiu ou não finalizar a escrita do capítulo.
+~Um fato futuro que depende da aprovação da revisão para acontecer.
+}
+
+::Q18::
+Na frase "A professora explicou o conteúdo com calma, mas Mariana não aceitou a resposta", as expressões em destaque "com calma" e "não" classificam-se, respectivamente, como\: {
+=Locução adverbial de modo e advérbio de negação.
+~Advérbio de tempo e locução adverbial de dúvida.
+~Locução adverbial de lugar e advérbio de intensidade.
+~Advérbio de modo e locução adverbial de afirmação.
+}
+
+// ==========================================
+// QUESTÕES DIFÍCEIS (Q19 a Q20)
+// ==========================================
+
+::Q19::
+Analise o emprego dos tempos do pretérito no período a seguir\:
+"Chovia muito, e o vento balançava as árvores, quando de repente a porta se abriu. Eu esquecera as chaves lá fora."
+Sobre os verbos desse trecho, é correto afirmar que\: {
+="Chovia" e "balançava" estão no pretérito imperfeito (ações contínuas em andamento); "abriu" está no pretérito perfeito (fato pontual concluído); "esquecera" está no pretérito mais-que-perfeito (ação anterior às demais).
+~Todos os verbos estão no pretérito perfeito, pois todos os fatos narrados já foram completamente concluídos no passado.
+~"Chovia" e "balançava" estão no pretérito mais-que-perfeito; "abriu" está no pretérito imperfeito; "esquecera" está no pretérito perfeito.
+~O verbo "esquecera" expressa um fato posterior ao momento em que a porta se abriu, situando-se no futuro do pretérito.
+}
+
+::Q20::
+Analise a concordância verbal das quatro orações abaixo\:
+1. "O piloto e seu assistente morreram no acidente."
+2. "Ao longe, surgiu um cavalo e um cavaleiro."
+3. "Faz meses que o navio zarpou."
+4. "Houve problemas durante o teste."
+De acordo com as regras de concordância verbal da norma-padrão, é correto afirmar que\: {
+=Todas as orações estão corretas, pois respeitam, respectivamente, as regras de sujeito anteposto, sujeito composto posposto, verbo "fazer" indicando tempo decorrido e verbo "haver" no sentido de existir.
+~Apenas as orações 1 e 4 estão corretas, pois nas orações 2 e 3 os verbos deveriam figurar obrigatoriamente no plural ("surgiram" e "fazem").
+~Apenas a oração 1 está correta, porque sujeitos com mais de um núcleo ou expressões temporais exigem sempre o verbo na 3ª pessoa do plural.
+~Todas as orações apresentam erros de concordância verbal, pois contrariam a regra de que o verbo deve sempre concordar com o primeiro termo da oração.
+}
